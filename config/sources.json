@@ -1,0 +1,79 @@
+{
+  "youtube_channels": [
+    {
+      "name": "aiDotEngineer",
+      "url": "https://www.youtube.com/@aiDotEngineer",
+      "lookback_count": 50
+    },
+    {
+      "name": "Cursor",
+      "url": "https://www.youtube.com/@cursor_ai/videos",
+      "lookback_count": 50
+    },
+    {
+      "name": "Stripe",
+      "url": "https://www.youtube.com/@stripe/videos",
+      "lookback_count": 50
+    },
+    {
+      "name": "Vanishing Gradients",
+      "url": "https://www.youtube.com/@vanishinggradients/streams",
+      "lookback_count": 50
+    },
+    {
+      "name": "Claude",
+      "url": "https://www.youtube.com/@claude/streams",
+      "lookback_count": 50
+    }
+  ],
+  "podcasts": [
+    {
+      "name": "Lenny's Podcast",
+      "rssUrl": "https://api.substack.com/feed/podcast/10845.rss",
+      "url": "https://www.lennysnewsletter.com/podcast",
+      "lookback_count": 50
+    },
+    {
+      "name": "Lex Fridman Podcast",
+      "rssUrl": "https://lexfridman.com/feed/podcast/",
+      "url": "https://lexfridman.com/podcast/",
+      "lookback_count": 50
+    },
+    {
+      "name": "Latent Space",
+      "rssUrl": "https://api.substack.com/feed/podcast/1084089.rss",
+      "url": "https://www.youtube.com/@LatentSpacePod",
+      "lookback_count": 50
+    },
+    {
+      "name": "Training Data",
+      "rssUrl": "https://feeds.megaphone.fm/trainingdata",
+      "url": "https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8",
+      "lookback_count": 50
+    },
+    {
+      "name": "No Priors",
+      "rssUrl": "https://feeds.megaphone.fm/nopriors",
+      "url": "https://www.youtube.com/@NoPriorsPodcast",
+      "lookback_count": 50
+    },
+    {
+      "name": "Unsupervised Learning",
+      "rssUrl": "https://feeds.simplecast.com/dOSE_bdP",
+      "url": "https://www.youtube.com/@RedpointAI",
+      "lookback_count": 50
+    },
+    {
+      "name": "The MAD Podcast with Matt Turck",
+      "rssUrl": "https://anchor.fm/s/f2ee4948/podcast/rss",
+      "url": "https://www.youtube.com/@DataDrivenNYC/videos",
+      "lookback_count": 50
+    },
+    {
+      "name": "AI & I by Every",
+      "rssUrl": "https://anchor.fm/s/ed1f5584/podcast/rss",
+      "url": "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL",
+      "lookback_count": 50
+    }
+  ]
+}

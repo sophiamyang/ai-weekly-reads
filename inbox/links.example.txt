@@ -1,0 +1,5 @@
+# Add one link per line.
+# Examples:
+# https://www.youtube.com/watch?v=...
+# https://example.com/podcast/feed.xml
+# https://example.com/podcast/episode-123

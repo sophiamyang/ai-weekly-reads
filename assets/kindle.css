@@ -1,0 +1,125 @@
+@page {
+  margin: 5%;
+}
+
+html,
+body {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+body {
+  font-family: serif;
+  line-height: 1.45;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0.65em 0;
+  text-indent: 0;
+  widows: 2;
+  orphans: 2;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  background: #ffffff !important;
+  color: #000000 !important;
+  font-weight: bold;
+  line-height: 1.2;
+  page-break-after: avoid;
+  page-break-inside: avoid;
+}
+
+h1 {
+  font-size: 1.65em;
+  margin: 0 0 0.8em;
+  page-break-before: always;
+}
+
+h1.title,
+body > section:first-child > h1:first-child {
+  page-break-before: avoid;
+}
+
+h2 {
+  font-size: 1.2em;
+  margin: 1.4em 0 0.45em;
+}
+
+h3,
+h4 {
+  font-size: 1em;
+  margin: 1.1em 0 0.35em;
+}
+
+ol,
+ul {
+  margin: 0.6em 0 0.9em 1.35em;
+  padding: 0;
+}
+
+li {
+  margin: 0.25em 0;
+}
+
+a,
+a:visited {
+  background: transparent !important;
+  color: #000000 !important;
+  text-decoration: underline;
+}
+
+blockquote,
+code,
+pre,
+table,
+th,
+td {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+blockquote {
+  border-left: 2px solid #000000;
+  margin: 0.8em 0;
+  padding-left: 0.8em;
+}
+
+code,
+pre {
+  font-family: monospace;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #000000;
+  height: 0;
+  margin: 1.5em 0;
+}
+
+header,
+nav,
+section,
+div {
+  background: #ffffff !important;
+  color: #000000 !important;
+}
+
+header {
+  margin-bottom: 2em;
+}
+
+nav#toc ol {
+  margin-left: 0;
+}
+
+nav#toc li {
+  list-style: none;
+  margin: 0.45em 0;
+}

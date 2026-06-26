@@ -1,0 +1,172 @@
+from __future__ import annotations
+
+import hashlib
+import json
+import os
+import re
+import shutil
+from datetime import date, datetime
+from email.utils import parsedate_to_datetime
+from pathlib import Path
+from typing import Any
+from urllib.parse import parse_qs, urlparse
+
+
+def slugify(value: str, fallback: str = "item") -> str:
+    value = value.strip().lower()
+    value = re.sub(r"https?://", "", value)
+    value = re.sub(r"[^a-z0-9]+", "-", value)
+    value = value.strip("-")
+    return value[:80] or fallback
+
+
+def stable_id(value: str) -> str:
+    return hashlib.sha256(value.encode("utf-8")).hexdigest()[:16]
+
+
+def read_json(path: Path, default: Any) -> Any:
+    if not path.exists():
+        return default
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+def write_json(path: Path, value: Any) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(value, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+
+
+def read_text(path: Path) -> str:
+    return path.read_text(encoding="utf-8")
+
+
+def write_text(path: Path, value: str) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(value, encoding="utf-8")
+
+
+def yaml_value(value: Any) -> str:
+    if value is None:
+        return '""'
+    if isinstance(value, bool):
+        return "true" if value else "false"
+    return json.dumps(str(value), ensure_ascii=False)
+
+
+def split_frontmatter(markdown: str) -> tuple[dict[str, Any], str]:
+    if not markdown.startswith("---\n"):
+        return {}, markdown
+    end = markdown.find("\n---\n", 4)
+    if end == -1:
+        return {}, markdown
+    frontmatter = markdown[4:end]
+    body = markdown[end + 5 :]
+    return parse_frontmatter(frontmatter), body
+
+
+def parse_frontmatter(frontmatter: str) -> dict[str, Any]:
+    fields: dict[str, Any] = {}
+    current_key: str | None = None
+    for line in frontmatter.splitlines():
+        if line.startswith("  - ") and current_key:
+            values = fields.get(current_key)
+            if not isinstance(values, list):
+                values = []
+                fields[current_key] = values
+            values.append(_parse_yaml_scalar(line.removeprefix("  - ").strip()))
+            continue
+        if line.startswith(" ") or ":" not in line:
+            continue
+        key, value = line.split(":", 1)
+        current_key = key.strip()
+        stripped = value.strip()
+        fields[current_key] = "" if stripped == "" else _parse_yaml_scalar(stripped)
+    return fields
+
+
+def _parse_yaml_scalar(value: str) -> Any:
+    try:
+        return json.loads(value)
+    except json.JSONDecodeError:
+        pass
+    lowered = value.lower()
+    if lowered == "true":
+        return True
+    if lowered == "false":
+        return False
+    return value
+
+
+def load_dotenv(path: Path) -> None:
+    if not path.exists():
+        return
+    for line in path.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, value = line.split("=", 1)
+        key = key.strip()
+        value = value.strip().strip('"').strip("'")
+        if key and key not in os.environ:
+            os.environ[key] = value
+
+
+def today_stamp() -> str:
+    return datetime.now().strftime("%Y-%m-%d")
+
+
+def parse_date(value: str | None) -> date | None:
+    if not value:
+        return None
+    text = value.strip()
+    if not text:
+        return None
+    for candidate in (text, text.replace("Z", "+00:00")):
+        try:
+            return datetime.fromisoformat(candidate).date()
+        except ValueError:
+            pass
+    try:
+        return datetime.strptime(text, "%Y%m%d").date()
+    except ValueError:
+        pass
+    try:
+        return parsedate_to_datetime(text).date()
+    except (TypeError, ValueError, IndexError, OverflowError):
+        return None
+
+
+def is_url(value: str) -> bool:
+    parsed = urlparse(value)
+    return parsed.scheme in {"http", "https"} and bool(parsed.netloc)
+
+
+def youtube_video_id(url: str) -> str | None:
+    parsed = urlparse(url)
+    host = parsed.netloc.lower()
+    if host.endswith("youtu.be"):
+        return parsed.path.strip("/") or None
+    if "youtube.com" in host:
+        query_id = parse_qs(parsed.query).get("v", [None])[0]
+        if query_id:
+            return query_id
+        parts = [part for part in parsed.path.split("/") if part]
+        for marker in ("shorts", "embed", "live"):
+            if marker in parts:
+                index = parts.index(marker)
+                if index + 1 < len(parts):
+                    return parts[index + 1]
+    return None
+
+
+def ytdlp_js_runtime_args() -> list[str]:
+    node_path = shutil.which("node")
+    if not node_path:
+        return []
+    return ["--js-runtimes", f"node:{node_path}"]
+
+
+def ytdlp_js_runtimes() -> dict[str, dict[str, str]]:
+    node_path = shutil.which("node")
+    if not node_path:
+        return {}
+    return {"node": {"path": node_path}}

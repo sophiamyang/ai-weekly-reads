@@ -1,0 +1,42 @@
+{
+  "digest_title": "AI Weekly Reads",
+  "timezone": "America/Chicago",
+  "summary_provider": "mistral",
+  "summary_model": "mistral-small-latest",
+  "summary_mode": "batch",
+  "transcription_provider": "mistral",
+  "transcription_model": "voxtral-mini-latest",
+  "include_full_transcripts": false,
+  "kindle_output_format": "epub",
+  "weekly_resource_limit": 30,
+  "publication_window_days": 7,
+  "max_items_per_run": 0,
+  "youtube_channels": [],
+  "follow_builders": {
+    "enabled": false,
+    "base_url": "",
+    "include_podcasts": false
+  },
+  "kindle": {
+    "enabled": false,
+    "delivery_method": "gmail_api",
+    "kindle_email": "yourname_123@kindle.com",
+    "sender_email": "",
+    "gmail_credentials_path": "config/private/gmail_credentials.json",
+    "gmail_token_path": "config/private/gmail_token.json",
+    "smtp_host": "smtp.gmail.com",
+    "smtp_port": 587,
+    "smtp_username": "",
+    "smtp_password_env": "KINDLE_SMTP_PASSWORD"
+  },
+  "substack": {
+    "enabled": false,
+    "publication_url": "",
+    "delivery_method": "browser_draft",
+    "auto_publish": false,
+    "intro": "",
+    "browser_user_data_dir": "config/private/substack/browser",
+    "compose_url": ""
+  },
+  "feeds": []
+}
