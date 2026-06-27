@@ -5,6 +5,7 @@ from pathlib import Path
 from typing import Any
 
 from config import Settings
+from public_epub import public_epub_markdown_url, public_epub_repo_url
 from project_paths import SUBSTACK_OUTPUT
 from utils import read_text, slugify, split_frontmatter, write_text
 
@@ -31,6 +32,7 @@ def build_substack_post(digest_path: Path, settings: Settings, *, force: bool = 
     intro = str(substack.get("intro") or (PLAYLIST_INTRO if is_playlist else DEFAULT_INTRO)).strip()
 
     body = _prepare_body(body, title, intro, is_playlist=is_playlist)
+    body = _replace_public_epub_link(body, public_epub_repo_url())
     output_path = _output_path(title, created)
     write_text(output_path, body)
 
@@ -59,6 +61,12 @@ def _prepare_body(markdown: str, title: str, intro: str, *, is_playlist: bool) -
         lines[insert_at:insert_at] = ["", intro, ""]
 
     return "\n".join(lines).strip() + "\n"
+
+
+def _replace_public_epub_link(markdown: str, absolute_url: str) -> str:
+    if not absolute_url:
+        return markdown
+    return markdown.replace(f"]({public_epub_markdown_url()})", f"]({absolute_url})")
 
 
 def _strip_graph_only_sections(markdown: str) -> str:

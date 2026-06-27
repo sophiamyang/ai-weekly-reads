@@ -5,6 +5,7 @@ from pathlib import Path
 from config import Settings
 from obsidian_metadata import obsidian_aliases, yaml_list_block
 from obsidian_graph import weekly_resource_links
+from public_epub import public_epub_markdown_url
 from project_paths import OUTPUT, PUBLIC_WEEKLY, WEEKLY_BOOKS
 from summary_metadata import featured_speakers, without_featured_speakers
 from utils import parse_date, read_text, split_frontmatter, today_stamp, write_text, yaml_value
@@ -36,9 +37,9 @@ def build_digest(
         "",
         f"Week of {stamp}",
         "",
-        "## Contents",
-        "",
     ]
+    lines.extend([f"[Download the latest EPUB for Kindle]({public_epub_markdown_url()})", ""])
+    lines.extend(["## Contents", ""])
     for index, resource_path in enumerate(resource_paths, start=1):
         lines.append(f"{index}. [{_resource_source(resource_path)}] {_resource_date(resource_path)} - {_resource_title(resource_path)}")
     lines.extend(["", "## Reading Notes", ""])

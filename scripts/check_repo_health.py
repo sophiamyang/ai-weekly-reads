@@ -191,8 +191,8 @@ def _check_git_hygiene(errors: list[str]) -> None:
         for path in PUBLIC_WEEKLY.glob("*")
         if path.is_file()
     )
-    if public_weekly_files != ["weekly/latest.md"]:
-        errors.append("weekly/ should contain only the tracked summaries-only file weekly/latest.md.")
+    if public_weekly_files not in (["weekly/latest.md"], ["weekly/latest.epub", "weekly/latest.md"]):
+        errors.append("weekly/ should contain only public latest artifacts: weekly/latest.md and optional weekly/latest.epub.")
     elif "# Appendix: Full Transcripts" in (PUBLIC_WEEKLY / "latest.md").read_text(encoding="utf-8"):
         errors.append("weekly/latest.md must not contain full transcripts.")
 

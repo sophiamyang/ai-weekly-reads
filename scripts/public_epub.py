@@ -1,0 +1,56 @@
+from __future__ import annotations
+
+import shutil
+import subprocess
+from pathlib import Path
+from urllib.parse import urlparse
+
+from project_paths import PUBLIC_WEEKLY, ROOT
+
+
+PUBLIC_EPUB_PATH = PUBLIC_WEEKLY / "latest.epub"
+
+
+def public_epub_repo_url() -> str:
+    remote_url = _git_remote_url("origin")
+    owner_repo = _github_owner_repo(remote_url)
+    if not owner_repo:
+        return ""
+    return f"https://raw.githubusercontent.com/{owner_repo}/main/weekly/latest.epub"
+
+
+def public_epub_markdown_url() -> str:
+    return "latest.epub"
+
+
+def publish_public_epub(epub_path: Path) -> str:
+    if epub_path.suffix.lower() != ".epub" or not epub_path.exists():
+        return "Public EPUB skipped: latest Kindle output is not an EPUB."
+    shutil.copy2(epub_path, PUBLIC_EPUB_PATH)
+    return f"Public EPUB written: {PUBLIC_EPUB_PATH}"
+
+
+def _git_remote_url(remote_name: str) -> str:
+    try:
+        result = subprocess.run(
+            ["git", "remote", "get-url", remote_name],
+            cwd=ROOT,
+            check=True,
+            capture_output=True,
+            text=True,
+        )
+    except subprocess.CalledProcessError:
+        return ""
+    return result.stdout.strip()
+
+
+def _github_owner_repo(remote_url: str) -> str:
+    if not remote_url:
+        return ""
+    if remote_url.startswith("git@github.com:"):
+        slug = remote_url.removeprefix("git@github.com:").removesuffix(".git")
+        return slug.strip("/")
+    parsed = urlparse(remote_url)
+    if parsed.netloc.lower() != "github.com":
+        return ""
+    return parsed.path.strip("/").removesuffix(".git")

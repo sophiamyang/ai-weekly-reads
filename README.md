@@ -6,9 +6,10 @@ AI Weekly Reads turns AI videos and podcasts into a weekly reading edition for S
 
 - **Substack:** [AI Weekly Reads](https://aiweeklyreads.substack.com/)
 - **Latest GitHub edition:** [`weekly/latest.md`](weekly/latest.md)
+- **Latest EPUB:** [`weekly/latest.epub`](weekly/latest.epub)
 - **Kindle:** generated locally as EPUB/Markdown under `output/` and sent by the local delivery script
 
-The public GitHub edition is intentionally a single rolling file. Each weekly run replaces `weekly/latest.md` so the repository stays small while Git history keeps older versions.
+The public GitHub edition is intentionally a rolling pair of files. Each weekly run replaces `weekly/latest.md` and `weekly/latest.epub`.
 
 ## What Gets Covered
 
@@ -50,7 +51,7 @@ flowchart TD
     G --> H["Weekly digest\nMarkdown + EPUB"]
     H --> I["Substack post\noutput/substack/latest.md + browser publish"]
     H --> J["Kindle delivery\nGmail API / SMTP / Apple Mail"]
-    H --> K["GitHub latest\nweekly/latest.md"]
+    H --> K["GitHub latest\nweekly/latest.md + weekly/latest.epub"]
     G --> L["Obsidian graph\nresources connected to topic hubs"]
 ```
 
@@ -59,6 +60,7 @@ The project is local-first. Raw transcripts, resource notes, generated EPUBs, pr
 ## Outputs
 
 - `weekly/latest.md`: current summaries-only public edition tracked in Git
+- `weekly/latest.epub`: current public Kindle-friendly EPUB tracked in Git
 - `output/kindle-digest-YYYY-MM-DD.md`: local weekly Markdown book
 - `output/kindle-digest-YYYY-MM-DD.epub`: Kindle-friendly EPUB when `pandoc` is installed
 - `output/substack/latest.md`: current Substack-ready post
@@ -81,7 +83,8 @@ That command:
 4. Transcribes and summarizes new items when needed.
 5. Builds the weekly digest.
 6. Exports the Substack post.
-7. Sends the Kindle file if Kindle delivery is enabled.
+7. Refreshes `weekly/latest.epub` when an EPUB is available.
+8. Sends the Kindle file if Kindle delivery is enabled.
 
 Useful manual commands:
 

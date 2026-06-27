@@ -1,9 +1,9 @@
 ---
-title: "AI Weekly Reads - 2026-06-26"
+title: "AI Weekly Reads - 2026-06-27"
 aliases:
-  - "AI Weekly Reads - 2026-06-26"
-  - "AI Weekly Reads 2026-06-26"
-created: "2026-06-26"
+  - "AI Weekly Reads - 2026-06-27"
+  - "AI Weekly Reads 2026-06-27"
+created: "2026-06-27"
 type: "weekly-book"
 status: "ready"
 language: "en"
@@ -11,7 +11,9 @@ language: "en"
 
 # AI Weekly Reads
 
-Week of 2026-06-26
+Week of 2026-06-27
+
+[Download the latest EPUB for Kindle](latest.epub)
 
 ## Contents
 
@@ -37,7 +39,6 @@ Week of 2026-06-26
 20. [Cursor / YouTube] 2026-06-22 - Opening Keynote, Michael Truell | Compile 26
 21. [Lenny's Podcast / Podcast] 2026-06-21 - What happens after coding is solved? | Fiona Fung (Manager of the Claude Code and Cowork Teams)
 22. [AI Engineer / YouTube] 2026-06-21 - 6 Things to Know about AIE World's Fair 2026
-23. [Vanishing Gradients / YouTube] 2026-06-19 - Show Us Your (Agent) Skills Episode 5 - w/ John Berryman, Isaac Flath, & Matt Palmer
 
 ## Reading Notes
 
@@ -1617,67 +1618,5 @@ High — The event’s scale, vertical focus, and networking innovations make it
 - Source: [[sources/AI Engineer|AI Engineer]]
 - Topics: [[topics/AI Agents|AI Agents]], [[topics/Enterprise AI|Enterprise AI]], [[topics/Developer Tools|Developer Tools]], [[topics/AI Infrastructure|AI Infrastructure]]
 - Speaker: [[people/swix|Swix]]
-
-***
-
-# Show Us Your (Agent) Skills Episode 5 - w/ John Berryman, Isaac Flath, & Matt Palmer
-
-- **Published:** 2026-06-19
-- **YouTube:** [Vanishing Gradients](https://www.youtube.com/watch?v=6zju7hyCFl0)
-
-## One-Sentence Takeaway
-
-AI agents are evolving from terminal-bound coding tools into portable, context-aware personal assistants that can follow users across apps, websites, and even physical spaces, unlocking new categories of personal software.
-
-## Short Summary
-
-The episode showcases how top practitioners are moving beyond coding agents to build portable, context-aware AI systems that integrate with everyday tools and environments. John Berryman demonstrates Rook, an agent that follows users across applications, websites, and even physical locations like grocery stores, while Matt Palmer shows how agents can automate video production, system configuration, and continuous tool improvement. Both guests emphasize that agents are lowering the barrier to building useful personal tools, but warn about current limitations like non-deterministic behavior, context compaction challenges, and fragile MCP integrations.
-
-The conversation reveals a shift from agents as coding assistants to agents as personal productivity platforms. Practitioners are building systems that compound over time, where each new agent skill or tool becomes part of a growing ecosystem that improves with use. The demos highlight both the promise of agentic personal software and the practical hurdles that remain in making these systems reliable and secure.
-
-## Main Ideas
-
-- Agents are breaking free from terminal-bound workflows to become portable, context-aware assistants that follow users across applications and websites.
-- Personal agent ecosystems compound over time: each new skill or tool becomes part of a growing system that improves with use.
-- Agents enable rapid iteration on personal tools—from video editing pipelines to system configuration—by automating tedious setup and maintenance.
-- Current agent harnesses remain fragile, with non-deterministic behavior, unreliable MCP server connections, and inconsistent context management.
-- The most powerful agentic systems balance automation with user control, avoiding both over-automation and brittle bespoke implementations.
-
-## Notable Details
-
-- Rook uses window tracking and environment detection to give agents superpowers in specific contexts like Obsidian or web pages.
-- Berryman’s agent follows him into a Kroger store via phone geolocation to plan shopping paths using store inventory data.
-- Palmer manages his entire Mac setup as code using Nix Home Manager, with agents helping generate and maintain the configuration.
-- Palmer’s video pipeline automates transcription, thumbnail generation, and caption placement entirely in the browser using Media Bunny.
-- MCP servers are described as “a coin toss” to connect, with configuration often leaking across the system in unexpected ways.
-- Berryman’s “agentic nightmare” involves turning every small task into a reusable skill, leading to an explosion of agentic workflows.
-
-## Actionable Takeaways
-
-- Start small: turn one repetitive task into an agent skill before building a full ecosystem.
-- Prefer deterministic, well-specified tasks for agents to avoid non-deterministic rabbit holes.
-- Use version-controlled system configs (e.g., Nix, Homebrew) so agents can safely modify infrastructure.
-- Build tools with headless APIs so other agents (or users) can interact with them programmatically.
-- Monitor agent behavior closely—context compaction and model proactivity can both cause surprising outcomes.
-
-## People, Companies, Tools, And Links Mentioned
-
-- **People**: John Berryman, Matt Palmer, Hugo Bowne-Anderson, Thomas Wiecki
-- **Companies**: GitHub, Replit, Conductor, Kroger
-- **Tools**: Rook, Nix Home Manager, Media Bunny, Assembly AI, Remotion, MCut, Pi, Codex, Cloud Code, DeepSeek V4, Fable, Super Collider, Marimo
-- **Links**:
-  - [Show Us Your Agent Skills GitHub repo](https://github.com/hugobowne/show-us-your-agent-skills)
-  - [Conductor](https://conductor.dev)
-  - [Assembly AI](https://www.assemblyai.com)
-  - [Media Bunny](https://github.com/media-bunny/media-bunny)
-
-## Reading Priority
-
-High – This episode captures a pivotal moment in agent evolution, moving from coding assistants to portable personal platforms, with practical demos and honest assessments of current limitations.
-
-## Connections
-
-- Source: [[sources/Vanishing Gradients|Vanishing Gradients]]
-- Topics: [[topics/AI Agents|AI Agents]], [[topics/Developer Tools|Developer Tools]], [[topics/Human AI Interaction|Human AI Interaction]], [[topics/Product Development|Product Development]]
 
 ***

@@ -12,6 +12,7 @@ from ebook import build_kindle_file
 from follow_builders_feed import follow_builders_items
 from mistral_batch import SummaryBatchItem, summarize_with_mistral_batch
 from project_paths import INBOX, METADATA
+from public_epub import publish_public_epub
 from resources import find_resource, is_summarized_resource, list_resources, write_resource
 from send_to_kindle import maybe_send_to_kindle
 from source_registry import RegistryLink, load_source_registry, registry_links, registry_youtube_channels
@@ -160,6 +161,10 @@ def build_weekly_book(settings: Settings) -> tuple[Path, Path, int] | None:
     print(f"Digest written: {digest_path}")
     if kindle_path != digest_path:
         print(f"Kindle file written: {kindle_path}")
+    try:
+        print(publish_public_epub(kindle_path))
+    except Exception as exc:
+        print(f"Public EPUB publish failed: {exc}")
     print(substack_status(build_substack_post(digest_path, settings)))
     return digest_path, kindle_path, len(weekly_resources)
 
