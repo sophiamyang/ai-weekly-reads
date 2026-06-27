@@ -52,7 +52,7 @@ flowchart TD
     A["Recurring sources\nYouTube channels + podcast RSS"] --> C["Discovery\nconfig/sources.json + inbox/links.txt"]
     B["One-off links\nvideos, playlists, episode pages"] --> C
     C --> D["Resolve items\nstable IDs + publication dates"]
-    D --> E["Transcript layer\npublisher text, captions, Mistral Voxtral fallback"]
+    D --> E["Transcript layer\npublisher text, captions, Mistral transcription fallback"]
     E --> F["Mistral summaries\nresource notes with speakers, topics, priority"]
     F --> G["Local knowledge base\nknowledge_base/resources + raw_transcripts"]
     G --> H["Weekly digest\nMarkdown + EPUB"]
@@ -74,7 +74,7 @@ After discovery, every item goes through the same shared pipeline: stable ID, pu
 2. Each URL is resolved into a media item with `yt-dlp` metadata such as title, channel name, description, and upload date.
 3. If a raw transcript is already cached locally, it is reused.
 4. Otherwise the workflow tries YouTube captions first.
-5. If captions are missing and Mistral transcription is enabled, it downloads the audio and transcribes that file with Voxtral.
+5. If captions are missing and Mistral transcription is enabled, it downloads the audio and transcribes that file.
 6. The transcript is stored locally, summarized, and written into the weekly outputs.
 
 ### Podcasts
@@ -186,7 +186,7 @@ Important settings:
 
 ### Mistral
 
-`MISTRAL_API_KEY` enables AI summaries and Voxtral transcription fallback.
+`MISTRAL_API_KEY` enables AI summaries and transcription fallback.
 
 ```bash
 MISTRAL_API_KEY=your-api-key
@@ -195,7 +195,7 @@ MISTRAL_API_KEY=your-api-key
 Default models are configured in `config/settings.json`:
 
 - summaries: `mistral-small-latest`
-- transcription: `voxtral-mini-latest`
+- transcription: configurable in `config/settings.json`
 
 ### Kindle
 
