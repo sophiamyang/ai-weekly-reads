@@ -22,7 +22,7 @@ The repository defaults to generation first. Personal delivery is explicit.
 
 Recurring sources live in [`config/sources.json`](config/sources.json). The weekly run looks back through each source, filters to the configured publication window, skips already-processed items, and summarizes new items.
 
-Sources are grouped by how the system fetches them. Podcast RSS is preferred for real podcasts because it carries cleaner episode dates, audio URLs, and show metadata. YouTube stays best for video channels, livestream-only tabs, and one-off playlists.
+Sources are grouped by editorial type, then fetched through the most reliable upstream for that source. Podcast RSS is preferred when it exists because it carries cleaner episode dates, audio URLs, and show metadata. Some podcast-style shows are still sourced from YouTube because the YouTube channel or playlist is the better upstream for that show.
 
 ### YouTube Channels
 
@@ -32,7 +32,7 @@ Sources are grouped by how the system fetches them. Podcast RSS is preferred for
 - [Vanishing Gradients livestreams](https://www.youtube.com/@vanishinggradients/streams)
 - [Claude livestreams](https://www.youtube.com/@claude/streams)
 
-### Podcast RSS Feeds
+### Podcasts And Podcast-Style Sources
 
 - [Lenny's Podcast](https://www.lennysnewsletter.com/podcast)
 - [Lex Fridman Podcast](https://lexfridman.com/podcast/)
@@ -63,6 +63,30 @@ flowchart TD
 ```
 
 The project is local-first. Raw transcripts, resource notes, generated EPUBs, private settings, browser sessions, and delivery ledgers are ignored by Git. The repository stores the workflow, prompts, source registry, and the single current public edition.
+
+## How YouTube And Podcasts Are Processed
+
+After discovery, every item goes through the same shared pipeline: stable ID, publication-date filtering, transcript lookup, summary generation, resource-note write, weekly digest build, and optional distribution. The only real difference is how discovery and transcript collection work at the front of the pipeline.
+
+### YouTube
+
+1. The weekly run collects recent video URLs from configured channels or playlists with `yt-dlp --flat-playlist`.
+2. Each URL is resolved into a media item with `yt-dlp` metadata such as title, channel name, description, and upload date.
+3. If a raw transcript is already cached locally, it is reused.
+4. Otherwise the workflow tries YouTube captions first.
+5. If captions are missing and Mistral transcription is enabled, it downloads the audio and transcribes that file with Voxtral.
+6. The transcript is stored locally, summarized, and written into the weekly outputs.
+
+### Podcasts
+
+1. The weekly run fetches configured RSS feeds and turns each recent entry into a media item using the feed GUID, link, or enclosure URL as the stable key.
+2. The feed entry supplies the episode title, published date, description, and audio enclosure when available.
+3. If a raw transcript is already cached locally, it is reused.
+4. Otherwise the workflow looks for a transcript embedded in the publisher description first.
+5. If no publisher transcript is present and Mistral transcription is enabled, it tries the remote audio URL directly, then falls back to downloading the media file and transcribing that file.
+6. The transcript is stored locally, summarized, and written into the weekly outputs.
+
+The summary and output stage is identical after that point. Both source types end up as local resource notes in `knowledge_base/resources/`, raw transcript notes in `knowledge_base/raw_transcripts/`, a public Markdown digest in `weekly/latest.md`, a public EPUB in `weekly/latest.epub`, and a Substack-ready export in `output/substack/latest.md`.
 
 ## Outputs
 
