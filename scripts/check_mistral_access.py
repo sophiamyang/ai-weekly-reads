@@ -11,7 +11,7 @@ from utils import load_dotenv
 def main() -> None:
     parser = argparse.ArgumentParser(description="Check which Mistral services this API key can access.")
     parser.add_argument("--batch", action="store_true", help="Submit a tiny Batch API job to test batch access.")
-    parser.add_argument("--audio-url", help="Transcribe a public audio URL to test Voxtral transcription access.")
+    parser.add_argument("--audio-url", help="Transcribe a public audio URL to test audio transcription access.")
     args = parser.parse_args()
 
     load_dotenv(ROOT / ".env")

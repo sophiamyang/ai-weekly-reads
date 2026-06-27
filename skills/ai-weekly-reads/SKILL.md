@@ -47,7 +47,7 @@ Each run checks the configured source inspection windows, filters recurring sour
 
 - Read `MISTRAL_API_KEY` from `.env` or the shell.
 - Default summaries use Mistral Batch API.
-- Transcription fallback uses Mistral Voxtral after publisher transcripts and YouTube captions fail.
+- Transcription fallback uses Mistral transcription after publisher transcripts and YouTube captions fail.
 - If Batch returns billing/access errors, check `scripts/check_mistral_access.py --batch` and temporarily use `"summary_mode": "direct"` only if needed.
 
 ## Kindle Delivery
