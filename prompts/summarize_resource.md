@@ -52,4 +52,11 @@ Use a compact list. Include only important names, companies, tools, and URLs exp
 
 ## Reading Priority
 
-High, Medium, or Low, followed by one concise sentence based on novelty, usefulness, and evidence.
+Use this scale strictly:
+- High: reserve for unusually strong sources, roughly the top 10-20% of a typical week. Use only when the source is both unusually consequential or novel and unusually concrete or evidence-backed.
+- Medium: default for most worthwhile sources. Use for solid, useful material that is interesting but not exceptional or urgent.
+- Low: use for niche, repetitive, thin, overly promotional, or mostly contextual/event material.
+- When in doubt, choose Medium.
+- Never use High just because the speaker is famous, the company is important, or the topic is broadly relevant.
+
+Format exactly as `High - ...`, `Medium - ...`, or `Low - ...`, followed by one concise sentence.

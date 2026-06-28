@@ -6,6 +6,7 @@ from typing import Any
 from obsidian_metadata import obsidian_aliases, raw_transcript_tags, resource_tags, weekly_book_tags, without_topics
 from obsidian_graph import refresh_all_resource_graphs, refresh_weekly_book_graphs
 from project_paths import RAW_TRANSCRIPTS, RESOURCES, WEEKLY_BOOKS
+from reading_priority import normalize_reading_priority
 from source_registry import load_source_registry
 from summary_metadata import normalize_speakers
 from summarize import is_placeholder_summary, strip_ai_response_wrappers
@@ -106,6 +107,7 @@ def _normalize_text(text: str, kind: str) -> str:
         body = without_topics(body)
         body = _strip_embedded_transcript(body)
         body = _clean_embedded_ai_wrapper(body)
+        body = normalize_reading_priority(body, str(fields.get("title") or ""))
         fields["type"] = "resource"
         fields["aliases"] = _aliases(fields.get("aliases"), str(fields.get("title") or ""))
         fields["speakers"] = normalize_speakers(

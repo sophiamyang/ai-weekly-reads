@@ -7,6 +7,7 @@ from pathlib import Path
 from project_paths import RESOURCES
 from obsidian_metadata import obsidian_aliases, resource_tags, without_topics, yaml_list_block
 from obsidian_graph import refresh_resource_graph
+from reading_priority import normalize_reading_priority
 from sources import MediaItem
 from summary_metadata import featured_speakers
 from summarize import is_placeholder_summary
@@ -25,6 +26,7 @@ def write_resource(
     filename = existing.name if existing else readable_resource_filename(item.title, item.id)
     resource_path = existing or RESOURCES / filename
     summary = read_text(summary_path).strip()
+    summary = normalize_reading_priority(summary, item.title).strip()
     transcript = read_transcript_text(transcript_path)
     raw_transcript_path = write_raw_transcript(item, transcript, find_raw_transcript(item.id))
     status = "needs_summary" if is_placeholder_summary(summary) else "summarized"

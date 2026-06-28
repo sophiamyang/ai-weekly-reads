@@ -1,9 +1,9 @@
 ---
-title: "AI Weekly Reads - 2026-06-27"
+title: "AI Weekly Reads - 2026-06-28"
 aliases:
-  - "AI Weekly Reads - 2026-06-27"
-  - "AI Weekly Reads 2026-06-27"
-created: "2026-06-27"
+  - "AI Weekly Reads - 2026-06-28"
+  - "AI Weekly Reads 2026-06-28"
+created: "2026-06-28"
 type: "weekly-book"
 status: "ready"
 language: "en"
@@ -11,7 +11,7 @@ language: "en"
 
 # AI Weekly Reads
 
-Week of 2026-06-27
+Week of 2026-06-28
 
 [Download the latest EPUB for Kindle](latest.epub)
 
@@ -106,12 +106,12 @@ A: Current safety frameworks evaluate models at fixed capability levels, but sin
 
 ## Reading Priority
 
-High – This discussion directly challenges current AI evaluation practices and highlights a critical gap in how we measure and understand model capability and safety.
+Medium – This discussion directly challenges current AI evaluation practices and highlights a critical gap in how we measure and understand model capability and safety.
 
 ## Connections
 
 - Source: [[sources/No Priors|No Priors]]
-- Topics: [[topics/AI Agents|AI Agents]], [[topics/Coding Agents|Coding Agents]], [[topics/AI Safety|AI Safety]], [[topics/AI Research|AI Research]]
+- Topics: [[topics/Model Evaluation|Model Evaluation]], [[topics/AI Agents|AI Agents]], [[topics/AI Infrastructure|AI Infrastructure]], [[topics/Model Inference|Model Inference]]
 
 ***
 
@@ -175,12 +175,12 @@ No distinct Q&A section.
 
 ## Reading Priority
 
-High – A practical, code-backed method to turn a large personal knowledge base into a reusable memory layer for AI agents, with clear tradeoffs and next steps.
+Medium – A practical, code-backed method to turn a large personal knowledge base into a reusable memory layer for AI agents, with clear tradeoffs and next steps.
 
 ## Connections
 
 - Source: [[sources/AI Engineer|AI Engineer]]
-- Topics: [[topics/AI Agents|AI Agents]], [[topics/Developer Tools|Developer Tools]], [[topics/Enterprise AI|Enterprise AI]], [[topics/Synthetic Data|Synthetic Data]]
+- Topics: [[topics/AI Agents|AI Agents]], [[topics/Developer Tools|Developer Tools]], [[topics/Foundation Models|Foundation Models]], [[topics/Open Source AI|Open Source AI]]
 
 ***
 
@@ -239,12 +239,11 @@ No distinct Q&A section.
 
 ## Reading Priority
 
-High – A practical, production-tested architecture for keeping AI outputs trustworthy in emotionally sensitive contexts.
+Medium – A practical, production-tested architecture for keeping AI outputs trustworthy in emotionally sensitive contexts.
 
 ## Connections
 
 - Source: [[sources/AI Engineer|AI Engineer]]
-- Topics: [[topics/AI Agents|AI Agents]], [[topics/Developer Tools|Developer Tools]], [[topics/Enterprise AI|Enterprise AI]], [[topics/Human AI Interaction|Human AI Interaction]]
 
 ***
 
@@ -302,12 +301,12 @@ No distinct Q&A section.
 
 ## Reading Priority
 
-High – Practical blueprint for building and scaling production agent systems with concrete mechanisms (Effect loop, A2A, sandboxing) and enterprise-grade safety controls.
+Medium – Practical blueprint for building and scaling production agent systems with concrete mechanisms (Effect loop, A2A, sandboxing) and enterprise-grade safety controls.
 
 ## Connections
 
 - Source: [[sources/AI Engineer|AI Engineer]]
-- Topics: [[topics/AI Agents|AI Agents]], [[topics/Developer Tools|Developer Tools]], [[topics/Enterprise AI|Enterprise AI]], [[topics/AI Infrastructure|AI Infrastructure]]
+- Topics: [[topics/AI Agents|AI Agents]]
 
 ***
 
@@ -364,12 +363,12 @@ The demo shows how Polygraph lets a developer start a session across backend and
 
 ## Reading Priority
 
-High – The core critique of current coding agents and the concrete design of a meta-harness that materially improves multi-repo development are directly applicable to engineering orgs scaling agent use.
+Medium – The core critique of current coding agents and the concrete design of a meta-harness that materially improves multi-repo development are directly applicable to engineering orgs scaling agent use.
 
 ## Connections
 
 - Source: [[sources/AI Engineer|AI Engineer]]
-- Topics: [[topics/Coding Agents|Coding Agents]], [[topics/Developer Tools|Developer Tools]], [[topics/AI Infrastructure|AI Infrastructure]], [[topics/Synthetic Data|Synthetic Data]]
+- Topics: [[topics/Developer Tools|Developer Tools]], [[topics/AI Agents|AI Agents]], [[topics/Open Source AI|Open Source AI]]
 - Speaker: [[people/amnesia-victor-savkin|Amnesia - Victor Savkin]]
 
 ***
@@ -467,13 +466,12 @@ A: Yes. The expert’s role is build-time and gate-time (designing the rubric an
 ***
 ## Reading Priority
 
-**High**
-A rigorous critique of persona evaluation with a practical, pre-registered instrument for detecting anachronistic reasoning in historical simulations. Essential for teams building role-playing agents, pedagogical tools, or any system where fidelity to a documentary record matters.
+High – A rigorous critique of persona evaluation with a practical, pre-registered instrument for detecting anachronistic reasoning in historical simulations. Essential for teams building role-playing agents, pedagogical tools, or any system where fidelity to a documentary record matters.
 
 ## Connections
 
 - Source: [[sources/AI Engineer|AI Engineer]]
-- Topics: [[topics/AI Agents|AI Agents]], [[topics/Human AI Interaction|Human AI Interaction]], [[topics/Retrieval|Retrieval]], [[topics/Enterprise AI|Enterprise AI]]
+- Topics: [[topics/Model Evaluation|Model Evaluation]], [[topics/Model Training|Model Training]]
 
 ***
 
@@ -531,12 +529,12 @@ A: If a worker or process crashes, a new worker can resume the session from the 
 
 ## Reading Priority
 
-High: The argument for log-centric agent infrastructure is novel, well-structured, and directly challenges current industry assumptions, with clear implications for reliability, ownership, and scalability.
+Medium – The argument for log-centric agent infrastructure is novel, well-structured, and directly challenges current industry assumptions, with clear implications for reliability, ownership, and scalability.
 
 ## Connections
 
 - Source: [[sources/AI Engineer|AI Engineer]]
-- Topics: [[topics/AI Agents|AI Agents]], [[topics/AI Infrastructure|AI Infrastructure]], [[topics/Developer Tools|Developer Tools]], [[topics/Enterprise AI|Enterprise AI]]
+- Topics: [[topics/AI Agents|AI Agents]]
 
 ***
 
@@ -596,12 +594,12 @@ No distinct Q&A section.
 
 ## Reading Priority
 
-High – RLMs are a new inference-time compute paradigm with immediate practical implications for coding agents and reliability.
+Medium – RLMs are a new inference-time compute paradigm with immediate practical implications for coding agents and reliability.
 
 ## Connections
 
 - Source: [[sources/AI Engineer|AI Engineer]]
-- Topics: [[topics/Coding Agents|Coding Agents]], [[topics/AI Agents|AI Agents]], [[topics/Model Inference|Model Inference]], [[topics/Developer Tools|Developer Tools]]
+- Topics: [[topics/AI Agents|AI Agents]], [[topics/Coding Agents|Coding Agents]]
 
 ***
 
@@ -667,12 +665,12 @@ Matthew Prince argues that automated traffic has overtaken human traffic on the 
 
 ## Reading Priority
 
-High – This conversation distills a pivotal shift in internet economics and infrastructure, with concrete technical and strategic insights from one of the most influential infrastructure leaders.
+Medium – This conversation distills a pivotal shift in internet economics and infrastructure, with concrete technical and strategic insights from one of the most influential infrastructure leaders.
 
 ## Connections
 
 - Source: [[sources/The MAD Podcast with Matt Turck|The MAD Podcast with Matt Turck]]
-- Topics: [[topics/AI Agents|AI Agents]], [[topics/AI Infrastructure|AI Infrastructure]], [[topics/Developer Tools|Developer Tools]], [[topics/Enterprise AI|Enterprise AI]]
+- Topics: [[topics/AI Agents|AI Agents]], [[topics/Enterprise AI|Enterprise AI]], [[topics/Model Inference|Model Inference]]
 
 ***
 
@@ -727,12 +725,12 @@ AI coding agents shift the locus of value from line-by-line coding to architecti
 
 ## Reading Priority
 
-High – Practical engineering patterns for building maintainable agentic systems that preserve craft and reduce drift.
+Medium – Practical engineering patterns for building maintainable agentic systems that preserve craft and reduce drift.
 
 ## Connections
 
 - Source: [[sources/AI Engineer|AI Engineer]]
-- Topics: [[topics/AI Agents|AI Agents]], [[topics/Developer Tools|Developer Tools]], [[topics/Enterprise AI|Enterprise AI]], [[topics/Product Development|Product Development]]
+- Topics: [[topics/AI Agents|AI Agents]]
 
 ***
 
@@ -814,13 +812,12 @@ The conversation highlights Databricks’ culture of rapid prototyping and tight
 
 ## Reading Priority
 
-**High**
-This conversation distills Databricks’ strategic bets on open agent infrastructure and LTAP, offering actionable insights for AI engineers, data leaders, and founders building agent platforms or data systems.
+Medium – This conversation distills Databricks’ strategic bets on open agent infrastructure and LTAP, offering actionable insights for AI engineers, data leaders, and founders building agent platforms or data systems.
 
 ## Connections
 
 - Source: [[sources/Latent Space|Latent Space]]
-- Topics: [[topics/AI Agents|AI Agents]], [[topics/AI Infrastructure|AI Infrastructure]], [[topics/Open Source AI|Open Source AI]], [[topics/Enterprise AI|Enterprise AI]]
+- Topics: [[topics/Coding Agents|Coding Agents]], [[topics/Synthetic Data|Synthetic Data]]
 
 ***
 
@@ -898,7 +895,7 @@ High – This talk distills concrete shifts in engineering practice at scale, wi
 ## Connections
 
 - Source: [[sources/Cursor|Cursor]]
-- Topics: [[topics/Coding Agents|Coding Agents]], [[topics/Developer Tools|Developer Tools]], [[topics/Enterprise AI|Enterprise AI]], [[topics/AI Infrastructure|AI Infrastructure]]
+- Topics: [[topics/Developer Tools|Developer Tools]], [[topics/AI Infrastructure|AI Infrastructure]]
 
 ***
 
@@ -953,12 +950,12 @@ No distinct Q&A section.
 
 ## Reading Priority
 
-High – The talk reframes product strategy for the AI era with concrete, counterintuitive advice and clear signals to watch.
+Medium – The talk reframes product strategy for the AI era with concrete, counterintuitive advice and clear signals to watch.
 
 ## Connections
 
 - Source: [[sources/Cursor|Cursor]]
-- Topics: [[topics/Developer Tools|Developer Tools]], [[topics/Enterprise AI|Enterprise AI]], [[topics/Product Development|Product Development]], [[topics/AI Agents|AI Agents]]
+- Topics: [[topics/Product Development|Product Development]]
 
 ***
 
@@ -1032,7 +1029,7 @@ High – Novel architecture for continual learning, concrete token savings, and 
 ## Connections
 
 - Source: [[sources/Training Data|Training Data]]
-- Topics: [[topics/AI Agents|AI Agents]], [[topics/Coding Agents|Coding Agents]], [[topics/Retrieval|Retrieval]], [[topics/AI Infrastructure|AI Infrastructure]]
+- Topics: [[topics/Model Inference|Model Inference]], [[topics/Model Training|Model Training]]
 - Speakers: [[people/dan-biderman-co-founder-ceo|Dan Biderman – Co-founder & CEO]], [[people/jessy-lin-co-founder|Jessy Lin – Co-founder]]
 
 ***
@@ -1109,7 +1106,7 @@ High – This conversation offers a rare, grounded perspective on AI’s rapid p
 ## Connections
 
 - Source: [[sources/AI & I by Every|AI & I by Every]]
-- Topics: [[topics/AI Agents|AI Agents]], [[topics/Model Evaluation|Model Evaluation]], [[topics/AI Infrastructure|AI Infrastructure]], [[topics/Human AI Interaction|Human AI Interaction]]
+- Topics: [[topics/AI Agents|AI Agents]], [[topics/AI For Science|AI For Science]], [[topics/Model Evaluation|Model Evaluation]], [[topics/Model Training|Model Training]]
 
 ***
 
@@ -1174,12 +1171,12 @@ No distinct Q&A section.
 
 ## Reading Priority
 
-High – concrete primitives, live demos, and safety mechanisms that directly address agent-driven infrastructure changes.
+Medium – concrete primitives, live demos, and safety mechanisms that directly address agent-driven infrastructure changes.
 
 ## Connections
 
 - Source: [[sources/Cursor|Cursor]]
-- Topics: [[topics/AI Agents|AI Agents]], [[topics/AI Infrastructure|AI Infrastructure]], [[topics/Developer Tools|Developer Tools]], [[topics/Enterprise AI|Enterprise AI]]
+- Topics: [[topics/AI Agents|AI Agents]], [[topics/Developer Tools|Developer Tools]]
 - Speaker: [[people/sam-lambert-ceo|Sam Lambert – CEO]]
 
 ***
@@ -1242,12 +1239,12 @@ Nenad Tomašev argues that AI agents—unlike static language models—can auton
 
 ## Reading Priority
 
-High: This discussion introduces a coherent vision of distributed AI agents, delegation protocols, and agentic economies with concrete safety mechanisms and real-world risks.
+Medium – This discussion introduces a coherent vision of distributed AI agents, delegation protocols, and agentic economies with concrete safety mechanisms and real-world risks.
 
 ## Connections
 
 - Source: [[sources/Google DeepMind|Google DeepMind]]
-- Topics: [[topics/AI Agents|AI Agents]], [[topics/Coding Agents|Coding Agents]], [[topics/AI Safety|AI Safety]], [[topics/AI Research|AI Research]]
+- Topics: [[topics/AI Agents|AI Agents]], [[topics/AI Research|AI Research]]
 
 ***
 
@@ -1310,12 +1307,12 @@ The talk reflects on how AI changes not just productivity, but the locus of craf
 
 ## Reading Priority
 
-High – This talk reframes AI’s role in development from productivity to human agency, with concrete design principles and risks worth internalizing.
+Medium – This talk reframes AI’s role in development from productivity to human agency, with concrete design principles and risks worth internalizing.
 
 ## Connections
 
 - Source: [[sources/Cursor|Cursor]]
-- Topics: [[topics/AI Agents|AI Agents]], [[topics/Developer Tools|Developer Tools]], [[topics/Human AI Interaction|Human AI Interaction]], [[topics/Product Development|Product Development]]
+- Topics: [[topics/AI Agents|AI Agents]], [[topics/Developer Tools|Developer Tools]]
 
 ***
 
@@ -1404,13 +1401,12 @@ A: Yes. Coding agents can run automated interpretability experiments at scale, p
 
 ## Reading Priority
 
-**High**
-AI security is a rapidly evolving, high-stakes domain where frontier insights and practical tools (e.g., Shade, Cygnal) are critical for safe deployment. The discussion on agent vulnerabilities, automated red teaming, and guardrails is essential for anyone building or deploying AI agents.
+Medium – AI security is a rapidly evolving, high-stakes domain where frontier insights and practical tools (e.g., Shade, Cygnal) are critical for safe deployment. The discussion on agent vulnerabilities, automated red teaming, and guardrails is essential for anyone building or deploying AI agents.
 
 ## Connections
 
 - Source: [[sources/Latent Space|Latent Space]]
-- Topics: [[topics/AI Agents|AI Agents]], [[topics/Coding Agents|Coding Agents]], [[topics/AI Safety|AI Safety]], [[topics/AI Infrastructure|AI Infrastructure]]
+- Topics: [[topics/Coding Agents|Coding Agents]], [[topics/AI Agents|AI Agents]], [[topics/AI Safety|AI Safety]], [[topics/Enterprise AI|Enterprise AI]]
 - Speaker: [[people/zico-kolter-matt-fredrikson|Zico Kolter & Matt Fredrikson]]
 
 ***
@@ -1481,12 +1477,12 @@ A: Cloud agents have their own dev environments, can run continuously, and are d
 
 ## Reading Priority
 
-High – This keynote outlines a major shift in AI-powered development infrastructure, with concrete product updates and a new model that could influence the future of coding agents.
+Medium – This keynote outlines a major shift in AI-powered development infrastructure, with concrete product updates and a new model that could influence the future of coding agents.
 
 ## Connections
 
 - Source: [[sources/Cursor|Cursor]]
-- Topics: [[topics/AI Agents|AI Agents]], [[topics/Coding Agents|Coding Agents]], [[topics/Developer Tools|Developer Tools]], [[topics/AI Infrastructure|AI Infrastructure]]
+- Topics: [[topics/Developer Tools|Developer Tools]], [[topics/AI Agents|AI Agents]], [[topics/AI Infrastructure|AI Infrastructure]]
 - Speakers: [[people/kevin-niparko-lead|**Kevin Niparko** – Lead]], [[people/tomas-reimers-co-founder|**Tomas Reimers** – Co-founder]]
 
 ***
@@ -1547,12 +1543,12 @@ Fiona Fung leads Anthropic’s Claude Code and Cowork teams, where engineers now
 
 ## Reading Priority
 
-**High** – Fiona Fung offers a rare, first-person view of how AI is reshaping software engineering, management, and product development at Anthropic, with actionable insights on hiring, verification, and async workflows.
+Medium – Fiona Fung offers a rare, first-person view of how AI is reshaping software engineering, management, and product development at Anthropic, with actionable insights on hiring, verification, and async workflows.
 
 ## Connections
 
 - Source: [[sources/Lenny's Podcast|Lenny's Podcast]]
-- Topics: [[topics/Coding Agents|Coding Agents]], [[topics/AI Infrastructure|AI Infrastructure]], [[topics/Developer Tools|Developer Tools]], [[topics/Enterprise AI|Enterprise AI]]
+- Topics: [[topics/Coding Agents|Coding Agents]], [[topics/AI Agents|AI Agents]]
 
 ***
 
@@ -1611,12 +1607,11 @@ Leadership programming gets a dedicated floor, daily themes (token maxing, EF fa
 
 ## Reading Priority
 
-High — The event’s scale, vertical focus, and networking innovations make it a strategic signal for AI engineering leaders and practitioners.
-
+Low – The event’s scale, vertical focus, and networking innovations make it a strategic signal for AI engineering leaders and practitioners.
 ## Connections
 
 - Source: [[sources/AI Engineer|AI Engineer]]
-- Topics: [[topics/AI Agents|AI Agents]], [[topics/Enterprise AI|Enterprise AI]], [[topics/Developer Tools|Developer Tools]], [[topics/AI Infrastructure|AI Infrastructure]]
+- Topics: [[topics/Developer Tools|Developer Tools]], [[topics/Model Inference|Model Inference]]
 - Speaker: [[people/swix|Swix]]
 
 ***
