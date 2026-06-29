@@ -63,15 +63,76 @@ TOPIC_RULES: dict[str, tuple[str, ...]] = {
         "code review",
         "repository",
         "testing",
+        "workflow",
+        "workflows",
+        "tooling",
+        "toolkit",
+        "toolkits",
+        "schema",
+        "schemas",
+        "maintainability",
+        "developer ecosystem",
     ),
-    "enterprise-ai": ("enterprise ai", "enterprise", "saas", "business workflow", "workplace"),
+    "enterprise-ai": (
+        "enterprise ai",
+        "enterprise",
+        "saas",
+        "business workflow",
+        "workplace",
+        "customer",
+        "customers",
+        "commercial",
+        "revenue",
+        "arr",
+        "willingness to pay",
+        "adoption",
+        "market",
+        "government",
+        "erp",
+    ),
     "open-source-ai": ("open-source", "open source", "open model", "sovereign ai"),
-    "ai-safety": ("ai safety", "alignment", "guardrail", "deception", "existential risk"),
+    "ai-safety": (
+        "ai safety",
+        "alignment",
+        "guardrail",
+        "deception",
+        "existential risk",
+        "cybersecurity",
+        "ransomware",
+        "security risk",
+        "threat detection",
+        "regulation",
+    ),
     "ai-research": ("ai research", "research productivity", "scientific discovery", "researcher", "experiments"),
     "ai-for-science": ("ai for science", "biology", "protein", "drug discovery", "mathematics", "theorem"),
     "robotics": ("robotics", "robot", "autonomous system", "physical ai"),
-    "human-ai-interaction": ("human-ai", "human computer", "simulated humans", "virtual people"),
-    "product-development": ("product development", "product management", "product signals", "figma", "design workflow"),
+    "human-ai-interaction": (
+        "human-ai",
+        "human computer",
+        "simulated humans",
+        "virtual people",
+        "brand voice",
+        "tone",
+        "persona",
+        "identity",
+        "empathy",
+        "user trust",
+        "emotionally sensitive",
+    ),
+    "product-development": (
+        "product development",
+        "product management",
+        "product signals",
+        "figma",
+        "design workflow",
+        "distribution",
+        "backlog",
+        "prd",
+        "sprint",
+        "behavior change",
+        "vision",
+        "commercial value",
+    ),
     "web-platform": ("web platform", "browser", "iframe", "web app", "web standard"),
     "synthetic-data": ("synthetic data", "data generation", "simulation data"),
 }
@@ -193,7 +254,35 @@ def _infer_topics(markdown: str, title: str) -> list[str]:
     if len(selected) < 2:
         selected_slugs = {topic for _score, topic in selected}
         selected.extend(item for item in scored if item[1] not in selected_slugs and item not in selected)
-    return [f"topic/{topic}" for _score, topic in selected[:4]]
+    topics = [topic for _score, topic in selected[:4]]
+    if len(topics) < 2:
+        topics.extend(_fallback_topics(title_text, body_text, topics))
+    return [f"topic/{topic}" for topic in topics[:4]]
+
+
+def _fallback_topics(title_text: str, body_text: str, selected: list[str]) -> list[str]:
+    text = f"{title_text}\n{body_text}"
+    fallbacks: list[str] = []
+    fallback_rules = {
+        "developer-tools": ("tool", "tools", "tooling", "workflow", "workflows", "schema", "developer"),
+        "ai-infrastructure": ("compute", "gpu", "sandbox", "sandboxing", "observability", "tracing", "runtime", "worker", "workers", "protocol", "session log", "log", "append-only", "event history", "portability"),
+        "enterprise-ai": ("customer", "customers", "commercial", "revenue", "arr", "adoption", "market", "government", "erp"),
+        "product-development": ("product", "adoption", "vision", "backlog", "prd", "sprint", "behavior change", "commercial value"),
+        "human-ai-interaction": ("tone", "voice", "persona", "identity", "empathy", "trust"),
+        "ai-safety": ("safety", "security", "ransomware", "cyber", "regulation", "guardrail", "threat"),
+    }
+    for topic, phrases in fallback_rules.items():
+        if topic in selected or topic in fallbacks:
+            continue
+        if any(_contains_phrase(text, phrase) for phrase in phrases):
+            fallbacks.append(topic)
+    if len(selected) + len(fallbacks) < 2:
+        for default_topic in ("ai-agents", "developer-tools", "enterprise-ai", "product-development"):
+            if default_topic not in selected and default_topic not in fallbacks:
+                fallbacks.append(default_topic)
+            if len(selected) + len(fallbacks) >= 2:
+                break
+    return fallbacks
 
 
 def _contains_phrase(text: str, phrase: str) -> bool:
