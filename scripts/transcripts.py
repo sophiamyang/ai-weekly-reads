@@ -18,9 +18,12 @@ def get_or_create_transcript(item: MediaItem, settings: Settings) -> tuple[Path 
         cached_text = read_transcript_text(transcript_path)
         if not cached_text.lower().startswith("transcript unavailable"):
             return transcript_path, "cached"
-        # A cached "unavailable" marker is not permanent: retry the full
-        # acquisition chain so captions or transcripts published later win.
-        text, method = _acquire_transcript(item, settings)
+        # A cached "unavailable" marker is not permanent: retry acquisition so
+        # captions or transcripts published later win. Skip the yt-dlp audio
+        # download here, though — it already failed to produce a transcript
+        # once, and re-downloading full audio every run for a stuck item is
+        # expensive.
+        text, method = _acquire_transcript(item, settings, include_audio_download=False)
         if not text:
             return transcript_path, "unavailable"
         write_raw_transcript(item, text, transcript_path)
@@ -33,7 +36,12 @@ def get_or_create_transcript(item: MediaItem, settings: Settings) -> tuple[Path 
     return transcript_path, method
 
 
-def _acquire_transcript(item: MediaItem, settings: Settings) -> tuple[str | None, str]:
+def _acquire_transcript(
+    item: MediaItem,
+    settings: Settings,
+    *,
+    include_audio_download: bool = True,
+) -> tuple[str | None, str]:
     publisher_transcript = _publisher_transcript(item)
     if publisher_transcript:
         return publisher_transcript, "publisher_transcript"
@@ -51,7 +59,7 @@ def _acquire_transcript(item: MediaItem, settings: Settings) -> tuple[str | None
     if text:
         return text, transcription_method(settings)
 
-    if item.source_type == "youtube" and can_transcribe(settings):
+    if include_audio_download and item.source_type == "youtube" and can_transcribe(settings):
         media_path = download_youtube_audio(item.url, item.id)
         if media_path:
             text = _transcribe_media_file(media_path, settings)
@@ -79,10 +87,17 @@ def _publisher_transcript(item: MediaItem) -> str | None:
     if item.source_type != "podcast" or not item.description:
         return None
     description = item.description.strip()
-    # Require a heading-like "Transcript" marker on its own line so prose such
-    # as "a full transcript is available at ..." in show notes is not
+    # Require the "Transcript" marker to start a line — either as a
+    # heading-like label ("Transcript", "# Full Transcript", "=== Transcript
+    # ===") or with the text following a colon on the same line — so prose
+    # such as "a full transcript is available at ..." in show notes is not
     # mistaken for the transcript itself.
-    marker = re.search(r"(?im)^#{0,6}\s*\**\s*transcripts?\s*\**\s*:?\s*$", description)
+    marker = re.search(
+        r"(?im)^[#>*=\s-]*(?:full\s+|episode\s+|show\s+)?transcripts?\s*[:*=\s-]*$"
+        r"|^(?:full\s+|episode\s+|show\s+)?transcripts?\s*:\s*\S"
+        r"|^transcripts?\b[^\n]{0,30}:\s*$",
+        description,
+    )
     if marker is None:
         return None
     transcript = description[marker.start():]

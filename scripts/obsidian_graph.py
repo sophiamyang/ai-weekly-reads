@@ -114,10 +114,11 @@ def refresh_weekly_book_graphs(weekly_books: Path) -> int:
         fields, body = split_frontmatter(read_text(path))
         if str(fields.get("language") or "en").lower() != "en":
             continue
+        headings = {line.removeprefix("# ").strip() for line in body.splitlines() if line.startswith("# ")}
         included = [
             resource_path
             for title, resource_path in resources_by_title.items()
-            if re.search(rf"^# {re.escape(title)}\s*$", body, re.MULTILINE)
+            if title in headings
         ]
         if not included:
             continue

@@ -34,6 +34,7 @@ class RunStats:
     resources_written: int = 0
     placeholder_summaries: int = 0
     skipped_outside_window: int = 0
+    skipped_missing_date: int = 0
 
 
 @dataclass(frozen=True)
@@ -207,6 +208,8 @@ def print_run_summary(stats: RunStats, weekly_resource_count: int | None = None)
     print(f"- skipped without transcript: {stats.unavailable_transcripts}")
     print(f"- skipped without generated summary: {stats.placeholder_summaries}")
     print(f"- skipped outside publication window: {stats.skipped_outside_window}")
+    if stats.skipped_missing_date:
+        print(f"- skipped without resolvable publication date: {stats.skipped_missing_date}")
     if weekly_resource_count is not None:
         print(f"- weekly resources included: {weekly_resource_count}")
 
@@ -222,11 +225,15 @@ def _add_item(
     filter_by_publication_window: bool,
     require_publication_date: bool = False,
 ) -> bool:
-    if filter_by_publication_window and not _in_publication_window(
-        item, publication_cutoff, require_publication_date=require_publication_date
-    ):
-        stats.skipped_outside_window += 1
-        return False
+    if filter_by_publication_window and publication_cutoff is not None:
+        published = parse_date(item.published)
+        if published is None and require_publication_date:
+            print(f"Skipping item without resolvable publication date: {item.title or item.url}")
+            stats.skipped_missing_date += 1
+            return False
+        if published is not None and published < publication_cutoff:
+            stats.skipped_outside_window += 1
+            return False
     if _run_limit_reached(len(items), settings.max_items_per_run):
         return False
     if item.id in seen_item_ids:
@@ -234,15 +241,6 @@ def _add_item(
     items.append(item)
     seen_item_ids.add(item.id)
     return True
-
-
-def _in_publication_window(item: MediaItem, cutoff: date | None, *, require_publication_date: bool = False) -> bool:
-    if cutoff is None:
-        return True
-    published = parse_date(item.published)
-    if published is None:
-        return not require_publication_date
-    return published >= cutoff
 
 
 def _batch_summaries_enabled(settings) -> bool:

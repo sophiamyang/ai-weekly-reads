@@ -12,7 +12,7 @@ from pathlib import Path
 
 from config import Settings
 from project_paths import METADATA, ROOT
-from utils import read_json, write_json
+from utils import read_json, write_json, write_text
 
 PLACEHOLDER_EMAILS = {"yourname_123@kindle.com", "you@example.com"}
 DELIVERY_LEDGER = METADATA / "kindle_delivery.json"
@@ -145,11 +145,9 @@ def private_path(value: object, default: str) -> Path:
 
 
 def write_private_file(path: Path, content: str) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(content, encoding="utf-8")
     # OAuth tokens grant live send access; keep them out of reach of other
-    # local users.
-    os.chmod(path, 0o600)
+    # local users, and never leave a truncated token behind.
+    write_text(path, content, mode=0o600)
 
 
 def _send_with_apple_mail(file_path: Path, kindle: dict, recipient: str) -> str:

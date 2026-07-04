@@ -11,7 +11,7 @@ from source_registry import load_source_registry
 from summary_metadata import normalize_speakers
 from summarize import is_placeholder_summary, strip_ai_response_wrappers
 from resources import readable_resource_filename
-from utils import read_text, split_frontmatter, write_text, yaml_value
+from utils import as_bool, read_text, split_frontmatter, write_text, yaml_value
 
 
 RESOURCE_FIELDS = [
@@ -145,7 +145,7 @@ def _frontmatter(
     lines = ["---"]
     send_to_kindle_line = None
     if "priority" in ordered_fields or "send_to_kindle" in fields:
-        send_to_kindle_line = f"send_to_kindle: {yaml_value(_as_bool(fields.get('send_to_kindle', True)))}"
+        send_to_kindle_line = f"send_to_kindle: {yaml_value(as_bool(fields.get('send_to_kindle', True)))}"
     for key in ordered_fields:
         value = fields.get(key, "")
         if omit_empty and (value == "" or value is None or value == []):
@@ -222,14 +222,6 @@ def _infer_source_name(fields: dict[str, Any]) -> str:
     if source == "youtube" and len(youtube_channels) == 1:
         return str(youtube_channels[0].get("name") or source)
     return source
-
-
-def _as_bool(value: object) -> bool:
-    if isinstance(value, bool):
-        return value
-    if isinstance(value, str):
-        return value.strip().lower() not in {"false", "0", "no", "off"}
-    return bool(value)
 
 
 if __name__ == "__main__":

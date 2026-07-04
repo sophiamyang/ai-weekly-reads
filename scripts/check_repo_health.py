@@ -9,7 +9,7 @@ from typing import Any
 from config import Settings, load_settings
 from project_paths import ASSETS, CONFIG, PROMPTS, PUBLIC_LATEST_EPUB, PUBLIC_LATEST_MD, PUBLIC_ONE_SHOT, PUBLIC_WEEKLY, ROOT
 from source_registry import load_source_registry, source_lookback_count
-from utils import is_url
+from utils import GRAPH_ONLY_HEADINGS, is_url
 
 
 REQUIRED_SUMMARY_PROMPTS = [
@@ -70,6 +70,9 @@ def main() -> None:
 
 
 def _check_settings(path: Path, errors: list[str]) -> None:
+    if not path.exists():
+        errors.append(f"Missing settings file: {path.relative_to(ROOT)}")
+        return
     settings = load_settings(path)
     label = path.relative_to(ROOT)
     _check_non_negative_int(label, "publication_window_days", settings.publication_window_days, errors)
@@ -219,7 +222,8 @@ def _check_public_markdown(path: Path, label: str, errors: list[str]) -> None:
     for marker in ("## Contents", "## Reading Notes"):
         if marker not in text:
             errors.append(f"{label} is missing {marker!r}.")
-    if "[[" in text or "## Connections" in text:
+    graph_headings = [f"## {heading.title()}" for heading in GRAPH_ONLY_HEADINGS]
+    if "[[" in text or any(heading in text for heading in graph_headings):
         errors.append(f"{label} must not contain Obsidian-only wikilinks or graph sections.")
     if not re.search(r"^- \*\*(Published|Added):\*\*", text, re.MULTILINE):
         errors.append(f"{label} should include published or added dates in each summary.")

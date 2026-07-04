@@ -39,13 +39,27 @@ def read_text(path: Path) -> str:
     return path.read_text(encoding="utf-8")
 
 
-def write_text(path: Path, value: str) -> None:
+def write_text(path: Path, value: str, mode: int | None = None) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     # Write via a temp file so a crash mid-write can't leave a truncated
     # resource or transcript that later parses as frontmatter-less.
     tmp_path = path.with_name(f".{path.name}.{os.getpid()}.tmp")
-    tmp_path.write_text(value, encoding="utf-8")
-    os.replace(tmp_path, path)
+    try:
+        tmp_path.write_text(value, encoding="utf-8")
+        if mode is not None:
+            os.chmod(tmp_path, mode)
+        os.replace(tmp_path, path)
+    except BaseException:
+        tmp_path.unlink(missing_ok=True)
+        raise
+
+
+def as_bool(value: object, default: bool = True) -> bool:
+    if value is None or value == "":
+        return default
+    if isinstance(value, str):
+        return value.strip().lower() not in {"false", "0", "no", "off"}
+    return bool(value)
 
 
 def yaml_value(value: Any) -> str:

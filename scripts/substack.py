@@ -173,10 +173,10 @@ def _is_duplicate_subheading(current_title: str, subheading: str) -> bool:
         return False
     if normalized == current_title:
         return True
-    # Treat only long prefixes as truncated repeats of the item title, so a
-    # short section heading like "Main Ideas" is never stripped just because
-    # the item title happens to start with those words.
-    return len(normalized) >= 25 and current_title.startswith(normalized)
+    # Treat only long fragments as repeats of the item title, so a short
+    # section heading like "Main Ideas" is never stripped just because the
+    # item title happens to contain those words.
+    return len(normalized) >= 25 and normalized in current_title
 
 
 def _next_nonblank(lines: list[str], index: int) -> str:

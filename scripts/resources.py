@@ -12,7 +12,7 @@ from sources import MediaItem
 from summary_metadata import featured_speakers
 from summarize import is_placeholder_summary
 from transcript_store import find_raw_transcript, read_transcript_text, write_raw_transcript
-from utils import parse_date, read_text, split_frontmatter, write_text, yaml_value
+from utils import as_bool, parse_date, read_text, split_frontmatter, write_text, yaml_value
 
 
 def write_resource(
@@ -23,6 +23,7 @@ def write_resource(
 ) -> Path:
     stamp = datetime.now().strftime("%Y-%m-%d")
     existing = find_resource(item.id)
+    existing_fields = _resource_fields(existing) if existing else {}
     filename = existing.name if existing else readable_resource_filename(item.title, item.id)
     resource_path = existing or RESOURCES / filename
     summary = read_text(summary_path).strip()
@@ -34,7 +35,10 @@ def write_resource(
     aliases = yaml_list_block("aliases", obsidian_aliases(item.title))
     speakers = featured_speakers(summary, item.title)
     speakers_block = f"{yaml_list_block('speakers', speakers)}\n" if speakers else ""
-    tags = yaml_list_block("tags", resource_tags(summary, item.title))
+    # A rewrite (e.g. re-summarizing a placeholder) must not clobber curated
+    # frontmatter: keep the user's send_to_kindle choice and topic tags.
+    send_to_kindle = as_bool(existing_fields.get("send_to_kindle", True))
+    tags = yaml_list_block("tags", resource_tags(summary, item.title, existing_fields.get("tags")))
     summary = without_topics(summary)
 
     body = f"""---
@@ -51,7 +55,7 @@ published: {yaml_value(item.published or "")}
 transcript_method: {yaml_value(transcript_method)}
 status: {yaml_value(status)}
 priority: {yaml_value(priority)}
-send_to_kindle: true
+send_to_kindle: {yaml_value(send_to_kindle)}
 raw_transcript: {yaml_value(f"raw_transcripts/{raw_transcript_path.name}")}
 created: {yaml_value(stamp)}
 {tags}
@@ -95,7 +99,8 @@ def list_resources(limit: int | None = None, since: date | None = None) -> list[
     resources: list[tuple[Path, dict]] = []
     for path in RESOURCES.glob("*.md"):
         fields = _resource_fields(path)
-        if not _send_to_kindle_enabled(fields):
+        if not as_bool(fields.get("send_to_kindle", True)):
+            print(f"Excluding resource marked send_to_kindle: false: {fields.get('title') or path.stem}")
             continue
         if fields.get("status") == "summarized" and _resource_fields_in_window(fields, since):
             resources.append((path, fields))
@@ -114,13 +119,6 @@ def is_summarized_resource(path: Path) -> bool:
 def _resource_fields(path: Path) -> dict:
     fields, _body = split_frontmatter(read_text(path))
     return fields
-
-
-def _send_to_kindle_enabled(fields: dict) -> bool:
-    value = fields.get("send_to_kindle", True)
-    if isinstance(value, str):
-        return value.strip().lower() not in {"false", "0", "no", "off"}
-    return bool(value)
 
 
 def _resource_fields_in_window(fields: dict, since: date | None) -> bool:

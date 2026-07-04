@@ -188,9 +188,14 @@ def obsidian_aliases(*values: object) -> list[str]:
 
 
 def resource_tags(markdown: str, title: str = "", existing: object | None = None) -> list[str]:
-    topics = _existing_topics(existing) or _section_topics(markdown) or _infer_topics(markdown, title)
-    if len(topics) < 2:
-        for topic in [*_section_topics(markdown), *_infer_topics(markdown, title)]:
+    section = _section_topics(markdown)
+    topics = _existing_topics(existing) or list(section)
+    if not topics:
+        topics = _infer_topics(markdown, title)
+    elif len(topics) < 2:
+        # Pad curated-but-short tag lists up to the 2-4 contract from the
+        # explicit section first, then keyword inference (the expensive step).
+        for topic in [*section, *_infer_topics(markdown, title)]:
             if len(topics) >= 2:
                 break
             if topic not in topics:

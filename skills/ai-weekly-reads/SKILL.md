@@ -66,6 +66,7 @@ Each run checks the configured source inspection windows, filters recurring sour
 - Apple Mail remains available with `KINDLE_DELIVERY_METHOD=apple_mail`, but only when the macOS Mail app has a configured sending account.
 - If Mail has no configured accounts, delivery is skipped and should not be recorded as sent.
 - Successful sends are recorded in `output/_metadata/kindle_delivery.json`; do not resend the same digest unless the user asks for `--force`.
+- Setting `send_to_kindle: false` on a resource note excludes it from the generated weekly book entirely — the digest, public editions, EPUB, and Substack export all build from the same book. Excluded notes are logged during the build.
 
 ## Commands
 

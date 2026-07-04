@@ -34,6 +34,9 @@ def main() -> None:
     parser.add_argument("post", nargs="?", help="Substack Markdown path. Defaults to output/substack/latest.md.")
     parser.add_argument("--setup", action="store_true", help="Open the browser so you can log into Substack, then save the session.")
     parser.add_argument("--headless", action="store_true", help="Run without a visible browser window. Default is headed so you can handle login challenges.")
+    # Deprecated no-op kept so existing invocations that passed the old
+    # default flag keep working.
+    parser.add_argument("--headed", action="store_true", help=argparse.SUPPRESS)
     parser.add_argument("--publish", action="store_true", help="Publish after filling the draft. Requires an explicit flag.")
     args = parser.parse_args()
 
