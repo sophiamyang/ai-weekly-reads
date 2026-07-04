@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import base64
+import json
 import os
 import mimetypes
 import smtplib
@@ -117,6 +118,26 @@ def _gmail_service(kindle: dict):
         from googleapiclient.discovery import build
     except ImportError:
         raise
+
+    # GMAIL_TOKEN_JSON carries the full authorized-user token (client id,
+    # client secret, refresh token) so ephemeral environments can send
+    # without the config/private/ files. Generate it once locally with
+    # scripts/setup_gmail_oauth.py and copy the token file's contents.
+    token_json = os.environ.get("GMAIL_TOKEN_JSON")
+    if token_json:
+        try:
+            token_info = json.loads(token_json)
+        except json.JSONDecodeError as exc:
+            raise RuntimeError("GMAIL_TOKEN_JSON is not valid JSON.") from exc
+        creds = Credentials.from_authorized_user_info(token_info, [GMAIL_SEND_SCOPE])
+        if creds.expired and creds.refresh_token:
+            creds.refresh(Request())
+        if not creds or not creds.valid:
+            raise RuntimeError(
+                "GMAIL_TOKEN_JSON is invalid or expired. Regenerate the token with "
+                "scripts/setup_gmail_oauth.py and update the environment variable."
+            )
+        return build("gmail", "v1", credentials=creds)
 
     token_path = private_path(kindle.get("gmail_token_path"), "config/private/gmail_token.json")
     credentials_path = private_path(

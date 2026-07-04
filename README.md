@@ -245,6 +245,12 @@ Set up Gmail OAuth once:
 .venv/bin/python scripts/setup_gmail_oauth.py
 ```
 
+For ephemeral or cloud environments without `config/private/` (for example a
+scheduled Claude Code session), set `GMAIL_TOKEN_JSON` to the full contents of
+`config/private/gmail_token.json` instead; it takes precedence over the token
+file. The token embeds a live send credential, so store it only in a secret
+manager or protected environment variable.
+
 Successful sends are recorded in `output/_metadata/kindle_delivery.json` so the same file is not resent accidentally.
 
 ### Substack

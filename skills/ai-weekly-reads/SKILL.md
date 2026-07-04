@@ -60,6 +60,7 @@ Each run checks the configured source inspection windows, filters recurring sour
 
 - Keep personal delivery values in `.env`, especially `KINDLE_EMAIL` and `KINDLE_SENDER_EMAIL`; do not commit real Kindle addresses, OAuth credentials, OAuth tokens, or app passwords.
 - Preferred Gmail delivery uses `KINDLE_DELIVERY_METHOD=gmail_api`, `GMAIL_CREDENTIALS_PATH=config/private/gmail_credentials.json`, and `GMAIL_TOKEN_PATH=config/private/gmail_token.json`.
+- Ephemeral/cloud runs can set `GMAIL_TOKEN_JSON` to the full contents of `gmail_token.json` instead of the private files; it takes precedence and never touches disk.
 - Run `.venv/bin/python scripts/setup_gmail_oauth.py` after downloading a Google OAuth Desktop app client JSON.
 - The configured sender must be added to Amazon's approved personal document email list.
 - SMTP remains available with `KINDLE_DELIVERY_METHOD=smtp`, but it requires a Gmail app password.
