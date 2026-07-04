@@ -203,12 +203,10 @@ def _existing_topics(existing: object) -> list[str]:
         return []
     topics: list[str] = []
     for value in existing:
-        text = str(value).strip().removeprefix("#")
-        slug = text.removeprefix("topic/").strip()
-        if not text.startswith("topic/") or not slug:
-            continue
-        topic = _canonical_topic(text) or f"topic/{_tag_segment(slug)}"
-        if topic not in topics:
+        # Keep only controlled-vocabulary topics so normalization still
+        # repairs drift; stored tags are canonical by construction.
+        topic = _canonical_topic(str(value))
+        if topic and topic not in topics:
             topics.append(topic)
     return topics
 

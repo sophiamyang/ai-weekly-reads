@@ -41,6 +41,7 @@ Each run checks the configured source inspection windows, filters recurring sour
 - `max_items_per_run` in `config/settings.json` is an optional safety cap; `0` means unlimited.
 - `weekly_resource_limit` controls how many recent resource notes are included in the weekly book.
 - YouTube channels use `yt-dlp --flat-playlist` to collect recent video URLs. Preserve explicit channel tabs such as `/streams`; they intentionally restrict discovery to that content type.
+- Channel items whose publication date cannot be resolved are treated as outside the weekly window and skipped, so a transient yt-dlp metadata failure cannot flood a run with the full lookback backlog. Podcast RSS items with missing dates are still included.
 - Podcasts use RSS feeds and stable IDs derived from GUID/link/audio URL.
 - `source_type` describes how an item was fetched/transcribed; optional `content_type` describes how the digest should label it, such as YouTube-hosted podcasts.
 - `follow_builders` settings can adapt a compatible JSON feed for podcast transcript ingestion.
