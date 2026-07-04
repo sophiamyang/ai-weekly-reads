@@ -172,6 +172,17 @@ Publish the latest Substack post with the saved browser profile:
 PLAYWRIGHT_BROWSERS_PATH=.venv-substack/ms-playwright .venv-substack/bin/python scripts/create_substack_draft.py --publish
 ```
 
+## Setup
+
+Create the primary virtual environment and install dependencies:
+
+```bash
+python3 -m venv .venv
+.venv/bin/pip install -r requirements.txt
+```
+
+EPUB generation additionally requires the external `pandoc` binary (for example `brew install pandoc` on macOS). Without it, builds still produce Markdown output.
+
 ## Configuration
 
 Start from the example files:
@@ -189,13 +200,16 @@ Local-only files:
 - `inbox/links.txt`: one-off weekly links
 - `config/private/`: Gmail OAuth tokens and Substack browser profile
 
-Important settings:
+Important settings in `config/settings.json`:
 
 - `publication_window_days`: how many days count as the current weekly window
-- `lookback_count`: how many recent items to inspect per source
 - `weekly_resource_limit`: maximum resources in the weekly book
 - `max_items_per_run`: optional cost/safety cap; `0` means no cap
 - `kindle_output_format`: `epub` or `markdown`
+
+Per-source settings in `config/sources.json`:
+
+- `lookback_count`: how many recent items to inspect for that source before publication-date filtering
 
 ## Services
 

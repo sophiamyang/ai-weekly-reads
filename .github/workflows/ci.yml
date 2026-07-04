@@ -27,6 +27,8 @@ jobs:
           python-version: "3.12"
           cache: pip
 
+      # The health scripts run on a bare interpreter; this step exists to
+      # catch requirement pins that no longer resolve.
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
