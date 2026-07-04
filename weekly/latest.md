@@ -138,11 +138,6 @@ A: Payne adopted Hermes early for its stability, automatic skill learning, and m
 
 Medium – A practical, experience-driven look at how leading practitioners design agent workflows, with concrete examples of context, feedback, and observability in action.
 
-## Connections
-
-- Source: [[sources/Vanishing Gradients|Vanishing Gradients]]
-- Topics: [[topics/AI Agents|AI Agents]], [[topics/Developer Tools|Developer Tools]], [[topics/Enterprise AI|Enterprise AI]], [[topics/Open Source AI|Open Source AI]]
-
 ***
 
 # Why NVIDIA Is Giving Away AI Models | Bryan Catanzaro
@@ -233,12 +228,6 @@ Open models allow broader scrutiny, diverse applications, and distributed contro
 
 High – This is a rare, technical deep dive from a leader at the intersection of AI research and hardware, with concrete insights into frontier model architectures, open vs. closed tradeoffs, and organizational strategies for large-scale AI development.
 
-## Connections
-
-- Source: [[sources/The MAD Podcast with Matt Turck|The MAD Podcast with Matt Turck]]
-- Topics: [[topics/Foundation Models|Foundation Models]], [[topics/Open Source AI|Open Source AI]], [[topics/Model Training|Model Training]], [[topics/AI Infrastructure|AI Infrastructure]]
-- Speaker: [[people/bryan-catanzaro|Bryan Catanzaro]]
-
 ***
 
 # The Prompt Is Still a Punch Card - Ted Johnson, JoinIn AI
@@ -295,11 +284,6 @@ The next leap requires interfaces that understand timing, attention, interruptio
 ## Reading Priority
 
 Medium – This talk reframes AI as an interface problem, not just an intelligence one, with concrete examples of how to move beyond legacy protocols.
-
-## Connections
-
-- Source: [[sources/AI Engineer|AI Engineer]]
-- Topics: [[topics/Human AI Interaction|Human AI Interaction]], [[topics/Developer Tools|Developer Tools]], [[topics/AI Infrastructure|AI Infrastructure]]
 
 ***
 
@@ -365,12 +349,6 @@ A: Critical components (e.g., control systems, concrete shielding) were either o
 ## Reading Priority
 
 High – Valar’s concrete, first-principles approach to nuclear—combining regulatory arbitrage, hardware iteration, and vertical integration—offers a rare, actionable blueprint for reviving a stagnant industry with outsized societal impact.
-
-## Connections
-
-- Source: [[sources/No Priors|No Priors]]
-- Topics: [[topics/AI Infrastructure|AI Infrastructure]], [[topics/Enterprise AI|Enterprise AI]], [[topics/Product Development|Product Development]]
-- Speaker: [[people/isaiah-taylor|Isaiah Taylor]]
 
 ***
 
@@ -443,12 +421,6 @@ A: Use deterministic code where possible; reserve agents for fuzzy tasks. Over-e
 ## Reading Priority
 
 High – This conversation offers a rare, concrete look at how frontier models are reshaping agent engineering, with actionable insights for builders and users alike.
-
-## Connections
-
-- Source: [[sources/Vanishing Gradients|Vanishing Gradients]]
-- Topics: [[topics/Coding Agents|Coding Agents]], [[topics/Developer Tools|Developer Tools]], [[topics/Model Inference|Model Inference]], [[topics/Enterprise AI|Enterprise AI]]
-- Speaker: [[people/nicolay-gerold-amp-code|Nicolay Gerold (Amp Code)]]
 
 ***
 
@@ -523,12 +495,6 @@ A: Academic benchmarks (e.g., 2Å RMSD) originated from docking studies, where r
 
 High – This conversation reveals a critical inflection point in AI-for-science: diffusion models achieving sub-atomic precision in drug discovery, enabling agentic workflows and exposing long-standing benchmark flaws, with concrete evidence from PEARL’s OpenBind performance.
 
-## Connections
-
-- Source: [[sources/Latent Space|Latent Space]]
-- Topics: [[topics/AI For Science|AI For Science]], [[topics/Foundation Models|Foundation Models]], [[topics/Synthetic Data|Synthetic Data]], [[topics/Product Development|Product Development]]
-- Speaker: [[people/sergey-edunov-cto|Sergey Edunov: CTO]]
-
 ***
 
 # The AI Workflows Behind Every's Consulting Team
@@ -595,12 +561,6 @@ The conversation highlights a shift in knowledge work from "sculpting" (direct m
 
 Medium – A practical, grounded look at how AI agents and coding tools are being integrated into real workflows, with clear tradeoffs and actionable insights for professionals.
 
-## Connections
-
-- Source: [[sources/AI & I by Every|AI & I by Every]]
-- Topics: [[topics/Coding Agents|Coding Agents]], [[topics/AI Agents|AI Agents]], [[topics/Developer Tools|Developer Tools]], [[topics/Enterprise AI|Enterprise AI]]
-- Speaker: [[people/natalia-quintero|Natalia Quintero]]
-
 ***
 
 # Course Overview - Technical Fundamentals of Generative AI
@@ -644,11 +604,6 @@ No distinct Q&A section.
 ## Reading Priority
 
 Medium – A structured, expert-led introduction to generative AI’s technical and ethical dimensions, useful for professionals seeking foundational knowledge.
-
-## Connections
-
-- Source: [[sources/Stanford Online|Stanford Online]]
-- Topics: [[topics/Foundation Models|Foundation Models]], [[topics/AI Agents|AI Agents]], [[topics/Model Training|Model Training]], [[topics/Human AI Interaction|Human AI Interaction]]
 
 ***
 
@@ -718,11 +673,6 @@ A: Yes, but not just in supply—technologically, DRAM/NAND cell designs have st
 ## Reading Priority
 
 High – This conversation offers unusually concrete, data-backed insights into the mechanics of AI efficiency gains, with actionable implications for model developers, hardware designers, and investors.
-
-## Connections
-
-- Source: [[sources/Training Data|Training Data]]
-- Topics: [[topics/Foundation Models|Foundation Models]], [[topics/Model Inference|Model Inference]], [[topics/AI Infrastructure|AI Infrastructure]], [[topics/Developer Tools|Developer Tools]]
 
 ***
 
@@ -805,12 +755,6 @@ The long-term economic impact of AI will likely be mixed—consumer benefits (e.
 
 Medium – A wide-ranging, evidence-backed discussion on AI’s economic impact, adoption curves, and Germany’s challenges, with actionable insights for businesses and policymakers.
 
-## Connections
-
-- Source: [[sources/Stripe|Stripe]]
-- Topics: [[topics/Foundation Models|Foundation Models]], [[topics/Developer Tools|Developer Tools]], [[topics/Enterprise AI|Enterprise AI]], [[topics/Open Source AI|Open Source AI]]
-- Speaker: [[people/conor-mcnamara|Conor McNamara]]
-
 ***
 
 # #498 – Anthony Kaldellis: Roman Empire, Byzantine Empire, Rise & Fall of Empires
@@ -873,12 +817,6 @@ Its longevity stemmed from a combination of inclusive citizenship, adaptive gove
 
 Medium – A deep, evidence-backed reassessment of Roman history that challenges conventional labels and offers timeless insights into governance and resilience.
 
-## Connections
-
-- Source: [[sources/Lex Fridman Podcast|Lex Fridman Podcast]]
-- Topics: [[topics/Human AI Interaction|Human AI Interaction]], [[topics/Product Development|Product Development]], [[topics/Web Platform|Web Platform]], [[topics/Synthetic Data|Synthetic Data]]
-- Speaker: [[people/anthony-kaldellis-roman-empire|Anthony Kaldellis: Roman Empire]]
-
 ***
 
 # Your Agent Failed in Prod. Good Luck Reproducing It. - Tisha Chawla & Susheem Koul, Microsoft
@@ -930,11 +868,6 @@ This approach complements durable execution (which recovers state) by focusing o
 ## Reading Priority
 
 Medium – Introduces a novel, concrete pattern (record/replay) for debugging non-deterministic agent failures, with actionable implementation details.
-
-## Connections
-
-- Source: [[sources/AI Engineer|AI Engineer]]
-- Topics: [[topics/AI Agents|AI Agents]], [[topics/Developer Tools|Developer Tools]], [[topics/Enterprise AI|Enterprise AI]]
 
 ***
 
@@ -991,12 +924,6 @@ A VisualLabs hackathon illustrated this: 17 of 21 agent ideas were abandoned due
 ## Reading Priority
 
 Medium – A clear, practical argument for why human-led requirements and process mapping are now the critical path in AI-assisted software development.
-
-## Connections
-
-- Source: [[sources/AI Engineer|AI Engineer]]
-- Topics: [[topics/AI Agents|AI Agents]], [[topics/Product Development|Product Development]], [[topics/Enterprise AI|Enterprise AI]], [[topics/Developer Tools|Developer Tools]]
-- Speaker: [[people/bal-zs-horv-th-visuallabs-founder|Balázs Horváth (VisualLabs): Founder]]
 
 ***
 
@@ -1058,11 +985,6 @@ The design emphasizes explainability, bounded actions, and auditability: rules e
 
 Medium – A concrete, evidence-backed demonstration of how RL-guided agents with safety guardrails can automate routine ETL failure recovery, with clear engineering tradeoffs and reproducibility.
 
-## Connections
-
-- Source: [[sources/AI Engineer|AI Engineer]]
-- Topics: [[topics/AI Agents|AI Agents]], [[topics/Developer Tools|Developer Tools]], [[topics/Enterprise AI|Enterprise AI]]
-
 ***
 
 # The Prompt is the Platform - Dominik Tornow, Resonate HQ
@@ -1122,12 +1044,6 @@ A: Humans drive the design of concrete specifications (e.g., defining schema, in
 
 High – This talk presents a novel, concrete workflow for agentic engineering with immediate implications for distributed systems and infrastructure tooling.
 
-## Connections
-
-- Source: [[sources/AI Engineer|AI Engineer]]
-- Topics: [[topics/Coding Agents|Coding Agents]], [[topics/Developer Tools|Developer Tools]], [[topics/AI Infrastructure|AI Infrastructure]], [[topics/Product Development|Product Development]]
-- Speaker: [[people/dominik-tornow-resonate-hq|Dominik Tornow (Resonate HQ]]
-
 ***
 
 # The Memory Problem, Baseten | Compile 26
@@ -1183,12 +1099,6 @@ They frame methods in a 2x2 matrix: selection vs. synthesis and per-context vs. 
 ## Reading Priority
 
 Medium – A concrete, technical approach to KV cache compression for long-horizon agents, with actionable mechanisms and clear tradeoffs.
-
-## Connections
-
-- Source: [[sources/Cursor|Cursor]]
-- Topics: [[topics/AI Agents|AI Agents]], [[topics/Model Inference|Model Inference]], [[topics/Foundation Models|Foundation Models]]
-- Speakers: [[people/mudith-jayasekara-baseten|Mudith Jayasekara (Baseten]], [[people/charlie-o-neill-baseten|Charlie O'Neill (Baseten]], [[people/harry-partridge-baseten|Harry Partridge (Baseten]]
 
 ***
 
@@ -1256,11 +1166,6 @@ The shift from "inheritance" (stacking context/tools into one agent) to "composi
 
 High – Domain-specific agents offer a concrete, near-term path to scalable, cost-effective AI systems, with strong evidence and actionable architectural insights for enterprise and developer applications.
 
-## Connections
-
-- Source: [[sources/AI Engineer|AI Engineer]]
-- Topics: [[topics/AI Agents|AI Agents]], [[topics/Coding Agents|Coding Agents]], [[topics/Developer Tools|Developer Tools]], [[topics/Enterprise AI|Enterprise AI]]
-
 ***
 
 # The Agentic AI Engineer - Benedikt Sanftl, Mutagent
@@ -1318,12 +1223,6 @@ Building AI agents today relies on slow, manual loops for iteration, testing, an
 ## Reading Priority
 
 Medium – A practical framework for scaling AI agent development with automated loops, though not yet widely validated.
-
-## Connections
-
-- Source: [[sources/AI Engineer|AI Engineer]]
-- Topics: [[topics/AI Agents|AI Agents]], [[topics/Coding Agents|Coding Agents]], [[topics/Model Evaluation|Model Evaluation]], [[topics/Developer Tools|Developer Tools]]
-- Speaker: [[people/burak-mutagent-cto|Burak (Mutagent): CTO]]
 
 ***
 
@@ -1401,12 +1300,6 @@ Nadella also discusses Microsoft’s custom silicon (Maia, Cobalt), quantum comp
 
 Medium – Nadella’s vision for enterprise AI agency, concrete product announcements (Scout, MAI models), and hardware/quantum roadmaps offer rare strategic clarity from a major player shaping the frontier ecosystem.
 
-## Connections
-
-- Source: [[sources/Stanford Online|Stanford Online]]
-- Topics: [[topics/Foundation Models|Foundation Models]], [[topics/Enterprise AI|Enterprise AI]], [[topics/AI Infrastructure|AI Infrastructure]], [[topics/Human AI Interaction|Human AI Interaction]]
-- Speaker: [[people/satya-nadella|Satya Nadella]]
-
 ***
 
 # Notational Intelligence, Linus Lee | Compile 26
@@ -1460,12 +1353,6 @@ Deep learning can be used to *create* new notations by training models to genera
 
 Medium – A thought-provoking exploration of how notation shapes thought, with a concrete (if speculative) demonstration of AI-assisted notation design.
 
-## Connections
-
-- Source: [[sources/Cursor|Cursor]]
-- Topics: [[topics/AI Research|AI Research]], [[topics/Human AI Interaction|Human AI Interaction]], [[topics/Synthetic Data|Synthetic Data]]
-- Speaker: [[people/linus-lee|Linus Lee]]
-
 ***
 
 # Introducing Cursor for iOS
@@ -1505,11 +1392,6 @@ No distinct Q&A section.
 ## Reading Priority
 
 Medium – Useful for developers interested in mobile-first coding workflows or agent-driven automation.
-
-## Connections
-
-- Source: [[sources/Cursor|Cursor]]
-- Topics: [[topics/Coding Agents|Coding Agents]], [[topics/Developer Tools|Developer Tools]], [[topics/AI Infrastructure|AI Infrastructure]]
 
 ***
 
@@ -1570,12 +1452,6 @@ Latent-space context injection—via shared agent knowledge bases, sparse-attent
 ## Reading Priority
 
 Medium – Offers concrete, data-backed mechanisms for improving model efficiency via context, with actionable engineering insights and measurable gains.
-
-## Connections
-
-- Source: [[sources/Cursor|Cursor]]
-- Topics: [[topics/Model Inference|Model Inference]], [[topics/Retrieval|Retrieval]], [[topics/AI Infrastructure|AI Infrastructure]], [[topics/Developer Tools|Developer Tools]]
-- Speaker: [[people/ben-geist|Ben Geist]]
 
 ***
 
@@ -1643,11 +1519,6 @@ The key is a disciplined evaluation framework: capability evals, LLM-as-judge, a
 
 High – A concrete, step-by-step framework for reducing AI costs and latency with rigorous evaluation, backed by real-world examples and tools.
 
-## Connections
-
-- Source: [[sources/AI Engineer|AI Engineer]]
-- Topics: [[topics/Model Evaluation|Model Evaluation]], [[topics/Model Inference|Model Inference]], [[topics/Developer Tools|Developer Tools]], [[topics/Foundation Models|Foundation Models]]
-
 ***
 
 # Explaining Culture to Technology, Paul Ford | Compile 26
@@ -1704,12 +1575,6 @@ The talk frames magazines not as static outputs but as dynamic networks of share
 ## Reading Priority
 
 Medium – Offers a provocative, cross-disciplinary lens on AI and culture, with concrete metaphors and actionable reframing for technologists.
-
-## Connections
-
-- Source: [[sources/Cursor|Cursor]]
-- Topics: [[topics/Human AI Interaction|Human AI Interaction]], [[topics/Product Development|Product Development]]
-- Speaker: [[people/paul-ford|Paul Ford]]
 
 ***
 
@@ -1769,11 +1634,6 @@ The solution involves treating agents as distributed systems, with a new "agenti
 
 High – This talk offers a rare, concrete framework for addressing the reliability gap in production AI agents, with actionable architectural patterns and a clear shift in competitive focus from models to infrastructure.
 
-## Connections
-
-- Source: [[sources/AI Engineer|AI Engineer]]
-- Topics: [[topics/AI Agents|AI Agents]], [[topics/AI Infrastructure|AI Infrastructure]], [[topics/Model Inference|Model Inference]], [[topics/Enterprise AI|Enterprise AI]]
-
 ***
 
 # Building Great Agent Skills: The Missing Manual
@@ -1832,11 +1692,6 @@ The framework aims to reduce context load, cognitive load, and unpredictability 
 
 Medium – A practical, structured framework for improving AI agent skills, useful for developers and teams building or maintaining agent workflows.
 
-## Connections
-
-- Source: [[sources/AI Engineer|AI Engineer]]
-- Topics: [[topics/AI Agents|AI Agents]], [[topics/Developer Tools|Developer Tools]], [[topics/Product Development|Product Development]]
-
 ***
 
 # Agency in Language, Alane Suhr | Compile 26
@@ -1888,12 +1743,6 @@ The talk emphasizes that language shapes reality, and vague concepts like "AI" o
 ## Reading Priority
 
 Medium – A thoughtful critique of how the concept of AI shapes our actions and perceptions, offering a human-centered perspective on technology and language.
-
-## Connections
-
-- Source: [[sources/Cursor|Cursor]]
-- Topics: [[topics/Foundation Models|Foundation Models]], [[topics/Human AI Interaction|Human AI Interaction]], [[topics/AI Research|AI Research]]
-- Speaker: [[people/alane-suhr|Alane Suhr]]
 
 ***
 
@@ -1952,11 +1801,6 @@ These tactics are framework-agnostic and especially effective in multi-turn or t
 
 Medium – Practical, code-level optimizations for reducing agent costs that are broadly applicable and easy to implement.
 
-## Connections
-
-- Source: [[sources/AI Engineer|AI Engineer]]
-- Topics: [[topics/AI Agents|AI Agents]], [[topics/Model Inference|Model Inference]], [[topics/Developer Tools|Developer Tools]]
-
 ***
 
 # When All Context Matters: Extended Cache Augmented Generation - Luis Romero-Sevilla, Orbis
@@ -2013,11 +1857,6 @@ ECAG solves this by distributing documents across multiple cache-augmented gener
 ## Reading Priority
 
 Medium – Introduces a novel, practical retrieval approach (ECAG) for dynamic, high-context datasets, with clear trade-offs and actionable insights for implementation.
-
-## Connections
-
-- Source: [[sources/AI Engineer|AI Engineer]]
-- Topics: [[topics/Retrieval|Retrieval]], [[topics/Model Inference|Model Inference]], [[topics/Developer Tools|Developer Tools]]
 
 ***
 
@@ -2081,10 +1920,5 @@ The core insight is that input tokens dominate cost (90% of total), so compressi
 ## Reading Priority
 
 High – A rare, concrete case study showing how context optimization—not model tuning—dramatically cuts AI costs and latency in real-world coding workflows.
-
-## Connections
-
-- Source: [[sources/AI Engineer|AI Engineer]]
-- Topics: [[topics/Coding Agents|Coding Agents]], [[topics/Retrieval|Retrieval]], [[topics/Developer Tools|Developer Tools]], [[topics/AI Infrastructure|AI Infrastructure]]
 
 ***
