@@ -64,9 +64,12 @@ def _prepare_body(markdown: str, title: str, intro: str, *, is_playlist: bool) -
 
 
 def _replace_public_epub_link(markdown: str, absolute_url: str) -> str:
-    if not absolute_url:
-        return markdown
-    return markdown.replace(f"]({public_epub_markdown_url()})", f"]({absolute_url})")
+    relative_target = f"]({public_epub_markdown_url()})"
+    if absolute_url:
+        return markdown.replace(relative_target, f"]({absolute_url})")
+    # Without an absolute URL the relative link would be dead on Substack;
+    # drop the download line entirely.
+    return "\n".join(line for line in markdown.splitlines() if relative_target not in line)
 
 
 def _public_epub_relative_path(is_playlist: bool) -> str:
@@ -166,7 +169,14 @@ def _normalized_heading(value: str) -> str:
 
 def _is_duplicate_subheading(current_title: str, subheading: str) -> bool:
     normalized = _normalized_heading(subheading)
-    return bool(normalized) and (normalized == current_title or normalized in current_title)
+    if not normalized:
+        return False
+    if normalized == current_title:
+        return True
+    # Treat only long prefixes as truncated repeats of the item title, so a
+    # short section heading like "Main Ideas" is never stripped just because
+    # the item title happens to start with those words.
+    return len(normalized) >= 25 and current_title.startswith(normalized)
 
 
 def _next_nonblank(lines: list[str], index: int) -> str:

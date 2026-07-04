@@ -48,6 +48,12 @@ def _build_epub(markdown_path: Path) -> Path:
             ],
             check=True,
         )
+    except (subprocess.CalledProcessError, OSError) as exc:
+        # Never leave a partial EPUB behind: send_latest_to_kindle.py picks
+        # the newest output file by modification time.
+        epub_path.unlink(missing_ok=True)
+        print(f"Pandoc EPUB build failed ({exc}); sending Markdown instead.")
+        return markdown_path
     finally:
         if epub_source != markdown_path:
             epub_source.unlink(missing_ok=True)

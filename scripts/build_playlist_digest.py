@@ -88,6 +88,9 @@ def _playlist_videos(playlist_url: str, limit: int) -> tuple[str, list[str]]:
     title = str(info.get("title") or "").strip()
     urls = []
     for entry in info.get("entries") or []:
+        # yt-dlp yields None entries for unavailable/private videos.
+        if not entry:
+            continue
         url = entry.get("url") or entry.get("webpage_url")
         if not url:
             continue

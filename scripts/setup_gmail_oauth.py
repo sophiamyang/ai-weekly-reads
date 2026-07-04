@@ -7,7 +7,7 @@ from pathlib import Path
 
 from config import load_settings
 from project_paths import ROOT
-from send_to_kindle import GMAIL_SEND_SCOPE, private_path
+from send_to_kindle import GMAIL_SEND_SCOPE, private_path, write_private_file
 from utils import load_dotenv
 
 
@@ -35,10 +35,9 @@ def main() -> None:
         print("Missing Gmail OAuth dependencies. Run: .venv/bin/pip install -r requirements.txt")
         sys.exit(1)
 
-    token_path.parent.mkdir(parents=True, exist_ok=True)
     flow = InstalledAppFlow.from_client_secrets_file(str(credentials_path), [GMAIL_SEND_SCOPE])
     creds = flow.run_local_server(port=0, access_type="offline", prompt="consent")
-    token_path.write_text(creds.to_json(), encoding="utf-8")
+    write_private_file(token_path, creds.to_json())
     print(f"Gmail OAuth token saved: {token_path}")
     print("You can now run: .venv/bin/python scripts/send_latest_to_kindle.py")
 
@@ -61,6 +60,7 @@ def _resolve_credentials_path(configured_path: Path, explicit_path: str | None) 
     source_path = candidates[0]
     configured_path.parent.mkdir(parents=True, exist_ok=True)
     shutil.copy2(source_path, configured_path)
+    configured_path.chmod(0o600)
     print(f"Copied Gmail OAuth client file to private config: {configured_path}")
     print(f"You can delete the downloaded file from the project root: {source_path.name}")
     return configured_path

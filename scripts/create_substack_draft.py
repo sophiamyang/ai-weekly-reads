@@ -13,7 +13,10 @@ from utils import load_dotenv, read_text
 
 
 MIN_DRAFT_CHARS = 1200
-REQUIRED_MARKERS = ("## Contents", "## Reading Notes", "- **Published:**")
+REQUIRED_MARKERS = ("## Contents", "## Reading Notes")
+# Every digest item carries one of these date labels; resources without a
+# publication date use "Added" instead of "Published".
+DATE_MARKERS = ("- **Published:**", "- **Added:**")
 
 
 @dataclass(frozen=True)
@@ -30,7 +33,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Create a Substack draft from the latest Substack-ready post.")
     parser.add_argument("post", nargs="?", help="Substack Markdown path. Defaults to output/substack/latest.md.")
     parser.add_argument("--setup", action="store_true", help="Open the browser so you can log into Substack, then save the session.")
-    parser.add_argument("--headed", action="store_true", default=True, help="Run with a visible browser window.")
+    parser.add_argument("--headless", action="store_true", help="Run without a visible browser window. Default is headed so you can handle login challenges.")
     parser.add_argument("--publish", action="store_true", help="Publish after filling the draft. Requires an explicit flag.")
     args = parser.parse_args()
 
@@ -49,7 +52,7 @@ def main() -> None:
         raise SystemExit(f"Substack post not found: {post_path}. Run scripts/build_substack_post.py first.")
 
     draft = _load_draft(post_path)
-    _create_browser_draft(draft, settings, setup_only=args.setup, publish=args.publish)
+    _create_browser_draft(draft, settings, setup_only=args.setup, publish=args.publish, headless=args.headless)
 
 
 def _load_draft(path: Path) -> DraftPost:
@@ -63,6 +66,8 @@ def _load_draft(path: Path) -> DraftPost:
 
 def _validate_markdown(markdown: str, path: Path) -> None:
     missing = [marker for marker in REQUIRED_MARKERS if marker not in markdown]
+    if not any(marker in markdown for marker in DATE_MARKERS):
+        missing.append(" or ".join(DATE_MARKERS))
     if missing:
         raise SystemExit(f"{path} does not look like a weekly Substack draft. Missing: {', '.join(missing)}")
     if len(markdown) < MIN_DRAFT_CHARS:
@@ -141,7 +146,7 @@ def _markdown_to_html(markdown: str) -> str:
     return markdown_lib.markdown(markdown, extensions=["extra", "sane_lists"])
 
 
-def _create_browser_draft(draft: DraftPost, settings: Settings, *, setup_only: bool, publish: bool) -> None:
+def _create_browser_draft(draft: DraftPost, settings: Settings, *, setup_only: bool, publish: bool, headless: bool = False) -> None:
     try:
         from playwright.sync_api import TimeoutError as PlaywrightTimeoutError
         from playwright.sync_api import sync_playwright
@@ -162,7 +167,7 @@ def _create_browser_draft(draft: DraftPost, settings: Settings, *, setup_only: b
     with sync_playwright() as playwright:
         context = playwright.chromium.launch_persistent_context(
             str(user_data_dir),
-            headless=False,
+            headless=headless and not setup_only,
             viewport={"width": 1440, "height": 1000},
         )
         page = context.pages[0] if context.pages else context.new_page()

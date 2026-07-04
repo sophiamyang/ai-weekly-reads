@@ -117,7 +117,7 @@ def refresh_weekly_book_graphs(weekly_books: Path) -> int:
         included = [
             resource_path
             for title, resource_path in resources_by_title.items()
-            if f"# {title}" in body
+            if re.search(rf"^# {re.escape(title)}\s*$", body, re.MULTILINE)
         ]
         if not included:
             continue

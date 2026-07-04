@@ -46,7 +46,7 @@ def _git_remote_url(remote_name: str) -> str:
             capture_output=True,
             text=True,
         )
-    except subprocess.CalledProcessError:
+    except (subprocess.CalledProcessError, OSError):
         return ""
     return result.stdout.strip()
 
@@ -58,6 +58,7 @@ def _github_owner_repo(remote_url: str) -> str:
         slug = remote_url.removeprefix("git@github.com:").removesuffix(".git")
         return slug.strip("/")
     parsed = urlparse(remote_url)
-    if parsed.netloc.lower() != "github.com":
+    host = parsed.netloc.lower().rsplit("@", 1)[-1].split(":", 1)[0]
+    if host != "github.com":
         return ""
     return parsed.path.strip("/").removesuffix(".git")

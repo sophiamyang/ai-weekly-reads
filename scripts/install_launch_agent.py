@@ -25,7 +25,19 @@ def main() -> None:
         uninstall()
         return
 
+    _validate_schedule(parser, args)
     install(args.weekday, args.hour, args.minute)
+
+
+def _validate_schedule(parser: argparse.ArgumentParser, args: argparse.Namespace) -> None:
+    # launchd accepts out-of-range StartCalendarInterval values at load time
+    # but the job then never fires, so fail fast here instead.
+    if not 0 <= args.weekday <= 7:
+        parser.error("--weekday must be between 0 and 7 (launchd treats both 0 and 7 as Sunday).")
+    if not 0 <= args.hour <= 23:
+        parser.error("--hour must be between 0 and 23.")
+    if not 0 <= args.minute <= 59:
+        parser.error("--minute must be between 0 and 59.")
 
 
 def install(weekday: int, hour: int, minute: int) -> None:
