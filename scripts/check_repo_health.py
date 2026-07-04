@@ -196,7 +196,7 @@ def _check_public_dir(public_dir: Path, label: str, errors: list[str], *, allow_
     public_files = sorted(
         path.relative_to(ROOT).as_posix()
         for path in public_dir.glob("*")
-        if path.is_file()
+        if path.is_file() and not path.name.startswith(".")
     )
     expected_md = f"{label}/latest.md"
     expected_epub = f"{label}/latest.epub"
@@ -209,40 +209,29 @@ def _check_public_dir(public_dir: Path, label: str, errors: list[str], *, allow_
         return
     latest_md = public_dir / "latest.md"
     if latest_md.exists():
-        _check_public_markdown(latest_md, label, errors)
+        _check_public_markdown(latest_md, f"{label}/latest.md", errors)
 
 
 def _check_public_markdown(path: Path, label: str, errors: list[str]) -> None:
     text = path.read_text(encoding="utf-8")
     if "# Appendix: Full Transcripts" in text:
-        errors.append(f"{label}/latest.md must not contain full transcripts.")
+        errors.append(f"{label} must not contain full transcripts.")
     for marker in ("## Contents", "## Reading Notes"):
         if marker not in text:
-            errors.append(f"{label}/latest.md is missing {marker!r}.")
+            errors.append(f"{label} is missing {marker!r}.")
+    if "[[" in text or "## Connections" in text:
+        errors.append(f"{label} must not contain Obsidian-only wikilinks or graph sections.")
     if not re.search(r"^- \*\*(Published|Added):\*\*", text, re.MULTILINE):
-        errors.append(f"{label}/latest.md should include published or added dates in each summary.")
+        errors.append(f"{label} should include published or added dates in each summary.")
     if not re.search(r"^- \*\*(YouTube|Podcast|Video|Livestream|Source):\*\* \[[^\]]+\]\(https?://", text, re.MULTILINE):
-        errors.append(f"{label}/latest.md should include linked source labels for original items.")
+        errors.append(f"{label} should include linked source labels for original items.")
 
 
 def _check_root_public_latest(errors: list[str]) -> None:
     if not PUBLIC_LATEST_MD.exists():
         errors.append("latest.md should exist at the repository root and track the most recent public edition.")
     else:
-        _check_root_public_markdown(PUBLIC_LATEST_MD, errors)
-
-
-def _check_root_public_markdown(path: Path, errors: list[str]) -> None:
-    text = path.read_text(encoding="utf-8")
-    if "# Appendix: Full Transcripts" in text:
-        errors.append("latest.md must not contain full transcripts.")
-    for marker in ("## Contents", "## Reading Notes"):
-        if marker not in text:
-            errors.append(f"latest.md is missing {marker!r}.")
-    if not re.search(r"^- \*\*(Published|Added):\*\*", text, re.MULTILINE):
-        errors.append("latest.md should include published or added dates in each summary.")
-    if not re.search(r"^- \*\*(YouTube|Podcast|Video|Livestream|Source):\*\* \[[^\]]+\]\(https?://", text, re.MULTILINE):
-        errors.append("latest.md should include linked source labels for original items.")
+        _check_public_markdown(PUBLIC_LATEST_MD, "latest.md", errors)
 
 
 def _check_list(registry: dict[str, Any], key: str, errors: list[str]) -> None:

@@ -96,6 +96,32 @@ def _parse_yaml_scalar(value: str) -> Any:
     return value
 
 
+GRAPH_ONLY_HEADINGS = {"connections", "related notes", "obsidian connections"}
+
+
+def strip_graph_only_sections(markdown: str) -> str:
+    lines = markdown.splitlines()
+    kept: list[str] = []
+    skipping_level: int | None = None
+    for line in lines:
+        heading = re.match(r"^(#{1,6})\s+(.+?)\s*$", line)
+        if heading:
+            level = len(heading.group(1))
+            label = heading.group(2).strip().lower()
+            if label in GRAPH_ONLY_HEADINGS:
+                skipping_level = level
+                continue
+            if skipping_level is not None and level <= skipping_level:
+                skipping_level = None
+        if skipping_level is not None:
+            if line.strip() == "***":
+                skipping_level = None
+                kept.append(line)
+            continue
+        kept.append(line)
+    return "\n".join(kept)
+
+
 def load_dotenv(path: Path) -> None:
     if not path.exists():
         return

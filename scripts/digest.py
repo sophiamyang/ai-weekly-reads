@@ -8,7 +8,7 @@ from obsidian_graph import weekly_resource_links
 from public_epub import public_epub_markdown_url
 from project_paths import OUTPUT, PUBLIC_LATEST_MD, PUBLIC_WEEKLY, WEEKLY_BOOKS
 from summary_metadata import featured_speakers, without_featured_speakers
-from utils import parse_date, read_text, split_frontmatter, today_stamp, write_text, yaml_value
+from utils import parse_date, read_text, split_frontmatter, strip_graph_only_sections, today_stamp, write_text, yaml_value
 
 
 def build_digest(
@@ -119,6 +119,7 @@ def _display_source_type(source_type: str) -> str:
 def _summary_part(resource: str) -> str:
     marker = "\n# Full Transcript\n"
     fields, body = split_frontmatter(resource.split(marker, 1)[0].strip())
+    body = strip_graph_only_sections(body)
     summary = _with_resource_metadata(body, fields)
     return "\n".join(_digest_line(line) for line in summary.splitlines() if not line.startswith("Raw transcript: [["))
 
@@ -137,10 +138,14 @@ def _with_resource_metadata(markdown: str, fields: dict) -> str:
     if not speakers:
         speakers = featured_speakers(markdown, str(fields.get("title") or ""))
     markdown = without_featured_speakers(markdown)
+    lines = markdown.strip().splitlines()
+    # Drop the bare metadata lines format_ai_summary writes under the H1, but
+    # leave later summary content that happens to share those prefixes alone.
+    header_end = next((index for index, line in enumerate(lines) if line.startswith("## ")), len(lines))
     lines = [
         line
-        for line in markdown.strip().splitlines()
-        if not line.startswith(("Published:", "Added:", "Date:", "Source:", "Original link:"))
+        for index, line in enumerate(lines)
+        if index >= header_end or not line.startswith(("Published:", "Added:", "Date:", "Source:", "Original link:"))
     ]
     for index, line in enumerate(lines):
         if not line.startswith("# "):

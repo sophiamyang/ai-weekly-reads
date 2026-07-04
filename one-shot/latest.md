@@ -96,11 +96,6 @@ LLMs are already surpassing humans in some areas and have demonstrated breakthro
 
 Medium – Altman’s empirical focus on scale, compute shortages, and democratization risks offers actionable insights for AI strategy and systems design.
 
-## Connections
-
-- Source: [[sources/Stanford Online|Stanford Online]]
-- Topics: [[topics/AI Infrastructure|AI Infrastructure]], [[topics/Coding Agents|Coding Agents]], [[topics/Foundation Models|Foundation Models]], [[topics/Model Inference|Model Inference]]
-
 ***
 
 # Stanford CS153 Frontier Systems | The Road Ahead: Resilience Required
@@ -168,11 +163,6 @@ A: Ransomware has evolved from state-sponsored attacks to a profitable criminal 
 ## Reading Priority
 
 High – A rare insider account of cybersecurity leadership, crisis management, and AI governance, grounded in a landmark legal case and ransomware realities.
-
-## Connections
-
-- Source: [[sources/Stanford Online|Stanford Online]]
-- Speaker: [[people/joe-sullivan-ceo|**Joe Sullivan** – CEO]]
 
 ***
 
@@ -252,11 +242,6 @@ A: Compute hardware is depreciated over six years, but planning is fungible at t
 
 High – A rare, systems-level view from one of the architects of AI infrastructure at planetary scale, with concrete mechanisms, trade-offs, and forecasts.
 
-## Connections
-
-- Source: [[sources/Stanford Online|Stanford Online]]
-- Topics: [[topics/AI Infrastructure|AI Infrastructure]], [[topics/Enterprise AI|Enterprise AI]], [[topics/Model Training|Model Training]]
-
 ***
 
 # Stanford CS153 Frontier Systems | The AI Native Company: How One Founder Becomes a 1000x Engineer
@@ -325,11 +310,6 @@ A: The AI founder orchestrates agents and humans, sets goals, and ensures tight 
 ## Reading Priority
 
 High – This lecture distills practical primitives for building AI-native companies, with concrete examples, open-source tools, and measurable outcomes.
-
-## Connections
-
-- Source: [[sources/Stanford Online|Stanford Online]]
-- Topics: [[topics/AI Agents|AI Agents]], [[topics/Coding Agents|Coding Agents]], [[topics/Developer Tools|Developer Tools]], [[topics/Enterprise AI|Enterprise AI]]
 
 ***
 
@@ -407,12 +387,6 @@ A: MFU measures flops utilization but ignores bottlenecks in memory bandwidth, n
 
 Medium – A foundational discussion on the reinvention of computing, NVIDIA’s architectural roadmap, and the interplay between AI, energy, and open models—critical for understanding the future of AI infrastructure and enterprise adoption.
 
-## Connections
-
-- Source: [[sources/Stanford Online|Stanford Online]]
-- Topics: [[topics/AI Infrastructure|AI Infrastructure]], [[topics/AI Agents|AI Agents]]
-- Speaker: [[people/jensen-huang-co-founder|**Jensen Huang** – Co-founder]]
-
 ***
 
 # Stanford CS153 Frontier Systems | Scott Nolan from General Matter on Energy Bottlenecks
@@ -479,11 +453,6 @@ A: The team identified enrichment as a critical, unsolved problem in 2023, assem
 ## Reading Priority
 
 High – This lecture reframes AI’s scaling bottleneck from compute to energy and identifies a concrete, near-term infrastructure solution with government alignment and rapid execution.
-
-## Connections
-
-- Source: [[sources/Stanford Online|Stanford Online]]
-- Topics: [[topics/AI Infrastructure|AI Infrastructure]], [[topics/Enterprise AI|Enterprise AI]]
 
 ***
 
@@ -561,11 +530,6 @@ A: It’s culturally the opposite of venture capital. LBOs focus on efficiency a
 ## Reading Priority
 
 Medium – This conversation distills Horowitz’s contrarian and systems-oriented approach to venture capital, culture, and AI’s impact on moats, offering actionable insights for entrepreneurs, investors, and leaders.
-
-## Connections
-
-- Source: [[sources/Stanford Online|Stanford Online]]
-- Topics: [[topics/AI Infrastructure|AI Infrastructure]]
 
 ***
 
@@ -648,11 +612,6 @@ A. The theatrics of packaging information are being exposed; AI can present grou
 
 High – A concise, evidence-backed map of how AI is reshaping product roles, compensation, and organizational structure, with practical signals for students and early-career builders.
 
-## Connections
-
-- Source: [[sources/Stanford Online|Stanford Online]]
-- Topics: [[topics/Product Development|Product Development]], [[topics/AI Agents|AI Agents]]
-
 ***
 
 # Stanford CS153 Frontier Systems | Amit Jain from Luma AI on Unified Intelligence Systems
@@ -719,11 +678,6 @@ A: GANs are still used for real-time systems and distillation, but their unpredi
 
 Medium – Unified multimodal models and the capital/data scale required to build them are central to the next wave of AI systems and creative tools.
 
-## Connections
-
-- Source: [[sources/Stanford Online|Stanford Online]]
-- Topics: [[topics/AI Infrastructure|AI Infrastructure]], [[topics/Foundation Models|Foundation Models]], [[topics/Generative Media|Generative Media]], [[topics/Model Training|Model Training]]
-
 ***
 
 # Stanford CS153 Frontier Systems | Andreas Blattmann from Black Forest Labs on Visual Intelligence
@@ -789,11 +743,6 @@ A: Start with large-scale, noisy automated labeling for pre-training, then progr
 
 Medium – A foundational perspective on visual intelligence, multimodal alignment, and open-weight model strategy from one of the pioneers of modern generative imaging.
 
-## Connections
-
-- Source: [[sources/Stanford Online|Stanford Online]]
-- Topics: [[topics/Model Inference|Model Inference]], [[topics/AI Infrastructure|AI Infrastructure]], [[topics/Generative Media|Generative Media]], [[topics/Model Training|Model Training]]
-
 ***
 
 # Stanford CS153 Frontier Systems | Mati Staniszewski from ElevenLabs on The Future of Voice Systems
@@ -858,11 +807,6 @@ A: The company releases foundational models and tools (e.g., CSM) to the communi
 ## Reading Priority
 
 High – A deep dive into the architecture tradeoffs of voice AI systems, with actionable insights for product and engineering teams building multimodal agents.
-
-## Connections
-
-- Source: [[sources/Stanford Online|Stanford Online]]
-- Topics: [[topics/AI Agents|AI Agents]], [[topics/AI Infrastructure|AI Infrastructure]], [[topics/Enterprise AI|Enterprise AI]], [[topics/Foundation Models|Foundation Models]]
 
 ***
 
@@ -951,11 +895,5 @@ A: Sovereign AI refers to AI systems and infrastructure controlled by government
 ## Reading Priority
 
 High – This lecture provides a systems-level framework for understanding AI’s current bottlenecks, the role of context and compute, and the strategic implications of infrastructure scarcity. It’s essential for anyone aiming to build or invest in frontier AI systems.
-
-## Connections
-
-- Source: [[sources/Stanford Online|Stanford Online]]
-- Topics: [[topics/AI Infrastructure|AI Infrastructure]], [[topics/Model Training|Model Training]]
-- Speaker: [[people/anjney-midha-founder|**Anjney Midha** – Founder]]
 
 ***
