@@ -87,6 +87,8 @@ def _check_settings(path: Path, errors: list[str]) -> None:
         errors.append(f"{label}: summary_model must not be empty.")
     if not str(settings.summary_fallback_model or "").strip():
         errors.append(f"{label}: summary_fallback_model must not be empty.")
+    if settings.rewrite_full_transcripts and not str(settings.transcript_rewrite_model or "").strip():
+        errors.append(f"{label}: transcript_rewrite_model must not be empty when rewrite_full_transcripts is enabled.")
     if settings.transcription_provider not in {"mistral", "none"}:
         errors.append(f"{label}: transcription_provider must be 'mistral' or 'none'.")
     if settings.kindle_output_format.lower() not in {"epub", "markdown", "md"}:

@@ -8,6 +8,8 @@
   "transcription_provider": "mistral",
   "transcription_model": "voxtral-mini-latest",
   "include_full_transcripts": false,
+  "rewrite_full_transcripts": false,
+  "transcript_rewrite_model": "mistral-small-latest",
   "kindle_output_format": "epub",
   "weekly_resource_limit": 30,
   "publication_window_days": 7,

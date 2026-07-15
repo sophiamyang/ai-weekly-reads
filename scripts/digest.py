@@ -8,6 +8,7 @@ from obsidian_graph import weekly_resource_links
 from public_epub import public_epub_markdown_url
 from project_paths import OUTPUT, PUBLIC_LATEST_MD, PUBLIC_WEEKLY, WEEKLY_BOOKS
 from summary_metadata import featured_speakers, without_featured_speakers
+from transcript_sanitizer import transcript_for_reading
 from utils import parse_date, read_text, split_frontmatter, strip_graph_only_sections, today_stamp, write_text, yaml_value
 
 
@@ -63,7 +64,7 @@ def build_digest(
             resource = read_text(resource_path)
             lines.append(f"## {_resource_title(resource_path)} ({_resource_date(resource_path)})")
             lines.append("")
-            lines.append(_transcript_part(resource).strip())
+            lines.append(transcript_for_reading(_transcript_part(resource), settings).strip())
             lines.append("")
             lines.append("***")
             lines.append("")
