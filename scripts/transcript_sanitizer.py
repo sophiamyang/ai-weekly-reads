@@ -16,7 +16,7 @@ def transcript_for_reading(transcript: str, settings: Settings) -> str:
     cleaned = deterministic_cleanup(transcript)
     if not settings.rewrite_full_transcripts:
         return cleaned
-    if settings.summary_provider != "mistral" or not os.environ.get("MISTRAL_API_KEY"):
+    if not os.environ.get("MISTRAL_API_KEY"):
         return cleaned
     return _cached_mistral_rewrite(cleaned, settings)
 
@@ -25,22 +25,31 @@ def deterministic_cleanup(transcript: str) -> str:
     text = transcript.replace("\r\n", "\n").replace("\r", "\n")
     paragraphs: list[str] = []
     pending: list[str] = []
+    current_speaker: str | None = None
 
     def flush_pending() -> None:
+        nonlocal current_speaker
         if not pending:
             return
-        paragraphs.extend(_paragraphs_from_text(" ".join(pending)))
+        rendered = _paragraphs_from_text(" ".join(pending))
+        if current_speaker:
+            paragraphs.extend(f"**{current_speaker}:** {paragraph}" for paragraph in rendered)
+        else:
+            paragraphs.extend(rendered)
         pending.clear()
 
     for raw_line in text.splitlines():
         line = _clean_line(raw_line)
         if not line:
             flush_pending()
+            current_speaker = None
             continue
         speaker, rest = _speaker_turn(line)
         if speaker:
             flush_pending()
-            paragraphs.append(f"**{speaker}:** {rest}" if rest else f"**{speaker}:**")
+            current_speaker = speaker
+            if rest:
+                pending.append(rest)
             continue
         pending.append(line)
     flush_pending()
@@ -70,6 +79,8 @@ def _speaker_turn(line: str) -> tuple[str | None, str]:
 
 
 def _paragraphs_from_text(text: str) -> list[str]:
+    if not text.strip():
+        return []
     sentences = re.split(r"(?<=[.!?])\s+", text.strip())
     paragraphs: list[str] = []
     current: list[str] = []

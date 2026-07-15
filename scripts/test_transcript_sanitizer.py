@@ -18,6 +18,44 @@ def test_deterministic_cleanup_structures_transcript() -> None:
     assert "**Alice:** this has spacing." in cleaned
 
 
+def test_deterministic_cleanup_keeps_wrapped_lines_with_same_speaker() -> None:
+    raw = """Speaker_1: first thought here
+this line wraps the same speaker and should stay attributed.
+
+Speaker_2: response starts here
+and continues on the next line too."""
+
+    cleaned = transcript_sanitizer.deterministic_cleanup(raw)
+
+    assert "**Speaker 1:** first thought here this line wraps the same speaker and should stay attributed." in cleaned
+    assert "**Speaker 2:** response starts here and continues on the next line too." in cleaned
+
+
+def test_rewrite_flag_does_not_depend_on_summary_provider() -> None:
+    original_rewrite = transcript_sanitizer._cached_mistral_rewrite
+    original_key = os.environ.get("MISTRAL_API_KEY")
+    os.environ["MISTRAL_API_KEY"] = "test-key"
+    transcript_sanitizer._cached_mistral_rewrite = lambda cleaned, _settings: f"rewritten::{cleaned}"
+    try:
+        result = transcript_sanitizer.transcript_for_reading(
+            "Speaker_1: raw words here.",
+            SimpleNamespace(
+                rewrite_full_transcripts=True,
+                summary_provider="local",
+                transcript_rewrite_model="mistral-small-latest",
+            ),
+        )
+    finally:
+        transcript_sanitizer._cached_mistral_rewrite = original_rewrite
+        if original_key is None:
+            os.environ.pop("MISTRAL_API_KEY", None)
+        else:
+            os.environ["MISTRAL_API_KEY"] = original_key
+
+    assert result.startswith("rewritten::")
+    assert "**Speaker 1:** raw words here." in result
+
+
 def test_mistral_prompt_targets_spoken_word_artifacts() -> None:
     captured = {}
 
@@ -65,6 +103,8 @@ def _settings() -> SimpleNamespace:
 
 def main() -> None:
     test_deterministic_cleanup_structures_transcript()
+    test_deterministic_cleanup_keeps_wrapped_lines_with_same_speaker()
+    test_rewrite_flag_does_not_depend_on_summary_provider()
     test_mistral_prompt_targets_spoken_word_artifacts()
 
 
