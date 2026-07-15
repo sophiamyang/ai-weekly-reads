@@ -132,11 +132,11 @@ def _rewrite_chunk(chunk: str, settings: Settings) -> str:
         "messages": [
             {
                 "role": "system",
-                "content": "Rewrite transcripts into readable Markdown while preserving meaning, speaker turns, names, and factual claims. Do not summarize or add information.",
+                "content": "Rewrite transcripts into readable Markdown while preserving meaning, speaker turns, names, and factual claims. Remove lexical fillers, smooth false starts, and collapse repeated words only when they do not change meaning. Do not summarize or add information.",
             },
             {
                 "role": "user",
-                "content": f"Clean this transcript excerpt for reading. Keep speaker labels in bold Markdown when present. Remove filler only when it does not change meaning. Return only the cleaned transcript.\n\n{chunk}",
+                "content": f"Clean this transcript excerpt for reading. Keep speaker labels in bold Markdown when present. Remove lexical fillers such as um, uh, you know, and non-meaningful like. Smooth false starts and repeated words. Preserve technical terms, claims, numbers, caveats, and speaker intent. Return only the cleaned transcript.\n\n{chunk}",
             },
         ],
     }
