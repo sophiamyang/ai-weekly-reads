@@ -68,6 +68,7 @@ Each run checks the configured source inspection windows, filters recurring sour
 - If Mail has no configured accounts, delivery is skipped and should not be recorded as sent.
 - Successful sends are recorded in `output/_metadata/kindle_delivery.json`; do not resend the same digest unless the user asks for `--force`.
 - Setting `send_to_kindle: false` on a resource note excludes it from the generated weekly book entirely — the digest, public editions, EPUB, and Substack export all build from the same book. Excluded notes are logged during the build.
+- Full transcript appendices are deterministically cleaned for reading before EPUB generation. `rewrite_full_transcripts: true` additionally runs a cached Mistral rewrite; raw transcripts remain unchanged.
 
 ## Commands
 

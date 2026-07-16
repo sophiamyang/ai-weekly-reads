@@ -206,6 +206,7 @@ Important settings in `config/settings.json`:
 - `weekly_resource_limit`: maximum resources in the weekly book
 - `max_items_per_run`: optional cost/safety cap; `0` means no cap
 - `kindle_output_format`: `epub` or `markdown`
+- `rewrite_full_transcripts`: when full transcripts are included, also rewrite cleaned transcript text with Mistral for readability
 
 Per-source settings in `config/sources.json`:
 

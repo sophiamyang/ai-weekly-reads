@@ -20,6 +20,8 @@ class Settings:
     transcription_provider: str
     transcription_model: str
     include_full_transcripts: bool
+    rewrite_full_transcripts: bool
+    transcript_rewrite_model: str
     kindle_output_format: str
     weekly_resource_limit: int
     publication_window_days: int
@@ -48,6 +50,8 @@ def load_settings(path: Path | None = None) -> Settings:
         transcription_provider=raw.get("transcription_provider", "mistral"),
         transcription_model=raw.get("transcription_model", "voxtral-mini-latest"),
         include_full_transcripts=raw.get("include_full_transcripts", False),
+        rewrite_full_transcripts=raw.get("rewrite_full_transcripts", False),
+        transcript_rewrite_model=raw.get("transcript_rewrite_model", raw.get("summary_model", "mistral-small-latest")),
         kindle_output_format=raw.get("kindle_output_format", "epub"),
         weekly_resource_limit=int(raw.get("weekly_resource_limit", 25)),
         publication_window_days=int(raw.get("publication_window_days", 7)),

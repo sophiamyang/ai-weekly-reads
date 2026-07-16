@@ -28,6 +28,7 @@ TEMPLATES = KNOWLEDGE_BASE / "templates"
 SUMMARIES = OUTPUT / "_summaries"
 MEDIA = OUTPUT / "_media"
 METADATA = OUTPUT / "_metadata"
+SANITIZED_TRANSCRIPTS = OUTPUT / "_sanitized_transcripts"
 
 
 def ensure_dirs() -> None:
@@ -52,5 +53,6 @@ def ensure_dirs() -> None:
         INDEXES,
         TEMPLATES,
         METADATA,
+        SANITIZED_TRANSCRIPTS,
     ):
         path.mkdir(parents=True, exist_ok=True)
