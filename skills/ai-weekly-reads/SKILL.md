@@ -31,6 +31,14 @@ Work from the AI Weekly Reads repository root.
 - GitHub Actions is for lightweight repo health only. Do not turn it into the primary content runner unless the user explicitly chooses cloud-hosted knowledge-base state and GitHub secrets for delivery.
 - Do not recreate a durable `data/` folder.
 
+## Cloud Knowledge-Base Persistence
+
+The knowledge base persists across ephemeral cloud sessions in the private repo `sophiamyang/ai-weekly-reads-kb`, nested as a second git repo at `knowledge_base/.git` inside this checkout. The main repo keeps tracking `knowledge_base/Home.md`, `README.md`, and `templates/`; the KB repo tracks the generated stores (`raw_transcripts/`, `resources/`, `weekly_books/`, `sources/`, `people/`, `topics/`, `indexes/`) and ignores the main-repo-owned files via its own `.gitignore`.
+
+- At session start (if the environment setup script has not already done it): attach `sophiamyang/ai-weekly-reads-kb` with push access, then from the checkout root run `git clone https://github.com/sophiamyang/ai-weekly-reads-kb /tmp/kb && mv /tmp/kb/.git knowledge_base/.git && rm -rf /tmp/kb && git -C knowledge_base checkout -- .` to restore prior state so already-processed items are skipped.
+- After a successful weekly run: commit and push `knowledge_base/` to the KB repo's `main` branch (message like "Weekly knowledge-base update YYYY-MM-DD") in addition to the normal public-edition commit in the main repo.
+- The KB repo must stay private: `raw_transcripts/` holds verbatim third-party content that must never be published in the public repo or editions.
+
 ## Weekly Discovery
 
 Each run checks the configured source inspection windows, filters recurring sources to the configured publication window, computes stable IDs, skips resources that already exist in `knowledge_base/resources/`, and processes every new in-window item it discovers.
