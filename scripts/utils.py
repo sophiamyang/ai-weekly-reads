@@ -214,3 +214,17 @@ def ytdlp_js_runtimes() -> dict[str, dict[str, str]]:
     if not node_path:
         return {}
     return {"node": {"path": node_path}}
+
+
+# YouTube refuses yt-dlp's default player client from datacenter IPs with a
+# "Sign in to confirm you're not a bot" error. The ios client is still served.
+# Keep this to a single client: passing a fallback list re-triggers the block.
+YTDLP_PLAYER_CLIENT = "ios"
+
+
+def ytdlp_player_client_args() -> list[str]:
+    return ["--extractor-args", f"youtube:player_client={YTDLP_PLAYER_CLIENT}"]
+
+
+def ytdlp_extractor_args() -> dict[str, dict[str, list[str]]]:
+    return {"youtube": {"player_client": [YTDLP_PLAYER_CLIENT]}}

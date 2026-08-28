@@ -21,7 +21,7 @@ try:
 except ImportError:  # pragma: no cover - depends on local environment
     BeautifulSoup = None
 
-from utils import is_url, stable_id, youtube_video_id, ytdlp_js_runtimes
+from utils import is_url, stable_id, youtube_video_id, ytdlp_extractor_args, ytdlp_js_runtimes
 
 
 @dataclass
@@ -160,6 +160,11 @@ def _youtube_item(url: str) -> MediaItem:
                 "skip_download": True,
                 "extract_flat": False,
                 "js_runtimes": ytdlp_js_runtimes(),
+                "extractor_args": ytdlp_extractor_args(),
+                # The ios client advertises no downloadable formats for some
+                # videos; metadata is all this call needs.
+                "ignore_no_formats_error": True,
+                "check_formats": False,
             }
         ) as ydl:
             info = ydl.extract_info(url, download=False)
