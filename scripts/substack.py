@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import re
 from pathlib import Path
-from typing import Any
 
 from config import Settings
 from public_epub import public_epub_markdown_url, public_epub_repo_url

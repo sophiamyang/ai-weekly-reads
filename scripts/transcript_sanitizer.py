@@ -28,7 +28,6 @@ def deterministic_cleanup(transcript: str) -> str:
     current_speaker: str | None = None
 
     def flush_pending() -> None:
-        nonlocal current_speaker
         if not pending:
             return
         rendered = _paragraphs_from_text(" ".join(pending))
