@@ -20,3 +20,5 @@ knowledge_base/sources/
 knowledge_base/people/
 knowledge_base/topics/
 knowledge_base/indexes/
+knowledge_base/.gitignore
+knowledge_base/KB_README.md

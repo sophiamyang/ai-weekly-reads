@@ -7,6 +7,7 @@ from pathlib import Path
 from config import Settings
 from sources import MediaItem
 from transcript_store import find_raw_transcript, read_transcript_text, write_raw_transcript
+from transcription.gemini import can_transcribe_youtube, transcribe_youtube, youtube_transcription_method
 from transcription.media import download_direct_media
 from transcription.mistral import can_transcribe, transcribe_audio_url, transcribe_media_file, transcription_method
 from transcription.youtube import download_youtube_audio, fetch_youtube_captions
@@ -54,6 +55,13 @@ def _acquire_transcript(
         text = fetch_youtube_captions(item.url)
         if text:
             return text, "youtube_captions"
+        # YouTube blocks caption requests from datacenter IPs. Gemini accepts
+        # the video URL and fetches it server-side, so this succeeds where the
+        # caption and audio-download paths below cannot.
+        if can_transcribe_youtube(settings):
+            text = transcribe_youtube(item.url, settings)
+            if text:
+                return text, youtube_transcription_method(settings)
 
     text = _transcribe_available_audio(item, settings)
     if text:

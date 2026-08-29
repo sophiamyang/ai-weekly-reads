@@ -4,7 +4,7 @@ import subprocess
 import sys
 from typing import Any
 
-from utils import ytdlp_js_runtime_args
+from utils import ytdlp_js_runtime_args, ytdlp_player_client_args
 
 
 def latest_channel_video_urls(channels: list[dict[str, Any]]) -> list[str]:
@@ -32,6 +32,7 @@ def _fetch_channel_urls(channel_url: str, lookback_count: int) -> list[str]:
         "-m",
         "yt_dlp",
         *ytdlp_js_runtime_args(),
+        *ytdlp_player_client_args(),
         "--flat-playlist",
         "--playlist-end",
         str(lookback_count),

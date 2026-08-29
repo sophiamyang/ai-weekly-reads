@@ -31,6 +31,14 @@ Work from the AI Weekly Reads repository root.
 - GitHub Actions is for lightweight repo health only. Do not turn it into the primary content runner unless the user explicitly chooses cloud-hosted knowledge-base state and GitHub secrets for delivery.
 - Do not recreate a durable `data/` folder.
 
+## Cloud Knowledge-Base Persistence
+
+The knowledge base persists across ephemeral cloud sessions in the private repo `sophiamyang/ai-weekly-reads-kb`, nested as a second git repo at `knowledge_base/.git` inside this checkout. The main repo keeps tracking `knowledge_base/Home.md`, `README.md`, and `templates/`; the KB repo tracks the generated stores (`raw_transcripts/`, `resources/`, `weekly_books/`, `sources/`, `people/`, `topics/`, `indexes/`) and ignores the main-repo-owned files via its own `.gitignore`.
+
+- At session start (if the environment setup script has not already done it): attach `sophiamyang/ai-weekly-reads-kb` with push access, then from the checkout root run `git clone https://github.com/sophiamyang/ai-weekly-reads-kb /tmp/kb && mv /tmp/kb/.git knowledge_base/.git && rm -rf /tmp/kb && git -C knowledge_base checkout -- .` to restore prior state so already-processed items are skipped.
+- After a successful weekly run: commit and push `knowledge_base/` to the KB repo's `main` branch (message like "Weekly knowledge-base update YYYY-MM-DD") in addition to the normal public-edition commit in the main repo.
+- The KB repo must stay private: `raw_transcripts/` holds verbatim third-party content that must never be published in the public repo or editions.
+
 ## Weekly Discovery
 
 Each run checks the configured source inspection windows, filters recurring sources to the configured publication window, computes stable IDs, skips resources that already exist in `knowledge_base/resources/`, and processes every new in-window item it discovers.
@@ -42,6 +50,12 @@ Each run checks the configured source inspection windows, filters recurring sour
 - `weekly_resource_limit` controls how many recent resource notes are included in the weekly book.
 - YouTube channels use `yt-dlp --flat-playlist` to collect recent video URLs. Preserve explicit channel tabs such as `/streams`; they intentionally restrict discovery to that content type.
 - Channel items whose publication date cannot be resolved are treated as outside the weekly window and skipped, so a transient yt-dlp metadata failure cannot flood a run with the full lookback backlog. Podcast RSS items with missing dates are still included.
+- YouTube blocks datacenter IPs. All yt-dlp calls therefore pin `player_client=ios` (`ytdlp_player_client_args` / `ytdlp_extractor_args` in `scripts/utils.py`), which still serves metadata where the default client returns "Sign in to confirm you're not a bot". Pin exactly one client; passing a fallback list re-triggers the block. Without this, videos lose their publication date and are silently dropped from the weekly window.
+- YouTube caption fetching is separately rate-limited by IP, and the throttling tightens under load. `fetch_youtube_captions` paces requests, retries a blocked video a few times, and stops retrying after a streak of blocked videos so a hardened block cannot add ~25 minutes to a run. From a blocked cloud IP, YouTube transcripts may be unavailable for an entire run even though metadata resolves; podcast sources are unaffected.
+- Audio download is not a workaround for blocked YouTube captions: the ios client exposes no audio-only formats, so Mistral transcription cannot rescue those items.
+- Gemini is the working YouTube fallback from a blocked IP. `scripts/transcription/gemini.py` passes the video URL to the Gemini Interactions API, which fetches the video on Google's servers, so the datacenter IP never touches YouTube. It runs after publisher transcripts and captions and before the audio-download path, and needs `GEMINI_API_KEY`. Settings: `youtube_transcription_provider` (default `gemini`, set to anything else to disable) and `youtube_transcription_model` (default `gemini-3.7-flash`).
+- The Gemini transcript is stored like any other raw transcript, so summaries still come from Mistral and read consistently across podcasts and YouTube.
+- YouTube URL support is a preview feature: free tier allows 8 hours of YouTube video per day, public videos only. A heavy backlog can exceed the daily cap, in which case the remaining items are picked up on the next run.
 - Podcasts use RSS feeds and stable IDs derived from GUID/link/audio URL.
 - `source_type` describes how an item was fetched/transcribed; optional `content_type` describes how the digest should label it, such as YouTube-hosted podcasts.
 - `follow_builders` settings can adapt a compatible JSON feed for podcast transcript ingestion.

@@ -7,7 +7,7 @@ from pathlib import Path
 from typing import Any
 
 from config import Settings, load_settings
-from project_paths import ASSETS, CONFIG, PROMPTS, PUBLIC_LATEST_EPUB, PUBLIC_LATEST_MD, PUBLIC_ONE_SHOT, PUBLIC_WEEKLY, ROOT
+from project_paths import ASSETS, CONFIG, PROMPTS, PUBLIC_LATEST_MD, PUBLIC_ONE_SHOT, PUBLIC_WEEKLY, ROOT
 from source_registry import load_source_registry, source_lookback_count
 from utils import GRAPH_ONLY_HEADINGS, is_url
 

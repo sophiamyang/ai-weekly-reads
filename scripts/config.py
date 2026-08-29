@@ -19,6 +19,8 @@ class Settings:
     summary_mode: str
     transcription_provider: str
     transcription_model: str
+    youtube_transcription_provider: str
+    youtube_transcription_model: str
     include_full_transcripts: bool
     rewrite_full_transcripts: bool
     transcript_rewrite_model: str
@@ -49,6 +51,8 @@ def load_settings(path: Path | None = None) -> Settings:
         summary_mode=raw.get("summary_mode", "batch"),
         transcription_provider=raw.get("transcription_provider", "mistral"),
         transcription_model=raw.get("transcription_model", "voxtral-mini-latest"),
+        youtube_transcription_provider=raw.get("youtube_transcription_provider", "gemini"),
+        youtube_transcription_model=raw.get("youtube_transcription_model", "gemini-3.7-flash"),
         include_full_transcripts=raw.get("include_full_transcripts", False),
         rewrite_full_transcripts=raw.get("rewrite_full_transcripts", False),
         transcript_rewrite_model=raw.get("transcript_rewrite_model", raw.get("summary_model", "mistral-small-latest")),
