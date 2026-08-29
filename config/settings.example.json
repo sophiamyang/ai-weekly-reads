@@ -7,6 +7,8 @@
   "summary_mode": "batch",
   "transcription_provider": "mistral",
   "transcription_model": "voxtral-mini-latest",
+  "youtube_transcription_provider": "gemini",
+  "youtube_transcription_model": "gemini-3.7-flash",
   "include_full_transcripts": false,
   "rewrite_full_transcripts": false,
   "transcript_rewrite_model": "mistral-small-latest",
