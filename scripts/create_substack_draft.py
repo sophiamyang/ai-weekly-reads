@@ -20,6 +20,44 @@ REQUIRED_MARKERS = ("## Contents", "## Reading Notes")
 DATE_MARKERS = ("- **Published:**", "- **Added:**")
 
 
+def _interactive() -> bool:
+    """True when a human is at a terminal who can take over the browser."""
+    return sys.stdin.isatty() and not os.environ.get("SUBSTACK_SID", "").strip()
+
+
+def _prompt_human(message: str) -> None:
+    """Hand control to the operator, or fail loudly when nobody is watching.
+
+    Every manual fallback in this script assumes someone can click in the
+    browser. Unattended (CI), that assumption is false: prompting there would
+    hang until the job timed out, so stop with a message that names the step.
+    """
+    if not _interactive():
+        raise SystemExit(f"Cannot continue without a human: {message}")
+    input(message)
+
+
+def _dump_diagnostics(page, label: str) -> None:
+    """Save what the browser actually saw, so an unattended failure is debuggable.
+
+    The artifact upload collects these, which is the only way to tell a stale
+    selector apart from a session that was silently signed out.
+    """
+    try:
+        target = OUTPUT / "substack"
+        target.mkdir(parents=True, exist_ok=True)
+        print(f"Diagnostics [{label}]: url={page.url}")
+        try:
+            print(f"Diagnostics [{label}]: title={page.title()!r}")
+        except Exception:
+            pass
+        page.screenshot(path=str(target / f"diagnostic-{label}.png"), full_page=True)
+        (target / f"diagnostic-{label}.html").write_text(page.content(), encoding="utf-8")
+        print(f"Diagnostics [{label}]: screenshot and HTML saved under {target}")
+    except Exception as exc:
+        print(f"Diagnostics [{label}] could not be captured: {exc}")
+
+
 @dataclass(frozen=True)
 class DraftPost:
     title: str
@@ -205,8 +243,7 @@ def _create_browser_draft(draft: DraftPost, settings: Settings, *, setup_only: b
 
         page.goto(compose_url, wait_until="domcontentloaded", timeout=60_000)
         if setup_only:
-            print("Log into Substack in the browser window, then press Enter here to save the session.")
-            input()
+            _prompt_human("Log into Substack in the browser window, then press Enter here to save the session.")
             context.close()
             print(f"Substack browser session saved under {user_data_dir}.")
             return
@@ -234,15 +271,18 @@ def _maybe_wait_for_login(page, compose_url: str, timeout_error_type) -> None:
     if _editor_is_visible(page, timeout_error_type, timeout=5_000):
         return
     if not _looks_like_login_gate(page):
+        # Neither a usable editor nor a recognizable login page. That is either
+        # a signed-out state this heuristic does not match or a Substack
+        # redesign, and the two are indistinguishable from the logs alone.
+        _dump_diagnostics(page, "editor-missing")
         return
 
+    _dump_diagnostics(page, "login-gate")
     print("Substack needs you to log in or confirm this browser session.")
-    print("Complete that in the browser, then press Enter here.")
-    input()
+    _prompt_human("Complete that in the browser, then press Enter here.")
     page.goto(compose_url, wait_until="domcontentloaded", timeout=60_000)
     if not _editor_is_visible(page, timeout_error_type, timeout=15_000) and _looks_like_login_gate(page):
-        print("Substack still looks signed out. Complete the login, then press Enter here.")
-        input()
+        _prompt_human("Substack still looks signed out. Complete the login, then press Enter here.")
         page.goto(compose_url, wait_until="domcontentloaded", timeout=60_000)
 
 
@@ -269,7 +309,8 @@ def _fill_title(page, title: str, timeout_error_type) -> None:
             continue
     print("I could not find the title field automatically.")
     print(f"Title to paste manually: {title}")
-    input("Click the Substack title field, paste/type the title, then press Enter here...")
+    _dump_diagnostics(page, "title-field-missing")
+    _prompt_human("Click the Substack title field, paste/type the title, then press Enter here...")
 
 
 def _fill_subtitle(page, subtitle: str, timeout_error_type) -> None:
@@ -320,7 +361,8 @@ def _paste_body(page, draft: DraftPost, timeout_error_type) -> None:
         except Exception:
             continue
     print("Substack did not expose a stable body editor selector, but the full post is on the browser clipboard.")
-    input("Click the Substack body editor, paste, then press Enter here...")
+    _dump_diagnostics(page, "body-editor-missing")
+    _prompt_human("Click the Substack body editor, paste, then press Enter here...")
 
 
 def _publish_post(page, timeout_error_type) -> None:

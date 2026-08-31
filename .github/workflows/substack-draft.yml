@@ -91,13 +91,18 @@ jobs:
           fi
           python scripts/create_substack_draft.py --headless
 
-      - name: Upload the post as an artifact
+      - name: Upload the post and any diagnostics
         # Runs even when drafting fails, so the post is still retrievable and
-        # can be pasted by hand.
+        # can be pasted by hand. On failure this also carries the screenshot and
+        # page HTML captured by the script, which is the only way to tell a
+        # stale selector apart from an expired session.
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: substack-post
-          path: output/substack/*.md
+          path: |
+            output/substack/*.md
+            output/substack/diagnostic-*.png
+            output/substack/diagnostic-*.html
           if-no-files-found: warn
           retention-days: 14
