@@ -88,7 +88,10 @@ Each run checks the configured source inspection windows, filters recurring sour
 
 - Substack has no publishing API, and browser automation cannot reach the network from the cloud runner: Chromium's TLS to the egress proxy is rejected, and the fix needs a CA in Chromium's trust store that cannot be installed there. Do not try to publish to Substack from a cloud session, and never disable certificate verification to force it.
 - The weekly run therefore builds the post and emails it with `scripts/email_substack_post.py`, reusing the Kindle Gmail credentials. Publishing stays a manual paste into the Substack editor.
-- `scripts/create_substack_draft.py` still works locally, where a real browser can log in and reach the network.
+- `scripts/create_substack_draft.py` works locally, where a real browser can log in and reach the network, and in GitHub Actions.
+- `.github/workflows/substack-draft.yml` creates the draft in CI, where the network is unrestricted and Playwright works. It fires on pushes that change `weekly/latest.md`, or manually via workflow_dispatch. It needs repository secret `SUBSTACK_SID` (the `substack.sid` cookie from a logged-in browser); `create_substack_draft.py` authenticates from that cookie when the variable is set and falls back to the local persistent browser profile when it is not.
+- The workflow creates a draft and never publishes. It uploads the post as an artifact even on failure, so a broken run still leaves something to paste by hand.
+- The cookie grants full account access and expires without warning. When a run fails to authenticate, re-export it from the browser rather than assuming the workflow is broken.
 
 ## Commands
 

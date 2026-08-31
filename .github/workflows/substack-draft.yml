@@ -1,0 +1,103 @@
+name: Substack Draft
+
+# Creates a Substack DRAFT from the current weekly edition. It never publishes:
+# review and publish from the Substack dashboard.
+#
+# Runs here rather than in the weekly cloud session because browser automation
+# needs unrestricted network access, which the cloud runner does not have.
+#
+# Requires repository secret SUBSTACK_SID — the `substack.sid` cookie from a
+# logged-in browser. It grants full account access, so keep this repo's secrets
+# tight, and re-export the cookie when a run reports an auth failure.
+
+on:
+  push:
+    branches:
+      - main
+      - "claude/**"
+    paths:
+      - "weekly/latest.md"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: substack-draft
+  cancel-in-progress: false
+
+jobs:
+  draft:
+    name: Create Substack draft
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt -r requirements-substack.txt
+
+      - name: Install Chromium
+        run: python -m playwright install --with-deps chromium
+
+      - name: Write local settings
+        env:
+          PUBLICATION_URL: ${{ vars.SUBSTACK_PUBLICATION_URL || 'https://aiweeklyreads.substack.com' }}
+        run: |
+          python - <<'PY'
+          import json, os
+          settings = json.load(open("config/settings.example.json"))
+          settings["weekly_resource_limit"] = 80
+          settings["substack"].update({
+              "enabled": True,
+              "publication_url": os.environ["PUBLICATION_URL"],
+              "delivery_method": "browser_draft",
+              "auto_publish": False,
+          })
+          json.dump(settings, open("config/settings.json", "w"), indent=2)
+          print("publication:", settings["substack"]["publication_url"])
+          PY
+
+      - name: Build the Substack post
+        run: |
+          python - <<'PY'
+          import sys; sys.path.insert(0, "scripts")
+          from pathlib import Path
+          from config import load_settings
+          from substack import build_substack_post
+          post = build_substack_post(Path("weekly/latest.md"), load_settings(), force=True)
+          if not post:
+              raise SystemExit("No Substack post was generated from weekly/latest.md.")
+          print("post:", post, Path(post).stat().st_size, "bytes")
+          PY
+
+      - name: Create the draft
+        env:
+          SUBSTACK_SID: ${{ secrets.SUBSTACK_SID }}
+        run: |
+          if [ -z "$SUBSTACK_SID" ]; then
+            echo "::error::SUBSTACK_SID secret is not set; cannot authenticate to Substack."
+            exit 1
+          fi
+          python scripts/create_substack_draft.py --headless
+
+      - name: Upload the post as an artifact
+        # Runs even when drafting fails, so the post is still retrievable and
+        # can be pasted by hand.
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: substack-post
+          path: output/substack/*.md
+          if-no-files-found: warn
+          retention-days: 14
