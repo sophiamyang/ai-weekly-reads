@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import os
 import re
 import sys
 from dataclasses import dataclass
@@ -165,14 +166,36 @@ def _create_browser_draft(draft: DraftPost, settings: Settings, *, setup_only: b
     publication_url = _normalized_url(str(substack.get("publication_url") or ""))
     compose_url = str(substack.get("compose_url") or "").strip() or urljoin(publication_url, "publish/post")
     user_data_dir = ROOT / str(substack.get("browser_user_data_dir") or "config/private/substack/browser")
-    user_data_dir.mkdir(parents=True, exist_ok=True)
+
+    # CI has no logged-in browser profile, so authenticate from a session cookie
+    # when one is supplied. Locally the persistent profile stays preferred: it
+    # survives across runs without re-exporting a cookie.
+    session_cookie = os.environ.get("SUBSTACK_SID", "").strip()
 
     with sync_playwright() as playwright:
-        context = playwright.chromium.launch_persistent_context(
-            str(user_data_dir),
-            headless=headless and not setup_only,
-            viewport={"width": 1440, "height": 1000},
-        )
+        if session_cookie:
+            browser = playwright.chromium.launch(headless=True)
+            context = browser.new_context(viewport={"width": 1440, "height": 1000})
+            context.add_cookies(
+                [
+                    {
+                        "name": "substack.sid",
+                        "value": session_cookie,
+                        "domain": ".substack.com",
+                        "path": "/",
+                        "httpOnly": True,
+                        "secure": True,
+                        "sameSite": "Lax",
+                    }
+                ]
+            )
+        else:
+            user_data_dir.mkdir(parents=True, exist_ok=True)
+            context = playwright.chromium.launch_persistent_context(
+                str(user_data_dir),
+                headless=headless and not setup_only,
+                viewport={"width": 1440, "height": 1000},
+            )
         page = context.pages[0] if context.pages else context.new_page()
         for origin in {publication_url.rstrip("/"), "https://substack.com"}:
             try:
@@ -198,8 +221,12 @@ def _create_browser_draft(draft: DraftPost, settings: Settings, *, setup_only: b
             print("Substack post published.")
             return
         print("Substack draft filled in the browser. Review it there, then save/publish manually.")
-        print(f"Browser session: {user_data_dir}")
-        input("Press Enter here when you are done reviewing the draft...")
+        # Substack autosaves the draft, so an unattended run can close straight
+        # away. Only a human at a terminal gets the chance to look first; in CI
+        # this prompt would hang the job until it timed out.
+        if sys.stdin.isatty() and not session_cookie:
+            print(f"Browser session: {user_data_dir}")
+            input("Press Enter here when you are done reviewing the draft...")
         context.close()
 
 
