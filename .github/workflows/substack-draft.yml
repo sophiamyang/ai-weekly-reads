@@ -3,8 +3,10 @@ name: Substack Draft
 # Creates a Substack DRAFT from the current weekly edition. It never publishes:
 # review and publish from the Substack dashboard.
 #
-# Runs here rather than in the weekly cloud session because browser automation
-# needs unrestricted network access, which the cloud runner does not have.
+# Drafts over Substack's JSON API rather than by driving a browser. Substack is
+# behind Cloudflare, which serves a "Just a moment..." challenge to headless
+# browsers from datacenter IPs — GitHub runners included — so browser
+# automation cannot reach the editor here. The API is not challenged.
 #
 # Requires repository secret SUBSTACK_SID — the `substack.sid` cookie from a
 # logged-in browser. It grants full account access, so keep this repo's secrets
@@ -47,9 +49,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt -r requirements-substack.txt
 
-      - name: Install Chromium
-        run: python -m playwright install --with-deps chromium
-
       - name: Write local settings
         env:
           PUBLICATION_URL: ${{ vars.SUBSTACK_PUBLICATION_URL || 'https://aiweeklyreads.substack.com' }}
@@ -89,7 +88,7 @@ jobs:
             echo "::error::SUBSTACK_SID secret is not set; cannot authenticate to Substack."
             exit 1
           fi
-          python scripts/create_substack_draft.py --headless
+          python scripts/post_to_substack.py --no-email-fallback
 
       - name: Upload the post and any diagnostics
         # Runs even when drafting fails, so the post is still retrievable and
