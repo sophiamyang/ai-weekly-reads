@@ -66,7 +66,7 @@ flowchart TD
     F --> G["Local knowledge base\nknowledge_base/resources + raw_transcripts"]
     G --> H["Weekly digest\nMarkdown + EPUB"]
     H --> I["Substack export\noutput/substack/latest.md"]
-    H --> J["Optional delivery\nKindle email + Substack browser publish"]
+    H --> J["Optional delivery\nKindle email + Substack draft"]
     H --> K["GitHub latest\nlatest.* plus weekly/latest.* or one-shot/latest.*"]
     G --> L["Obsidian graph\nresources connected to topic hubs"]
 ```
@@ -288,7 +288,9 @@ The generated graph preset hides storage details such as raw transcripts, source
 - `scripts/pipeline.py`: shared update/build/send workflow
 - `scripts/build_weekly_digest.py`: weekly runner
 - `scripts/build_playlist_digest.py`: one-shot YouTube playlist runner
-- `scripts/create_substack_draft.py`: Substack browser draft/publish automation
+- `scripts/post_to_substack.py`: Substack draft over the JSON API (works from servers)
+- `scripts/create_substack_draft.py`: Substack browser draft automation (local only)
+- `scripts/email_substack_post.py`: emails the generated Substack post to paste manually
 - `scripts/send_to_kindle.py`: Kindle delivery
 - `scripts/resources.py`: resource note writer
 - `scripts/digest.py`: weekly book builder
