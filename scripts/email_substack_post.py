@@ -13,11 +13,10 @@ from email.message import EmailMessage
 from pathlib import Path
 
 from config import load_settings
-from project_paths import OUTPUT, ROOT, ensure_dirs
+from project_paths import ROOT, ensure_dirs
 from send_to_kindle import _configured_email, _gmail_service
+from substack import latest_substack_post
 from utils import load_dotenv
-
-SUBSTACK_DIR = OUTPUT / "substack"
 
 
 def main() -> None:
@@ -30,7 +29,7 @@ def main() -> None:
     load_dotenv(ROOT / ".env")
     settings = load_settings()
 
-    post = Path(args.post) if args.post else _latest_post()
+    post = Path(args.post) if args.post else latest_substack_post()
     if not post or not post.exists():
         raise SystemExit("No Substack post found. Build the weekly digest first.")
 
@@ -81,12 +80,6 @@ def _build_message(post: Path, sender: str, recipient: str, settings) -> EmailMe
     )
     return message
 
-
-def _latest_post() -> Path | None:
-    if not SUBSTACK_DIR.exists():
-        return None
-    posts = [p for p in SUBSTACK_DIR.glob("*.md") if p.name != "latest.md"]
-    return max(posts, key=lambda p: p.stat().st_mtime) if posts else None
 
 
 if __name__ == "__main__":
