@@ -16,21 +16,29 @@ from __future__ import annotations
 import argparse
 import os
 import sys
+from contextlib import contextmanager
 from pathlib import Path
 
 from config import load_settings
-from project_paths import OUTPUT, ROOT, ensure_dirs
+from project_paths import ROOT, ensure_dirs
+from substack import latest_substack_post
 from utils import load_dotenv
 
-SUBSTACK_DIR = OUTPUT / "substack"
 
-
+@contextmanager
 def _load_substack_api():
-    """Import the python-substack package, not this repo's scripts/substack.py.
+    """Yield python-substack's `Api`, not this repo's scripts/substack.py.
 
     Both are importable as `substack`, and the repo's own module wins because
     scripts/ leads sys.path when a script in it runs. Drop that directory (and
-    any cached module) for the duration of the import.
+    any cached module) for the duration of the block.
+
+    The swap has to span every call made on the Api, not just the import:
+    python-substack defers `from substack.post import Post` and `from substack
+    import mdrender` to draft-creation time, and those resolve through
+    sys.modules when they run. Restoring the repo module too early makes them
+    fail. On exit the repo module is put back, so a later `import substack`
+    elsewhere in the pipeline still gets scripts/substack.py.
     """
     script_dir = str(Path(__file__).resolve().parent)
     removed = [p for p in list(sys.path) if p in ("", ".", script_dir)]
@@ -40,12 +48,11 @@ def _load_substack_api():
     try:
         from substack import Api  # noqa: PLC0415 - deliberately late, see docstring
 
-        return Api
+        yield Api
     finally:
         # Evict the library from the module cache, otherwise a later
         # `import substack` elsewhere in the pipeline resolves to it instead of
-        # this repo's scripts/substack.py. The already-imported Api class keeps
-        # working regardless.
+        # this repo's scripts/substack.py.
         for name in [n for n in sys.modules if n == "substack" or n.startswith("substack.")]:
             sys.modules.pop(name, None)
         sys.modules.update(shadowed)
@@ -66,7 +73,7 @@ def main() -> int:
     load_dotenv(ROOT / ".env")
     settings = load_settings()
 
-    post = Path(args.post) if args.post else _latest_post()
+    post = Path(args.post) if args.post else latest_substack_post()
     if not post or not post.exists():
         print("No Substack post found. Build the weekly digest first.", file=sys.stderr)
         return 1
@@ -92,16 +99,24 @@ def create_draft(post: Path, settings) -> str:
     if not publication_url:
         raise RuntimeError("Missing substack.publication_url in config/settings.json.")
 
-    api_cls = _load_substack_api()
-    api = api_cls(publication_url=publication_url, cookies_string=f"substack.sid={cookie}")
-
     title, subtitle, body = _split_post(post.read_text(encoding="utf-8"))
     print(f"Creating draft: {title!r} ({len(body)} chars)")
 
-    draft = api.create_draft_from_markdown(body, title=title, subtitle=subtitle, publish=False)
-    draft_id = draft.get("id")
+    with _load_substack_api() as api_cls:
+        api = api_cls(publication_url=publication_url, cookies_string=f"substack.sid={cookie}")
+        # Pass everything by keyword: create_draft_from_markdown takes
+        # (title, markdown, ...), so a positional body silently lands in title.
+        result = api.create_draft_from_markdown(
+            title=title,
+            markdown=body,
+            subtitle=subtitle,
+            publish=False,
+        )
+
+    # The draft is returned alongside the tag/prepublish/publish results.
+    draft_id = (result.get("draft") or {}).get("id")
     if not draft_id:
-        raise RuntimeError(f"Substack accepted the request but returned no draft id: {draft}")
+        raise RuntimeError(f"Substack accepted the request but returned no draft id: {result}")
     return f"{publication_url}/publish/post/{draft_id}"
 
 
@@ -137,13 +152,6 @@ def _email_fallback(post: Path, settings) -> None:
         print(send_substack_post(post, settings))
     except Exception as exc:
         print(f"Email fallback also failed: {exc}", file=sys.stderr)
-
-
-def _latest_post() -> Path | None:
-    if not SUBSTACK_DIR.exists():
-        return None
-    posts = [p for p in SUBSTACK_DIR.glob("*.md") if p.name != "latest.md"]
-    return max(posts, key=lambda p: p.stat().st_mtime) if posts else None
 
 
 if __name__ == "__main__":
