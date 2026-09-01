@@ -50,12 +50,12 @@ Each run checks the configured source inspection windows, filters recurring sour
 - `weekly_resource_limit` controls how many recent resource notes are included in the weekly book.
 - YouTube channels use `yt-dlp --flat-playlist` to collect recent video URLs. Preserve explicit channel tabs such as `/streams`; they intentionally restrict discovery to that content type.
 - Channel items whose publication date cannot be resolved are treated as outside the weekly window and skipped, so a transient yt-dlp metadata failure cannot flood a run with the full lookback backlog. Podcast RSS items with missing dates are still included.
-- YouTube blocks datacenter IPs. All yt-dlp calls therefore pin `player_client=ios` (`ytdlp_player_client_args` / `ytdlp_extractor_args` in `scripts/utils.py`), which still serves metadata where the default client returns "Sign in to confirm you're not a bot". Pin exactly one client; passing a fallback list re-triggers the block. Without this, videos lose their publication date and are silently dropped from the weekly window.
-- YouTube caption fetching is separately rate-limited by IP, and the throttling tightens under load. `fetch_youtube_captions` paces requests, retries a blocked video a few times, and stops retrying after a streak of blocked videos so a hardened block cannot add ~25 minutes to a run. From a blocked cloud IP, YouTube transcripts may be unavailable for an entire run even though metadata resolves; podcast sources are unaffected.
-- Audio download is not a workaround for blocked YouTube captions: the ios client exposes no audio-only formats, so Mistral transcription cannot rescue those items.
-- Gemini is the working YouTube fallback from a blocked IP. `scripts/transcription/gemini.py` passes the video URL to the Gemini Interactions API, which fetches the video on Google's servers, so the datacenter IP never touches YouTube. It runs after publisher transcripts and captions and before the audio-download path, and needs `GEMINI_API_KEY`. Settings: `youtube_transcription_provider` (default `gemini`, set to anything else to disable) and `youtube_transcription_model` (default `gemini-3.7-flash`).
-- The Gemini transcript is stored like any other raw transcript, so summaries still come from Mistral and read consistently across podcasts and YouTube.
-- YouTube URL support is a preview feature: free tier allows 8 hours of YouTube video per day, public videos only. A heavy backlog can exceed the daily cap, in which case the remaining items are picked up on the next run.
+- Transcript acquisition constraints (YouTube bot checks, caption throttling, the Gemini fallback, podcast RSS handling) are documented in the reusable `youtube-transcripts` and `podcast-transcripts` skills. The essentials this pipeline depends on are repeated below so a run never depends on those being loaded.
+- All yt-dlp calls pin `player_client=ios` (`ytdlp_player_client_args` / `ytdlp_extractor_args` in `scripts/utils.py`); exactly one client, since a fallback list re-triggers the block. Without it videos lose their publication date and are silently dropped from the weekly window.
+- `fetch_youtube_captions` paces requests, retries a blocked video, and circuit-breaks after a streak so a hardened block cannot add ~25 minutes to a run.
+- `scripts/transcription/gemini.py` is the working fallback from a blocked IP: it hands the video URL to the Gemini Interactions API, which fetches server-side. Needs `GEMINI_API_KEY`. Settings: `youtube_transcription_provider` (default `gemini`) and `youtube_transcription_model` (default `gemini-3.7-flash`). Free tier allows 8 hours of video per day; a heavy backlog rolls to the next run.
+- Its output is stored as an ordinary raw transcript, so summaries still come from Mistral and read consistently across sources.
+- Audio download is not a workaround for blocked captions: the ios client exposes no audio-only formats.
 - Podcasts use RSS feeds and stable IDs derived from GUID/link/audio URL.
 - `source_type` describes how an item was fetched/transcribed; optional `content_type` describes how the digest should label it, such as YouTube-hosted podcasts.
 - `follow_builders` settings can adapt a compatible JSON feed for podcast transcript ingestion.
@@ -73,6 +73,8 @@ Each run checks the configured source inspection windows, filters recurring sour
 
 ## Kindle Delivery
 
+General Kindle/Gmail mechanics are in the reusable `kindle-delivery` skill. Project specifics:
+
 - Keep personal delivery values in `.env`, especially `KINDLE_EMAIL` and `KINDLE_SENDER_EMAIL`; do not commit real Kindle addresses, OAuth credentials, OAuth tokens, or app passwords.
 - Preferred Gmail delivery uses `KINDLE_DELIVERY_METHOD=gmail_api`, `GMAIL_CREDENTIALS_PATH=config/private/gmail_credentials.json`, and `GMAIL_TOKEN_PATH=config/private/gmail_token.json`.
 - Run `.venv/bin/python scripts/setup_gmail_oauth.py` after downloading a Google OAuth Desktop app client JSON.
@@ -86,14 +88,14 @@ Each run checks the configured source inspection windows, filters recurring sour
 
 ## Substack
 
-- Substack has no publishing API, and browser automation cannot reach the network from the cloud runner: Chromium's TLS to the egress proxy is rejected, and the fix needs a CA in Chromium's trust store that cannot be installed there. Do not try to publish to Substack from a cloud session, and never disable certificate verification to force it.
-- The weekly run therefore builds the post and emails it with `scripts/email_substack_post.py`, reusing the Kindle Gmail credentials. Publishing stays a manual paste into the Substack editor.
-- `scripts/create_substack_draft.py` works locally, where a real browser can log in and reach the network, and in GitHub Actions.
-- Substack is behind Cloudflare, and which IP the request comes from decides everything. GitHub Actions runner IPs are challenged on both HTML pages and the JSON API, so drafting cannot run from Actions at all; do not add a workflow for it. This cloud environment's IP and a residential IP are not challenged.
-- `scripts/post_to_substack.py` drafts over the JSON API using the `python-substack` package and the `substack.sid` cookie in `SUBSTACK_SID`. Run it from the weekly cloud session, which is not challenged. It creates a draft and never publishes, and falls back to emailing the post when drafting fails.
-- Note that `scripts/substack.py` shadows the `python-substack` package; `post_to_substack.py` imports the library with the repo's own scripts directory temporarily off `sys.path`, then evicts it from the module cache so later `import substack` still resolves to the repo module.
-- `scripts/create_substack_draft.py` drives a browser and only works locally, from a residential IP.
-- The cookie grants full account access and expires without warning. When a run fails to authenticate, re-export it from the browser rather than assuming the workflow is broken.
+Full background is in the reusable `substack-publishing` skill. What this pipeline needs:
+
+- Substack has no publishing API. Its Cloudflare protection keys on the **source IP**: this cloud environment and a residential IP are not challenged; GitHub Actions runner IPs are challenged on both HTML and the JSON API. Do not move drafting to Actions — a workflow for it was tried and removed. Never try to defeat the challenge or disable certificate verification.
+- `scripts/post_to_substack.py` drafts over the JSON API using the `python-substack` package and the `substack.sid` cookie in `SUBSTACK_SID`. Run it from the weekly cloud session. It creates a draft and never publishes; the user reviews and publishes.
+- `scripts/substack.py` shadows the `python-substack` package. `post_to_substack.py` imports the library with the scripts directory temporarily off `sys.path`, then evicts it from the module cache so later `import substack` still resolves to the repo module. Preserve that guard.
+- On failure it falls back to `scripts/email_substack_post.py`, which emails the post using the Kindle Gmail credentials. A failed draft is never a reason to abandon the run.
+- The cookie grants full account access and expires without warning. A 401/403 means re-export it from the browser, not that the pipeline is broken.
+- `scripts/create_substack_draft.py` drives a browser and works only locally, from a residential IP. It contains interactive prompts routed through a helper that fails loudly when no terminal is attached.
 
 ## Commands
 

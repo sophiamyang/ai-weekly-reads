@@ -19,6 +19,14 @@ PLAYLIST_INTRO = (
 )
 
 
+def latest_substack_post() -> Path | None:
+    """Newest generated Substack post, ignoring the rolling `latest.md` alias."""
+    if not SUBSTACK_OUTPUT.exists():
+        return None
+    posts = [path for path in SUBSTACK_OUTPUT.glob("*.md") if path.name != "latest.md"]
+    return max(posts, key=lambda path: path.stat().st_mtime) if posts else None
+
+
 def build_substack_post(digest_path: Path, settings: Settings, *, force: bool = False) -> Path | None:
     substack = settings.substack
     if not force and not substack.get("enabled"):
