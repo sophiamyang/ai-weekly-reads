@@ -33,12 +33,12 @@ Work from the AI Weekly Reads repository root.
 
 ## Cloud Knowledge-Base Persistence
 
-The knowledge base persists across ephemeral cloud sessions in the private repo `sophiamyang/ai-weekly-reads-kb`, nested as a second git repo at `knowledge_base/.git` inside this checkout. The main repo keeps tracking `knowledge_base/Home.md`, `README.md`, and `templates/`; the KB repo tracks the generated stores (`raw_transcripts/`, `resources/`, `weekly_books/`, `sources/`, `people/`, `topics/`, `indexes/`) and ignores the main-repo-owned files via its own `.gitignore`.
+The knowledge base persists across ephemeral cloud sessions in the private repo `sophiamyang/ai-knowledge-base`, nested as a second git repo at `knowledge_base/.git` inside this checkout. That repo is a shared store, not owned by this pipeline — other workflows publish transcripts and notes into it too, so treat its note schema as a contract (documented in its `KB_README.md`) rather than something to change unilaterally, and never assume every note there came from this pipeline. The main repo keeps tracking `knowledge_base/Home.md`, `README.md`, and `templates/`; the KB repo tracks the generated stores (`raw_transcripts/`, `resources/`, `weekly_books/`, `sources/`, `people/`, `topics/`, `indexes/`) and ignores the main-repo-owned files via its own `.gitignore`.
 
-- At session start (if the environment setup script has not already done it): attach `sophiamyang/ai-weekly-reads-kb` with push access, then from the checkout root run:
+- At session start (if the environment setup script has not already done it): attach `sophiamyang/ai-knowledge-base` with push access, then from the checkout root run:
 
   ```bash
-  git clone https://github.com/sophiamyang/ai-weekly-reads-kb /tmp/kb && \
+  git clone https://github.com/sophiamyang/ai-knowledge-base /tmp/kb && \
     mv /tmp/kb/.git knowledge_base/.git && rm -rf /tmp/kb && \
     git -C knowledge_base checkout -- .
   git -C knowledge_base config remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*' && \
