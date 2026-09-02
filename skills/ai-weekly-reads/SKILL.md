@@ -35,7 +35,18 @@ Work from the AI Weekly Reads repository root.
 
 The knowledge base persists across ephemeral cloud sessions in the private repo `sophiamyang/ai-weekly-reads-kb`, nested as a second git repo at `knowledge_base/.git` inside this checkout. The main repo keeps tracking `knowledge_base/Home.md`, `README.md`, and `templates/`; the KB repo tracks the generated stores (`raw_transcripts/`, `resources/`, `weekly_books/`, `sources/`, `people/`, `topics/`, `indexes/`) and ignores the main-repo-owned files via its own `.gitignore`.
 
-- At session start (if the environment setup script has not already done it): attach `sophiamyang/ai-weekly-reads-kb` with push access, then from the checkout root run `git clone https://github.com/sophiamyang/ai-weekly-reads-kb /tmp/kb && mv /tmp/kb/.git knowledge_base/.git && rm -rf /tmp/kb && git -C knowledge_base checkout -- .` to restore prior state so already-processed items are skipped.
+- At session start (if the environment setup script has not already done it): attach `sophiamyang/ai-weekly-reads-kb` with push access, then from the checkout root run:
+
+  ```bash
+  git clone https://github.com/sophiamyang/ai-weekly-reads-kb /tmp/kb && \
+    mv /tmp/kb/.git knowledge_base/.git && rm -rf /tmp/kb && \
+    git -C knowledge_base checkout -- .
+  git -C knowledge_base config remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*' && \
+    git -C knowledge_base fetch origin
+  ```
+
+  The second command asserts the fetch refspec. A plain clone sets it, but a `.git` assembled any other way (`init` + `remote add` + `pull`) leaves it unset, and then `origin/main` never exists: `git status` cannot report ahead/behind and the only way to tell whether the KB is pushed is `git ls-remote`. It is idempotent, so run it unconditionally.
+- Verify the restore before processing anything: `git -C knowledge_base status -sb` should print `## main...origin/main`, and `knowledge_base/resources/` should already be populated. An empty `resources/` means the restore failed, and the run will re-transcribe everything it has already done — burning the Gemini daily quota and the caption rate limit for nothing.
 - After a successful weekly run: commit and push `knowledge_base/` to the KB repo's `main` branch (message like "Weekly knowledge-base update YYYY-MM-DD") in addition to the normal public-edition commit in the main repo.
 - The KB repo must stay private: `raw_transcripts/` holds verbatim third-party content that must never be published in the public repo or editions.
 
