@@ -143,13 +143,12 @@ It does **not** email Kindle or publish to Substack by default.
 
 ### Optional Distribution
 
-Use explicit follow-up commands when you want personal delivery or browser-based publishing:
+Use explicit follow-up commands when you want personal delivery or a Substack draft:
 
 ```bash
 .venv/bin/python scripts/send_latest_to_kindle.py
 .venv/bin/python scripts/send_latest_to_kindle.py --force
-PLAYWRIGHT_BROWSERS_PATH=.venv-substack/ms-playwright .venv-substack/bin/python scripts/create_substack_draft.py
-PLAYWRIGHT_BROWSERS_PATH=.venv-substack/ms-playwright .venv-substack/bin/python scripts/create_substack_draft.py --publish
+.venv/bin/python scripts/post_to_substack.py
 ```
 
 If you want one command that builds and then sends to Kindle, use:
@@ -166,12 +165,6 @@ Process a one-shot YouTube playlist:
 ```
 
 That command also refreshes the rolling public one-shot artifacts at `one-shot/latest.md` and `one-shot/latest.epub`, and it updates the top-level `latest.md` and `latest.epub` pointers to that one-shot edition.
-
-Publish the latest Substack post with the saved browser profile:
-
-```bash
-PLAYWRIGHT_BROWSERS_PATH=.venv-substack/ms-playwright .venv-substack/bin/python scripts/create_substack_draft.py --publish
-```
 
 ## Setup
 
@@ -255,18 +248,24 @@ Successful sends are recorded in `output/_metadata/kindle_delivery.json` so the 
 Substack support has two separate steps:
 
 1. Generate a Substack-ready Markdown post at `output/substack/latest.md`
-2. Optionally publish it through a dedicated Playwright browser profile
+2. Create a draft over Substack's JSON API
 
-Local setup:
+Setup:
 
 ```bash
-python3 -m venv .venv-substack
-.venv-substack/bin/pip install -r requirements-substack.txt
-PLAYWRIGHT_BROWSERS_PATH=.venv-substack/ms-playwright .venv-substack/bin/playwright install chromium
-PLAYWRIGHT_BROWSERS_PATH=.venv-substack/ms-playwright .venv-substack/bin/python scripts/create_substack_draft.py --setup
+.venv/bin/pip install -r requirements-substack.txt
+export SUBSTACK_SID=...   # the substack.sid cookie from a logged-in browser
+.venv/bin/python scripts/post_to_substack.py
 ```
 
-The browser session is stored under `config/private/substack/browser` and ignored by Git. You should only need to log in again if Substack expires or challenges the session.
+This creates a draft and never publishes; review and publish from Substack.
+
+Where the request comes from decides whether it works. Substack sits behind
+Cloudflare, which challenges GitHub Actions runners on both HTML and the JSON
+API, while a laptop or a general cloud container is usually let through. A
+response body containing `Just a moment...` means the IP is challenged — run it
+somewhere else rather than trying to defeat it. If drafting fails for any other
+reason, the post is emailed instead, so an edition is never stranded.
 
 ## Obsidian Knowledge Base
 
@@ -290,7 +289,6 @@ The generated graph preset hides storage details such as raw transcripts, source
 - `scripts/build_weekly_digest.py`: weekly runner
 - `scripts/build_playlist_digest.py`: one-shot YouTube playlist runner
 - `scripts/post_to_substack.py`: Substack draft over the JSON API (works from servers)
-- `scripts/create_substack_draft.py`: Substack browser draft automation (local only)
 - `scripts/email_substack_post.py`: emails the generated Substack post to paste manually
 - `scripts/send_to_kindle.py`: Kindle delivery
 - `scripts/resources.py`: resource note writer

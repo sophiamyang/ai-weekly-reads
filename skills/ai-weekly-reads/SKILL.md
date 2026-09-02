@@ -109,7 +109,6 @@ Full background is in the reusable `substack-publishing` skill. What this pipeli
 - `create_draft_from_markdown` takes `(title, markdown, ...)`. Pass by keyword; a positional body silently lands in the title. The draft is returned nested under `draft`, not as a top-level `id`. `python-substack` is pinned to `>=0.6,<0.7` because the API surface changed across releases.
 - On failure it falls back to `scripts/email_substack_post.py`, which emails the post using the Kindle Gmail credentials. A failed draft is never a reason to abandon the run.
 - The cookie grants full account access and expires without warning. A 401/403 means re-export it from the browser, not that the pipeline is broken.
-- `scripts/create_substack_draft.py` drives a browser and works only locally, from a residential IP. It contains interactive prompts routed through a helper that fails loudly when no terminal is attached.
 
 ## Commands
 
