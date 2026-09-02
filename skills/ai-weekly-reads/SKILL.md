@@ -52,6 +52,8 @@ The knowledge base persists across ephemeral cloud sessions in the private repo 
 
 ## Weekly Discovery
 
+Items that are discovered but never produce a transcript are recorded in `knowledge_base/unresolved.json`, which the private KB repo tracks. This exists because `output/_metadata/last_run.json` is gitignored and overwritten every run, so without it a failed item leaves no trace and is never rediscovered once the publication window moves past it — a silent loss. Each run retries up to `MAX_RETRIES_PER_RUN` of those, oldest first and ignoring the publication window, gives up after `MAX_ATTEMPTS`, and `scripts/audit_knowledge_base.py` reports anything abandoned. Retries are capped because they compete with new content for the same daily Gemini quota.
+
 Each run checks the configured source inspection windows, filters recurring sources to the configured publication window, computes stable IDs, skips resources that already exist in `knowledge_base/resources/`, and processes every new in-window item it discovers.
 
 - Use `publication_window_days` in `config/settings.json` for the weekly publishing window; the default is 7.

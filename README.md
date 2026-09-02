@@ -110,6 +110,7 @@ The summary and output stage is identical after that point. Both source types en
 - `output/substack/latest.md`: current Substack-ready post
 - `knowledge_base/resources/`: local clean reading notes for Obsidian
 - `knowledge_base/raw_transcripts/`: local raw transcript/text archive
+- `knowledge_base/unresolved.json`: items discovered but not yet transcribed, retried on later runs
 
 ## Weekly Run
 

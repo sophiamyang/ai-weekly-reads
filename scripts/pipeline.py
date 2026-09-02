@@ -14,6 +14,7 @@ from mistral_batch import SummaryBatchItem, summarize_with_mistral_batch
 from project_paths import INBOX, METADATA
 from public_epub import publish_public_epub
 from resources import find_resource, is_summarized_resource, list_resources, write_resource
+from unresolved import abandoned_items, clear_resolved, load_unresolved, record_unavailable, retryable_items
 from send_to_kindle import maybe_send_to_kindle
 from source_registry import RegistryLink, load_source_registry, registry_links, registry_youtube_channels
 from sources import MediaItem, read_inbox, resolve_link
@@ -35,6 +36,7 @@ class RunStats:
     placeholder_summaries: int = 0
     skipped_outside_window: int = 0
     skipped_missing_date: int = 0
+    retried_unresolved: int = 0
 
 
 @dataclass(frozen=True)
@@ -65,9 +67,14 @@ def update_knowledge_base(settings: Settings) -> RunStats:
             row["summary_path"] = ""
             row["resource_path"] = ""
             metadata.append(row)
+            # Record it durably: last_run.json is gitignored and overwritten, so
+            # without this the item vanishes once the publication window moves.
+            record_unavailable(item, "no transcript could be obtained")
             print(f"Skipping resource without transcript: {item.title}")
             stats.unavailable_transcripts += 1
             continue
+
+        clear_resolved(item.id)
 
         existing_resource = find_resource(item.id)
         if existing_resource and is_summarized_resource(existing_resource):
@@ -142,6 +149,18 @@ def discover_items(settings: Settings, publication_cutoff: date | None, stats: R
 
     items: list[MediaItem] = []
     seen_item_ids: set[str] = set()
+
+    # Previously failed items first, and without the window filter: they were in
+    # the window when discovered, and the window has since moved past them. Both
+    # collections are seeded here so ordinary discovery dedupes against them.
+    for item in retryable_items():
+        if item.id in seen_item_ids:
+            continue
+        print(f"Retrying previously unavailable item: {item.title or item.url}")
+        items.append(item)
+        seen_item_ids.add(item.id)
+        stats.retried_unresolved += 1
+
     for item in follow_builders_items(settings):
         _add_item(item, settings, publication_cutoff, stats, items, seen_item_ids, filter_by_publication_window=True)
 
@@ -223,6 +242,13 @@ def print_run_summary(stats: RunStats, weekly_resource_count: int | None = None)
     print(f"- skipped outside publication window: {stats.skipped_outside_window}")
     if stats.skipped_missing_date:
         print(f"- skipped without resolvable publication date: {stats.skipped_missing_date}")
+    if stats.retried_unresolved:
+        print(f"- retried previously unavailable items: {stats.retried_unresolved}")
+    outstanding = len(load_unresolved())
+    if outstanding:
+        abandoned = len(abandoned_items())
+        note = f" ({abandoned} past the retry limit)" if abandoned else ""
+        print(f"- items still without a transcript: {outstanding}{note}")
     if weekly_resource_count is not None:
         print(f"- weekly resources included: {weekly_resource_count}")
 
