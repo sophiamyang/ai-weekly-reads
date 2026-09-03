@@ -22,3 +22,5 @@ knowledge_base/topics/
 knowledge_base/indexes/
 knowledge_base/.gitignore
 knowledge_base/KB_README.md
+# Tracked by the private knowledge-base repo, not this public one
+knowledge_base/unresolved.json

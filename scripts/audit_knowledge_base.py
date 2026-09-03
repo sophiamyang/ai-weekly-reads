@@ -7,6 +7,7 @@ from obsidian_metadata import is_operational_tag, resource_tags
 from project_paths import INDEXES, METADATA, RAW_TRANSCRIPTS, RESOURCES, WEEKLY_BOOKS
 from resources import is_summarized_resource
 from transcript_store import read_transcript_text
+from unresolved import abandoned_items, load_unresolved
 from utils import read_json, read_text, split_frontmatter
 
 
@@ -54,7 +55,17 @@ def main() -> None:
     print(f"Raw transcripts: {len(transcript_paths)} total")
     print(f"Weekly books: {len(weekly_books)}")
     print(f"Last run items: {len(last_run) if isinstance(last_run, list) else 0}")
+
+    unresolved = load_unresolved()
+    if unresolved:
+        abandoned = abandoned_items()
+        print(f"Unresolved items: {len(unresolved)} without a transcript, {len(abandoned)} past the retry limit")
     print("")
+    _print_issues(
+        "Items abandoned without a transcript",
+        [f"{e.get('title') or e.get('url')} ({e.get('attempts')} attempts, first seen {e.get('first_seen')})"
+         for e in abandoned_items()],
+    )
     _print_issues("Duplicate resource ids", _duplicates(resource_ids))
     _print_issues("Duplicate transcript ids", _duplicates(transcript_ids))
     _print_issues("Duplicate resource titles", _duplicates(resource_keys))

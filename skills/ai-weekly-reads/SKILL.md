@@ -33,12 +33,12 @@ Work from the AI Weekly Reads repository root.
 
 ## Cloud Knowledge-Base Persistence
 
-The knowledge base persists across ephemeral cloud sessions in the private repo `sophiamyang/ai-weekly-reads-kb`, nested as a second git repo at `knowledge_base/.git` inside this checkout. The main repo keeps tracking `knowledge_base/Home.md`, `README.md`, and `templates/`; the KB repo tracks the generated stores (`raw_transcripts/`, `resources/`, `weekly_books/`, `sources/`, `people/`, `topics/`, `indexes/`) and ignores the main-repo-owned files via its own `.gitignore`.
+The knowledge base persists across ephemeral cloud sessions in the private repo `sophiamyang/ai-knowledge-base`, nested as a second git repo at `knowledge_base/.git` inside this checkout. That repo is a shared store, not owned by this pipeline — other workflows publish transcripts and notes into it too, so treat its note schema as a contract (documented in its `KB_README.md`) rather than something to change unilaterally, and never assume every note there came from this pipeline. The main repo keeps tracking `knowledge_base/Home.md`, `README.md`, and `templates/`; the KB repo tracks the generated stores (`raw_transcripts/`, `resources/`, `weekly_books/`, `sources/`, `people/`, `topics/`, `indexes/`) and ignores the main-repo-owned files via its own `.gitignore`.
 
-- At session start (if the environment setup script has not already done it): attach `sophiamyang/ai-weekly-reads-kb` with push access, then from the checkout root run:
+- At session start (if the environment setup script has not already done it): attach `sophiamyang/ai-knowledge-base` with push access, then from the checkout root run:
 
   ```bash
-  git clone https://github.com/sophiamyang/ai-weekly-reads-kb /tmp/kb && \
+  git clone https://github.com/sophiamyang/ai-knowledge-base /tmp/kb && \
     mv /tmp/kb/.git knowledge_base/.git && rm -rf /tmp/kb && \
     git -C knowledge_base checkout -- .
   git -C knowledge_base config remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*' && \
@@ -51,6 +51,8 @@ The knowledge base persists across ephemeral cloud sessions in the private repo 
 - The KB repo must stay private: `raw_transcripts/` holds verbatim third-party content that must never be published in the public repo or editions.
 
 ## Weekly Discovery
+
+Items that are discovered but never produce a transcript are recorded in `knowledge_base/unresolved.json`, which the private KB repo tracks. This exists because `output/_metadata/last_run.json` is gitignored and overwritten every run, so without it a failed item leaves no trace and is never rediscovered once the publication window moves past it — a silent loss. Each run retries up to `MAX_RETRIES_PER_RUN` of those, oldest first and ignoring the publication window, gives up after `MAX_ATTEMPTS`, and `scripts/audit_knowledge_base.py` reports anything abandoned. Retries are capped because they compete with new content for the same daily Gemini quota.
 
 Each run checks the configured source inspection windows, filters recurring sources to the configured publication window, computes stable IDs, skips resources that already exist in `knowledge_base/resources/`, and processes every new in-window item it discovers.
 
@@ -107,7 +109,6 @@ Full background is in the reusable `substack-publishing` skill. What this pipeli
 - `create_draft_from_markdown` takes `(title, markdown, ...)`. Pass by keyword; a positional body silently lands in the title. The draft is returned nested under `draft`, not as a top-level `id`. `python-substack` is pinned to `>=0.6,<0.7` because the API surface changed across releases.
 - On failure it falls back to `scripts/email_substack_post.py`, which emails the post using the Kindle Gmail credentials. A failed draft is never a reason to abandon the run.
 - The cookie grants full account access and expires without warning. A 401/403 means re-export it from the browser, not that the pipeline is broken.
-- `scripts/create_substack_draft.py` drives a browser and works only locally, from a residential IP. It contains interactive prompts routed through a helper that fails loudly when no terminal is attached.
 
 ## Commands
 
