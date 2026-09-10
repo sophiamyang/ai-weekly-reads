@@ -183,3 +183,16 @@ def test_clean_line_still_strips_real_timestamps() -> None:
     assert transcript_sanitizer._clean_line("00:01:02 here we go") == "here we go"
     assert transcript_sanitizer._clean_line("02:30 here we go") == "here we go"
     assert transcript_sanitizer._clean_line("00:02:03") == ""
+
+
+def test_looks_incomplete_flags_truncation_at_any_length() -> None:
+    import audit_knowledge_base as audit
+
+    long_cut_off = " ".join(["word"] * 3000) + " thanks for being here and"
+    short_complete = " ".join(["word"] * 180) + " lead the way."
+
+    assert audit._looks_incomplete(long_cut_off)          # 3000 words, still cut off
+    assert not audit._looks_incomplete(short_complete)    # 180 words, but finished
+    assert audit._looks_incomplete("")
+    assert audit._looks_incomplete("a stub of only a few words.")
+    assert not audit._looks_incomplete(" ".join(["word"] * 100) + ' he said "yes."')

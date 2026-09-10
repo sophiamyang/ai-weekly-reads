@@ -45,7 +45,7 @@ def main() -> None:
         if fields.get("raw_transcript") and not _raw_transcript_link_exists(str(fields.get("raw_transcript")))
     ]
     placeholders = [path for path in resource_paths if _has_placeholder(path)]
-    short_transcripts = [path for path in transcript_paths if len(read_transcript_text(path).split()) < 250]
+    short_transcripts = [path for path in transcript_paths if _looks_incomplete(read_transcript_text(path))]
     metadata_issues = _metadata_issues(resource_paths, transcript_paths, weekly_books)
     graph_issues = _graph_issues(resource_paths, weekly_books)
 
@@ -73,7 +73,7 @@ def main() -> None:
     _print_paths("Resources missing raw transcripts", missing_raw)
     _print_paths("Resources with broken raw transcript links", broken_raw_links)
     _print_paths("Resources with placeholder summaries", placeholders)
-    _print_paths("Very short raw transcripts", short_transcripts)
+    _print_paths("Truncated or stub raw transcripts", short_transcripts)
     _print_issues("Obsidian metadata issues", metadata_issues)
     _print_issues("Obsidian graph issues", graph_issues)
     if not any(
@@ -91,6 +91,35 @@ def main() -> None:
         ]
     ):
         print("No audit issues found.")
+
+
+# A short transcript is not the same as a broken one. Publishers post genuine
+# 1-2 minute clips: two Stanford Online overviews here run 1m12s and 1m33s and
+# transcribe to 180 and 194 words, which is 125-150 words per minute — a normal
+# speaking pace and a complete transcript. Flagging those every week trains the
+# reader to ignore the audit, which costs more than the check is worth.
+#
+# Flag instead what actually indicates a problem: a stub too short to be any
+# real item, or text that stops mid-sentence, which is what truncation looks
+# like.
+STUB_TRANSCRIPT_WORDS = 60
+_SENTENCE_ENDINGS = '.?!"\')]’”'
+
+
+def _looks_incomplete(text: str) -> bool:
+    """A stub, or text that stops mid-sentence.
+
+    Length alone was the wrong signal in both directions. It flagged two
+    complete 1-2 minute clips every run, and it missed five transcripts of
+    1,800-4,300 words that simply stop mid-sentence ("...thanks for being here
+    and"), which is what a cut-off transcription actually looks like.
+    """
+    stripped = text.strip()
+    if not stripped:
+        return True
+    if len(stripped.split()) < STUB_TRANSCRIPT_WORDS:
+        return True
+    return stripped[-1] not in _SENTENCE_ENDINGS
 
 
 def _fields(path: Path) -> dict:
