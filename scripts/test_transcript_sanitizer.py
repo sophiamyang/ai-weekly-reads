@@ -110,3 +110,89 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
+
+def test_format_for_storage_changes_no_words() -> None:
+    """The invariant that matters: reflowing must never alter the text itself."""
+    raw = (
+        "One unbroken wall of speech that goes on and on. It has several sentences. "
+        "Each of them should survive intact. Even this one, with an aside — like so. "
+    ) * 40
+
+    formatted = transcript_sanitizer.format_for_storage(raw)
+
+    squash = lambda text: "".join(text.split())
+    assert squash(formatted) == squash(raw)
+
+
+def test_format_for_storage_breaks_a_wall_into_paragraphs() -> None:
+    raw = " ".join(f"Sentence number {n} says something." for n in range(200))
+
+    formatted = transcript_sanitizer.format_for_storage(raw)
+    paragraphs = formatted.split("\n\n")
+
+    assert len(paragraphs) > 5
+    assert max(len(p.split()) for p in paragraphs) <= 150
+
+
+def test_format_for_storage_does_not_invent_speakers() -> None:
+    """Measured across the vault, a loose `Name:` rule matched 36 false speakers
+    and zero real ones — section headings and mid-sentence colons. Only explicit
+    diarization markers may be labelled."""
+    raw = (
+        "Introduction: this is a heading, not a speaker.\n"
+        "My current advice to founders is: ship earlier than feels right.\n"
+    )
+
+    formatted = transcript_sanitizer.format_for_storage(raw)
+
+    assert "**Introduction:**" not in formatted
+    assert "**My current advice to founders is:**" not in formatted
+    assert "Introduction: this is a heading" in formatted
+
+
+def test_format_for_storage_keeps_explicit_speaker_markers() -> None:
+    raw = "Speaker_1: first turn here.\n\nSPEAKER 2: second turn here."
+
+    formatted = transcript_sanitizer.format_for_storage(raw)
+
+    assert "**Speaker_1:** first turn here." in formatted
+    assert "**SPEAKER 2:** second turn here." in formatted
+
+
+def test_format_for_storage_is_idempotent() -> None:
+    raw = " ".join(f"Sentence number {n} says something." for n in range(120))
+
+    once = transcript_sanitizer.format_for_storage(raw)
+    twice = transcript_sanitizer.format_for_storage(once)
+
+    assert once == twice
+
+
+def test_clean_line_keeps_spoken_times() -> None:
+    """"2:00 a.m." is speech, not a timestamp. The old rule ate the "2:00"."""
+    assert transcript_sanitizer._clean_line("2:00 a.m. Wow, thanks for being on, Saad.") == (
+        "2:00 a.m. Wow, thanks for being on, Saad."
+    )
+    assert transcript_sanitizer._clean_line("9:30 pm and still going") == "9:30 pm and still going"
+
+
+def test_clean_line_still_strips_real_timestamps() -> None:
+    assert transcript_sanitizer._clean_line("[00:01] here we go") == "here we go"
+    assert transcript_sanitizer._clean_line("(1:02) here we go") == "here we go"
+    assert transcript_sanitizer._clean_line("00:01:02 here we go") == "here we go"
+    assert transcript_sanitizer._clean_line("02:30 here we go") == "here we go"
+    assert transcript_sanitizer._clean_line("00:02:03") == ""
+
+
+def test_looks_incomplete_flags_truncation_at_any_length() -> None:
+    import audit_knowledge_base as audit
+
+    long_cut_off = " ".join(["word"] * 3000) + " thanks for being here and"
+    short_complete = " ".join(["word"] * 180) + " lead the way."
+
+    assert audit._looks_incomplete(long_cut_off)          # 3000 words, still cut off
+    assert not audit._looks_incomplete(short_complete)    # 180 words, but finished
+    assert audit._looks_incomplete("")
+    assert audit._looks_incomplete("a stub of only a few words.")
+    assert not audit._looks_incomplete(" ".join(["word"] * 100) + ' he said "yes."')

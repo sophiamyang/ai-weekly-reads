@@ -6,6 +6,7 @@ from pathlib import Path
 from obsidian_metadata import obsidian_aliases, yaml_list_block
 from project_paths import RAW_TRANSCRIPTS
 from sources import MediaItem
+from transcript_sanitizer import format_for_storage
 from utils import read_text, slugify, split_frontmatter, write_text, yaml_value
 
 
@@ -27,6 +28,10 @@ def write_raw_transcript(item: MediaItem, transcript: str, path: Path | None = N
         "aliases",
         obsidian_aliases(f"{item.title} raw transcript", item.title),
     )
+    # Transcription returns either one unbroken block or one sentence per line;
+    # Markdown renders both as a wall of text. Reflow into paragraphs on the way
+    # in. This changes no words — only where the line breaks fall.
+    transcript = format_for_storage(transcript)
     body = f"""---
 id: {yaml_value(item.id)}
 title: {yaml_value(f"{item.title} raw transcript")}

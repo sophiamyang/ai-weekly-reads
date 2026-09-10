@@ -32,10 +32,18 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          python -m pip install -r requirements.txt
+          python -m pip install -r requirements.txt -r requirements-dev.txt
 
       - name: Compile Python scripts
         run: find scripts -name '*.py' -print0 | xargs -0 python -m py_compile
+
+      - name: Lint
+        run: python -m pyflakes scripts
+
+      # These tests existed but nothing ran them, so a regression in transcript
+      # handling could reach the knowledge base unnoticed.
+      - name: Run tests
+        run: PYTHONPATH=scripts python -m pytest scripts -q
 
       - name: Check repo health
         run: python scripts/check_repo_health.py
