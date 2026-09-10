@@ -55,6 +55,49 @@ def deterministic_cleanup(transcript: str) -> str:
     return "\n\n".join(paragraphs).strip()
 
 
+STORED_PARAGRAPH_WORDS = 90
+
+# Only unmistakable diarization markers. The general `Name:` heuristic used for
+# digest text is far too loose for stored transcripts: measured across the whole
+# vault it matched zero real speakers and 36 false ones — mid-sentence colons
+# ("My current advice to founders is:") and section headings ("Introduction:").
+# Gemini and Mistral both return undiarized prose, so labelling is nearly always
+# wrong here; recognise only the explicit forms and otherwise leave text alone.
+_EXPLICIT_SPEAKER = re.compile(r"^(speaker[ _-]?\d{1,2})\s*:\s*(.*)$", re.IGNORECASE)
+
+
+def format_for_storage(transcript: str, target_words: int = STORED_PARAGRAPH_WORDS) -> str:
+    """Reflow a transcript into readable paragraphs, changing no words.
+
+    Transcription returns either one unbroken block (Mistral) or one sentence
+    per line (Gemini). Markdown renders both as a single wall of text — the
+    worst in this vault was a 53,259-word paragraph. This regroups sentences
+    into paragraphs and preserves any blank-line structure the source had.
+    """
+    text = transcript.replace("\r\n", "\n").replace("\r", "\n")
+    blocks: list[list[str]] = [[]]
+    for raw_line in text.splitlines():
+        line = _clean_line(raw_line)
+        if not line:
+            if blocks[-1]:
+                blocks.append([])
+            continue
+        blocks[-1].append(line)
+
+    out: list[str] = []
+    for block in blocks:
+        if not block:
+            continue
+        speaker, first = _EXPLICIT_SPEAKER.match(block[0]).groups() if _EXPLICIT_SPEAKER.match(block[0]) else (None, None)
+        if speaker:
+            block = [first, *block[1:]] if first else block[1:]
+        paragraphs = _paragraphs_from_text(" ".join(block), target_words)
+        if speaker and paragraphs:
+            paragraphs[0] = f"**{speaker.strip()}:** {paragraphs[0]}"
+        out.extend(paragraphs)
+    return "\n\n".join(out).strip()
+
+
 def _clean_line(line: str) -> str:
     line = re.sub(r"\s+", " ", line).strip()
     line = re.sub(r"^(?:\[?\d{1,2}:\d{2}(?::\d{2})?\]?\s*)+", "", line).strip()
@@ -77,7 +120,7 @@ def _speaker_turn(line: str) -> tuple[str | None, str]:
     return speaker, match.group(2).strip()
 
 
-def _paragraphs_from_text(text: str) -> list[str]:
+def _paragraphs_from_text(text: str, target_words: int = 120) -> list[str]:
     if not text.strip():
         return []
     sentences = re.split(r"(?<=[.!?])\s+", text.strip())
@@ -86,7 +129,7 @@ def _paragraphs_from_text(text: str) -> list[str]:
     word_count = 0
     for sentence in sentences:
         words = sentence.split()
-        if current and word_count + len(words) > 120:
+        if current and word_count + len(words) > target_words:
             paragraphs.append(" ".join(current))
             current = []
             word_count = 0

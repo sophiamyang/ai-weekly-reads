@@ -13,7 +13,7 @@ Work from the AI Weekly Reads repository root.
 - `config/settings.example.json` is the shareable settings template; local `config/settings.json` is ignored by Git.
 - `inbox/links.example.txt` is the shareable inbox template; local `inbox/links.txt` is ignored by Git.
 - `inbox/links.txt` is for one-off links collected during the week.
-- `knowledge_base/raw_transcripts/` is the canonical local raw transcript/text store.
+- `knowledge_base/raw_transcripts/` is the canonical local raw transcript/text store. `write_raw_transcript` reflows text through `format_for_storage` before writing: transcription returns either one unbroken block (Mistral) or one sentence per line (Gemini), and Markdown renders both as a wall of text. The reflow changes no words — only line breaks — and refuses to label speakers except on explicit `Speaker N:` markers, because a looser rule matched 36 false speakers and zero real ones across the vault. Run `scripts/reformat_raw_transcripts.py` to backfill transcripts written before this existed.
 - `knowledge_base/resources/` is the canonical local clean reading-note store.
 - `knowledge_base/weekly_books/` stores local Markdown weekly books for Obsidian.
 - `knowledge_base/sources/`, `knowledge_base/people/`, `knowledge_base/topics/`, and `knowledge_base/indexes/` are generated local graph hubs. Resources link to source, speaker, and topic hubs; weekly books link to included resources. The default global graph shows only resources and topics.
