@@ -167,3 +167,19 @@ def test_format_for_storage_is_idempotent() -> None:
     twice = transcript_sanitizer.format_for_storage(once)
 
     assert once == twice
+
+
+def test_clean_line_keeps_spoken_times() -> None:
+    """"2:00 a.m." is speech, not a timestamp. The old rule ate the "2:00"."""
+    assert transcript_sanitizer._clean_line("2:00 a.m. Wow, thanks for being on, Saad.") == (
+        "2:00 a.m. Wow, thanks for being on, Saad."
+    )
+    assert transcript_sanitizer._clean_line("9:30 pm and still going") == "9:30 pm and still going"
+
+
+def test_clean_line_still_strips_real_timestamps() -> None:
+    assert transcript_sanitizer._clean_line("[00:01] here we go") == "here we go"
+    assert transcript_sanitizer._clean_line("(1:02) here we go") == "here we go"
+    assert transcript_sanitizer._clean_line("00:01:02 here we go") == "here we go"
+    assert transcript_sanitizer._clean_line("02:30 here we go") == "here we go"
+    assert transcript_sanitizer._clean_line("00:02:03") == ""

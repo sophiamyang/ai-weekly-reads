@@ -98,10 +98,28 @@ def format_for_storage(transcript: str, target_words: int = STORED_PARAGRAPH_WOR
     return "\n\n".join(out).strip()
 
 
+# A leading timestamp is only stripped when it cannot be speech. Bracketed
+# forms and zero-padded or hour:minute:second forms are machine-emitted; a bare
+# "2:00" with an unpadded hour is how a person says a time, and stripping it
+# turned "2:00 a.m. Wow, thanks for being on" into "a.m. Wow, thanks for being
+# on". Across 88 stored transcripts there were zero real leading timestamps and
+# one spoken time, so the loose rule only ever did damage here.
+_LEADING_TIMESTAMP = re.compile(
+    r"^(?:"
+    r"\[\d{1,2}:\d{2}(?::\d{2})?\]"          # [0:01] or [00:01:02]
+    r"|\(\d{1,2}:\d{2}(?::\d{2})?\)"         # (0:01)
+    r"|\d{1,2}:\d{2}:\d{2}"                   # 00:01:02
+    r"|\d{2}:\d{2}(?!\s*[ap]\.?m\.?\b)"     # 02:30, but not "02:30 pm"
+    r")\s*"
+)
+
+
 def _clean_line(line: str) -> str:
     line = re.sub(r"\s+", " ", line).strip()
-    line = re.sub(r"^(?:\[?\d{1,2}:\d{2}(?::\d{2})?\]?\s*)+", "", line).strip()
-    if re.fullmatch(r"\[?\d{1,2}:\d{2}(?::\d{2})?\]?", line):
+    while (stripped := _LEADING_TIMESTAMP.sub("", line, count=1)) != line:
+        line = stripped
+    line = line.strip()
+    if re.fullmatch(r"[\[(]?\d{1,2}:\d{2}(?::\d{2})?[\])]?", line):
         return ""
     return line
 
