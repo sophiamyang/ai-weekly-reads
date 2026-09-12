@@ -24,3 +24,6 @@ knowledge_base/.gitignore
 knowledge_base/KB_README.md
 # Tracked by the private knowledge-base repo, not this public one
 knowledge_base/unresolved.json
+knowledge_base/README.md
+knowledge_base/CHANGELOG-*.md
+knowledge_base/INDEX-*.md
