@@ -1,10 +1,16 @@
-beautifulsoup4>=4.12.0
-feedparser>=6.0.0
-google-api-python-client>=2.130.0
-google-auth-httplib2>=0.2.0
-google-auth-oauthlib>=1.2.0
-google-genai>=2.20.0
-mistralai>=2.4.0
-requests>=2.31.0
-youtube-transcript-api>=0.6.0
+# Upper bounds cap the major version so a scheduled run cannot pick up a
+# breaking release on its own. Floors are unchanged.
+#
+# yt-dlp is deliberately left uncapped: it tracks YouTube's frequent extractor
+# changes, and an old pin is the failure mode here rather than the fix. It still
+# needs a floor so a stale resolver cannot fall far behind.
+beautifulsoup4>=4.12.0,<5
+feedparser>=6.0.0,<7
+google-api-python-client>=2.130.0,<3
+google-auth-httplib2>=0.2.0,<1
+google-auth-oauthlib>=1.2.0,<2
+google-genai>=2.20.0,<3
+mistralai>=2.4.0,<3
+requests>=2.31.0,<3
+youtube-transcript-api>=0.6.0,<2
 yt-dlp>=2024.1.0
