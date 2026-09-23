@@ -28,7 +28,9 @@ jobs:
           cache: pip
 
       # The health scripts run on a bare interpreter; this step exists to
-      # catch requirement pins that no longer resolve.
+      # catch a dependency set that no longer resolves or imports. Runtime
+      # requirements are capped at the major version so a breaking release
+      # cannot land here on its own -- see requirements.txt.
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip

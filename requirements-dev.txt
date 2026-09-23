@@ -1,2 +1,2 @@
-pytest>=8.0
-pyflakes>=3.0
+pytest>=8.0,<9
+pyflakes>=3.0,<4
