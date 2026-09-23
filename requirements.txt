@@ -11,6 +11,6 @@ google-auth-httplib2>=0.2.0,<1
 google-auth-oauthlib>=1.2.0,<2
 google-genai>=2.20.0,<3
 mistralai>=2.4.0,<3
-requests>=2.31.0,<3
+requests>=2.34.2,<3
 youtube-transcript-api>=0.6.0,<2
 yt-dlp>=2024.1.0
