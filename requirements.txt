@@ -7,7 +7,7 @@
 beautifulsoup4>=4.12.0,<5
 feedparser>=6.0.0,<7
 google-api-python-client>=2.130.0,<3
-google-auth-httplib2>=0.2.0,<1
+google-auth-httplib2>=0.4.2,<1
 google-auth-oauthlib>=1.2.0,<2
 google-genai>=2.20.0,<3
 mistralai>=2.4.0,<3
