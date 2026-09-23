@@ -145,6 +145,27 @@ def _entry_published(entry: dict) -> str | None:
     return entry.get("published") or entry.get("updated")
 
 
+def youtube_item_id(url: str) -> str:
+    """Stable identity for a YouTube item.
+
+    Hashing the URL as it arrived makes the same video look like several
+    different items: a ``youtu.be`` share link, a ``watch?v=`` link from channel
+    discovery, a mobile ``m.youtube.com`` link and a timestamped ``&t=`` link all
+    point at one video but produce four ids. Each one is transcribed, summarized
+    and billed separately, and each shows up in the edition.
+
+    Podcast entries already avoid this by keying on the feed guid first
+    (``_entry_stable_key``); this is the YouTube equivalent. The video id is
+    namespaced so it cannot collide with a non-YouTube item that happens to hash
+    to the same value, and a URL we cannot parse falls back to the old behaviour
+    rather than losing its identity entirely.
+    """
+    video_id = youtube_video_id(url)
+    if not video_id:
+        return stable_id(url)
+    return stable_id(f"youtube:{video_id}")
+
+
 def _youtube_item(url: str) -> MediaItem:
     title = url
     description = None
@@ -177,7 +198,7 @@ def _youtube_item(url: str) -> MediaItem:
     except Exception as exc:
         print(f"Could not fetch YouTube metadata for {url}: {exc}")
     return MediaItem(
-        id=stable_id(url),
+        id=youtube_item_id(url),
         url=url,
         source_type="youtube",
         title=title,
