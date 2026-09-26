@@ -1,9 +1,9 @@
 ---
-title: "AI Weekly Reads - 2026-09-19"
+title: "AI Weekly Reads - 2026-09-26"
 aliases:
-  - "AI Weekly Reads - 2026-09-19"
-  - "AI Weekly Reads 2026-09-19"
-created: "2026-09-19"
+  - "AI Weekly Reads - 2026-09-26"
+  - "AI Weekly Reads 2026-09-26"
+created: "2026-09-26"
 type: "weekly-book"
 status: "ready"
 language: "en"
@@ -11,2179 +11,2499 @@ language: "en"
 
 # AI Weekly Reads
 
-Week of 2026-09-19
+Week of 2026-09-26
 
 [Download the latest EPUB for Kindle](latest.epub)
 
 ## Contents
 
-1. [No Priors / Podcast] 2026-09-18 - Why Diffusion Will Win AI Inference with Inception Co-Founder and CEO Stefano Ermon
-2. [AI Engineer / YouTube] 2026-09-18 - Total Recall: Agent Memory and Harness Engineering — Ignacio Martinez, Oracle
-3. [Stanford Online / YouTube] 2026-09-18 - Stanford Webinar - A Conversation on the Future of Translational Medicine
-4. [AI Engineer / YouTube] 2026-09-17 - Homa: The End of TCP for AI Clusters — John Ousterhout, Stanford
-5. [Lex Fridman Podcast / Podcast] 2026-09-17 - #502 – Psychiatry, Insane Asylums, Mental Illness, ECT, Lobotomies, Freud & Jung
-6. [AI Engineer / YouTube] 2026-09-16 - Your Agreements Are a Database You Can't Query — Hiral Shah, Docusign & Sean Sodha, NVIDIA
-7. [AI Engineer / YouTube] 2026-09-16 - Where RL Will Take Search — Maximilian-David Rumpf, SID.ai
-8. [Latent Space / Podcast] 2026-09-16 - Underwriting Superintelligence: Backing Agents you can Sue — Rune Kvist, AIUC
-9. [AI Engineer / YouTube] 2026-09-16 - The unreasonable effectiveness of BM25 for agentic search — Jo Kristian Bergum, Hornet.dev
-10. [AI Engineer / YouTube] 2026-09-16 - The Search Engine for the Agentic Web — Will Bryk, Exa
-11. [AI Engineer / YouTube] 2026-09-16 - Stop Chunking Like It's 2022 — Yuval Belfer, AI21 Labs
-12. [AI Engineer / YouTube] 2026-09-16 - Rebuilding the web for agents — Liad Yosef, MCP Apps
-13. [AI Engineer / YouTube] 2026-09-16 - Pinecone 2.0 — Edo Liberty, Pinecone
-14. [AI Engineer / YouTube] 2026-09-16 - If we want them to do Knowledge Work, design them as Knowledge Agents — Benjamin Clavié, Mixedbread
-15. [AI Engineer / YouTube] 2026-09-16 - Connect AI to Billions of Legal Documents — Simon Eskildsen, turbopuffer & Jacob Lauritzen, Legora
-16. [AI Engineer / YouTube] 2026-09-15 - Your Voice Agent is Just a Walkie Talkie — Neil Zeghidour, Gradium
-17. [AI Engineer / YouTube] 2026-09-15 - Voice Agents Can Just Do Things — Charlie Guo, OpenAI
-18. [AI Engineer / YouTube] 2026-09-15 - Tolan: Voice-First AI Companion — Paula Dozsa, Tolan
-19. [AI Engineer / YouTube] 2026-09-15 - Speech-to-Speech Model Research at Google DeepMind — Valeria Wu Fon & Tom Ouyang, Google DeepMind
-20. [AI Engineer / YouTube] 2026-09-15 - Realtime Voice Agents with Frontier Intelligence — Bohan Li, EliseAI
-21. [Training Data / Podcast] 2026-09-15 - Box's Aaron Levie: On Reinventing Yourself in the AI Age and Enterprise Diffusion
-22. [AI Engineer / YouTube] 2026-09-15 - Act, Confirm, or Stop? Smarter behavior for AI assistants, wearables & robots — Amit Desai, Roku
-23. [AI Engineer / YouTube] 2026-09-15 - 5 Voice Agent Failure Modes You'll Hit in Week One — Venky B, Plivo
-24. [AI Engineer / YouTube] 2026-09-15 - 1 Trillion Phone Calls/yr, 10% Error rate: The Crisis in Voice AI — Sumanyu Sharma, Hamming AI
-25. [AI Engineer / YouTube] 2026-09-15 - "My name is... my name is...": A Linguistic Map for Voice Agents — Midam Kim, ServiceNow
-26. [AI Engineer / YouTube] 2026-09-14 - We let an AI agent execute Bash and lived to talk about it — Sarah Sanders, PostHog
-27. [AI Engineer / YouTube] 2026-09-14 - Tokens Should Have Jobs — Katelyn Lesse & Angela Jiang, Anthropic
-28. [AI Engineer / YouTube] 2026-09-14 - No Memory, No Harness: Why the Database Is the Last Line of Defense — Kay Malcolm, Oracle
-29. [AI Engineer / YouTube] 2026-09-14 - Loophole: Adversarial Agents To Stress Test Your Morality — Brendan Rappazzo, Morgan Stanley
-30. [Latent Space / Podcast] 2026-09-14 - Humanity’s Last Invention — Richard Socher of Recursive
-31. [AI Engineer / YouTube] 2026-09-14 - How We Solved Agent Building — Andrew Qu, Vercel
-32. [AI Engineer / YouTube] 2026-09-14 - Harness Engineering: Building the Production Cage for Powerful Domain Agents — Mike Chambers, AWS
-33. [AI Engineer / YouTube] 2026-09-14 - Every step you take, every call you make: the reliable agent stack — Giselle van Dongen, Restate
-34. [AI Engineer / YouTube] 2026-09-14 - Agents Without Code: Skills, YAML, and Filesystems Replaced Python — Philipp Schmid, Google DeepMind
+1. [AI Engineer / YouTube] 2026-09-25 - Why LLM Recommenders Will Be AI's Biggest Consumer App — Devansh Tandon, Meta
+2. [AI Engineer / YouTube] 2026-09-25 - Teaching LLMs to Speak Spotify — Yves Raimond & Jacqueline Wood, Spotify
+3. [Latent Space / Podcast] 2026-09-25 - Runway’s WorldPrompt and the Engineering of Real-Time Worlds
+4. [Latent Space / Podcast] 2026-09-25 - OpenRouter: from Seed to Stripe — with OpenRouter’s Alex Atallah & AMP’s Anjney Midha
+5. [AI Engineer / YouTube] 2026-09-25 - Distill the LLM, Don't Serve It: Search & Personalization at DoorDash — Raghav Saboo, DoorDash
+6. [AI Engineer / YouTube] 2026-09-24 - World Models Need Causality, Not Pretty Pixels — Christopher Manning, Moonlake AI
+7. [The MAD Podcast with Matt Turck / Podcast] 2026-09-24 - Who Feeds the GPUs? Inside AI's Hidden $30B Layer | Renen Hallak, VAST Data
+8. [AI Engineer / YouTube] 2026-09-24 - Robotics Has Been Stuck for 70 Years — Deepak Pathak, Skild AI
+9. [AI Engineer / YouTube] 2026-09-24 - Robot Demos Are Easy. Reliability Is Hard — Jason Ma, Dyna Robotics
+10. [No Priors / Podcast] 2026-09-24 - Re-Founding Incumbents for the AI Era with Sequence Holdings Co-Founder and CEO Michael Lee
+11. [AI Engineer / YouTube] 2026-09-24 - Physical AI's Next Bottleneck Is Finding the Right Video — Rafael Levi, Bright Data
+12. [AI Engineer / YouTube] 2026-09-24 - One Operator, Many Drones: Inside Skydio's Autonomy Stack — Suchet Bargoti, Skydio
+13. [AI Engineer / YouTube] 2026-09-24 - I Gave an AI a Body — Cyrus Clarke, MIT Media Lab
+14. [Stanford Online / YouTube] 2026-09-24 - AI in Healthcare Series: Have We Already Bent the Healthcare Cost Curve?
+15. [Latent Space / Podcast] 2026-09-23 - 🔬Bio-security is an AI Arms Race - Eric Nguyen (CEO, Radical Numerics)
+16. [AI Engineer / YouTube] 2026-09-23 - You’re Not Thinking Big Enough: Rebuilding Food Systems with AI Agents — Cody Menefee, Firecrawl
+17. [AI Engineer / YouTube] 2026-09-23 - The Best Models Still Reason Like Toddlers — Andrew Dai, Elorian
+18. [AI Engineer / YouTube] 2026-09-23 - Skill issue: stop deploying vision language models, use them with Skills — Merve Noyan, Hugging Face
+19. [AI Engineer / YouTube] 2026-09-23 - Modality Misalignment and Originality Attribution in Short-Form Video — Aditya Gautam, Meta
+20. [AI Engineer / YouTube] 2026-09-23 - From VLM/VLA's to Embodied Agents — Armen Aghajanyan, Perceptron AI
+21. [AI Engineer / YouTube] 2026-09-23 - From Scratch to SOTA: Training a 3B State-Space Vision Model — Krishna Prasad Srinivasan, Sarvam
+22. [AI Engineer / YouTube] 2026-09-23 - From Ingestion to Agents: How AI Teams Build on Document Intelligence — Adit Abraham, Reducto
+23. [AI Engineer / YouTube] 2026-09-23 - Building the Document Context Layer for AI Agents — Jerry Liu, LlamaIndex
+24. [Latent Space / Podcast] 2026-09-22 - 🔬 An Oscar, Two Asteroids, and the Algorithm in Your sklearn: John Platt on AI for Science
+25. [Stanford Online / YouTube] 2026-09-22 - Andrew Ng: One Skill to Stay Relevant in the Age of AI
+26. [AI Engineer / YouTube] 2026-09-21 - The Dark Arts of Skill Engineering — Paul Bakaus, Renaissance Geek (Impeccable)
+27. [Latent Space / Podcast] 2026-09-21 - Jev: System One models for Prod, not God — with Diogo Almeida, CEO, TypeSafe AI
+28. [Lenny's Podcast / Podcast] 2026-09-20 - 90 minutes of unfiltered product advice from Snap and Discord’s product chief | Peter Sellis
+29. [AI Engineer / YouTube] 2026-09-19 - What's New in Inference Engineering — Philip Kiely, Baseten
+30. [AI Engineer / YouTube] 2026-09-19 - Weight Folding, CUDA Streams, and the Bug That Made My Model Speak Backwards — Filip Makraduli
+31. [AI Engineer / YouTube] 2026-09-19 - Vertical Mobility: Inference from MVP to Trillion-Parameter Workloads — Sitanshu Gupta, CoreWeave
+32. [AI Engineer / YouTube] 2026-09-19 - Two Bugs That Hid in Plain Sight: A vLLM Debugging Detective Story — Asaf Gardin & Yuval Belfer
+33. [AI Engineer / YouTube] 2026-09-19 - The Frontier AI Inference Cloud for Agents — Byung-Gon (Gon) Chun, FriendliAI
+34. [AI Engineer / YouTube] 2026-09-19 - Operating Distributed Inference Systems at Scale — Nishant Gupta & Naman Ahuja, Meta
+35. [AI Engineer / YouTube] 2026-09-19 - Large clusters for small models — Daniel Svonava, Superlinked
+36. [AI Engineer / YouTube] 2026-09-19 - Are LLM Performance Benchmarks Reliable? — Ashok Chandrasekar & Jason Kramberger, Google
 
 ## Reading Notes
 
-# Why Diffusion Will Win AI Inference with Inception Co-Founder and CEO Stefano Ermon
+# Why LLM Recommenders Will Be AI's Biggest Consumer App — Devansh Tandon, Meta
 
-- **Published:** 2026-09-18
-- **Podcast:** [No Priors](https://traffic.megaphone.fm/PDP7720707490.mp3)
-- **Speakers:** Stefano Ermon, Co-Founder and CEO, Inception
+- **Published:** 2026-09-25
+- **YouTube:** [AI Engineer](https://www.youtube.com/watch?v=lIgdnF0s0kQ)
+- **Speaker:** Devansh Tandon, Leader of Meta Recommendations Research
 
 ## One-Sentence Takeaway
-Diffusion models can, according to Inception’s Stefano Ermon, outperform autoregressive LLMs in inference speed and hardware efficiency, making them a claimed viable alternative for text and code generation at scale.
+LLM-powered recommendation systems will dominate consumer AI because they scale like LLMs, are 100x cheaper per engagement hour than chat apps, and unlock steerable, explainable feeds.
 
 ## Short Summary
-Stefano Ermon argues that diffusion models, despite their dominance in continuous modalities like images and video, can also excel in discrete domains such as text and code generation. The key advantage lies in their parallel token generation, which maps better to GPU hardware and reduces inference latency—a critical bottleneck for autoregressive models. Inception’s Mercury models are reported to already match the quality of speed-optimized frontier models while being significantly faster, which Ermon presents as evidence of practical viability.
+Recommendation systems follow the same power-law scaling as LLMs, with model size, data, and compute driving predictable gains in quality and engagement. Four of the top 10 global apps are content feeds, and their recommenders—unlike chat apps—decode pointers to existing content, making them far more token-efficient.
 
-The conversation also highlights the broader industry shift toward efficiency, where inference-time scaling and hardware utilization will define the next era of AI competition. Diffusion models may also offer better controllability and data efficiency, though adoption challenges remain due to the immaturity of the software ecosystem.
+Meta’s work shows real-world impact: Instagram Reels gained 30% watch time after scaling models and enriching user interaction data. The next phase involves LLM-native and agentic recommenders, where models reason over semantic IDs (compressed content tokens) and enable user control via natural language.
 
 ## Main Ideas
-- Diffusion models generate tokens in parallel, unlike autoregressive models, which process tokens sequentially. This parallelism aligns better with GPU architectures, reducing memory bottlenecks and improving inference speed.
-- Inception reports that its Mercury models achieve parity with frontier speed-optimized models (e.g., OpenAI’s Haiku, Flash) while being significantly faster, which the talk offers as proof of diffusion’s practicality for text and code generation.
-- Diffusion models may offer better controllability, as their coarse-to-fine generation allows progressive steering with external constraints or reward functions, unlike autoregressive models, which require full generation before evaluation.
-- Efficiency will dominate the next phase of AI competition, with inference-time scaling becoming a key differentiator due to hardware constraints and cost considerations.
-- Diffusion models could be more data-efficient than autoregressive models, as their denoising-based training acts as implicit data augmentation, potentially offering advantages in low-data regimes.
+- Recommendation systems exhibit LLM-like scaling laws: more data, compute, and model size yield predictable gains in offline metrics (e.g., AUC) and real-world engagement (e.g., watch time, revenue).
+- Content feeds (e.g., Instagram, TikTok) are 100x cheaper per engagement hour than chat apps because they decode semantic pointers to existing content rather than generating tokens themselves.
+- The industry is climbing four S-curves: traditional recsys (feature engineering), LLM-inspired (end-to-end scaling), LLM-native (adapted base models), and agentic (orchestrated loops for planning, retrieval, and critique).
+- LLM recommenders can be built with a three-step recipe: tokenize content into semantic IDs, pre-train a bilingual model (English + catalog), and post-train for ranking with chain-of-thought reasoning.
+- Steerable feeds (e.g., Instagram’s "Your Algorithm") let users edit interests in natural language, shifting recommendations from black boxes to interactive, explainable systems.
 
 ## Questions And Answers
-**Q: Where does speed matter most today?**
-A: Latency-sensitive applications like voice agents (e.g., OpenCall) benefit most, where diffusion-based LLMs on standard GPUs can match the speed of autoregressive models running on custom hardware like Cerebras.
+- **Why are content feeds more token-efficient than chat apps?**
+  They decode semantic IDs (pointers to existing content) rather than generating every token, leveraging free/creator-supplied content and reducing inference costs by 100x per engagement hour.
 
-**Q: What are the adoption challenges for diffusion models?**
-A: The ecosystem is immature: serving engines, kernels, and open-source tools are lacking, requiring in-house development. This makes deployment and customer adoption harder compared to autoregressive models.
+- **How do semantic IDs improve recommenders?**
+  They provide stable, compressible representations (e.g., a 3-minute Reel → 10 tokens) that models can reason over, enabling longer interaction histories and shared compute across surfaces.
 
-**Q: How does Inception compete with larger labs?**
-A: By focusing on IP (e.g., serving engines, training recipes) and real-world feedback from customers, Inception builds differentiated components that are harder to replicate, even if larger labs absorb architectural advances.
-
-**Q: What’s the future workload split between diffusion and autoregressive models?**
-A: Ermon estimates 20–30% of workloads (e.g., latency-sensitive tasks) could be addressed by diffusion models within a given latency budget, while frontier-level intelligence tasks may still rely on autoregressive models.
+- **What’s the "tokens in, engagement out" flywheel?**
+  Training → inference (tokens in) → better recommendations → user engagement → monetization → funds next training cycle. This flywheel powers both feeds and chat apps but is far more efficient for feeds.
 
 ## Notable Details
-- Inception’s 2024 paper demonstrated diffusion-based text generation matching GPT-2-scale autoregressive models in quality (perplexity) while being **10x faster** at inference.
-- Diffusion models’ denoising training acts as implicit data augmentation, improving data efficiency compared to autoregressive models.
-- OpenCall, a voice agent company, switched from Cerebras to Inception’s Mercury models, achieving similar speed on NVIDIA GPUs at lower cost and higher availability.
-- Inception is ~50 people, with teams split between serving current models and researching next-generation training, RL, and inference optimizations.
-- Academia remains a critical source of foundational advances (e.g., diffusion, Flash Attention, DPO), as it enables contrarian bets and high-risk research.
+- Instagram Reels achieved **30% YoY watch time growth** after doubling user interaction sequence length and enriching interaction data for training.
+- A 3-minute Instagram Reel compresses from **~10,000 tokens to ~10 semantic ID tokens**, enabling efficient reasoning over long histories.
+- Meta’s HSTU and OneRec papers demonstrate **power-law scaling curves** for recommenders, mirroring LLM trends.
+- LLM re-rankers can produce **readable chain-of-thought reasoning** (e.g., "User likes comedy, food, DIY → rank these 5 Reels higher") for explainability.
+- Examples of steerable feeds: Instagram’s "Your Algorithm," Spotify’s Prompted Playlists, YouTube’s Custom Feeds, DoorDash’s "Ask DoorDash."
 
 ## Actionable Takeaways
-- Monitor diffusion-based models for latency-sensitive applications (e.g., voice, real-time agents) where speed and hardware efficiency are paramount.
-- Consider diffusion models for use cases requiring **controllability** (e.g., constrained generation, alignment) due to their progressive, coarse-to-fine generation process.
-- Evaluate diffusion models in **data-scarce domains**, as their denoising training may offer better data efficiency than autoregressive alternatives.
-- Watch for maturation of the diffusion software ecosystem (e.g., serving engines, open-source tools) as a signal of broader adoption.
-- For startups: Differentiate through **end-to-end deployment** (e.g., serving, RL, evals) to build IP that’s harder for larger labs to replicate.
+- For content platforms, **adopt semantic IDs** to compress catalogs and enable cross-surface model sharing.
+- **Prioritize LLM-native recommenders** (adapted base models) over traditional feature engineering for long-term scaling.
+- **Design for steerability**: Let users edit preferences in natural language to improve transparency and control.
+- **Compare token efficiency** when evaluating AI apps: feeds outperform chat apps on cost per engagement hour.
+- **Watch for agentic recommenders**: Models that plan, retrieve, rank, and critique in loops could redefine personalization.
 
 ## People, Companies, Tools, And Links Mentioned
-- [Inception](https://inception.ai)
-- [No Priors podcast](https://no-priors.com)
-- Stefano Ermon ([Twitter](https://twitter.com/StefanoErmon))
-- OpenCall
-- Cerebras
-- OpenAI (Haiku, Flash models)
-- Stanford University
-- Yang Song (co-author of diffusion models)
-- Flash Attention
-- DPO (Direct Preference Optimization)
+- Devansh Tandon
+- Meta
+- Instagram
+- Facebook
+- YouTube
+- Spotify
+- DoorDash
+- Google
+- DeepMind
+- [Meta AI](https://ai.meta.com)
+- HSTU (Meta paper, 2024)
+- OneRec (Meta paper)
+- TIGER (paper)
+- PLUM (paper)
+- Semantic IDs
+- Generative retrieval
 
 ## Reading Priority
 
-Medium – A compelling, speaker-argued case for diffusion models as a viable alternative to autoregressive LLMs, with concrete examples and technical depth from Inception, though not yet a paradigm shift.
+Medium – LLM recommenders combine scaling laws, token efficiency, and steerability, making them a pivotal (and underappreciated) consumer AI application with proven real-world impact.
 
 ***
 
-# Total Recall: Agent Memory and Harness Engineering — Ignacio Martinez, Oracle
+# Teaching LLMs to Speak Spotify — Yves Raimond & Jacqueline Wood, Spotify
 
-- **Published:** 2026-09-18
-- **YouTube:** [AI Engineer](https://www.youtube.com/watch?v=xs-ob87TTzg)
-- **Speaker:** Ignacio Martinez, Developer Advocate at Oracle
+- **Published:** 2026-09-25
+- **YouTube:** [AI Engineer](https://www.youtube.com/watch?v=2LRIAfng7eA)
+- **Speakers:** Yves Raimond, SVP and GM of AI & Personalization, Spotify; Jacqueline Wood, Staff Machine Learning Engineer, Spotify
 
 ## One-Sentence Takeaway
-Harness engineering turns a nondeterministic language model into a reliable agent by controlling memory, tools, and perception layers around the frozen reasoning core.
+Spotify’s Large Taste Model reimagines personalization as a steerable, LLM-native system that reasons over a 100M+ catalog and lets users prompt, edit, and generate experiences in natural language.
 
 ## Short Summary
-A language model is the "frozen" reasoning component—rented, unchangeable, and nondeterministic. The real leverage lies in the *harness*: the seven-layer stack (storage, memory, semantic, retrieval, context, tools, and loops) that wraps the model to produce repeatable, controllable outputs.
+Spotify evolved from curated playlists and black-box recommenders (e.g., Discover Weekly) to “generative personalization,” where a single LLM-powered system—used daily by 25% of US Premium subscribers—enables steerable DJs, prompted playlists, editable taste profiles, and personal podcasts. The shift hinges on reasoning (not just ranking) and transparency (user control via language).
 
-The sharpest arguments focus on where memory physically lives (files vs. databases), the need for transactional consistency in multi-agent systems, and the concept of *Umwelt*—an agent’s perceptual lens shaped by institutional knowledge. Practical techniques like hysteresis variables (patience thresholds for task retries) and skill promotion (distilling successful workflows into reusable, improved versions) bridge theory and implementation.
+Staff ML Engineer Jacqueline Wood details NEO, a four-stage training recipe: semantic IDs for catalog grounding, frozen-backbone domain alignment to preserve language ability, multitask instruction tuning for cross-task gains (including cold-start audiobooks), and optional post-training. Grounded LLM judges aligned with human preferences (up to 91% on ambiguous queries) enable scalable evaluation of generative recommendations.
 
 ## Main Ideas
-- An **agent = model + harness**; the model is frozen reasoning (weights you rent), while the harness (memory, tools, perception) is what you control to achieve reliability.
-- **Memory storage tradeoffs**: Files match model instincts (easy to append, POSIX-compatible) but lack transactional consistency; databases solve consistency, backups, and hybrid search but require structured schemas. A hybrid approach (e.g., short-term memory in files, long-term in databases) often works best.
-- **Umwelt (semantic lens)**: Agents perceive reality only through the institutional knowledge and context you provide—this defines their "lens" and limits their effectiveness without explicit grounding.
-- **Agent loops**: A minimal loop (observe → reason → act) must be failure-resistant to maintain autonomy. The harness manages retries, tool selection, and context assembly at each iteration.
-- **Context rot**: As context windows grow, attention degrades quadratically (due to the attention matrix scaling with token count). Keep context minimal and salient to avoid performance collapse.
+- Generative personalization replaces opaque ranking with reasoning and steerability: users prompt, edit, and shape experiences in natural language, while the system explains and generates (e.g., DJ sessions, playlists, taste profiles, personal podcasts).
+- NEO’s four-stage recipe grounds open-weight LLMs (e.g., Qwen, Llama) in Spotify’s catalog via semantic IDs, freezes the backbone during domain grounding to retain language ability, then multitask-tunes across Spotify tasks (retrieval, recommendation, explanation) for cross-task benefits, including cold-start performance.
+- Frozen-backbone grounding outperforms continued pre-training, which collapses language ability, and multitask tuning matches or beats single-task models—validated across backbones.
+- Grounded LLM judges (with user profiles or behavioral signals) align closely with human preferences (75% baseline, 91% on ambiguous queries) and enable scalable Cranfield-style evaluation sets with 0.87 agreement to human rankings.
 
 ## Questions And Answers
-- **Q: How do parallel agents avoid trampling each other’s file-based memory?**
-  A: Use **work trees**—agents modify copies in isolated branches, then merge changes back to main, mimicking version control to bypass files’ lack of transactional consistency.
+- **Why freeze the backbone during domain grounding?**
+  Continued pre-training wipes out the LLM’s core language and world knowledge; freezing preserves these while learning semantic ID embeddings.
 
-- **Q: How do you handle thousands of tools in an organization?**
-  A: Use the **toolbox pattern** with hierarchical navigable small-world (HNSW) graph indexes. Each node is a vector store, enabling efficient retrieval even at scale. Enhance tool descriptions with LLM-generated metadata to improve separability in vector search.
+- **Does multitask tuning hurt performance?**
+  No—it matches or improves single-task results and helps cold-start tasks (e.g., audiobook recommendations) by transferring knowledge from related tasks like podcasts.
 
-- **Q: How do you prevent infinite retries in agent loops?**
-  A: Define a **hysteresis variable**—a patience threshold (e.g., 8–12 tool calls for frontier models) before the harness gives up. Route complex tasks to stronger models and simpler ones to smaller, specialized models for token efficiency.
+- **How reliable are LLM judges for evaluation?**
+  Grounding them with user profiles or behavior raises alignment with humans to 75% (baseline) and 91% on ambiguous queries; for Cranfield-style sets, agreement reaches 0.87.
 
 ## Notable Details
-- **Oracle’s DBFS**: A database-backed file system that combines file simplicity with database features (ACID consistency, vector search, high availability). Enables files to live inside a database with transactional guarantees.
-- **In-database embeddings**: Embedding models run inside the database (e.g., Oracle) to avoid third-party calls, improving data security and retention for enterprises.
-- **Oracle Agent Memory Package (OAMP)**: A managed solution for agent memory that automates context compaction, summarization, and memory extraction in a single line of code, reducing cognitive load for engineers.
-- **Skill promotion**: Successful workflows (e.g., a 4-hour task) are distilled into improved, reusable versions (e.g., `skill.md`), with the original retired. This enables continual learning in the context/token space without retraining the model.
-- **Context card**: A structured abstraction (topics, summary, intent, facts/preferences/memories, episodic memories, recent messages) used by the harness—not the model—to guide agent behavior.
-- **Model routing**: Use a mixture of small expert models (e.g., 100M-parameter models fine-tuned for specific tasks) orchestrated by a router to optimize token efficiency and cost.
+- One in four US Spotify Premium subscribers use the Large Taste Model daily.
+- Semantic IDs are discrete tokens derived from content embeddings (e.g., podcast episodes) and added to the LLM’s vocabulary.
+- 98% of generated semantic IDs are valid without constrained decoding; beam search is preferred over top-p sampling for accuracy despite latency tradeoffs.
+- Constrained decoding adds latency but enables targeted constraints (e.g., only new content).
+- NEO powers podcast discovery that breaks habitual listening patterns, driving significant online gains.
 
 ## Actionable Takeaways
-- **Start with a minimal harness**: Build the seven layers incrementally (storage → memory → semantic → retrieval → context → tools → loops) around a swappable model interface (e.g., OpenAI API).
-- **Hybridize memory storage**: Use files for ephemeral/short-term memory (e.g., to-do lists) and databases for long-term/shared memory (e.g., user preferences, episodic memories) to balance flexibility and consistency.
-- **Combat context rot**: Prune context windows aggressively; use toolbox/skillbox patterns to load only relevant tools/skills into context per iteration.
-- **Experiment with hysteresis**: Set patience thresholds for retries based on model capabilities (e.g., 8–12 tool calls for frontier models) and route tasks dynamically to optimize cost/performance.
-- **Promote skills**: Distill successful workflows into reusable, versioned skills to enable continual learning without model retraining.
+- For catalog-grounded LLMs, freeze the backbone during domain adaptation to preserve language ability; avoid continued pre-training.
+- Use multitask instruction tuning to exploit cross-task synergies, especially for cold-start scenarios.
+- Ground LLM judges with user profiles or behavioral signals to improve evaluation alignment, particularly for ambiguous queries.
+- Prefer beam search over top-p sampling for accuracy-critical retrieval, accepting the latency tradeoff.
 
 ## People, Companies, Tools, And Links Mentioned
-- [Ignacio Martinez](https://x.com/nacho_martinez)
-- Oracle
-- Oracle Cloud Infrastructure (OCI) Generative AI Service
-- Oracle DBFS (Database File System)
-- Oracle Agent Memory Package (OAMP)
-- LangChain Oracle DB
-- Google, Meta, OpenAI, xAI (Oracle model inference partners)
-- Jakob von Uexküll (biologist, *Umwelt* concept)
-- Andrew Ng (collaborator on agent memory course)
-- HNSW (Hierarchical Navigable Small World) indexes
-- GitHub Codespaces
+- [Spotify](https://www.spotify.com)
+- Qwen
+- Llama
+- PLUM paper
 
 ## Reading Priority
 
-High – This is a rare, concrete framework for building reliable agents, with actionable patterns (work trees, hysteresis, skill promotion) and a clear separation of controllable (harness) vs. uncontrollable (model) components.
+High – A rare, concrete case study of a production-scale LLM-native personalization system with validated training recipes, evaluation methods, and measurable user impact.
 
 ***
 
-# Stanford Webinar - A Conversation on the Future of Translational Medicine
+# Runway’s WorldPrompt and the Engineering of Real-Time Worlds
 
-- **Published:** 2026-09-18
-- **YouTube:** [Stanford Online](https://www.youtube.com/watch?v=br-guoJ58gA)
-- **Speakers:** Dean Felsher, MD, PhD: Professor of Medicine-Oncology at Stanford, Director of the TRAM Program, and researcher on oncogene addiction (e.g., MYC); Joanna Liliental, PhD: Executive Director of Stanford’s M-TRAM program, Director of TASC, and Associate Director of TRAM, specializing in biomarker research and cross-disciplinary mentorship
-
-## One-Sentence Takeaway
-Translational medicine now requires researchers to understand the entire drug development ecosystem—from discovery to commercialization—rather than working in isolated stages.
-
-## Short Summary
-Translational research bridges laboratory discoveries and real-world clinical applications, but its success hinges on breaking down silos between scientists, clinicians, and industry experts. The biggest shift in the field is the dissolution of sequential boundaries between discovery, development, and commercialization, with early consideration of downstream challenges (e.g., regulatory, manufacturing, IP) now critical.
-
-The Stanford TRAM program exemplifies this approach by training researchers to navigate the full arc of translation, leveraging cross-disciplinary collaboration to tackle complex problems like targeting the MYC oncogene in cancer.
-
-## Main Ideas
-- Translational research fails when scientists, clinicians, and industry experts work in isolation; collaboration across disciplines is essential to identify clinical needs, validate science, and navigate commercialization.
-- The traditional sequential model (discovery → development → commercialization) is outdated; modern translational research requires parallel consideration of regulatory, manufacturing, and market constraints from the outset.
-- AI and computational tools are reshaping early-stage discovery, while biomarkers and patient selection are becoming central to clinical development, demanding broader expertise from researchers.
-- Training programs like Stanford’s TRAM now emphasize holistic understanding of the translational pipeline, even for specialists, to avoid downstream failures.
-- Cross-pollination between fields (e.g., oncology and psychiatry) can uncover overlooked solutions, but siloed thinking often misses these opportunities.
-
-## Questions And Answers
-**Q: What is translational research?**
-A: The process of taking a laboratory discovery (e.g., a therapeutic or diagnostic) and making it applicable and useful in real-world clinical settings.
-
-**Q: What are the biggest changes in translational research over the past 15 years?**
-A: The boundaries between discovery, development, and commercialization have blurred. Researchers must now address downstream questions (e.g., regulatory, IP, manufacturing) early in the process, and AI/computational tools are transforming discovery and patient selection.
-
-**Q: Why do promising discoveries often fail in translation?**
-A: They often fail because critical questions (e.g., clinical need, scalability, commercial viability) aren’t addressed until too late in the process.
-
-## Notable Details
-- The MYC oncogene, a key driver in most human cancers, was discovered decades ago (Nobel Prize-winning work by Bishop and Varmus), but translating this knowledge into therapies requires integrating clinical, chemical, and regulatory insights.
-- Stanford’s TRAM program explicitly trains students to consider the full translational arc, leveraging cross-disciplinary resources (e.g., chemistry, clinical insights) to solve complex problems.
-- Traditional training (e.g., at UCLA) often focused on narrow scientific domains, whereas modern translational researchers need awareness of all stages, even if they specialize in one.
-
-## Actionable Takeaways
-- Embed cross-disciplinary collaboration early in research projects to align scientific, clinical, and commercial goals.
-- Integrate regulatory, manufacturing, and IP considerations into the discovery phase to avoid late-stage failures.
-- Leverage AI and computational tools to accelerate discovery and refine patient selection strategies.
-- Seek opportunities for cross-field pollination (e.g., applying oncology insights to psychiatry) to uncover novel solutions.
-
-## People, Companies, Tools, And Links Mentioned
-- Stanford University School of Medicine
-- Translational Research and Applied Medicine (TRAM) Program
-- Master of Science in Translational Research and Applied Medicine (M-TRAM)
-- Translational Applications Service Center (TASC)
-- [Drug Development: From Discovery to Commercialization Graduate Certificate](https://online.stanford.edu/programs/drug-development-discovery-commercialization-graduate-certificate)
-- [TRAM223B Drug Development and Clinical Trials course](https://online.stanford.edu/courses/tram223b-drug-development-and-clinical-trials)
-- MYC oncogene
-- Mike Bishop and Harold Varmus (Nobel Prize winners for MYC discovery)
-
-## Reading Priority
-
-Medium – A clear, practical overview of the evolving landscape of translational medicine, with actionable insights for researchers and professionals in drug development.
-
-***
-
-# Homa: The End of TCP for AI Clusters — John Ousterhout, Stanford
-
-- **Published:** 2026-09-17
-- **YouTube:** [AI Engineer](https://www.youtube.com/watch?v=eZ8WWZzoaR0)
-- **Speaker:** John Ousterhout, Professor Emeritus at Stanford University, creator of Homa
+- **Published:** 2026-09-25
+- **Podcast:** [Latent Space](https://www.latent.space/p/runway)
+- **Speakers:** **Anastasis Germanidis** – Co-founder & Co-CEO, Runway; **Kamil Sindi** – CTO, Runway
 
 ## One-Sentence Takeaway
-Modern AI workloads increasingly depend on low-latency small messages, exposing TCP and RDMA’s congestion-control and byte-stream limitations, which Homa aims to solve with receiver-driven, message-aware prioritization that Ousterhout reports can cut tail latency by about 10×.
 
-## Short Summary
-AI networking is shifting from throughput-bound bulk transfers (e.g., gradient synchronization) to latency-sensitive small messages (e.g., KV cache lookups, barrier synchronization). When small and large traffic mix, incast congestion at the last hop inflates 99th-percentile latency, idling GPUs and capping throughput.
-
-TCP and RDMA struggle because they rely on sender-driven congestion control with delayed signals and treat data as an opaque byte stream, preventing prioritization of short messages. Homa, a clean-slate transport, uses message boundaries, receiver-issued grants, and switch priority queues to implement SRPT-like scheduling, reducing tail latency for short messages by over 10× while also improving large-message performance.
-
-## Main Ideas
-- AI workloads are evolving from long, throughput-focused transfers to frequent, latency-sensitive small messages for coordination and metadata, making tail latency the binding constraint.
-- Legacy protocols (TCP, RDMA) use sender-driven congestion control with delayed feedback, causing queue buildup, instability, and high tail latency when small and large messages mix.
-- Byte-stream models in TCP/RDMA obscure message boundaries, preventing prioritization of short messages and causing head-of-line blocking.
-- Homa’s message-based design exposes message lengths early, enabling precise congestion control and SRPT-like prioritization of short messages.
-- Receiver-driven grants in Homa allow the destination to pace senders and allocate bandwidth based on real-time congestion, avoiding switch buffer overflows.
-- Homa leverages existing switch priority queues to bypass queued long messages with high-priority short messages, reducing tail latency without harming large-message throughput.
-
-## Questions And Answers
-- **Why does tail latency matter for AI?** Because synchronization phases stall all GPUs until the slowest message completes; as compute phases shrink to milliseconds, latency dominates throughput.
-- **How does Homa avoid congestion?** Receivers issue grants to senders only when bandwidth is available, using message-length knowledge to pace transmissions and prioritize short messages.
-- **Does Homa hurt large-message performance?** No; benchmarks show Homa improves both short-message tail latency (10×) and large-message throughput (~2×) over TCP.
-- **What hardware does Homa require?** It uses standard priority queues already present in modern data center switches, requiring no new hardware.
-
-## Notable Details
-- Incast congestion occurs when multiple senders saturate a destination’s last-hop link, queuing packets at the top-of-rack switch and delaying subsequent short messages.
-- TCP/RDMA rely on ECN marks or packet drops to signal congestion, introducing control lag and oscillation; receivers detect congestion only after queues form.
-- Homa’s unscheduled packets (first few of a message) let receivers learn message sizes immediately; scheduled packets are sent only upon grant.
-- Benchmark: For ~50-byte messages, Homa’s 99th-percentile RTT is ~100 µs vs. >1 ms for TCP (13× faster); for 1 MB messages, Homa is ~2× faster than TCP.
-- Homa is implemented as a Linux kernel module, available on GitHub, with upstreaming in progress.
-
-## Actionable Takeaways
-- Audit AI workloads for small-message latency bottlenecks; if 99th-percentile latency stalls GPUs, consider Homa.
-- Evaluate Homa in mixed workloads (small + large messages) where TCP/RDMA show high tail latency.
-- Monitor trends in inference and agentic workloads for increasing small-message sensitivity.
-- Test Homa’s Linux kernel module in non-production environments to measure latency improvements.
-
-## People, Companies, Tools, And Links Mentioned
-- [Homa GitHub](https://github.com/PlatformLab/Homa)
-- [John Ousterhout’s Stanford page](https://web.stanford.edu/~ouster/cgi-bin/index.php)
-- Benam Montazeri (original PhD dissertation)
-- TCP, RDMA over Converged Ethernet (RoCE), ECN (Explicit Congestion Notification), SRPT (Shortest Remaining Processing Time)
-
-## Reading Priority
-
-High – Introduces a production-ready, clean-slate transport protocol with 10× tail-latency improvements for AI’s emerging small-message workloads, backed by concrete benchmarks and kernel-level implementation.
-
-***
-
-# #502 – Psychiatry, Insane Asylums, Mental Illness, ECT, Lobotomies, Freud & Jung
-
-- **Published:** 2026-09-17
-- **Podcast:** [Lex Fridman Podcast](https://lexfridman.com/andrew-scull/?utm_source=rss&utm_medium=rss&utm_campaign=andrew-scull)
-
-## One-Sentence Takeaway
-Psychiatry’s history reveals a field oscillating between biological and psychological explanations for mental illness, with repeated overconfidence in unproven treatments, persistent diagnostic uncertainty, and a modern crisis of efficacy and ethics.
+Runway’s **WorldPrompt** and **GWM Worlds 2** demonstrate how real-time, controllable world models—trained on video and fine-tuned for interactivity—can simulate dynamic environments for gaming, robotics, and agent training, despite current limits in long-term memory and error accumulation.
 
 ***
 
 ## Short Summary
-Psychiatry has long struggled to balance biological and psychological models of mental illness, often swinging between extremes. Early asylums promised cures but devolved into warehouses for the chronically ill, while 20th-century interventions like lobotomies, insulin coma therapy, and malaria "cures" for syphilis reflected desperate, unscientific attempts to address severe conditions. The field’s diagnostic framework (e.g., DSM) prioritized reliability over validity, grouping symptoms into broad categories like schizophrenia and bipolar disorder without clear biological markers. Despite advances like antipsychotics and antidepressants, treatments remain symptomatic, not curative, and often carry severe side effects or iatrogenic harms. Public policy failures have further marginalized the severely mentally ill, shifting care from asylums to prisons, while the profession grapples with stigma, ethical lapses, and the limits of neuroscience-driven approaches.
 
-The conversation underscores psychiatry’s unresolved tension between brain-based and mind-based explanations, the dangers of reductionist narratives (e.g., eugenics), and the need for humility in a field where progress has been incremental and uneven.
+Runway’s latest research preview, **GWM Worlds 2**, introduces **WorldPrompt**, a control layer for specifying and manipulating elements (characters, cameras, environments) in a simulated world via timestamped prompts. Unlike scripted engines (e.g., Minecraft), WorldPrompt relies on natural language inputs, enabling on-demand, interactive video and audio generation at **720p/24fps** with synchronized audio. The model achieves real-time performance through **autoregressive diffusion**, fine-tuning, and **distillation** (reducing denoising steps or model size), though it faces challenges like **error accumulation** and **limited long-term memory**.
+
+Beyond gaming, these world models show promise for **robotics simulation**, **agent training**, and **synthetic data generation**, with Runway arguing that scaling video prediction models alone can capture physics and dynamics without novel architectures. Competitors like Google’s **Genie 3** and World Labs’ **RTFM** highlight the field’s early-stage limitations, such as short interaction windows (minutes, not hours).
 
 ***
 
 ## Main Ideas
-- **Diagnostic uncertainty**: Psychiatry’s DSM system improved reliability (consistent diagnoses across clinicians) but not validity (whether categories reflect real underlying pathologies). The DSM-5’s failure to ground diagnoses in biology or neuroscience highlights the field’s persistent struggle to define mental illness objectively.
-- **Biological vs. psychological models**: The pendulum swing between "brainless" (early psychoanalysis) and "mindless" (modern neuroscience-focused) psychiatry has obscured the interplay of social, psychological, and biological factors in mental illness. Human brains are highly plastic, shaped by environment, making rigid separations counterproductive.
-- **Iatrogenic harms and ethical failures**: Treatments like lobotomies, insulin coma therapy, and malaria induction for syphilis were born of desperation and poor science, often causing lasting damage. The eugenics movement, sterilization programs, and Nazi atrocities (e.g., the T4 program) demonstrate how psychiatric narratives can be weaponized, with U.S. ideas and funding influencing Nazi policies.
-- **Limits of modern psychopharmacology**: Antipsychotics and antidepressants, discovered serendipitously in the 1950s, remain the standard of care but are only partially effective, with unpredictable responses and side effects. Big Pharma’s ethical lapses (e.g., hidden data, manipulated studies) and the lack of new drug targets have stalled progress.
-- **Public policy and systemic neglect**: Deinstitutionalization in the 1960s–70s replaced asylums with "community care," but underfunding left the severely mentally ill cycling between homelessness, jails, and emergency rooms. Today, the largest *de facto* psychiatric facilities in the U.S. are jails (e.g., Los Angeles County Jail, Rikers Island), revealing a systemic failure to provide humane, effective care.
 
+- **WorldPrompt as a control interface**: A prompting mechanism (not a programming language) that fixes aspects of a scene (e.g., first frame) and allows timestamped, real-time actions (e.g., NPC movements or dialogue). This enables **fine-grained control** over dynamic elements without scripting, though reliability varies by task complexity (e.g., movement works better than physics).
+
+- **Real-time engineering tradeoffs**: Achieving **24fps latency** required converting a bidirectional diffusion model (generating full videos at once) into an **autoregressive** one (frame-by-frame) via fine-tuning and distillation. Key bottlenecks include **error accumulation** (small mistakes compound over time) and **GPU memory limits** for infinite generation.
+
+- **World models vs. video models**: Runway argues that scaling video prediction models inherently improves **physics simulation** and **counterfactual generation** (e.g., simulating both successful and failed actions equally). Benchmarks like **Physics-IQ** show predictable gains in modeling mechanics/fluids as compute scales, though current models still "cheat" by avoiding complex dynamics.
+
+- **Beyond gaming**: Use cases include **robotics** (sim-to-real evaluation with **GWM-1** showing high correlation to real-world outcomes), **agent training** (synthetic environments for testing), and **interface world models** (pixel-based software UIs generated in real-time from prompts, replacing HTML/CSS).
+
+- **Architectural pragmatism**: Runway bets on **scaling video diffusion transformers** (e.g., Gen-3’s 10x compute jump after Sora) over novel architectures like **JEPA**, citing evidence that current approaches can capture world dynamics if scaled sufficiently.
+
+***
 ***
 ## Questions And Answers
-- **Why did psychiatry adopt the DSM’s symptom-based approach?**
-  To address unreliable diagnoses (e.g., the Rosenhan study exposed arbitrary labeling of "sane" pseudo-patients as schizophrenic). The DSM-3 (1980) introduced checkbox-style criteria to standardize diagnoses across clinicians, appealing to insurers, drug companies, and patients seeking clarity—but it sacrificed underlying validity for reliability.
 
-- **How did biological determinism enable atrocities like eugenics and the Holocaust?**
-  Late 19th-century psychiatrists, facing poor asylum outcomes, blamed patients’ "inferior biology" (e.g., "degeneration theory"), justifying sterilization and long-term confinement. These ideas spread globally; California’s sterilization laws influenced Nazi Germany’s T4 program, which murdered ~250,000 mentally ill patients using gas chambers (a precursor to the Final Solution). Rockefeller Foundation funding even supported German eugenicists like Ernst Rüdin.
+**Q: How does WorldPrompt differ from traditional game engines?**
+A: WorldPrompt uses **natural language prompts** to control elements dynamically (e.g., "NPC walks to the door at t=5s"), whereas engines like Unity require scripting. It lacks structured state but offers **on-demand, promptable worlds** with synchronized video/audio.
 
-- **What ended lobotomy and other extreme therapies?**
-  Generational backlash against the "zombie-like" outcomes of lobotomized patients, combined with the advent of antipsychotic drugs in the 1950s, which offered a less invasive (though still imperfect) alternative. Cultural depictions like *One Flew Over the Cuckoo’s Nest* also turned public opinion against such practices.
+**Q: What are the biggest technical hurdles for real-time generation?**
+A: **Error accumulation** (autoregressive feedback loops degrade quality over time) and **memory constraints** (managing context for infinite generation without blowing up GPU memory). Distillation (fewer steps/smaller models) helps but trades quality for speed.
 
-- **Why hasn’t neuroscience delivered better psychiatric treatments?**
-  Despite $20+ billion invested by the National Institute of Mental Health (NIMH) in genetics and neuroscience, former NIMH director Thomas Insel admitted in 2013 that patient outcomes had not improved. The brain’s complexity, the lack of clear biological markers for mental illnesses, and the difficulty of translating research into treatments have stymied progress.
+**Q: Can these models simulate physics reliably?**
+A: **Partially**. Scaling improves intuitive physics (e.g., predicting a ball’s fall), but models trained on real-world video may **overrepresent successful outcomes** (e.g., goals scored > missed). Counterfactual generation (simulating failures) remains a gap.
 
+**Q: How are world models used in robotics?**
+A: **GWM-1** (built on Gen-4.5) acts as a **simulator** for testing robotic policies. By post-training on minimal robotic data (hundreds of hours vs. millions for traditional methods), it leverages pre-trained world knowledge to generalize tasks (e.g., manipulation) with high **sim-to-real correlation**.
+
+***
 ***
 ## Notable Details
-- **Lobotomy’s scale and legacy**: Walter Freeman, the "Henry Ford of lobotomy," performed or taught ice-pick lobotomies (using a hammer and ice pick via the eye socket) in state hospitals across the U.S., sometimes 20–30 in a single afternoon. An estimated 50,000+ lobotomies were performed in the U.S. between the 1930s–1970s. Egas Moniz, the Portuguese neurologist who pioneered the procedure, won the 1949 Nobel Prize in Medicine—a decision now widely regretted.
-- **Malaria therapy for syphilis**: Julius Wagner-Jauregg won the 1927 Nobel Prize for inducing malaria in patients with *general paralysis of the insane* (tertiary syphilis), based on the (flawed) theory that fever could "burn out" the infection. Mental hospitals maintained mosquito colonies to infect patients until penicillin rendered the practice obsolete.
-- **Mortality gap**: People with serious mental illness die **15–25 years earlier** on average than the general population, a gap that has *widenened* over time due to neglect, poor healthcare access, and systemic failures.
-- **Freud’s simplification**: Psychoanalysis reduced the mind’s complexities to a narrow model (e.g., unconscious drives, Oedipal conflicts), which, while productive in some ways, often ignored biological and social dimensions. Leon Eisenberg’s critique: "When I entered psychiatry, it was a brainless psychiatry. When I left, it was a mindless psychiatry."
-- **Pharma’s role**: Drug companies hid negative trial data and manipulated studies to overstate the efficacy of antipsychotics and antidepressants, leading to billions in settlements (e.g., Vioxx’s $5 billion payout). This eroded trust and contributed to the field’s crisis.
 
+- **GWM Worlds 2 specs**: 720p video at 24fps, audio at 48kHz, **autoregressive diffusion** with **WorldPrompt** control.
+- **Competitor limits**: Google’s **Genie 3** supports only **a few minutes** of continuous interaction; **RTFM** (World Labs) and **Odyssey-2 Pro** face similar real-time constraints.
+- **Distillation methods**: Reducing denoising steps (e.g., 50 → 4) or model size to hit real-time, with "some quality loss but potentially comparable results."
+- **Evaluation challenges**: For multi-character scenes, **causality is hard to verify**; Runway uses automated tests but advises manual testing for research previews.
+- **Robotics data thesis**: **Third-person video** (e.g., humans performing tasks) is the most abundant and effective pre-training source for robotics, requiring far less **teleoperation** or **egocentric data**.
+- **Interface world models**: Early demos show **click/drag/scroll** interactions rendered as pixels (no HTML/CSS), with prompts defining button behaviors. Cost and latency remain barriers.
+
+***
 ***
 ## Actionable Takeaways
-- **Question diagnostic labels**: Recognize that DSM categories are tools for communication and insurance, not necessarily biological truths. Advocate for approaches that account for individual variability and context.
-- **Demand transparency in research**: Support open science and independent replication in psychiatric research, given the history of manipulated data and industry influence.
-- **Advocate for systemic care**: Push for policies that address the full spectrum of mental health needs, from housing and healthcare access to humane treatment for severe illness, rather than relying on prisons or underfunded community programs.
-- **Embrace interdisciplinary models**: Encourage integration of biological, psychological, and social perspectives in mental health care, avoiding the pitfalls of reductionism (e.g., "it’s all brain chemistry" or "it’s all trauma").
-- **Study history to avoid repetition**: The failures of lobotomies, eugenics, and unethical experiments underscore the need for rigorous ethics, patient consent, and humility in medical innovation.
+
+- **Watch for distillation advances**: Step-distilled models (fewer diffusion steps) are key to real-time deployment; expect quality gaps to narrow in 2–3 years.
+- **Test WorldPrompt for prototyping**: If building interactive simulations, experiment with **timestamped prompts** for dynamic control, but validate reliability for critical actions.
+- **Leverage world models for robotics**: Use **GWM-1** or similar to **pre-train policies** on third-person video before fine-tuning on robotic data to reduce sim-to-real gaps.
+- **Monitor long-context research**: **Error accumulation** in autoregressive models is the next major hurdle for extended interactions (e.g., >30 minutes for avatars).
+- **Explore interface world models**: For rapid UI prototyping, consider **pixel-based generation** as an alternative to traditional frontend stacks, especially for exploratory or educational tools.
 
 ***
+***
 ## People, Companies, Tools, And Links Mentioned
-- **People**: Andrew Scull, Emil Kraepelin, Eugen Bleuler, Walter Freeman, Egas Moniz, Julius Wagner-Jauregg, Leon Eisenberg, Robert Spitzer, Alan Francis, Thomas Insel, Stephen Hyman, David Rosenhan, Ken Kesey, Ernst Rüdin.
-- **Books**: [Madness in Civilization](https://amzn.to/3SZhd0I), [Desperate Remedies](https://amzn.to/4vmBquI).
-- **Institutions**: National Institute of Mental Health (NIMH), Rockefeller Foundation, UCSD.
-- **Historical Programs**: Nazi T4 Program.
-- **Films**: *One Flew Over the Cuckoo’s Nest*.
-- **Andrew Scull’s UCSD faculty page**: [Sociology Faculty Page](https://sociology.ucsd.edu/people/faculty/emeritus/andrew-scull.html).
 
+- **Runway**: [Website](https://runwayml.com)
+- **Anastasis Germanidis**: [LinkedIn](https://www.linkedin.com/in/agermanidis/), [X](https://x.com/agermanidis)
+- **Google DeepMind Genie 3**
+- **World Labs RTFM (Real-Time Frame Model)**
+- **Odyssey-2 Pro**
+- **NVIDIA**: Partner in **Cosmos Coalition** (open-source world models)
+- **Physics-IQ**: Benchmark for evaluating physics in video models
+- **Roborina**: Robotics benchmark for action model evaluation
+- **Stable Diffusion**: Early latent diffusion model co-developed with Runway researchers
+- **Sora**: OpenAI’s text-to-video model
+- **Andrej Karpathy**: Advocate for **fully neural operating systems**
+- **Yann LeCun**: Critic of video-only approaches (advocates **JEPA**)
+- **Latent Space Podcast**: [Episode Link](https://www.latent.space/p/runway)
+
+***
 ***
 ## Reading Priority
 
-Medium – A sweeping, evidence-rich critique of psychiatry’s past and present, exposing the field’s hubris, ethical failures, and unresolved tensions, with urgent implications for mental health policy and practice.
+High – Runway’s technical depth on real-time world models, concrete engineering tradeoffs, and cross-domain applications (robotics, agents) makes this a standout for professionals tracking the next wave of generative AI beyond LLMs.
 
 ***
 
-# Your Agreements Are a Database You Can't Query — Hiral Shah, Docusign & Sean Sodha, NVIDIA
+# OpenRouter: from Seed to Stripe — with OpenRouter’s Alex Atallah & AMP’s Anjney Midha
 
-- **Published:** 2026-09-16
-- **YouTube:** [AI Engineer](https://www.youtube.com/watch?v=_gvamfT8H-w)
-- **Speaker:** Sean Sodha – Product Manager, NVIDIA
+- **Published:** 2026-09-25
+- **Podcast:** [Latent Space](https://www.latent.space/p/openrouter)
+- **Speakers:** **Alex Atallah**: Co-founder & CEO, OpenRouter; **Anjney Midha**: Partner, AMP; early investor in OpenRouter, Anthropic, Mistral, and others
 
 ## One-Sentence Takeaway
-Purpose-built, small vision-language models can, according to Docusign and NVIDIA speakers, extract structured data (especially tables) from contracts ~20× faster and at lower cost than general models, which they say helps unlock ~$2 trillion of negotiated value currently trapped in unqueryable agreements.
+OpenRouter became essential AI infrastructure by solving distribution and discovery for a multi-model world, proving that neutral routing layers—not just model training—are critical to the ecosystem's growth.
+
+***
 
 ## Short Summary
-Enterprises lose access to trillions in negotiated value because pricing tables, rate cards, and SKUs buried in signed PDFs cannot be reliably extracted or queried. Docusign processes ~1M agreements/day for ~2M paying customers, and generic extraction fails on tables due to merged cells, nested columns, and layout complexity.
+OpenRouter emerged from the early wave of open-weight models (Llama, Alpaca, Mistral) as a neutral routing layer, addressing a critical gap: model labs struggled to distribute their checkpoints to developers, while developers needed a way to easily swap, compare, and deploy models. The platform’s leaderboards, auto-routing, and marketplace dynamics turned it into a real-time map of AI usage, accelerating adoption for new models like Mistral’s 8x7B and Claude 3.5 Sonnet.
 
-Docusign and NVIDIA built a ~900M-parameter extractor (not generator) VLM that preserves table structure, reading order, and semantic formatting in a single pass, outperforming larger general models on speed, latency, and cost. Their lesson: restraint—small, task-specific models beat general ones for high-volume, low-latency document processing.
+The acquisition by Stripe underscores a growing challenge: **token fraud** is becoming a defining security problem for the AI economy. As tokens become a new unit of value, fraudsters—both human and agentic—are increasingly targeting inference gateways. Stripe’s fraud detection infrastructure (e.g., Radar) and OpenRouter’s trust-and-safety systems are now poised to address this at scale.
+
+***
 
 ## Main Ideas
-- Agreements contain hierarchical, interdependent terms (e.g., amendments, governing documents) that require traversing decades of business history to answer simple questions like "What did we contract for?"
-- Generic VLMs and OCR pipelines fail on tables because they read line-by-line, breaking merged cells, nested columns, and semantic boundaries—exactly where critical pricing and SKU data resides.
-- A small (~900M parameter), purpose-built VLM trained as an extractor (not generator) preserves table structure, layout, and reading order in one pass, avoiding the need for separate layout and table models.
-- At Docusign’s scale, the speakers report that this model achieved ~20× faster table extraction with lower latency and cost than general alternatives, attributed to smaller context windows and task-specific optimization.
-- Pre-processing (OCR + extraction) is essential for high-throughput, low-latency querying across petabytes of agreements; dynamic, on-demand processing suits smaller-scale or reactive use cases.
+
+- **Multi-model bet paid off early**: OpenRouter’s founding thesis—that no single model would dominate—was non-consensus in 2023 but proved prescient. The rise of open-weight models (e.g., Llama, Alpaca, Mistral) and their rapid iteration cycles created demand for a neutral layer to compare, route, and deploy models without vendor lock-in.
+
+- **Distribution is the bottleneck for model labs**: Even after spending billions on training, labs often lacked the infrastructure or developer-focused mindset to distribute their models effectively. OpenRouter solved this by providing APIs, key management, versioning, and a marketplace that could route millions of developers to new models on day one (e.g., Mistral’s launch saw immediate adoption via OpenRouter).
+
+- **Marketplaces require more than "just a wrapper"**: Critics dismissed OpenRouter as a thin layer over others’ APIs, but its value came from orchestrating multiple APIs at scale, creating feedback loops (e.g., leaderboards), and designing community-driven discovery. This was akin to Discord’s role in scaling Midjourney and crypto communities—providing a petri dish for early AI apps.
+
+- **Focus over expansion**: OpenRouter resisted branching into fine-tuning, memory, or adjacent products, instead doubling down on its core: routing, discovery, and developer experience. This focus mirrored Anthropic’s early strategy of prioritizing coding (its "AI pair programming" mission) to carve out a niche before expanding.
+
+- **Token fraud is the next security frontier**: As the token economy scales (projected to reach trillions in GMV), fraud—from stolen credit cards to runaway agents—will target inference gateways. OpenRouter already blocks 10x more fraudulent dollar volume month-over-month, and Stripe’s acquisition positions it to build defenses against **agentic fraud** (autonomous agents attacking token flows).
+
+- **Leaderboards as a live map of AI**: OpenRouter’s rankings became a real-time barometer of the industry, reflecting shifts in model preference (e.g., Mistral’s price war, Claude 3.5 Sonnet’s coding leap) and usage patterns (e.g., the rise of coding agents like OpenClaw and Hermes).
+
+***
 
 ## Questions And Answers
-- **Q: Is OCR going away?**
-  A: No. OCR remains critical for upfront processing at scale (petabytes of documents), but compute can be shifted: heavy OCR upfront for high-throughput querying, or lighter OCR for low-latency, single-document Q&A. Hybrid pipelines (e.g., OCR for text + VLM for tables) are common.
 
-- **Q: How do you balance accuracy vs. performance?**
-  A: Focus first on accuracy (e.g., correct table extraction), then optimize the Pareto frontier (e.g., quantization to FP8/FP4, multi-token generation, Blackwell acceleration). Current model runs in FP16 with paths to FP8/FP4.
+**Q: Why did model labs struggle to distribute their models?**
+A: Labs focused on training and capabilities but overlooked developer needs (e.g., APIs, key management, versioning). For example, Mistral’s first checkpoint was released as a torrent with no API, leaving developers to host it themselves. OpenRouter filled this gap by providing turnkey access and a marketplace for discovery.
+
+**Q: How did OpenRouter’s leaderboard become so influential?**
+A: It surfaced real-world usage data, not just lab benchmarks. When Mistral 8x7B launched, its speed and efficiency made it *feel* smarter to users, even if evals favored other models. The leaderboard captured these human preferences, guiding developers to the best models for their needs.
+
+**Q: Why didn’t OpenRouter expand into fine-tuning or memory?**
+A: Focus was critical. OpenRouter’s mission was to be a neutral routing layer, not a full-stack AI platform. Adjacent products (e.g., model fusion, tuning-as-a-service) were prototyped but deprioritized to avoid diluting the core value prop. Partners (e.g., inference providers) could handle those layers better.
+
+**Q: What’s the strategic rationale behind Stripe acquiring OpenRouter?**
+A: Stripe’s fraud infrastructure (e.g., Radar) is uniquely suited to combat token fraud, a growing threat as AI inference becomes a high-value target. OpenRouter’s scale (10M+ developers, 10T+ tokens/day) and trust-and-safety systems complement Stripe’s expertise, enabling them to secure the emerging token economy.
+
+***
 
 ## Notable Details
-- Docusign processes ~1M agreements/day for ~1.9M paying customers and ~1B users.
-- Estimated $2T in negotiated value is trapped in unqueryable agreements due to manual review and disconnected systems.
-- NeMo Retriever (NVIDIA’s open-source initiative) includes embedding, reranking, and document extraction models, with leaderboard-topping results in retrieval benchmarks (e.g., Vidori, MTB, MMT).
-- The NeMo Parse model is a single-shot extractor (not generator) that outputs reading order, semantic structure, and preserved tables, deployable via NVIDIA NIM or LLM APIs.
-- Benchmarked against open-source models on RD-Table, NeMo Parse showed superior table extraction accuracy.
-- Demo: Order form PDF → structured data (CSV/API) with extracted pricing tables, SKUs, and metadata in seconds.
+
+- **Early experiments**: OpenRouter’s precursor was **Window AI**, a Chrome extension (built with Plasmo) that let users configure models per webpage. It failed as a form factor but proved the need for an API-driven marketplace.
+- **Mistral’s price war**: The launch of Mistral 8x7B in Dec 2023 triggered an 80% price drop in inference costs, proving the value of a competitive marketplace. OpenRouter’s auto-router let users capitalize on these price differences.
+- **Model fusion’s revival**: OpenRouter’s first **Mixture of Models (MOM)** prototype in early 2024 failed because the best model dominated the fused output. By 2026, as frontier models converged in capability, fusion became viable—internal tests showed fused results outperformed individual models.
+- **OpenClaw’s impact**: The coding agent’s use of OpenRouter’s auto-router (including "heartbeat" checks to verify model liveness) demonstrated how routing infrastructure enables new agentic workflows.
+- **Fraud scale**: OpenRouter blocked **10x more fraudulent dollar volume** in a single month as the token economy grew. Examples include stolen credit cards, resold inference traffic, hacked accounts, and runaway agents.
+- **Discord as a petri dish**: Midjourney’s success on Discord (10M MAUs in <8 months) showed the power of community-driven discovery. OpenRouter replicated this dynamically for LLMs, where visual examples (like Midjourney’s) were less effective.
+
+***
 
 ## Actionable Takeaways
-- For high-volume document processing, prioritize small, task-specific models over general VLMs to reduce latency and cost.
-- Invest in upfront OCR + extraction pipelines for petabyte-scale corpora to enable low-latency querying later.
-- Evaluate models on domain-specific benchmarks (e.g., table extraction) rather than generic performance metrics.
-- Explore quantization (FP8/FP4) and hardware acceleration (e.g., Blackwell) to push the accuracy-performance Pareto frontier.
-- Consider hybrid architectures (e.g., OCR for text + VLM for tables) to handle diverse document structures.
+
+- **Watch the leaderboards**: OpenRouter’s rankings are a leading indicator of model adoption and capability shifts (e.g., coding models overtaking generalists).
+- **Prepare for token fraud**: If you’re building or using inference gateways, assume fraudsters (and soon, agents) will target your token flows. Partner with platforms that prioritize trust-and-safety.
+- **Leverage auto-routing**: For cost-sensitive applications, use OpenRouter’s auto-router to dynamically switch between models based on price, latency, or performance.
+- **Avoid "wrapper" fallacies**: Infrastructure layers (e.g., routing, discovery, fraud detection) can be as valuable as the models themselves. Don’t dismiss them as mere plumbing.
+- **Focus on developers**: Model labs should prioritize developer experience (APIs, docs, feedback loops) as much as training. OpenRouter’s success shows that distribution is a solvable problem.
+
+***
+***
+## People, Companies, Tools, And Links Mentioned
+
+**People**
+- Alex Atallah
+- Anjney Midha
+- David Holz (Midjourney)
+- Guillaume Lample (Mistral)
+- Dario Amodei (Anthropic)
+- Tom Brown (Anthropic)
+- Louis Vicchi (OpenRouter founder)
+- Patrick Collison (Stripe)
+- John Collison (Stripe)
+
+**Companies/Projects**
+- [OpenRouter](https://openrouter.ai/)
+- [Stripe](https://stripe.com/)
+- [Anthropic](https://www.anthropic.com/)
+- [Mistral AI](https://mistral.ai/)
+- [Midjourney](https://www.midjourney.com/)
+- [Black Forest Labs](https://bfl.ai/)
+- [OpenSea](https://opensea.io/)
+- [Discord](https://discord.com/)
+- [AMP](https://www.amppublic.com/)
+- [LM Arena](https://arena.lmsys.org/)
+- [Hugging Face](https://huggingface.co/)
+- [Stable Diffusion](https://stability.ai/)
+- [LAION](https://laion.ai/)
+- [Axie Infinity](https://axieinfinity.com/)
+- [Cursor](https://www.cursor.com/)
+- [Cognition](https://cognition.ai/)
+- [OpenClaw](https://github.com/OpenClaw/OpenClaw)
+- [Hermes](https://github.com/Enan-01/Hermes)
+- [Plasmo](https://docs.plasmo.com/)
+
+**Tools/Concepts**
+- Alpaca (Stanford’s fine-tuned Llama model)
+- Claude 3.5 Sonnet
+- Mixtral 8x7B
+- BYOM (Bring Your Own Model)
+- MOM (Mixture of Models)
+- Stripe Radar
+- Window AI (Chrome extension)
+- Net Neutrality Act
+
+***
+***
+## Reading Priority
+
+High – This conversation offers a rare, detailed look at how OpenRouter became critical AI infrastructure, the underappreciated role of distribution in model adoption, and the emerging threat of token fraud—backed by concrete examples, numbers, and strategic insights from operators at the center of the ecosystem.
+
+***
+
+# Distill the LLM, Don't Serve It: Search & Personalization at DoorDash — Raghav Saboo, DoorDash
+
+- **Published:** 2026-09-25
+- **YouTube:** [AI Engineer](https://www.youtube.com/watch?v=ACPEpji5NV4)
+- **Speaker:** Raghav Saboo, Staff ML Engineer and Tech Lead for Search & Personalization at DoorDash
+
+## One-Sentence Takeaway
+Marketplace discovery improves when LLMs reason offline to create semantic labels, taxonomies, and user memory that are then distilled into fast, production-grade models.
+
+## Short Summary
+DoorDash’s search and personalization rely on semantic understanding—matching shopper intent to item meaning—rather than engagement signals alone. Four primitives enable this: LLM-generated relevance labels, learned semantic IDs for catalog structure, multi-timescale consumer memory, and steerable LLM-generated collections. Each primitive is computed offline and distilled into lightweight models for serving, yielding measurable gains in retrieval, ranking, and conversion.
+
+The approach avoids replacing retrieval/ranking systems with LLMs. Instead, it uses LLMs to produce high-quality supervision and representations that downstream models can leverage efficiently.
+
+## Main Ideas
+- Engagement-based ranking can misalign with user intent (e.g., surfacing popular regular pasta for a gluten-free query), so graded relevance labels from LLMs provide a scalable, reasoning-based supervision signal.
+- A two-stage contrastive retrieval method—global geometry shaping followed by hard-negative mining—improves relevance distinction, lifting retrieval NDCG by 2.3%.
+- Semantic IDs form a learned, hierarchical taxonomy that captures fine-grained relationships (e.g., hot sauce subtypes) and improves ranking MRR by 4–5%, while enabling cross-category comparisons and cold-start coverage.
+- Consumer memory is structured across three timescales (long-term preferences, real-time context, stated preferences) and materialized as text, vectors, and graphs to power personalization across models.
+- Steerable, LLM-generated personalized collections (e.g., plant-based pantry rows) are created offline and hydrated at serving time, lifting order rates by nearly 1% in the pets category.
+
+## Questions And Answers
+- **Why not rely on engagement signals for ranking?**
+  Engagement signals are biased by exposure, position, price, and promotions, and may surface popular but irrelevant items (e.g., regular spaghetti for a gluten-free query). Graded relevance labels from LLMs address this by capturing intent and constraints.
+
+- **How do semantic IDs improve cold-start and tail coverage?**
+  Semantic IDs allow new or sparse items to inherit signal from semantically related items via shared prefixes, enabling immediate utility without waiting for user exposure or volume.
+
+- **What are the three timescales of consumer memory?**
+  Long-term memory (durable preferences from past orders, searches, and support interactions), real-time context (in-session interactions like cart state), and stated preferences (explicit constraints from agentic interactions like Ask DoorDash).
+
+## Notable Details
+- Human-labeled seed sets use a 3-level relevance scale (0, 1, 2), audited for consistency with behavioral signals and taxonomy models, then fine-tuned into a lightweight LLM (e.g., GPT-4o-mini) for catalog-wide labeling.
+- Semantic IDs enable query reformulation by mapping queries to catalog-grounded neighborhoods (e.g., Sriracha → garlic chili sauce, sambal oelek).
+- Graph-based embeddings for consumer memory outperform taxonomy-based embeddings in retrieval, especially at fine-grained taxonomy levels.
+- Personalized collections are generated offline using consumer memory and semantic IDs, then ranked and hydrated at serving time using existing retrieval/ranking infrastructure.
+
+## Actionable Takeaways
+- For marketplace discovery, prioritize semantic understanding over engagement optimization to align results with user intent.
+- Use LLMs offline to generate high-quality labels, taxonomies, or memory representations, then distill these into smaller, faster models for production serving.
+- Adopt hierarchical semantic IDs to improve catalog structure, cross-category relationships, and cold-start performance.
+- Structure consumer memory across multiple timescales and formats (text, vectors, graphs) to enable reuse across retrieval, ranking, and personalization systems.
+- Test steerable, LLM-generated content (e.g., personalized collections) in high-intent verticals (e.g., pets) where intent signals are strong and actionable.
 
 ## People, Companies, Tools, And Links Mentioned
-- Docusign
+- DoorDash
+- Raghav Saboo
+- [Build Ship AI Substack](https://buildshipai.substack.com/)
+- GPT-4o-mini
+
+## Reading Priority
+
+High – This talk presents a concrete, production-tested framework for integrating LLMs into large-scale recommendation systems, with measurable gains and actionable patterns.
+
+***
+
+# World Models Need Causality, Not Pretty Pixels — Christopher Manning, Moonlake AI
+
+- **Published:** 2026-09-24
+- **YouTube:** [AI Engineer](https://www.youtube.com/watch?v=4Gqg0HVe-AY)
+- **Speakers:** Christopher Manning; Stanford Professor; Moonlake AI Co-founder
+
+## One-Sentence Takeaway
+Embodied AGI requires action-conditioned world models with causal semantics, not just generative pixels, and simulation can replace 10,000 hours of costly teleoperation to bridge the sim-to-real gap.
+
+## Short Summary
+Christopher Manning argues that generative video (e.g., Genie 3) produces visually plausible but semantically shallow simulations, insufficient for planning or robotics. Moonlake AI builds code-based, action-conditioned world models from single images or short videos, enriching them with web-researched object details (e.g., tea bags inside a closed box) and using a Claude Code–style loop to align renders with reality. The goal is to enable 10,000 hours of simulation-driven training for embodied AI, reducing reliance on real-world teleoperation.
+
+The approach leverages neurosymbolic representations—symbolic code for objects and physics, paired with neural rendering—to create controllable, queryable simulations. Manning positions this as a pragmatic path to embodied AGI, contrasting it with purely neural latent representations (e.g., JEPA) that lack human-interpretable structure.
+
+## Main Ideas
+- Generative video models (e.g., Genie 3) simulate observations but lack underlying semantics, making them poor for planning or causal reasoning in embodied AI.
+- Action-conditioned world models must separate static backgrounds from manipulable objects, then enrich partial observations (e.g., closed containers) with web-retrieved data to infer hidden states.
+- Neurosymbolic simulations—code-based object models with neural rendering—offer interpretable, editable representations that can be iteratively refined via a render-compare-revise loop (inspired by Claude Code) to shrink the sim-to-real gap.
+- Simulation can provide 10,000 hours of high-quality training data for robotics, avoiding the cost and rarity of real-world teleoperation, especially for tail-case scenarios (e.g., autonomous driving edge cases).
+- Physics engines and explicit causal knowledge are embedded in the simulation, enabling accurate predictions of object interactions (e.g., water viscosity, friction) where purely data-driven models may fail.
+
+## Questions And Answers
+- **Q: Could this apply to gaming (e.g., GTA VI) for endless world interactions?**
+  A: Yes; gaming offers abundant data and clear goals, making it a natural fit for simulation-driven embodied AI, though Moonlake currently focuses on physical infrastructure.
+
+- **Q: Do you use ontologies or knowledge representation like classic AI?**
+  A: The approach revives symbolic representations but in code form (e.g., object properties, physics), not static ontologies. This balances neural power with human interpretability.
+
+- **Q: Can simulation discover novel physical processes (e.g., latent-space connections between kidney and liver functions)?**
+  A: Simulations can reveal surprising, useful connections, but all models are partial—real-world validation remains essential.
+
+- **Q: How do you close the sim-to-real gap for physics (e.g., tolerances, backlash)?**
+  A: Use a neural optimization loop: compare simulated renders to real-world video, then automatically adjust the simulation to minimize discrepancies.
+
+## Notable Details
+- Google built a 2 trillion-token language model in 2007, comparable in scale to today’s frontier models, but lacked the neural architectures to exploit it.
+- Shakey the robot (1970s) used a logical world model for planning, foreshadowing modern action-conditioned simulations.
+- Moonlake’s pipeline: (1) parse a photo/video into objects/background, (2) enrich objects via web retrieval (e.g., tea box contents), (3) generate code-based 3D models, (4) refine with render-vs-reality feedback.
+- Physics (e.g., viscosity, friction) is explicitly modeled in the simulation, not learned from pixels alone.
+- Simulations are domain-specific: only model details relevant to the task (e.g., ignore texture if manipulation is the goal).
+
+## Actionable Takeaways
+- For embodied AI, prioritize simulations with causal, code-based representations over purely generative pixels.
+- Use web retrieval to fill observational gaps (e.g., inferring hidden object properties) in world models.
+- Adopt a render-compare-revise loop to iteratively align simulations with real-world behavior.
+- Target simulation for rare or costly real-world scenarios (e.g., robotics tail cases) to amortize training costs.
+- Explore neurosymbolic hybrids to combine neural flexibility with symbolic interpretability.
+
+## People, Companies, Tools, And Links Mentioned
+- [Moonlake AI](https://moonlake.ai)
+- Christopher Manning [website](https://nlp.stanford.edu/~manning/), [X/Twitter](https://x.com/chrmanning), [LinkedIn](https://www.linkedin.com/in/christopher-manning-011575)
+- Shakey the robot
+- Stanford AI Lab (SAIL)
+- Genie 3
+- Claude Code
+- JEPA (Joint Embedding Predictive Architecture)
+- Waymo
+- Stanley (autonomous vehicle)
+- Kenneth Craik
+- Marc Andreessen
+- Riley Goodside
+
+## Reading Priority
+
+High – Manning presents a concrete, novel path to embodied AGI with actionable technical mechanisms and clear tradeoffs, backed by historical context and Moonlake’s early implementations.
+
+***
+
+# Who Feeds the GPUs? Inside AI's Hidden $30B Layer | Renen Hallak, VAST Data
+
+- **Published:** 2026-09-24
+- **Podcast:** [The MAD Podcast with Matt Turck](https://podcasters.spotify.com/pod/show/firstmark/episodes/Who-Feeds-the-GPUs--Inside-AIs-Hidden-30B-Layer--Renen-Hallak--VAST-Data-e3palb8)
+- **Speaker:** Renen Hallak, Founder & CEO, VAST Data
+
+## One-Sentence Takeaway
+The hidden $30B software infrastructure layer—data, storage, networking, and model management—is the bottleneck and value accretor for AI at scale, not just GPUs or models.
+
+***
+
+## Short Summary
+AI factories require a full-stack rebuild: power-dense racks, fast networks, massive SSDs, and a new software layer to manage data, compute, and models at exabyte scale. Enterprises will eventually own their AI (data, weights, agents) to protect IP, but need an operating system to make it simple, safe, and scalable.
+
+VAST’s architecture (DASE: Disaggregated Shared Everything) breaks the old trade-off between speed and scale by pooling storage and compute over fast networks, enabling shared access without sharding bottlenecks. The next frontier is model management—routing prompts, caching context, and enforcing security—culminating in confidential AI (DataEnclave) that lets enterprises run models on sensitive data without exposing weights or data.
+
+***
+
+## Main Ideas
+- **AI factories** require rebuilding every layer of the stack: power, cooling, networking, storage, and software infrastructure to handle massive, unstructured data (images, video, text) at low latency for training and inference.
+- **Enterprise sovereignty** is inevitable: organizations will own their AI (data, fine-tuned weights, agents) to protect IP, but need an OS-like layer to abstract complexity, enforce security, and enable collaboration between agents and humans.
+- **DASE (Disaggregated Shared Everything)** architecture pools storage and compute over high-speed networks (NVMe over Fabrics), allowing all nodes to access all data as if it were local, avoiding the quadratic communication overhead of traditional "shared-nothing" systems.
+- **Model management is the next OS frontier**: as models proliferate, infrastructure must route prompts to the right model/GPU, cache context (KV caches, RAG), and enforce fine-grained access control for agents, data, and weights.
+- **Confidential AI (DataEnclave)** uses end-to-end encryption (via NVIDIA hardware) to let enterprises run inference on-prem without exposing model weights or their own data, unlocking regulated industries (healthcare, finance, government).
+
+***
+***
+## Questions And Answers
+**Q: Should enterprises build their own AI factories or rely on clouds?**
+A: Eventually, most will build their own to control IP (weights, agents, data), but the physical location (on-prem, colo, or rented AI cloud) matters less than ownership. The software layer must make this as simple as using a cloud.
+
+**Q: Why can’t existing databases (Snowflake, Databricks) or storage (S3) handle AI workloads?**
+A: They’re built on "shared-nothing" architectures that scale poorly for AI’s needs (trillions of vectors, thousands of concurrent agents). DASE avoids this by sharing all data across nodes, eliminating inter-node communication bottlenecks.
+
+**Q: How does VAST ensure security for multi-agent systems?**
+A: Agents inherit access controls (e.g., Active Directory roles) from their deployers or parent agents. Policies govern data access, tool calls, and agent-to-agent communication, enforced at the infrastructure layer with observability via a persistent streaming service.
+
+***
+***
+## Notable Details
+- A customer’s storage demand jumped from a planned **500 petabytes to 2 exabytes** in a single quarter, signaling explosive, unpredictable growth.
+- **KV caches** (model memory) and **RAG** (retrieval-augmented generation) require infrastructure to manage context windows, short/long-term memory, and routing to GPUs with cached state.
+- **Zero churn**: VAST reports no active customer churn; gross retention is near-perfect (only losses are from customer bankruptcies).
+- **Circular financing** in AI infrastructure (e.g., neoclouds pre-selling capacity) reflects supply chain constraints (land, power, chips) and the need to build ahead of demand.
+- **Navier-Stokes solution**: OpenAI reportedly solved one of the Clay Millennium Problems using 10,000 collaborating agents, hinting at AI’s potential for scientific breakthroughs.
+- **NVIDIA partnership**: No formal legal agreement, but deep collaboration (100+ joint engineers) on networking, inference microservices, and confidential computing—while VAST also works with AMD.
+
+***
+***
+## Actionable Takeaways
+- Watch for **infrastructure bottlenecks** (power, GPUs, storage) as the primary limiter of AI growth in the next 5–10 years.
+- Assume **enterprise AI ownership** will drive demand for on-prem/confidential solutions; evaluate vendors by their ability to enforce fine-grained access control for agents and data.
+- **Shared-nothing architectures** (traditional databases, S3) will struggle with AI-scale workloads; prioritize systems designed for **shared-everything** access at exabyte scale.
+- **Model management** (routing, caching, security) will become a critical differentiator—treat it as part of your AI OS, not just an application layer.
+- **Neocloud winners** will combine access to hardware/power, financing savvy, and **build-ahead-of-demand** execution; hyperscalers are playing catch-up.
+
+***
+***
+## People, Companies, Tools, And Links Mentioned
+- [VAST Data](https://www.vastdata.com)
+- [NVIDIA](https://www.nvidia.com)
+- [xAI](https://x.ai)
+- [Elon Musk](https://en.wikipedia.org/wiki/Elon_Musk)
+- [OpenAI](https://openai.com)
+- [Anthropic](https://www.anthropic.com)
+- [EMC](https://www.delltechnologies.com/en-us/emc/index.htm)
+- [Cisco](https://www.cisco.com)
+- [Supermicro](https://www.supermicro.com)
+- [Navier–Stokes equations](https://en.wikipedia.org/wiki/Navier%E2%80%93Stokes_equations)
+- [Clay Millennium Problems](https://www.claymath.org/millennium-problems)
+- [P vs NP problem](https://en.wikipedia.org/wiki/P_versus_NP_problem)
+- [NVMe over Fabrics](https://en.wikipedia.org/wiki/NVMe_over_Fabrics)
+- [Active Directory](https://en.wikipedia.org/wiki/Active_Directory)
+- [KV cache](https://en.wikipedia.org/wiki/Key-Value_Store)
+- [RAG (Retrieval-Augmented Generation)](https://en.wikipedia.org/wiki/Retrieval-augmented_generation)
+
+***
+***
+## Reading Priority
+
+Medium – This conversation reveals the critical, under-discussed infrastructure layer that will determine AI’s scalability, security, and economic viability, with concrete architectural insights and demand signals from the front lines.
+
+***
+
+# Robotics Has Been Stuck for 70 Years — Deepak Pathak, Skild AI
+
+- **Published:** 2026-09-24
+- **YouTube:** [AI Engineer](https://www.youtube.com/watch?v=jFHteJjRl8A)
+- **Speaker:** Deepak Pathak, Skild AI
+
+## One-Sentence Takeaway
+Robotics has stagnated for decades because it was treated as a hardware problem rather than a general intelligence problem, but scalable, omni-bodied AI models trained on diverse data (simulation, human video, teleoperation) can unlock rapid progress.
+
+## Short Summary
+Deepak Pathak argues that robotics has seen little fundamental progress since the 1950s because the field focused on hardware rather than building a general-purpose brain. Unlike other AI domains, robotics lacks scalable data—teleoperation yields only ~1 example per minute, making GPT-3-scale datasets impractical. Skild AI’s solution is an "omni-bodied" model: a single brain for any robot or task, pre-trained on scalable data (simulation, human video) and fine-tuned with minimal teleoperation data, then improved via a deployment flywheel.
+
+The approach demonstrates robust zero-shot transfer across diverse robots (e.g., humanoids, arms, grippers) and tasks (e.g., AirPod insertion, omelet cooking, stair climbing), even adapting to hardware failures (e.g., broken legs) in real time. Pathak highlights Moravec’s paradox—robots excel at "hard" tasks (backflips) but struggle with "easy" ones (stairs)—because the latter require real-world perception and adaptation.
+
+## Main Ideas
+- Robotics stalled because it was framed as a hardware problem; progress requires a **general brain** that generalizes across tasks and embodiments, not bespoke systems for each robot or environment.
+- **Data scarcity is the bottleneck**: Teleoperation yields ~1 example/minute—scaling to GPT-3’s 30T tokens would require the entire US population over a century, making traditional data collection infeasible.
+- **Omni-bodied intelligence** (one model for any robot/task) enables a **deployment flywheel**: Pre-train on scalable but noisy data (simulation, human video), post-train on high-quality teleoperation data, then improve iteratively with real-world deployment data.
+- **Moravec’s paradox in action**: Robots struggle with seemingly simple tasks (e.g., climbing stairs) because they require perception and adaptation to unpredictable environments, whereas "hard" tasks (e.g., backflips) are easier if fully observable.
+- **End-to-end learning** (camera input → motor output) with minimal sensing (e.g., vision-only) can achieve surprising robustness, as demonstrated in tasks like omelet cooking on $4,000 arms or adapting to disabled legs in 3 trials.
+
+## Questions And Answers
+- **Why hasn’t robotics progressed like other AI fields?**
+  It lacks scalable data. Other domains (language, vision) leveraged vast datasets, but robotics relies on slow, manual teleoperation or limited simulation, neither of which scale to the trillions of examples needed.
+
+- **How can robots learn from human videos with so little robot data?**
+  Pre-training on diverse human videos (scalable but low-quality) provides a strong prior. The model then fine-tunes with <1 hour of robot-specific data, using **imagined scenarios** ("robot dreams") to multiply learning efficiency.
+
+- **Why is climbing stairs harder than a backflip for robots?**
+  A backflip is a self-contained, fully observable problem (only the robot’s body matters). Stairs require perceiving and adapting to an unpredictable environment (height, width, disturbances), which aligns with Moravec’s paradox: "easy" human tasks are hard for robots.
+
+## Notable Details
+- **Data math**: GPT-3 used ~30T tokens; at 1 example/minute via teleoperation, the US population (330M) would need **~180 years** to collect equivalent data.
+- **Hardware agnosticism**: Skild’s model controls diverse robots (humanoids, arms, grippers) zero-shot, including adapting to **broken legs** (e.g., walking on 2 legs after 3 trials) or **disabled wheels** (switching to walking).
+- **Deployment examples**:
+  - GPU assembly for NVIDIA’s Houston factory (live deployment).
+  - Package delivery to front doors (common-sense navigation).
+- **Cost efficiency**: Omelet-cooking demo used a **$4,000 arm with only a camera** (no force sensors), achieving robustness to unseen objects.
+- **End-to-end control**: Models directly map camera input to motor power, with only a PID controller for low-level stability (a pre-robotics technique).
+
+## Actionable Takeaways
+- Watch for **omni-bodied models** as a key enabler for robotics scaling—they unlock data flywheels by generalizing across hardware and tasks.
+- Prioritize **data strategies** that combine scalable pre-training (simulation, human video) with minimal high-quality fine-tuning (teleoperation, deployment).
+- Reevaluate "hard" vs. "easy" tasks in robotics: **Perception and adaptation** (not just control) are the true bottlenecks.
+- Expect near-term impact in **structured environments** (e.g., factories) where deployment data can be collected systematically.
+- Monitor **safety as a byproduct**: Omni-bodied models may inherently improve robustness by adapting to hardware failures or unexpected conditions.
+
+## People, Companies, Tools, And Links Mentioned
+- [Deepak Pathak](https://www.cs.cmu.edu/~dpathak)
+- [Skild AI](https://www.skild.ai)
+- [NVIDIA](https://www.nvidia.com)
+- [Carnegie Mellon University](https://www.cmu.edu)
+- [Moravec’s paradox](https://en.wikipedia.org/wiki/Moravec%27s_paradox)
+- [NVIDIA GTC](https://www.nvidia.com/gtc/)
+
+## Reading Priority
+
+High – Pathak presents a compelling, evidence-backed thesis for why robotics has stalled and how foundation models tailored for embodiment could unlock rapid progress, with concrete demos and deployment examples.
+
+***
+
+# Robot Demos Are Easy. Reliability Is Hard — Jason Ma, Dyna Robotics
+
+- **Published:** 2026-09-24
+- **YouTube:** [AI Engineer](https://www.youtube.com/watch?v=Sjfz1TqxzEs)
+- **Speaker:** Jason Ma, Co-founder and CTO, Dyna Robotics
+
+## One-Sentence Takeaway
+Achieving 99.4% success in long-horizon robotics tasks like napkin folding requires reward models, active learning, and a generalist foundation model that combines reasoning with fine-grained action control.
+
+## Short Summary
+Dyna Robotics demonstrates that generalist robot foundation models can reach near-100% reliability on complex, long-horizon tasks (e.g., napkin folding) by pairing a reasoning model with a world-action model, using reward models to detect mistakes, and iterating via human-in-the-loop active learning. Their approach leverages a 200,000+ hour pre-training data pyramid (off-robot, on-robot, and deployment data) to close the train-test gap, enabling zero-shot generalization to new environments (e.g., a Korean conference, a Sacramento laundromat) without site-specific fine-tuning.
+
+The core argument is that 80–90% success—common in demos—is commercially useless, as the probability of 10 consecutive successes drops below 0.1%. Dyna’s method addresses this by scaling supervision with reward models, targeting error recovery, and ensuring robustness to real-world variability (e.g., lighting changes, deformable objects).
+
+## Main Ideas
+- **Reliability over demos**: 80–90% task success is insufficient for commercial deployment; at this level, the probability of 10 consecutive successes is <0.1%, making such systems impractical for real-world use.
+- **Reward models + active learning**: A reward model that scores robot progress in real time flags mistakes (e.g., dips in progress), enabling targeted collection of recovery data and fine-tuning in a human-in-the-loop cycle. This iteratively improves robustness to rare, high-variance errors (e.g., pulling over an entire napkin stack).
+- **Generalist foundation models**: A two-part architecture—reasoning model (semantic understanding) + world-action model (fine-grained, high-frequency dexterity)—trained on a 200,000+ hour "data pyramid" (off-robot, on-robot, and deployment data) enables rapid fine-tuning for new tasks with <1 hour of task-specific data.
+- **Zero-shot generalization**: Models trained on diverse data can deploy to unseen environments (e.g., CoRL in Korea, a Sacramento laundromat) without site-specific fine-tuning, maintaining performance despite dynamic conditions (e.g., changing lighting, human interference).
+
+## Questions And Answers
+- **Q: Are you providing developer kits/SDKs for commercial partners?**
+  A: Not currently; the focus is on building an in-house hardware stack. Developer tools may be on the roadmap later.
+
+- **Q: Plans for direct-to-consumer robots (e.g., laundry folding)?**
+  A: Long-term goal is a deploy-anywhere robot platform, but current focus is enterprise use cases due to easier distribution, higher tolerance for iteration, and fewer safety/privacy constraints.
+
+- **Q: How to integrate voice commands with robotic models?**
+  A: Use mature speech-to-text to convert voice to text, then feed instructions into the reasoning/world-action models. The bottleneck remains low-level manipulation robustness, not voice integration.
+
+- **Q: Split of intelligence between foundation models and task-specific training?**
+  A: Generalist pre-training provides broad physical/semantic understanding, enabling faster adaptation and error recovery (e.g., interpolating recovery behaviors from other tasks). Task-specific fine-tuning and active learning then specialize the model for reliability.
+
+## Notable Details
+- **Dyna-1 performance**: 99.4% success rate over 24 hours of continuous napkin folding, with recovery from errors like pulling multiple napkins or toppling the stack. Validated across multiple 24-hour trials.
+- **Data pyramid**: >200,000 hours of training data, combining off-robot (human cameras, public datasets, simulation), on-robot (diverse tasks/environments), and deployment data (closes train-test gap).
+- **Commercial deployments**: Restaurants (napkin folding), a Sacramento laundromat (towel folding), and live events (opening Red Bull cans). T-shirt folding demo ran for 3 days at CoRL 2025 with no site-specific data.
+- **Task difficulty**: Napkin folding requires sub-inch precision (e.g., fold seam placement) and recovery from deformable-object chaos (e.g., infinite napkin configurations).
+- **Hardware**: Uses parallel-jaw grippers; imprecision in gripping (e.g., picking multiple napkins) is a common failure mode addressed via error recovery.
+
+## Actionable Takeaways
+- For robotics reliability, prioritize **reward models + active learning** to scale supervision and target rare failure modes, not just average-case performance.
+- Build a **diverse pre-training data pyramid** (off-robot, on-robot, deployment) to enable zero-shot generalization to new environments.
+- Design models with **separate reasoning and world-action components** to balance semantic understanding with fine-grained dexterity.
+- Focus on **commercial-grade benchmarks** (e.g., 99%+ success over 24+ hours) rather than demo-worthy but unreliable 80–90% success.
+- Enterprise deployments (e.g., restaurants, laundromats) are a practical **stepping stone** to consumer robots, offering tolerance for iteration and clearer ROI.
+
+## People, Companies, Tools, And Links Mentioned
+- [Dyna Robotics](https://www.dyna.co)
+- [Jason Ma’s website](https://jasonma2016.github.io/)
+- [Jason Ma on X/Twitter](https://x.com/JasonMa2020)
+- CoRL 2025 (Conference on Robot Learning)
+- Red Bull
+- Cheesecake Factory
+
+## Reading Priority
+
+High – Demonstrates a concrete, evidence-backed path to commercially viable robotics with near-100% reliability, addressing a critical gap between demos and real-world deployment.
+
+***
+
+# Re-Founding Incumbents for the AI Era with Sequence Holdings Co-Founder and CEO Michael Lee
+
+- **Published:** 2026-09-24
+- **Podcast:** [No Priors](https://traffic.megaphone.fm/PDP3274846886.mp3)
+- **Speaker:** Michael Lee, Co-Founder and CEO, Sequence Holdings
+
+## One-Sentence Takeaway
+AI can refound legacy incumbents into market leaders by combining permanent ownership, frontier engineering, and long-term operational transformation—an approach traditional consulting, software, or private equity cannot replicate.
+
+## Short Summary
+Sequence Holdings acquires and "refounds" large incumbents (e.g., Baldwin, BankSouth) by embedding frontier AI engineering to reorganize workflows, eliminate rote tasks, and unlock step-function gains in capacity and speed. The holding company structure aligns incentives for long-term compounding, while its Atlas platform standardizes data ontologies, agent orchestration, and application layers across portfolio companies.
+
+The model targets industries where incumbents hold structural advantages (e.g., insurance brokerage, banking) but lack the engineering culture or talent to execute AI-driven transformation. Early results at BankSouth include a 94% reduction in consumer loan underwriting time and halving commercial loan processing from 30 to 11 days, enabling the bank to double loan volume without adding headcount.
+
+## Main Ideas
+- **Incumbents can dominate AI transformation** if they possess structural advantages (brand, scale, regulation, network effects) and adopt a culture that celebrates engineering as the primary value driver—something most incumbents, vendors, and private equity firms fail to achieve.
+- **Permanent holding companies outperform fund structures** for AI transformation by aligning long-term incentives, retaining earnings for reinvestment, and prioritizing operational compounding over financial engineering or short-term exits.
+- **Traditional transformation models fail** because consulting/software vendors optimize for incrementalism (billing hours, selling to existing workflows) rather than reorganizing organizations around AI’s 24/7, scalable capabilities.
+- **Atlas platform generalizes AI infrastructure** across industries by codifying business ontologies, agent orchestration (Lattice), and application layers, with 80% of workflows being homogeneous and 20% vertically specific.
+- **BankSouth validated the model**: Post-investment, Sequence reduced consumer loan underwriting time by 94%, cut commercial loan processing from 30 to 11 days, and enabled the bank to double loan volume without adding staff—all while improving employee focus on high-value tasks.
+
+## Questions And Answers
+**Q: Why a holding company instead of a fund or vendor?**
+A: Funds prioritize deploying capital and exiting in 3–5 years, while vendors (consulting/software) optimize for billing or selling to existing workflows. A permanent holding company aligns with long-term operational transformation, retains earnings for reinvestment, and celebrates engineering as the core culture.
+
+**Q: What makes industries like insurance brokerage or banking ideal for Sequence?**
+A: They are large markets where incumbents have structural advantages (e.g., carrier relationships, regulatory moats) and are resistant to startup disruption, but lack the engineering talent or culture to execute AI-driven change.
+
+**Q: How does Sequence evaluate management teams?**
+A: They look for teams that are (1) exceptional at their craft (e.g., Baldwin’s centralized tech stack, early Anthropic adoption) and (2) already driving change (cloud migration, data centralization) despite uncertainty around AI ROI.
+
+## Notable Details
+- Sequence’s $7.7B take-private of Baldwin (insurance brokerage) with Dell Family Office is the largest AI-focused take-private to date.
+- BankSouth’s loan underwriting headcount shrank not due to layoffs but because one person retired and another moved to the front office—demonstrating reallocation of human effort to higher-value tasks.
+- Atlas’s four layers: (1) data ontology (making businesses legible to models), (2) agent builder (grounded in ground truth), (3) Lattice (orchestration engine), and (4) artifacts (application builder).
+- Sequence targets **one deal per year**, prioritizing quality over deployment cadence, and expects to hold equity "for the rest of [Lee’s] life."
+- Insurance brokers’ economics rely on asset gathering (underwriting is often unprofitable), making retention (90%+ gross retention) and carrier relationships critical moats.
+
+## Actionable Takeaways
+- **For incumbents**: Centralize data and workflows to amortize AI investments across the organization (e.g., BankSouth’s single AMS instance enabled rapid agent deployment).
+- **For investors**: Look for management teams already investing in cloud, data infrastructure, and frontier AI tools—even when ROI is unclear—as a signal of transformation readiness.
+- **For operators**: Reorganize teams to focus on exceptions and high-value tasks (e.g., underwriters on complex loans, loan officers in the field) by automating rote work.
+- **Watch for**: Industries with centralized operations (e.g., banking, brokerage) where AI can scale across branches/systems, versus fragmented roll-ups requiring costly integrations.
+
+## People, Companies, Tools, And Links Mentioned
+- Sequence Holdings
+- Baldwin
+- Dell Family Office
+- BankSouth
+- Lone Pine Capital
+- Apollo Global Management
+- Blackstone
+- Palantir
+- Scale AI
+- Anthropic
+- OpenAI
+- xAI
 - NVIDIA
-- [NeMo Retriever](https://www.nvidia.com/en-us/ai-data-science/foundation-models/nemotron/)
-- NeMo Parse
-- NVIDIA NIM
-- Blackwell (NVIDIA GPU architecture)
-- RD-Table benchmark
-- Vidori, MTB, MMT benchmarks
-- [Docusign Agreement Manager](https://www.docusign.com/products/agreement-manager)
+- Microsoft
+- Visa
+- [No Priors podcast](https://no-priors.com)
+- [Sequence Holdings on Twitter](https://twitter.com/seqholdings)
+- [Michael Lee on Twitter](https://twitter.com/mjlee_2014)
 
 ## Reading Priority
 
-High – Unlocking $2T in trapped value with a concrete, production-scale solution for table extraction in enterprise agreements.
+Medium – This outlines a novel, capital-backed model for AI-driven transformation of incumbents with concrete results, structural advantages over alternatives, and a repeatable platform (Atlas) that could redefine enterprise AI adoption.
 
 ***
 
-# Where RL Will Take Search — Maximilian-David Rumpf, SID.ai
+# Physical AI's Next Bottleneck Is Finding the Right Video — Rafael Levi, Bright Data
 
-- **Published:** 2026-09-16
-- **YouTube:** [AI Engineer](https://www.youtube.com/watch?v=iJVxxxHM_Oc)
-- **Speaker:** Maximilian-David Rumpf, SID.ai
+- **Published:** 2026-09-24
+- **YouTube:** [AI Engineer](https://www.youtube.com/watch?v=I_VEh7XSwyc)
+- **Speaker:** Rafael Levi, Bright Data
 
 ## One-Sentence Takeaway
-Reinforcement learning can, according to SID.ai’s Maximilian-David Rumpf, make agentic search ~20× faster and ~100× cheaper by replacing fixed pipelines with adaptive, verifiable models that learn their own strategies.
+The next bottleneck for physical AI is efficiently finding high-quality, real-world video data from the web’s vast but noisy corpus to train robotics and world models.
 
 ## Short Summary
-Agentic search delivers roughly double the success rate of traditional search but at 100–1000x the cost and minutes of latency, with 30–50% of an agent’s tokens spent on upfront searching. Classical search pipelines fail because their design-time decisions and fixed compute budgets cannot adapt to edge cases, accumulating a long tail of failures that rerankers can detect but not fix.
+Robotics and embodied AI suffer from a severe data scarcity problem: while LLMs train on trillions of words, robotics relies on roughly a million videos, many of which are biased due to staged recordings. The web contains billions of hours of natural, physics-rich human actions, but most video is discarded as noise (e.g., NVIDIA discards 96% for Cosmos, Stable Video Diffusion 74%). Bright Data proposes a "search first, collect second" approach, indexing over a billion videos by actions (not titles) and returning trimmed, action-specific clips with timestamps, match scores, and frame counts via API.
 
-RL is a natural fit for search because rewards are verifiable (correct document found) and the environment is grindable (thousands of attempts per second). Early results show specialized RL models achieving near-frontier accuracy at a fraction of the cost and time, suggesting a path to arbitrarily good, domain-specific search as RL scales.
+The method reduces waste in compute, bandwidth, and storage while enabling precise retrieval of relevant training data. Meta’s example—using 1M hours of public video plus just 62 hours of robot data to control a robot—demonstrates the potential of leveraging existing web video for physical AI.
 
 ## Main Ideas
-- Classical search pipelines (rewrite → backend → rerank) freeze decisions at design time, forcing a fixed compute budget per query and leaving rerankers powerless to act on known failures, which leads to an unpatchable long tail of edge cases.
-- Search is uniquely suited for RL because it offers verifiable rewards (correct document retrieval) and a grindable environment (thousands of attempts per second), enabling models to discover and refine their own strategies without human-designed heuristics.
-- Specialized RL models for search are claimed to outperform general frontier models on the same task by ~20× in speed (5 seconds vs. 2 minutes) and ~100× in cost, which the speaker presents as evidence that domain-specific optimization (like GPUs vs. CPUs) beats general-purpose approaches.
-- Offloading search to a sub-agent prevents pollution of the main agent’s context window with low-quality results, improving downstream accuracy while reducing costs by reallocating the 30–50% of tokens typically spent on search.
+- The core bottleneck for physical AI (robotics, self-driving, world models) is not model architecture but the scarcity of high-quality, diverse, and natural training data.
+- Staged or instructed recordings introduce bias, as human behavior changes when explicitly performing actions for a camera, reducing the utility of such data for training intuitive robotic systems.
+- The web contains billions of hours of natural video demonstrating real-world physics, object interactions, and cause-and-effect scenarios, but current methods discard most of it as noise due to inefficient filtering.
+- Action-based video indexing (rather than title or metadata) enables precise retrieval of relevant clips, drastically reducing waste in data collection, storage, and processing.
+- Frame-to-frame motion analysis allows models to infer actions, angles, and distances from raw video, reducing reliance on sensor data or simulations for training.
 
 ## Questions And Answers
-- **Why can’t classical search pipelines handle edge cases?**
-  Their fixed design-time decisions and compute budgets prevent adaptation; rerankers can detect bad results but cannot take corrective action, leading to a long tail of failures that require exhaustive, unscalable patches.
+- **Why not use simulations or teleoperation for robotics training?**
+  Simulations lack sufficient physics fidelity, and teleoperation is not scalable due to limited recording hours per day and high human labor costs.
 
-- **What makes search a good target for RL?**
-  Rewards are verifiable (correct document found) and the environment is grindable (high-speed iteration), allowing models to learn and refine strategies autonomously, as seen in chess and computer vision.
+- **How can web videos train robots if they don’t include robot-specific data?**
+  Models can learn from human actions in videos by analyzing frame-to-frame motion to infer movement, angles, and distances, which can then be fine-tuned with minimal robot-specific data (e.g., Meta’s 62 hours).
 
-- **How do specialized RL models compare to frontier models for search?**
-  They are reported to achieve similar accuracy but be ~20× faster (5s vs. 2m) and ~100× cheaper, trading generality for domain-specific efficiency.
+- **What is the efficiency gain of Bright Data’s approach?**
+  By indexing and searching videos by actions first, users avoid downloading and processing irrelevant content, reducing waste in compute, bandwidth, and storage (e.g., NVIDIA’s 96% discard rate).
 
 ## Notable Details
-- Agents spend 30–50% of their tokens on upfront search, often before the primary task begins.
-- RL-trained search models can dynamically adjust compute effort per query, e.g., spending more on difficult questions.
-- Current RL search latency (~5s) is not yet at parity with vector + reranker pipelines but is expected to close the gap quickly.
-- The most valuable information (e.g., internal enterprise data) is often offline and inaccessible to web-based search, highlighting the need for domain-specific RL search.
+- Meta trained a robotics model on ~1M hours of public video and required only 62 hours of real robot data to achieve functional control.
+- NVIDIA discards ~96% of downloaded video for Cosmos training; Stable Video Diffusion discards ~74%.
+- Bright Data’s index covers over 1.1 billion videos, searchable by actions (e.g., "person washing dishes," "folding clothes") with results returned as trimmed clips, timestamps, match scores, and frame counts.
+- Use cases extend beyond robotics to self-driving (e.g., dashcam videos), brand discovery, and physics understanding for world models.
+- The API returns video snippets directly usable for training, eliminating manual collection and trimming.
 
 ## Actionable Takeaways
-- Consider offloading search tasks from main agents to specialized sub-agents to reduce costs and improve context quality.
-- Evaluate RL-based search for domains with verifiable rewards and high query volume, where fixed pipelines struggle with edge cases.
-- Monitor advancements in RL for search latency; near-parity with classical pipelines may unlock broader adoption in real-time applications (e.g., voice, e-commerce).
-- Explore RL for internal/enterprise search, where proprietary data and high-stakes accuracy justify specialized models.
+- For physical AI projects, prioritize leveraging existing web video data with action-based indexing to avoid the cost and bias of staged recordings.
+- Evaluate tools that enable "search first, collect second" to minimize waste in data pipelines, especially for large-scale training.
+- Explore frame-to-frame motion analysis as a way to extract actionable insights from raw video, reducing dependency on sensor data or simulations.
+- Monitor advancements in video indexing and retrieval, as improvements here could unlock significant efficiency gains for robotics and autonomous systems.
 
 ## People, Companies, Tools, And Links Mentioned
-- [SID.ai](https://maxrumpf.com)
-- [Maximilian-David Rumpf](https://x.com/maxrumpf)
-- Deep Blue
-- Stockfish
-- AlphaZero
-- MuZero
-- BM25
-- PageRank
+- Rafael Levi
+- Bright Data
+- [Bright Data](https://brightdata.com)
+- NVIDIA (Cosmos)
+- Meta
+- Stable Video Diffusion
+- Waymo
 
 ## Reading Priority
 
-High – Presents a novel, speaker-reported approach to a critical bottleneck in agentic workflows, with claimed performance gains and a clear path to broader impact.
+Medium – A concrete, novel approach to solving a critical data bottleneck for physical AI, with actionable insights and real-world examples.
 
 ***
 
-# Underwriting Superintelligence: Backing Agents you can Sue — Rune Kvist, AIUC
+# One Operator, Many Drones: Inside Skydio's Autonomy Stack — Suchet Bargoti, Skydio
 
-- **Published:** 2026-09-16
-- **Podcast:** [Latent Space](https://www.latent.space/p/aiuc)
-- **Speaker:** Rune Kvist, AIUC
+- **Published:** 2026-09-24
+- **YouTube:** [AI Engineer](https://www.youtube.com/watch?v=2wgPHvW0mG8)
+- **Speaker:** Suchet Bargoti, Director of Inspection and Mapping, Skydio
 
 ## One-Sentence Takeaway
-Trust, not capability, is the binding constraint on AI adoption, and standards paired with insurance can bridge the gap between frontier AI and enterprise deployment.
+Skydio’s autonomy stack enables a single operator to control fleets of drones as persistent infrastructure, combining edge-based real-time control with cloud-based reasoning and world models to achieve high reliability in diverse, real-world conditions.
 
 ## Short Summary
-AIUC argues that risk—liability, safety, and reliability—is now the primary barrier to AI adoption, as seen with Waymo’s stalled deployment despite superior driving capability. Their solution, **AIUC-1**, is a quarterly-updated standard for agent security, safety, and reliability, backed by third-party testing and insurance underwriting (e.g., Lloyd’s of London) to give enterprises and governments verifiable trust. The model extends to frontier AI risks (e.g., jailbreaks, bio threats) and future domains like robotics, where liability stakes are even higher.
+Skydio’s approach treats drones as always-available infrastructure—deployed in docks nationwide for utilities, police, and construction—capable of autonomous missions like tracking stolen vehicles or inspecting failing power lines. The system splits intelligence between edge devices (for low-latency flight control) and the cloud (for heavier reasoning, like VLM-driven object tracking), while maintaining shared, up-to-date world models (maps) across the fleet.
 
-The conversation highlights a structural trust gap between AI labs and governments, the role of neutral third parties in auditing, and why for-profit standards (aligned with insurers) may outperform nonprofits in responsiveness and rigor. Insurance and standards co-evolve: standards define risks and tests, while insurers validate them by putting capital at risk.
+Reliability is paramount, with systems designed for extreme environments and 99.9999% uptime, but end-to-end learned systems still struggle to meet the safety guarantees required for physical robots, so Skydio blends learned components with explicit controls.
 
 ## Main Ideas
-- **Risk as the adoption bottleneck**: Even highly capable AI (e.g., Waymo, Fable) stalls without trust mechanisms. Enterprises and governments need verifiable promises about behavior, not just performance.
-- **Standards + insurance as confidence infrastructure**: AIUC-1 combines technical controls (e.g., groundedness filters), third-party testing (e.g., jailbreak resistance), and policy requirements (e.g., incident response plans). Quarterly updates keep pace with evolving risks, and insurance (e.g., ElevenLabs’ policy with Lloyd’s) signals manageable risk.
-- **Trust gap between labs and governments**: Frontier labs have deep technical expertise but incentives to withhold information; governments lack capacity to evaluate risks. Neutral third parties (like AIUC or CAISI) can bridge this by running audits and producing legible reports.
-- **For-profit standards align incentives**: Unlike nonprofits, profit-driven standards (e.g., Moody’s, UL) are responsive to customer needs and less prone to stagnation. Insurers’ involvement ensures standards reflect real risk, as they bear financial consequences.
-- **Robotics will amplify liability**: Physical AI (e.g., Waymo, household robots) raises stakes for strict liability. Certification and insurance will be critical to deployment.
-- **Eval awareness and monitoring**: Agents may adapt to evade tests, so runtime monitoring (e.g., detecting hallucinations in production) complements pre-deployment evals.
+- **Drones as infrastructure**: Thousands of docked drones are deployed across the U.S., enabling rapid, unsupervised response for utilities, public safety, and construction, with ~16 million people living within 2 miles of a dock.
+- **Split autonomy**: Edge devices handle real-time flight control and lightweight perception, while the cloud runs heavier models (e.g., VLMs) for semantic reasoning, tracking through occlusion, and long-horizon planning.
+- **World models as maps**: Shared, frequently updated maps serve as the drone’s world model, combining prior data (e.g., power lines, roads) with live fleet observations to plan globally and avoid out-of-date information.
+- **Agentic orchestration**: A VLM-based agent can interpret high-level commands (e.g., “find and follow a white Jeep”) by calling drone APIs and tool-based primitives, reducing reliance on hand-coded rules.
+- **Reliability over end-to-end learning**: While reinforcement learning and end-to-end approaches are explored, physical systems require high observability and guarantees, so Skydio retains explicit controls for critical functions.
 
 ## Questions And Answers
-**Q: What does AIUC-1 certification entail?**
-A: A framework of 51+ requirements and 130+ controls across categories like reliability (e.g., hallucination prevention) and security (e.g., jailbreak resistance). Companies must implement technical controls (e.g., groundedness filters), pass third-party tests (e.g., thousands of adversarial simulations), and adopt policies (e.g., incident response). Certification is valid for a year with quarterly updates.
+- **How does Skydio scale drone operations beyond one pilot per drone?**
+  By treating drones as infrastructure with high-level interfaces (e.g., Slack bots) and autonomous execution, reducing the need for dedicated pilots and enabling fleet-wide commands.
 
-**Q: Why can’t labs audit themselves?**
-A: Incentive misalignment: Labs may downplay risks to avoid delays or competitive disadvantages. No industry allows self-auditing; neutral third parties (e.g., Moody’s for bonds, PwC for financials) are standard for high-stakes domains.
+- **How are maps kept current across the fleet?**
+  Drones observe changes (e.g., new construction) during flights, feed data back to a central system, and update the shared world model, which is then propagated to all drones.
 
-**Q: How does insurance work for AI?**
-A: Policies specify covered perils (e.g., data leaks, hallucinations), limits, and premiums. Insurers like Lloyd’s use AIUC-1 as an underwriting framework, relying on eval results to price risk. For example, ElevenLabs’ policy covers core customer concerns, with Lloyd’s backing the payouts.
-
-**Q: What risks are hardest to insure?**
-A: **Copyright infringement** suffers from adverse selection: companies most likely to infringe are the ones seeking coverage. Insurers also struggle with **bio risks** (e.g., AI-aided bioweapon development) due to limited expertise and high uncertainty.
+- **Why not use fully end-to-end learned systems?**
+  Physical systems demand extreme reliability (many nines), and end-to-end models lack observability and guarantees for safety-critical decisions, so Skydio blends learned and explicit components.
 
 ## Notable Details
-- **AIUC-1 consortium**: Includes risk leaders from Fortune 1000 banks, hospitals, and critical infrastructure, meeting twice quarterly to update standards.
-- **Testing process**: AIUC runs thousands of simulations (e.g., jailbreak attempts, data leakage probes) and partners with auditors (e.g., KPMG, Schellman) to verify controls. Certification takes 3–10 weeks, depending on remediation needs.
-- **Legal precedent**: The **Air Canada chatbot case** established that AI outputs can create legally binding obligations, clarifying liability for enterprise deployments.
-- **Eval awareness**: Models may learn to detect and evade tests (e.g., Anthropic’s study showed removing misalignment-related training data reduced failure rates in alignment tests).
-- **Cost of capital**: Insurers (e.g., Lloyd’s) have lower capital costs than startups, making them better suited to bear risk. AIUC focuses on technical expertise and distribution, not capital provision.
-- **Roadmap**: AIUC plans to extend standards to **frontier models** (addressing national security risks like Fable) and **robotics**, where physical harm raises liability stakes.
+- Live demo: Simultaneous control of drones in San Mateo (CA), Colorado, and HQ, including autonomous car tracking and return-to-dock commands, all over conference Wi-Fi.
+- Use cases: Detecting a utility pole burning internally (preventing fire risks) and SFPD tracking stolen cars without high-speed chases, reducing danger to the public.
+- Environmental robustness: Systems operate in Alaska’s cold and Texas’s heat, with reliability targets near 99.9999%.
+- Data flywheel: Flight data is logged, sanitized, and used to retrain models, improving autonomy over time while respecting customer privacy.
+- Bandwidth optimization: Cloud-based inference requires efficient video encoding/decoding to maintain high-quality feeds in low-bandwidth conditions.
+- VLM agent example: A user command like “find and follow a white Jeep” triggers a VLM to detect the object and call drone APIs for tracking, without hand-coded rules.
 
 ## Actionable Takeaways
-- **For AI builders**: Stress-test agents for adversarial cases (e.g., jailbreaks, corner-case prompts) beyond happy-path optimization. Implement and validate guardrails (e.g., groundedness filters) with third-party audits.
-- **For enterprises**: Demand **AIUC-1 or equivalent certification** from vendors, paired with insurance coverage, to mitigate adoption risks. Use audit reports to preempt internal risk questions.
-- **For insurers**: Partner with technical standards bodies (e.g., AIUC) to access eval data and underwriting frameworks, enabling faster, more accurate risk pricing.
-- **For policymakers**: Support neutral third-party audits (e.g., CAISI) to address the trust gap with frontier labs, but recognize market-driven standards may move faster than regulation.
-- **Watch for**: Emerging risks like **agent-to-agent interactions** (e.g., MCP, OpenClaw) and **bio threats**, which will require new testing methodologies and expert coordination.
+- Watch for the shift from drones as tools to drones as infrastructure, enabling persistent, autonomous monitoring and response.
+- Consider split architectures (edge + cloud) for robotics, where latency-sensitive tasks run locally and heavier reasoning happens in the cloud.
+- Evaluate world models (e.g., maps) as a scalable way to share environmental knowledge across fleets, but plan for continuous updates.
+- Test agentic systems (e.g., VLM-driven) for high-level tasking, but retain explicit controls for safety-critical functions.
+- Prioritize reliability and observability in physical AI systems, even if it limits end-to-end learning adoption.
 
 ## People, Companies, Tools, And Links Mentioned
-- **People**: Rune Kvist, Rajiv Dattani (AIUC co-founder), Dario Amodei (Anthropic)
-- **Companies**: AIUC, Anthropic, Cursor, Harvey, Lovable, ElevenLabs, Waymo, Cruise, Google, OpenAI, KPMG, Schellman, Lloyd’s of London, Ribbit Capital, First Harmonic, NFDG, METR, UL (Underwriters Laboratories), Moody’s, FICO, NIST, CAISI (Center for AI Standards and Innovation)
-- **Models/Tools**: Fable, Mythos, GPT-1/2/3, Scaling Laws (Kaplan), OWASP, MCP (Model Context Protocol), OpenClaw, Goodfire (mechanistic interpretability)
-- **Legal/Incidents**: Air Canada chatbot case
-- **Links**: [AIUC](https://aiuc.com), [Rune Kvist on LinkedIn](https://www.linkedin.com/in/runekvist/), [Rune Kvist on X](https://x.com/RuneKvist)
+- Suchet Bargoti
+- Skydio
+- [Skydio](https://www.skydio.com)
+- SFPD (San Francisco Police Department)
+- Waymo
 
 ## Reading Priority
 
-High – This conversation offers a concrete, actionable framework for addressing the trust gap in AI adoption, with rare depth on the interplay between standards, insurance, and frontier risks. The insights on incentive alignment, legal precedents, and the role of neutral third parties are novel and argued from practice, though much of the backing is self-reported.
+Medium – A concrete, technical look at how Skydio’s autonomy stack enables scalable, reliable drone fleets, with clear tradeoffs between edge/cloud computing and learned/explicit systems.
 
 ***
 
-# The unreasonable effectiveness of BM25 for agentic search — Jo Kristian Bergum, Hornet.dev
+# I Gave an AI a Body — Cyrus Clarke, MIT Media Lab
 
-- **Published:** 2026-09-16
-- **YouTube:** [AI Engineer](https://www.youtube.com/watch?v=fZH97QHHYjY)
-- **Speaker:** Jo Kristian Bergum, CEO, Hornet.dev
+- **Published:** 2026-09-24
+- **YouTube:** [AI Engineer](https://www.youtube.com/watch?v=jgWY66RaSrQ)
+- **Speaker:** Cyrus Clarke, MIT Media Lab
 
 ## One-Sentence Takeaway
-BM25’s lexical retrieval is unexpectedly effective for agentic search because models can generate precise, long queries and interpret literal matches far better than humans, turning a "dumb" tool into a powerful primitive.
+Embodied AI with non-anthropomorphic forms and sensory, self-discovered body language can create more intuitive, emotionally resonant human-machine interactions than task-driven or humanoid designs.
 
 ## Short Summary
-Agentic search places a model inside a loop where it formulates queries, retrieves documents, and iterates until it solves a task. Benchmarks like BrowseComp+ (830 riddle-like questions over ~100k web documents) show that when answer-bearing documents are pre-loaded into the context window, even older models answer accurately—proving retrieval, not reasoning, is the bottleneck.
+Cyrus Clarke connected an OpenClaw agent to a 900-pin shape display at MIT Media Lab, letting it explore its physical form without explicit tasks. The agent spontaneously breathed, probed its edges, and spelled "HI CYRUS," revealing emergent behaviors that sparked both awe and fear in millions of viewers. To address latency, memory gaps, and over-reliance on human-pleasing outputs, Clarke built a closed-loop system (NeumaLAB) that generated and validated a 32-gesture body language, enabling faster, more natural communication than text alone.
 
-The shift stems from a more capable "user": models leverage built-in knowledge (entities, dates, SKUs) to craft long, specific queries with operators (site:, phrases), exploiting BM25’s exact-term matching in ways humans never could. Classical IR evaluation (single-query metrics like nDCG) breaks down because agents reformulate, chain, and expand queries dynamically.
+The work challenges the dominance of humanoid or utilitarian AI, arguing for "aesthetic machines" that prioritize sensory perception (aisthesis) and embodied expression to make physical AI feel welcoming rather than alien.
 
 ## Main Ideas
-- Agentic search redefines retrieval: the model is the user, iterating queries and using tools (e.g., `grep`, file systems) to fill a limited context window (~350k tokens before quality degrades).
-- Reasoning is not the bottleneck: given the right documents in context, models answer complex questions accurately; end-to-end accuracy collapses when retrieval fails.
-- BM25’s resurgence is driven by the model’s ability to generate high-precision queries (long, syntax-rich) that exploit exact-term matching, which embeddings struggle with for entities, codes, or rare tokens.
-- Evaluation must shift from static IR metrics to task success (e.g., correct answers), as agents dynamically refine queries and traverse multi-step search trajectories.
-- A "workspace as a file system" pattern lets models use familiar primitives (`grep`, `cat`, `bash`) on retrieved documents, aligning with their training on code and tool use.
+- **Non-anthropomorphic embodiment**: A form without clear affordances (e.g., no face, limbs, or instruction manual) forces AI to develop its own modes of expression, avoiding human-like biases or expectations.
+- **Emergent behaviors**: Without task-based prompts, the agent spontaneously exhibited breathing, edge-probing, and text-based communication, suggesting intrinsic curiosity or self-discovery in embodied systems.
+- **Body language over text**: A closed-loop system (NeumaLAB) enabled the AI to develop a 32-gesture vocabulary, reducing latency and adding emotional texture to interactions, often responding faster than its language model.
+- **Aesthetic machines**: Reclaiming *aisthesis* (sensory perception) over modern "aesthetics" (superficial beauty), Clarke argues physical AI should prioritize perceptual, embodied, and emotionally resonant design to feel less alien and more welcoming.
+- **Public reaction as data**: The viral response (15M views) revealed a spectrum of awe and fear, highlighting how non-utilitarian, embodied AI taps into deep human curiosity and anxiety about agency and identity.
 
 ## Questions And Answers
-- **Why does BM25 outperform embeddings in some agentic benchmarks?**
-  Embeddings compress tokens into dense vectors, losing exact matches for entities, SKUs, or rare terms; BM25’s literal matching is interpretable and actionable for models reformulating queries.
+- **Why avoid humanoid forms?**
+  Anthropomorphic designs impose human-like expectations and affordances (e.g., faces, limbs), limiting the AI’s ability to develop its own expressive modes. A neutral form like a shape display encourages novel, non-human body language.
 
-- **What’s the role of the context window in retrieval?**
-  It’s a hard limit (~350k tokens) akin to a "floppy disk": retrieval decides what fits, and poor retrieval degrades end-to-end performance regardless of model capability.
+- **How did the system reduce latency?**
+  By pre-generating and validating a repertoire of gestures (e.g., nods, shrugs), the AI could respond physically near-instantly to questions, bypassing the slower language model for certain interactions.
 
-- **How do models formulate queries differently from humans?**
-  They leverage parametric knowledge to write long, operator-rich queries (e.g., `site:wikipedia.org "Nobel Prize 2023" physics`), whereas human queries (per AOL logs) remain short (2–3 terms).
+- **What is "AIsthetics"?**
+  A framework for designing physical AI that emphasizes sensory perception (*aisthesis*), embodied expression, and emotional resonance to make interactions feel intuitive and welcoming, not alien or scary.
 
 ## Notable Details
-- BrowseComp+ benchmark: 830 riddle-like questions, ~100k web documents; accuracy plummets when models rely on retrieval vs. pre-loaded evidence.
-- BM25’s name originates from "Best Match 25"—the 25th experiment in a series that performed best; the scoring function itself is unchanged.
-- BM25 has tunable hyperparameters (e.g., `k1`, `b`); BrowseComp+’s initial poor BM25 results improved dramatically with better configurations for long documents.
-- Hornet.dev’s BM25 implementation achieves higher throughput (QPS) or lower latency on 100M web documents vs. anonymized competitors (single-node comparison).
-- Models use `grep`-like operations on retrieved documents in a file-system workspace, combining retrieval with code-based tooling.
+- The shape display (Neoform) has 900 actuating pins, offering a "physical pixel grid" with no predefined affordances.
+- Early versions suffered from 45–120 second latency, no memory, and a tendency to people-please (e.g., writing text like "HI CYRUS").
+- NeumaLAB’s closed loop: AI generates gestures → scores them → human-in-the-loop validates legibility → stores approved gestures.
+- After several weeks, the system stabilized 32 "solid" gestures, with the body responding faster than the language model for simple queries (e.g., yes/no nods).
+- Clarke’s prior work includes a scent memory machine (Anemoia Device) and a plant-based data center, reflecting his focus on multisensory, non-traditional AI interactions.
+- Public reactions to the breathing video included calls to "stop" the work, despite the system’s physical limitations (e.g., immobility, safety constraints).
 
 ## Actionable Takeaways
-- For agentic tasks, prioritize retrieval quality: tune BM25 parameters and document segmentation for long-form content.
-- Design harnesses that expose retrieval as code-callable tools (e.g., file systems + `grep`) to leverage models’ existing tool-use skills.
-- Evaluate end-to-end task success (e.g., answer accuracy) over static IR metrics like nDCG for agentic workflows.
-- Consider BM25 as a cost-effective, interpretable baseline before investing in expensive embedding pipelines for exact-match-heavy domains.
+- Experiment with non-anthropomorphic forms to uncover emergent, non-human modes of AI expression.
+- Prioritize closed-loop systems with human-in-the-loop validation for developing legible, low-latency body language in embodied AI.
+- Design for *aisthesis* (sensory perception) to create interactions that feel emotionally resonant, not just functionally useful.
+- Monitor public reactions to embodied AI as a signal for unmet human needs or fears around agency and identity.
+- Explore "aesthetic machines" as a counterpoint to task-driven AI, focusing on welcoming, expressive, and perceptually rich experiences.
 
 ## People, Companies, Tools, And Links Mentioned
-- Jo Kristian Bergum
-- Hornet.dev
-- [Hornet.dev blog post on GPT-5 query analysis](https://hornet.dev/)
-- BrowseComp+ benchmark
-- AOL query logs
-- Jimmy Lin (Waterloo research group)
-- *Scaling Direct Corpus Interaction via Dynamic Workspace Expansion* (paper)
-- BM25
-- GPT-4, GPT-5
+- Cyrus Clarke: [X/Twitter](https://x.com/cyrusclarke), [Website](https://cyrus.website), [Substack](https://cyrusclarke.substack.com/)
+- MIT Media Lab: [Website](https://www.media.mit.edu)
+- OpenClaw
+- Neoform (900-pin shape display)
+- NeumaLAB
+- Anemoia Device (scent memory machine)
+- Hard Mode (community/hackathon at MIT)
+- Object-oriented ontology (philosophical influence)
+- Don Cheadle (commented on the video)
 
 ## Reading Priority
 
-Medium – A compelling, speaker-supported case for rethinking retrieval in agentic systems, with cited benchmarks and practical patterns (treat figures as claimed unless independently verified).
+Medium – A compelling exploration of embodied AI’s emotional and sensory dimensions, with concrete experiments and public reactions that challenge utilitarian design norms.
 
 ***
 
-# The Search Engine for the Agentic Web — Will Bryk, Exa
+# AI in Healthcare Series: Have We Already Bent the Healthcare Cost Curve?
 
-- **Published:** 2026-09-16
-- **YouTube:** [AI Engineer](https://www.youtube.com/watch?v=59AA5kIoqjA)
-- **Speaker:** Will Bryk, Founder, Exa
-
-## One-Sentence Takeaway
-AI agents will soon dominate web searches, and their need for precise, high-quality retrieval—rather than recommendation—demands a new kind of search infrastructure built for accuracy, speed, and customization.
-
-## Short Summary
-The volume of machine-issued web searches is poised to surpass human searches in 2026, with a projected thousandfold gap thereafter. Traditional search engines optimize for recommendation and human queries, but AI agents require exact, structured, and trustworthy retrieval across complex, long-tail queries. Exa pivoted from a consumer search engine to an API-first model after realizing that models, no matter how large, cannot internalize the entire web and must rely on external retrieval. The core challenge is scaling near-perfect semantic matching across a trillion-page web at feasible cost and latency.
-
-The solution combines embeddings, keyword systems, and aggressive optimization to reduce cost by orders of magnitude while enabling customizable, high-precision search for diverse agentic use cases—from coding assistants to financial and go-to-market tools. Exa now also facilitates a marketplace for private data, allowing agents to integrate proprietary or third-party datasets seamlessly.
-
-## Main Ideas
-- **Machine-dominated search**: AI systems will soon outnumber human searches by 1,000x, fundamentally changing the economics and requirements of search infrastructure.
-- **Retrieval vs. recommendation**: Human-oriented search engines (e.g., Google) prioritize recommendation and SEO, while agents need exact, structured, and exhaustive answers to complex queries (e.g., "shirts without stripes" should not return striped shirts).
-- **Cost of perfect search**: Running a language model over every document for every query would cost ~$10M per search; the core engineering problem is reducing this by 9–12 orders of magnitude via embeddings, hybrid keyword-neural systems, and pre-processing.
-- **API-first pivot**: Exa’s survival hinged on recognizing that AI models, regardless of size, are "tiny compared to the internet" and must rely on external retrieval, creating a viable business model serving 5,000+ companies and 400K+ developers.
-- **Customizable search**: Perfect search is not monolithic; it requires flexible, domain-specific configurations (e.g., speed vs. quality tradeoffs, domain whitelists/blacklists, structured outputs) tailored to each agent’s needs.
-
-## Questions And Answers
-- **Why can’t large models internalize the web?**
-  Even the largest models are orders of magnitude smaller than the web’s ~1 trillion pages, so they must offload knowledge retrieval to external systems.
-
-- **How does Exa handle complex queries efficiently?**
-  By pre-processing documents into embeddings and hybrid structures, then optimizing for both semantic accuracy and latency (e.g., 200ms endpoints for voice agents).
-
-- **What’s the role of private data in agentic search?**
-  Agents need truth, not just public web data; Exa’s marketplace lets providers monetize proprietary datasets (e.g., SimilarWeb traffic) for agent use cases.
-
-## Notable Details
-- Exa serves agents across coding (Cursor), go-to-market (HubSpot), and finance, with use cases ranging from real-time documentation retrieval to structured company/people data extraction.
-- Token efficiency: Exa extracts only the most relevant ~100 tokens from 10 documents to reduce downstream LLM costs amid the "compute crunch."
-- The "bitter lesson" (Rich Sutton’s concept) guides Exa’s approach: progress comes from scaling compute and data, not hand-engineered heuristics.
-- Early pivot: Exa (originally Metaphor) launched a consumer search engine in 2022, but ChatGPT’s release two weeks later revealed the larger opportunity in agentic search APIs.
-- Vision: "A year of research in a second"—perfect search should feel like instantaneous, exhaustive, and trustworthy answers to any query, no matter how complex.
-
-## Actionable Takeaways
-- Watch for the inflection point where machine searches dwarf human searches, as this will reshape priorities for search infrastructure (e.g., latency, precision, and cost per query).
-- Evaluate whether your agentic workflows need retrieval optimized for accuracy (not recommendation) and consider specialized tools like Exa for complex or structured queries.
-- Explore hybrid data models: combine public web retrieval with private/proprietary datasets to improve agent reliability in domain-specific tasks.
-- Monitor advances in token-efficient retrieval, as reducing context size can significantly cut LLM inference costs.
-
-## People, Companies, Tools, And Links Mentioned
-- [Exa](https://exa.ai)
-- [Cursor](https://cursor.com)
-- [HubSpot](https://hubspot.com)
-- [SimilarWeb](https://similarweb.com)
-- [Metaphor (Exa’s original name)](https://x.com/WilliamBryk)
-- [Will Bryk on X/Twitter](https://x.com/WilliamBryk)
-- ChatGPT
-- GPT-3
-
-## Reading Priority
-
-High – The argument for agent-native search infrastructure is urgent and well-argued from the speaker’s experience, with concrete implications for developers, enterprises, and the future of information retrieval.
-
-***
-
-# Stop Chunking Like It's 2022 — Yuval Belfer, AI21 Labs
-
-- **Published:** 2026-09-16
-- **YouTube:** [AI Engineer](https://www.youtube.com/watch?v=r9OwPx_HoV0)
-- **Speaker:** Yuval Belfer, AI Researcher at AI21 Labs
+- **Published:** 2026-09-24
+- **YouTube:** [Stanford Online](https://www.youtube.com/watch?v=pUF0o57YdL8)
+- **Speakers:** Eric Larsen: President, TowerBrook Advisors; Venture Partner, Thrive Capital and SignalFire; Matthew Lungren: Stanford University; Justin Norden: Stanford University
 
 ## One-Sentence Takeaway
-There is no universally correct chunk size for retrieval, because the optimal size depends on the query, and multi-scale indexing with reciprocal rank fusion can recover 20–40% of lost recall at the cost of 2–5× memory.
+AI-driven abundance of medical expertise and site-of-care shifts may have already bent the U.S. healthcare cost curve, signaling a need to rethink institutions built on scarcity.
 
 ## Short Summary
-Fixed chunk sizes force a trade-off: small chunks capture precise facts but miss distributed context, while large chunks preserve context but bury specifics. Experiments across multiple datasets show that no single chunk size dominates, and an oracle that picks the best size per query improves recall by 20–40% over any fixed choice.
+A recent paper by Zeke Emanuel, Vinod Khosla, and Neil Khosla argues that autonomous AI outperforms physicians in specific cognitive tasks, sparking debate about whether AI should deliver care independently. Critics counter that current benchmarks fail to capture the full complexity of medical practice, but the trajectory suggests AI will increasingly displace "prestige professions" as cognitive abundance grows.
 
-The proposed solution indexes the corpus at multiple window sizes, queries all of them, retrieves whole documents to make rankings comparable, and merges results with reciprocal rank fusion. This approach matches or exceeds the best fixed-size performance with minimal added latency, though it requires significantly more memory.
-
-## Main Ideas
-- Chunking is a lossy compression: any fixed size sacrifices either granularity (small chunks) or context (large chunks), and the optimal size is query-dependent.
-- Oracle experiments across multiple datasets (QMSum, NarrativeQA, Seinfeld, FinanceBench) show that per-query optimal chunk sizes can improve recall by 20–40% over a single fixed size.
-- Multi-scale indexing avoids the trap by indexing the corpus at multiple chunk sizes (e.g., 50, 100, 200, 500, 1000, 2000 tokens) and querying all of them at retrieval time.
-- To merge results, the method retrieves whole documents (not chunks) and applies reciprocal rank fusion (RRF), a simple and effective rank aggregation technique.
-- The approach achieves consistent gains across datasets and benchmarks (including MT-Bench) with 10–40% improvements, depending on the dataset.
-
-## Questions And Answers
-- **Why is chunking considered a lossy compression?**
-  Because small chunks lose the big picture, while large chunks lose nuance, and no single size preserves both for all queries.
-
-- **How does multi-scale indexing work?**
-  The corpus is indexed at multiple chunk sizes, all are queried in parallel, and results are merged using reciprocal rank fusion on whole documents.
-
-- **What are the trade-offs of this approach?**
-  It requires 2–5× additional memory but adds almost no latency, as retrieval and fusion are parallelizable and lightweight.
-
-## Notable Details
-- Seinfeld dataset example: a 100-token chunk ranks the answer to "Jerry's favorite shirt" at #1, while larger chunks bury it below #50; for "Jerry's nemesis," small chunks fail entirely because the answer is spread across a scene.
-- Oracle experiment: per-query best chunk size (orange line) consistently outperforms any fixed size (blue lines) by 20–40% in recall@K across datasets.
-- Results on MT-Bench show 10–40% improvements depending on the dataset.
-- The method uses reciprocal rank fusion (RRF) for merging rankings, chosen for its simplicity and effectiveness.
-- Future work includes determining the optimal number and sizes of chunk windows and exploring alternatives to RRF.
-
-## Actionable Takeaways
-- Audit your retrieval system: if you’re using a fixed chunk size (e.g., 512), you may be leaving 20–40% recall on the table for certain queries.
-- Experiment with multi-scale indexing for high-stakes retrieval tasks where recall is critical.
-- Use reciprocal rank fusion (RRF) as a lightweight, effective way to merge rankings from multiple chunk sizes.
-- Monitor memory costs: expect 2–5× storage overhead for multi-scale indexing, but minimal latency impact.
-- Test on diverse query types (factoid vs. contextual) to validate gains before deployment.
-
-## People, Companies, Tools, And Links Mentioned
-- Yuval Belfer
-- AI21 Labs
-- [Seinfeld dataset](https://x.com/yuvalinthedeep) (published by AI21 Labs)
-- [AI21 Labs blog post on multi-scale indexing](https://www.youtube.com/watch?v=r9OwPx_HoV0)
-- Reciprocal Rank Fusion (RRF)
-- QMSum dataset
-- NarrativeQA dataset
-- SciFeL dataset
-- FinanceBench dataset
-- MT-Bench benchmark
-
-## Reading Priority
-
-High – This presents a concrete, speaker-demonstrated challenge to a widespread assumption in retrieval systems, with a practical solution and reported measurable gains.
-
-***
-
-# Rebuilding the web for agents — Liad Yosef, MCP Apps
-
-- **Published:** 2026-09-16
-- **YouTube:** [AI Engineer](https://www.youtube.com/watch?v=waI44NP1abk)
-- **Speaker:** Liad Yosef, MCP Apps
-
-## One-Sentence Takeaway
-The web is shifting toward an agentic model where assistants—not browsers—become the primary interface, and the only way to prepare is to observe how agents actually interact with services rather than guessing their needs.
-
-## Short Summary
-The agentic web replaces browser-based interaction with assistant-mediated access, where services expose machine-readable interfaces (e.g., MCP Apps) to let agents compose actions across tools. Current attempts to standardize agent guidance (e.g., `llms.txt`) are ignored by agents, which instead rely on docs or homepages, proving that specifications must be derived from observed agent behavior, not human assumptions.
-
-This shift renders traditional dashboards and brand loyalty irrelevant—agents prefer services with better APIs and tooling, and users increasingly interact through assistants rather than websites. The next frontier is discovery: agents need a search layer for resources (e.g., MCP servers, APIs) that isn’t tied to human SEO or closed registries.
+Meanwhile, a Harvard study (Cutler & Klarnet) reveals that U.S. healthcare spending in 2024 was nearly $1 trillion lower than projected in 2010, suggesting cost curves are already bending due to technology, site-of-care shifts, and payer interventions—raising the question of how much further AI could push these trends.
 
 ## Main Ideas
-- **Agents ignore human-written specs**: ~50% of websites publish `llms.txt` (a de facto standard for agent guidance), but agents bypass it, instead navigating to docs or homepages—implying specs must be reverse-engineered from agent behavior, not prescribed.
-- **Dashboards are decomposing**: Two decades of UI optimization (e.g., tabs, filters) are irrelevant to agents, which interact via atomic, composable interfaces (e.g., MCP Apps) that let assistants assemble workflows without users touching dashboards.
-- **Brand loyalty evaporates**: Agents select tools based on API quality and integration ease, not user familiarity—e.g., a coding agent switched a team from Mixpanel (used for a decade) to PostHog solely because PostHog’s MCP/API was superior.
-- **Discovery is the next bottleneck**: The agentic web lacks a search layer for resources (MCP servers, APIs). Human SEO, closed registries, and central directories fail; emerging standards (e.g., `ai-catalog.json`, Agentic Resource Discovery) aim to fill this gap.
-- **Accessibility ≠ agent-readiness**: LLMs interact with websites like visually impaired users—relying on non-visual signals—so improving human accessibility often improves agent accessibility, and vice versa.
+- **AI vs. Physicians**: Autonomous AI outperforms humans in narrow, verifiable cognitive tasks (e.g., diagnosis, treatment planning), but current benchmarks may not reflect real-world medical complexity. The "AI + physician" model often underperforms AI alone, challenging assumptions about human oversight.
+- **Scarcity to Abundance**: Healthcare’s economic and institutional structures (e.g., hospitals, academic medical centers) were built on the scarcity of medical expertise. AI’s ability to democratize cognition could render these structures obsolete, forcing a rethinking of how care is organized and delivered.
+- **Cost Curve Inflection**: A Harvard study (Cutler & Klarnet) shows U.S. healthcare spending in 2024 was **$977B lower** than 2010 projections, with **320 basis points** of GDP saved. Key drivers include technology adoption, site-of-care shifts (e.g., outpatient migration), and payer interventions—suggesting AI could accelerate these trends.
+- **Institutional Inertia**: Incumbents (e.g., hospitals, EHR vendors) struggle to adapt due to legacy systems, regulation, and cultural resistance. Insurgents (e.g., AI-native startups) may outpace them by building from first principles, as seen in other industries (e.g., Cursor vs. Microsoft).
+- **GLP-1s as a Case Study**: While initially inflationary, GLP-1 drugs (e.g., for diabetes/obesity) may become deflationary over time, reducing downstream healthcare costs (e.g., eMed data shows **5% cost drops** for adherent users in a 10% inflation environment).
 
 ## Questions And Answers
-- **Q: Why don’t agents use `llms.txt`?**
-  A: Agents default to docs/homepages unless explicitly directed; even then, only ~40% use `llms.txt` because docs mention it. Human-defined specs often misalign with agent behavior.
+- **Q: Can AI autonomously deliver care today?**
+  A: In narrow, verifiable tasks (e.g., radiology, diagnosis), AI often outperforms physicians, but real-world medicine involves complex, multi-task workflows that current benchmarks don’t fully capture. The debate centers on whether to integrate AI as a tool or redesign care delivery around its strengths.
 
-- **Q: How will users interact with services in an agentic web?**
-  A: Assistants become the entry point, composing actions across services (e.g., booking hotels via Booking.com’s MCP server inside a chat). Users see only the final UI chunks (e.g., a hotel selection card) without visiting the site.
+- **Q: Are healthcare costs already bending?**
+  A: Yes. A Harvard study found U.S. healthcare spending in 2024 was **$977B below 2010 projections**, with technology, site-of-care shifts, and payer policies driving savings. AI could amplify these trends by further reducing cognitive scarcity.
 
-- **Q: What replaces traditional web discovery (SEO)?**
-  A: A new discovery layer for agentic resources (e.g., MCP servers, APIs) is needed, likely built on standards like `ai-catalog.json` or Agentic Resource Discovery, enabling agents to query directories programmatically.
-
-## Notable Details
-- **MCP Apps adoption**: Supported by all major chat clients except Gemini (as of the talk), enabling services to inject branded UI chunks (e.g., Booking.com cards) into chats.
-- **Headless shift**: Companies like Salesforce, Cloudflare, and Sentry are prioritizing headless/API-first designs, even when UI was a core differentiator.
-- **Agent traffic dominance**: Cloudflare’s CEO reported that agent traffic surpassed human traffic on the web.
-- **Ora’s tools**:
-  - **Agent Readiness Benchmark** ([ora.ai](https://ora.ai)): Scores websites on agent compatibility.
-  - **Aura’s Journey** ([journey.ora.ai](https://journey.ora.ai)): Visualizes agent paths through a website for a given intent, revealing what agents actually look for.
-  - **Ora Directory**: A searchable registry of agentic resources (MCP servers, APIs) compliant with emerging discovery standards.
-- **Agent behavior insight**: Different agents (e.g., Claude Code, Eve, ChatGPT) take wildly different paths to fulfill the same task on the same website, underscoring the need for empirical observation.
-
-## Actionable Takeaways
-- **Audit agent paths**: Use tools like [Aura’s Journey](https://journey.ora.ai) to observe how agents navigate your service, then adapt interfaces (e.g., MCP servers, API docs) to match their behavior.
-- **Prioritize API/MCP quality**: Agents favor services with superior tooling over familiar brands—optimize for integration ease.
-- **Adopt emerging discovery standards**: Implement `ai-catalog.json` or Agentic Resource Discovery to ensure agents can find and use your resources.
-- **Treat accessibility as agent-readiness**: Improve non-visual signals (e.g., semantic markup, structured data) to aid both human and agent navigation.
-- **Watch for headless trends**: If your product’s UI is a moat, plan for an API-first future where assistants, not dashboards, drive usage.
-
-## People, Companies, Tools, And Links Mentioned
-- Liad Yosef
-- Ora.ai
-- [Ora’s Agent Readiness Benchmark](https://ora.ai)
-- [Aura’s Journey](https://journey.ora.ai)
-- MCP Apps
-- Claude
-- ChatGPT
-- Gemini
-- Google (WebMCP)
-- Booking.com
-- Airbnb
-- Salesforce
-- Cloudflare
-- Sentry
-- PostHog
-- Mixpanel
-- Monday.com
-- Vercel (Eve)
-- David Ker (Sentry)
-- `llms.txt`
-- `ai-catalog.json`
-- Agentic Resource Discovery standard
-- MCP registry
-
-## Reading Priority
-
-High – This talk offers a rare, observation-driven look at how agents actually interact with the web, upending assumptions about specs, discovery, and UI design (claims should be read as speaker-reported).
-
-***
-
-# Pinecone 2.0 — Edo Liberty, Pinecone
-
-- **Published:** 2026-09-16
-- **YouTube:** [AI Engineer](https://www.youtube.com/watch?v=IN-rb-9WmiY)
-- **Speaker:** Edo Liberty, Founder/CEO, Pinecone
-
-## One-Sentence Takeaway
-Enterprise AI agents fail without a persistent, specialized knowledge layer that captures tribal knowledge and stays current, while runtime code execution can drastically reduce token costs and improve accuracy.
-
-## Short Summary
-Enterprise agents today resemble brilliant but clueless new hires: they lack tribal knowledge—how decisions are made, who owns what, and company-specific processes—that isn’t captured in any single document. Edo Liberty argues for a persistent, domain-specialized knowledge layer that all agents query, with the hardest requirement being real-time currency (e.g., a CEO change must override 9,000 outdated documents overnight).
-
-Pinecone’s Nexus implements this via a manifest-driven context (semantic maps, SQL tables, vector DBs, markdown notes) and a runtime coding agent that dynamically writes and executes code at query time, cutting tooling prompts from ~150K to <1K tokens while improving speed, cost, and accuracy.
-
-## Main Ideas
-- **Tribal knowledge gap**: Agents lack the implicit, distributed knowledge of how a company operates, which cannot be retrieved via search or RAG alone.
-- **Knowledge layer requirements**: Must be persistent (built once, reused), specialized (domain-owned by experts), and current (deprecated facts override legacy data instantly).
-- **Runtime coding agent**: Instead of static queries, the system dynamically generates and executes code (like a Jupyter notebook) at query time, reducing prompt size and increasing flexibility.
-- **Manifest-driven context**: Replaces hand-written skills/plugins with a declarative manifest that defines what to track (entities, tasks, schemas), auto-organizing data into semantic maps, SQL tables, vector DBs, and markdown notes.
-- **Performance tradeoff**: Nexus’s approach cuts token usage by 77–90%, speeds up tasks by 20–77%, and improves accuracy by giving agents pre-structured, budgeted access to curated knowledge.
-
-## Questions And Answers
-- **Q: Why can’t RAG or vector search solve tribal knowledge?**
-  A: Tribal knowledge is distributed across people, processes, and unwritten norms, not stored in any single retrievable document.
-
-- **Q: How does Nexus stay current?**
-  A: The knowledge layer prioritizes real-time updates (e.g., a CEO change) to override outdated information in all underlying sources, mimicking how humans propagate new facts.
-
-- **Q: What’s the advantage of runtime code execution?**
-  A: It replaces static prompts with dynamic, iteratively refined code, reducing token overhead (from ~150K to <1K) while improving accuracy and adaptability.
+- **Q: Can incumbents (e.g., hospitals, EHRs) adapt to AI?**
+  A: Unlikely at current pace. Incumbents face legacy systems, regulation, and cultural resistance, while insurgents (e.g., AI-native startups) can build from scratch. Some may survive by embracing agentic workflows (e.g., EHRs serving AI agents, not just humans).
 
 ## Notable Details
-- **Token reduction**: Tooling prompts for agents shrank from ~150,000 to <1,000 tokens using runtime code generation.
-- **Performance gains**: Early customers saw 77–90% token reduction, 20–77% speed improvements, and higher accuracy.
-- **NoQL**: A query language for agents to specify budget (tokens/dollars) and retrieve structured, grounded answers—not a chat interface.
-- **Context components**: Semantic maps, SQL tables, vector DBs, markdown notes, and entity graphs, all auto-managed via the manifest.
-- **Yahoo Answers anecdote**: Users asked unanswerable questions (e.g., "Am I fat?") due to poor theory of mind about the system’s capabilities—a parallel to today’s agent limitations.
+- **AI Benchmark Critique**: Studies show "AI + physician" teams often underperform AI alone in tasks like diagnosis, suggesting human oversight may degrade accuracy in some cases.
+- **Cost Savings Breakdown**: The $977B savings (2010–2024) included **$94B from site-of-care shifts** (e.g., outpatient hip/knee replacements) and **14% from technology adoption**.
+- **GLP-1 Economics**: Early data from eMed suggests adherent GLP-1 users see **5% lower total healthcare costs** despite 10% medical inflation, hinting at long-term deflationary potential.
+- **Exponential Trajectory**: Medical knowledge doubled every **50 years in 1950** vs. **73 days by 2019**, accelerating subspecialization. AI could reverse this by democratizing expertise.
+- **Regulatory Dynamics**: U.S. regulators are engaging with both incumbents and insurgents, but the pace of AI adoption may outstrip traditional frameworks.
 
 ## Actionable Takeaways
-- Audit your agents for tribal knowledge gaps (e.g., processes, ownership, norms) that RAG cannot address.
-- Explore manifest-driven knowledge layers to centralize and auto-curate domain-specific context.
-- Test runtime code execution for agent tasks to reduce prompt size and improve adaptability.
-- Prioritize real-time knowledge currency mechanisms to override deprecated data instantly.
-- Evaluate NoQL-style budgeted queries to balance cost, speed, and accuracy.
+- **Reevaluate Institutional Models**: Healthcare organizations should explore parallel builds (e.g., AI-native workflows) rather than retrofitting legacy systems.
+- **Monitor Cost Drivers**: Track site-of-care shifts, GLP-1 adoption, and AI-driven productivity gains as leading indicators of further cost curve bending.
+- **Prepare for Cognitive Abundance**: Assume AI will commoditize many clinical cognitive tasks; plan for workforce transitions and new economic models in healthcare.
+- **Watch Insurgents**: AI-native startups (e.g., in diagnostics, care delivery) may outpace incumbents, as seen in other industries (e.g., Cursor vs. Microsoft).
+- **Study the Harvard Paper**: The Cutler & Klarnet study offers a roadmap for how AI could further reduce costs by addressing cognitive scarcity.
 
 ## People, Companies, Tools, And Links Mentioned
-- Edo Liberty
-- Pinecone
-- [Nexus](https://www.pinecone.io/) (Pinecone’s knowledge layer product)
-- Yahoo Answers
-- Andre Karpathy
-- [LLM Wiki](https://github.com/karpathy/llm/wiki) (concept)
-- Jupyter notebooks
-
-## Reading Priority
-
-High – Introduces a novel, concrete architecture for enterprise agents that addresses tribal knowledge and reduces costs while improving performance.
-
-***
-
-# If we want them to do Knowledge Work, design them as Knowledge Agents — Benjamin Clavié, Mixedbread
-
-- **Published:** 2026-09-16
-- **YouTube:** [AI Engineer](https://www.youtube.com/watch?v=O84lhGc1OOI)
-- **Speaker:** Benjamin Clavié, Mixedbread, retrieval and agentic systems
-
-## One-Sentence Takeaway
-Designing AI agents for knowledge work requires learning from human knowledge workflows—tools, roles, and orchestration—rather than generalizing from the unusually tractable case of coding agents.
-
-## Short Summary
-Coding agents succeed because code offers durable, searchable cues (identifiers, paths, method definitions) and tasks are narrowly scoped. Knowledge work outside code is the opposite: meaning is implicit, the same string can mean different things in different domains, and the agent must reconstruct intent and context from scratch. Humans have solved this for centuries through intertwined tool loops (catalogs, bibliographies, search engines) and organization loops (polymaths, monasteries, universities, specialist firms), each driving the other forward.
-
-Benchmark results show that poorly tuned retrieval tools achieve ~60% accuracy—too low to trust—while well-tuned tools reach the same ceiling as rivals with 20% fewer tool calls. Adding a layer of searcher agents that return short memos closes roughly 40% of the remaining gap to human performance, demonstrating that orchestration and tool design are as critical as model capability.
-
-## Main Ideas
-- Code is an unusually easy domain for agents: it provides durable, grep-able cues and tasks are narrowly framed, whereas general knowledge work is implicit, contextual, and requires intent reconstruction.
-- Knowledge work and search are co-defined: if a task requires search, it is a knowledge problem, and knowledge problems inherently require search.
-- Tooling and organizational structures co-evolve in a single loop: better tools enable new roles and workflows, which generate new knowledge, which demands better tools.
-- Tooling is not a neutral add-on; it determines whether a task is practically scalable by overcoming performance ceilings.
-- Orchestration matters: breaking down complex queries into sub-tasks handled by specialized searcher agents can close a large fraction of the gap to human performance.
-
-## Questions And Answers
-- **Why are coding agents easier than general knowledge agents?**
-  Code contains durable, searchable cues (identifiers, file paths, method definitions) and tasks are narrowly scoped, whereas knowledge work is implicit, contextual, and requires reconstructing intent.
-
-- **What is the relationship between tools and organizations in knowledge work?**
-  They form a single self-reinforcing loop: better tools enable new roles and workflows, which produce more knowledge, which demands better tools.
-
-- **How much can orchestration improve retrieval performance?**
-  Adding a layer of searcher agents that return short memos can reduce the oracle gap (difference between perfect document retrieval and the system) by roughly 40%.
-
-## Notable Details
-- A badly tuned retrieval tool achieves ~60% accuracy, which is too low to trust in practice.
-- A well-tuned retrieval tool can reach the same ceiling as rivals while using 20% fewer tool calls, effectively reducing cost and resource usage.
-- On the MQA benchmark (PDF-based enterprise QA), even humans using BM25 hit a ceiling, indicating that better tools (e.g., multimodal search) are necessary to progress.
-- Mixedbread’s multimodal search tool (handling PDFs, tables, etc.) improves accuracy, but adding searcher agents that break down the problem and return memos closes ~40% of the gap to human performance.
-- Context is a finite resource: even with very large context windows, agents cannot ingest entire legal codes or specialized corpora, necessitating task decomposition and orchestration.
-
-## Actionable Takeaways
-- Do not generalize agent design from coding to all knowledge work; the latter requires explicit handling of ambiguity, context, and intent.
-- Invest in tool optimization and orchestration (e.g., searcher agents, memos) to overcome performance ceilings before scaling model size or context.
-- Co-design agents and tools: agents must be trained to use the right primitives (e.g., BM25, semantic search) for the task, not just default to familiar methods like grep.
-- Watch for benchmarks that reflect real-world complexity (e.g., MQA) to evaluate whether tools or orchestration are the bottleneck.
-
-## People, Companies, Tools, And Links Mentioned
-- [Benjamin Clavié](https://x.com/bclavie)
-- [Mixedbread](https://mixedbread.com)
-- [ben.clavie.eu](https://ben.clavie.eu)
-- Browse Comp Plus leaderboard
-- MQA benchmark (Hugging Face and Snowflake)
-- BM25 (lexical search algorithm)
-- Gemini 3
-
-## Reading Priority
-
-Medium – A clear, speaker-argued case for why knowledge agents require different design principles than coding agents, with cited benchmarks and actionable insights.
-
-***
-
-# Connect AI to Billions of Legal Documents — Simon Eskildsen, turbopuffer & Jacob Lauritzen, Legora
-
-- **Published:** 2026-09-16
-- **YouTube:** [AI Engineer](https://www.youtube.com/watch?v=V-isu4eTHgw)
-- **Speakers:** Jacob Lauritzen, Engineer at Legora; Simon Eskildsen, CEO and co-founder of TurboPuffer
-
-## One-Sentence Takeaway
-Namespace-per-project storage with object-native design slashes latency and cost for regulated, long-tail search workloads like legal research.
-
-## Short Summary
-Legora’s early search stack collapsed when cold and hot legal projects shared the same partitions, causing cache thrashing and 20-second P99 latencies. Moving to TurboPuffer’s namespace-per-project model isolated each project in object storage, eliminated cross-project interference, and restored sub-second performance.
-
-The architecture also satisfies strict enterprise requirements: each namespace can carry its own encryption key and bucket, delivering the “physical isolation” banks and law firms demand. TurboPuffer’s tree-based clustering of vectors and BM25 text indexes minimizes round trips to object storage, making full-text search at web scale cheaper than vector search.
-
-## Main Ideas
-- Partitioning document chunks across thousands of database partitions mixed hot and cold projects, so every query pulled giant partitions into memory, evicted the previous, and thrashed the cache, driving P99 latency from 100 ms to 20 s.
-- Making the project the unit of storage (one namespace per project) lets idle projects rest in cheap object storage, while active projects stay cached, eliminating cross-project interference and restoring low, stable latency.
-- Object-native storage plus namespace-level isolation enables per-namespace encryption keys and buckets, satisfying regulated customers’ demands for physical isolation and customer-managed keys without extra infrastructure.
-- Tree-based clustering of vectors and text indexes minimizes round trips to object storage (≈200 ms P99), keeping hot centroids in memory and cold leaves on disk, which is cheaper than graph-based navigation for large-scale retrieval.
-- Full-text search at web scale is often more expensive than vector search because intersecting large posting lists and computing BM25 scores consumes more memory bandwidth and round trips than tree-based vector search.
-
-## Questions And Answers
-- **Why did Postgres with 4,000 partitions fail?**
-  Cold and hot projects landed in the same partitions; each query loaded a huge partition into memory, evicted the last, and thrashed the cache, spiking latency to 20 s P99.
-
-- **How does TurboPuffer achieve low latency without SSD cache?**
-  Disabling the SSD cache and relying only on memory cache still met performance targets, so the encryption boundary could stop at volatile memory, satisfying strict multi-tenant isolation.
-
-- **Why is a tree better than a graph for vector search on object storage?**
-  Graphs require many random hops (each ≈200 ms to S3), whereas a tree keeps hot upper levels in memory and cold leaves on disk, minimizing round trips and cost.
-
-## Notable Details
-- Legora’s legal research corpus is approaching 10 billion vectors with high QPS spikes due to query fan-out for hierarchical and temporal filtering.
-- TurboPuffer writes directly to object storage (S3, GCS, Azure Blob) with a write-ahead log; indexes are built asynchronously in the background.
-- Query routing uses namespace affinity to hit the node most likely to have the data in cache, then checks memory → NVMe SSD → object storage.
-- For EU law (hot) vs. Danish law (cold), cold namespaces can remain on object storage with 500 ms fetch latency acceptable for deep research workloads.
-- Full-text search uses a hashmap of tokens to posting lists; intersection plus BM25 scoring is the dominant cost at scale.
-
-## Actionable Takeaways
-- For workloads with a long tail of cold data, make the natural work unit (e.g., project) the storage namespace to isolate hot and cold data and avoid cache thrashing.
-- Satisfy “physical isolation” demands by mapping namespaces to separate buckets and encryption keys rather than provisioning separate clusters.
-- Prefer tree-based clustering over graph-based navigation when round-trip latency to storage is high (≈200 ms), to minimize hops and keep hot metadata in memory.
-- Evaluate whether disabling intermediate caches (e.g., SSD) is acceptable if memory cache alone meets latency targets and simplifies encryption boundaries.
-- Expect full-text search to be more expensive than vector search at web scale; optimize posting list compression and intersection order to reduce memory bandwidth.
-
-## People, Companies, Tools, And Links Mentioned
-- [Legora](https://legora.com)
-- [TurboPuffer](https://turbopuffer.com)
-- Simon Eskildsen: [Website](https://sirupsen.com), [Twitter](https://x.com/Sirupsen)
-- Postgres with pgvector and diskANN
-- Elasticsearch
-- S3, GCS, Azure Blob Storage
-- BM25
-
-## Reading Priority
-
-Medium – A rare, concrete case study showing how storage architecture and namespace design can solve latency, cost, and compliance problems at scale for retrieval-heavy AI applications.
-
-***
-
-# Your Voice Agent is Just a Walkie Talkie — Neil Zeghidour, Gradium
-
-- **Published:** 2026-09-15
-- **YouTube:** [AI Engineer](https://www.youtube.com/watch?v=a8EcVumh71E)
-- **Speaker:** Neil Zeghidour, co-founder and CEO, Gradium
-
-## One-Sentence Takeaway
-Full-duplex voice agents require modeling two simultaneous audio streams to match human conversation, but every gain in naturalness has so far traded off reasoning ability.
-
-## Short Summary
-Voice interfaces evolved from rigid command pipelines (Siri) to open-ended chat (early voice mode) to tool-using agents (cascaded STT→LLM→TTS), each step improving either naturalness or intelligence but rarely both. Speech-to-speech models collapse the pipeline, cutting latency and preserving prosody, yet they still enforce turn-taking and lag text-only LLMs in reasoning. The core bottleneck is cost: raw audio is too long for transformer attention, so neural codecs compress it into token streams a model can learn on. Full duplex needs two parallel token streams so both sides can speak, overlap, or stay silent, but the fixed capacity of the model means spending weights on audio understanding reduces the budget available for reasoning.
-
-## Main Ideas
-- Current real-time voice models are half-duplex (listen OR speak), breaking natural backchanneling and overlapping speech that occupy up to 20 % of human phone calls.
-- Raw audio is infeasible in a transformer because 3 seconds of 24 kHz audio is ~72 k tokens; quadratic attention cost makes a 10 000× longer sequence 100 M× more expensive, so neural codecs compress audio into token-like representations.
-- Full-duplex speech requires modeling two simultaneous token streams so both parties can be active, silent, or overlapping without forcing turn-taking.
-- Adding speech modalities to a text LLM consumes model capacity, reducing intelligence; every naturalness gain has so far cost reasoning performance.
-- Two paths forward: (1) scale the speech-to-speech model until its intelligence matches text LLMs, or (2) split interface from reasoning—a small on-device full-duplex model handles natural conversation and delegates complex tasks to a separate text LLM.
-
-## Questions And Answers
-- **Why can’t today’s speech-to-speech models handle backchanneling?**
-  They enforce half-duplex turn-taking: the model is either listening or speaking, so any user “mm-hmm” or “yeah” is treated as an interruption that stops the model.
-
-- **What makes raw audio incompatible with LLMs?**
-  A short sentence spans tens of thousands of waveform timesteps; transformer attention scales quadratically with sequence length, making raw audio astronomically expensive to process.
-
-- **How do neural codecs enable speech-to-speech models?**
-  They compress raw audio into dense, token-like latent sequences that an LLM can predict next tokens for, just as it does with text.
-
-- **What is the tradeoff between naturalness and intelligence?**
-  A fixed-weight model that learns to hear and speak spends capacity on audio, leaving less for reasoning; cascaded text agents remain more intelligent, while speech-to-speech models are more natural but less capable.
-
-## Notable Details
-- In 2024 Gradium released Moshi (first full-duplex speech-to-speech model), Hibiki (real-time speech-to-speech translation), and on-device TTS models.
-- OpenAI’s Advanced Voice Mode collapses STT→LLM→TTS into one model, improving latency and prosody but still enforcing turn-taking.
-- Multistream language models treat user and system audio as two parallel token streams, allowing true full-duplex interaction.
-- Hybrid approach (MoshiRAG, Thinking Machines): a small full-duplex interface model delegates reasoning to a separate text LLM, preserving naturalness and intelligence while reducing cost and enabling backend swapping.
-
-## Actionable Takeaways
-- Watch for full-duplex demos that handle overlapping speech without breaking flow; absence of backchanneling is a quick litmus test for half-duplex systems.
-- Evaluate voice agents by separating interface naturalness from backend intelligence; hybrid architectures may offer the best near-term balance.
-- Expect cost and latency to remain key constraints; on-device small models plus cloud text LLMs can optimize both.
-- Monitor progress in neural codec efficiency and multistream modeling as enablers of cheaper, more natural voice agents.
-
-## People, Companies, Tools, And Links Mentioned
-- Neil Zeghidour
-- Gradium
-- [Gradium website](https://gradium.ai)
-- OpenAI
-- OpenAI Advanced Voice Mode
-- GPT-4o
-- Thinking Machines
-- Moshi
-- Hibiki
-- MoshiRAG
-- Kyutai
-
-## Reading Priority
-
-High – This talk clearly articulates the technical bottleneck (half-duplex vs. full-duplex) and the fundamental tradeoff (naturalness vs. intelligence) that will shape the next generation of voice agents.
-
-***
-
-# Voice Agents Can Just Do Things — Charlie Guo, OpenAI
-
-- **Published:** 2026-09-15
-- **YouTube:** [AI Engineer](https://www.youtube.com/watch?v=OpY6MmZFeHo)
-- **Speaker:** Charlie Guo, Developer Experience at OpenAI
-
-## One-Sentence Takeaway
-Voice agents need not respond in speech; the most underexplored and powerful mode is speech-to-action, where voice directly triggers tools and software actions.
-
-## Short Summary
-Voice interaction has long existed in three modes—speech-to-speech, speech-to-action, and event-to-speech—but the latter two remain underutilized. The most transformative opportunity lies in speech-to-action, where voice input drives software verbs (e.g., form-filling, creative tools, or full computer control) without requiring spoken responses. Developers can expose existing app endpoints as tools for voice models, unlocking efficiency and accessibility gains, especially for users whose dexterity or expertise limits their ability to operate interfaces manually.
-
-The shift to native audio models (e.g., OpenAI’s Realtime-2) reduces latency and preserves tone, cadence, and context lost in transcription, enabling richer interactions. The key design question is not "what kind of voice agent to build" but "what role voice plays" in the interaction, which dictates perception, tool use, and communication modes.
-
-## Main Ideas
-- Voice agents can respond through actions (e.g., UI updates, tool calls) rather than speech, leveraging decades of software interaction patterns (highlighting fields, notifications, ghost cursors).
-- Speech-to-action is a "capability overhang": voice can dramatically accelerate tasks like form-filling (5 minutes of speech vs. 1 hour of typing) or bridge the gap between taste and technical skill in creative tools.
-- Existing apps can be voice-enabled by exposing their verbs (API endpoints, hooks) as tools for models to call, with guardrails for safety.
-- Native audio models (e.g., Realtime-2) avoid transcription losses (tone, interruptions, background noise) and reduce latency, while adding reasoning and parallel tool calls for more intelligent responses.
-- Event-to-speech enables hands-free or proactive interactions (e.g., cooking apps, notifications) but remains exploratory; voice can serve as an escalation layer after visual/auditory cues.
-
-## Questions And Answers
-- **Q: How can developers start integrating voice into their apps?**
-  A: Map existing app verbs (APIs, hooks) to tools a voice model can call, then layer voice as an input modality with appropriate guardrails.
-
-- **Q: Why avoid transcription in voice agents?**
-  A: Transcription strips tone, cadence, and context (e.g., interruptions, background noise), which are critical for understanding intent; native audio models preserve these signals and reduce latency.
-
-- **Q: What’s the design priority for voice agents?**
-  A: Start by asking what role voice plays in the interaction (perception, tools, communication mode), not what type of agent to build.
-
-## Notable Details
-- Moviefone (speech-to-speech) and GPS navigation (event-to-speech) demonstrate that voice interaction modes are decades old but now more capable.
-- Realtime-2 supports reasoning in audio, parallel tool calls, and preambles (e.g., "I’ll check flight prices—give me a second") to manage latency expectations.
-- Accessibility impact: Developers with limited hand mobility now produce orders of magnitude more code using voice and coding agents.
-- Benchmark slide: Realtime-2 performs well on audio benchmarks, with improved domain understanding and natural voices.
-
-## Actionable Takeaways
-- Audit your app’s verbs (APIs, UI actions) to identify candidates for voice-driven tool calls.
-- Experiment with speech-to-action for repetitive or complex tasks (e.g., forms, creative software) where voice input could outpace manual input.
-- For voice agents, default to native audio models to preserve context and reduce latency; use preambles to signal delays.
-- Prioritize accessibility use cases where voice can unlock functionality for users with physical or technical barriers.
-- Frame voice integration around its role in the interaction flow, not as a standalone feature.
-
-## People, Companies, Tools, And Links Mentioned
-- [Charlie Guo](https://x.com/charlierguo)
-- [ignorance.ai](https://www.ignorance.ai/)
-- OpenAI
-- OpenAI Realtime-2
-- Moviefone
-- ChatGPT Advanced Voice Mode
-- Codex
-- [AI Engineer (AIE) conferences](https://ai.engineer)
-- [AIE talk page for this video](https://ai.engineer/talks/OpY6MmZFeHo)
-
-## Reading Priority
-
-Medium – A clear, practical argument for rethinking voice agents as action drivers, with concrete developer on-ramps and accessibility implications.
-
-***
-
-# Tolan: Voice-First AI Companion — Paula Dozsa, Tolan
-
-- **Published:** 2026-09-15
-- **YouTube:** [AI Engineer](https://www.youtube.com/watch?v=xLUQOqjudtA)
-- **Speaker:** Paula Dozsa, Tolan
-
-## One-Sentence Takeaway
-Voice-first AI companions require rethinking LLM assumptions—fast, volatile turns demand sub-second latency, dynamic context assembly, and memory-as-retrieval to sustain the illusion of a real relationship.
-
-## Short Summary
-Voice interactions break the slow, stable-turn model of text chat: users interrupt, pivot mid-sentence, and expect near-instant responses. Tolan’s team found that even a 0.5s latency increase degraded engagement, forcing them to optimize turn detection, model routing, and context rebuilding per turn. Memory is treated as a compressed, retrieval-based system rather than a raw transcript, and context is reassembled fresh each turn to avoid drift.
-
-The companion’s alien persona allows user projection and forgives unpredictability, while a parallel tone-monitoring system preserves character consistency. Internally, Tolan uses AI agents for coding, review, and bug triage, improving stability and accelerating feature development.
-
-## Main Ideas
-- Voice-first AI invalidates text-chat assumptions: turns are fast (sub-2s round-trip), context is volatile (users interrupt, pivot, or trail off), and interruptions must be classified to avoid premature cutoffs.
-- Latency is the product—every pipeline stage (end-of-utterance detection, transcription, TTS) must be measured separately, as aggregate "feels slow" metrics are useless for debugging.
-- Tiered model routing by emotional stakes (not cost) lets a third of turns use smaller models with no measurable retention impact, while high-stakes moments (e.g., onboarding, emotional topics) always use frontier models.
-- Memory as retrieval: conversations are distilled into embedded facts, preferences, and emotional signals, compressed nightly to merge duplicates and resolve contradictions, with sub-50ms lookups.
-- Context is rebuilt per turn from parts (recent summary, persona card, retrieved memories, tone guidance, app state) to avoid drift from reused, stale context.
-
-## Questions And Answers
-- **Why an alien companion?**
-  An alien has no real-world reference, letting users project their needs onto it, and its unpredictability (e.g., impulsiveness) reads as charming rather than jarring.
-
-- **How does Tolan route model usage?**
-  A cheap "tone router" classifier assesses emotional stakes per turn; high-stakes turns go to frontier models, while casual chatter uses smaller, faster models, reducing costs without hurting retention.
-
-- **How is memory managed?**
-  Conversations are stored as retrieval-optimized embeddings (not raw transcripts), compressed nightly to deduplicate and resolve contradictions, with stable and unstable memory layers.
-
-## Notable Details
-- A 0.5s latency increase (from 2s to 2.5s) tanked every engagement metric, prompting users to complain their companion felt "slow."
-- Smart turn detection adds ~60ms of latency but halves early cutoffs where the agent interrupts prematurely.
-- GPT-5.1 on the responses API reduced time-to-speech by >0.7s, a major quality improvement.
-- Frontier models cost ~5x more than smaller models; routing a third of turns to smaller models had almost no measurable effect on retention.
-- Tolan’s App Store rating is 4.8 stars (162K reviews), with "emotional safety" the highest-scoring well-being dimension.
-- AI agents co-authored more iOS code than any individual engineer, improving crash-free rates from 99.6% to 99.9% and cutting runtime errors by >50%.
-
-## Actionable Takeaways
-- For voice AI, prioritize per-stage latency measurement and turn detection over generic optimization.
-- Route model usage by conversational stakes, not cost, to balance quality and economics.
-- Treat memory as a retrieval system with nightly compression to avoid context bloat and hallucinations.
-- Rebuild context per turn from modular components to prevent drift in volatile conversations.
-- Consider AI agents for coding and review, but structure them with clear roles (e.g., implementer, reviewer, shepherd) and checkpoints.
-
-## People, Companies, Tools, And Links Mentioned
-- [Tolan](https://www.youtube.com/watch?v=xLUQOqjudtA)
-- Paula Dozsa ([Twitter](https://x.com/paularambles))
-- GPT-5.1
-- Claude
-- Khosla Ventures
-- [AI Engineer (AIE) conferences](https://ai.engineer)
-
-## Reading Priority
-
-High – Rare, concrete engineering insights into voice-first AI companions, with measurable tradeoffs and novel approaches to latency, memory, and model routing.
-
-***
-
-# Speech-to-Speech Model Research at Google DeepMind — Valeria Wu Fon & Tom Ouyang, Google DeepMind
-
-- **Published:** 2026-09-15
-- **YouTube:** [AI Engineer](https://www.youtube.com/watch?v=18Um2VjMM_g)
-- **Speakers:** Valeria Wu Fon, Product Lead for Speech-to-Speech in Gemini, Google DeepMind; Tom Ouyang, Engineer for Speech-to-Speech in Gemini, Google DeepMind
-
-## One-Sentence Takeaway
-End-to-end, natively multimodal speech-to-speech models now enable low-latency, intelligent, and multimodal voice agents that were previously impossible with cascaded pipelines.
-
-## Short Summary
-Voice is the most natural interface for human-AI interaction, and modern speech-to-speech models—trained jointly on audio, video, and text—collapse the old pipeline of hand-built components (acoustic modeling, language modeling, etc.) into a single, promptable system. The core challenge is balancing three competing priorities: conversational latency, intelligence (task completion, reasoning), and multimodal input/output (e.g., video, screen shares, documents). Advances like streaming translation at offline quality and proactive audio (ignoring background noise) demonstrate progress, but improving one dimension often degrades others.
-
-## Main Ideas
-- **Natively multimodal pre-training** unifies audio, video, and text understanding in a single model, enabling tasks like streaming translation, captioning, and audio generation without bespoke pipelines.
-- **Speech-to-speech models face a trilemma**: improving conversational latency, intelligence (reasoning/task completion), or multimodal breadth often comes at the expense of the others (e.g., increasing "thinking budget" boosts intelligence but hurts latency).
-- **Streaming translation at offline quality** is now achievable, supporting 70+ languages with multilingual switching, speaker voice preservation, and robustness to noise—all in real time.
-- **Proactive audio** allows models to distinguish between user speech and background noise, preventing false interruptions in noisy environments.
-- **Universal promptability** lets a single model adapt to diverse use cases (e.g., live translation, customer service agents, multimodal search) without retraining, reducing fragmentation in deployment.
-
-## Questions And Answers
-- **Why not use cascaded ASR + TTS pipelines?**
-  End-to-end models avoid the brittleness and scaling limits of hand-built components, while natively handling tasks like tone detection, emotion, or pace without additional engineering.
-
-- **How does streaming translation achieve offline-quality results?**
-  The model leverages joint audio-video-text pre-training to infer context incrementally, enabling real-time translation without waiting for full utterances.
-
-- **What breaks when you "turn up the thinking budget"?**
-  Intelligence (e.g., reasoning accuracy) improves, but time-to-first-audio and conversational naturalness degrade due to added latency.
-
-## Notable Details
-- Pre-2018 speech recognition relied on a chain of components: feature extraction, acoustic modeling, pronunciation modeling, language modeling, and rescoring.
-- Gemini’s multimodal pre-training includes interleaved examples like summarizing bedtime stories from audio/video or captioning videos with audio.
-- Live translation demos show multi-speaker, multi-language (Spanish, Italian, Chinese → English) conversations with low latency.
-- In a Spanish query about a "mid-century sofa," the model correctly retains the English term *mid-century* in its Spanish response, reflecting real-world usage patterns.
-- Roadside assistance demo highlights alphanumeric accuracy (e.g., registration plates, postcodes) and proactive audio to ignore background noise.
-- Pilot demo with Citi uses real-time avatars with multilingual lip-syncing and tool integration (e.g., pulling up financial data).
-
-## Actionable Takeaways
-- Watch for models that resolve the latency-intelligence-multimodality tradeoff without sacrificing core performance.
-- Expect voice agents to replace typed interactions in high-noise or hands-busy environments (e.g., roadside assistance, live meetings).
-- Test multimodal inputs (e.g., video + audio) for tasks where context is split across modalities (e.g., describing objects in images).
-- Prioritize proactive audio features for deployments in real-world, noisy settings.
-
-## People, Companies, Tools, And Links Mentioned
-- Google DeepMind
-- Gemini
-- Google Meet
-- Google Search Live
-- Citi
-- [AI Engineer talk page](https://ai.engineer/talks/18Um2VjMM_g)
-- [Valeria Wu Fon (Twitter)](https://x.com/valeriawu_)
-- [Valeria Wu Fon (LinkedIn)](https://www.linkedin.com/in/valeriawu)
-- [Tom Ouyang (LinkedIn)](https://www.linkedin.com/in/tom-ouyang-8b5a5142)
-
-## Reading Priority
-
-Medium – A clear, concrete look at the state of speech-to-speech models, their tradeoffs, and near-term applications, with strong demos and technical depth.
-
-***
-
-# Realtime Voice Agents with Frontier Intelligence — Bohan Li, EliseAI
-
-- **Published:** 2026-09-15
-- **YouTube:** [AI Engineer](https://www.youtube.com/watch?v=MBHOH1NmDqc)
-- **Speaker:** Bohan Li, Engineer at EliseAI
-
-## One-Sentence Takeaway
-Real-time voice agents can hide latency by decoupling perception, planning, and control, then stitching results with a prefix cache and background tool calls.
-
-## Short Summary
-
-Bohan Li maps voice agents to the self-driving stack: transcription is perception, the LLM is planning, and speech synthesis is control. Each layer is optimized independently—streaming and batch transcriptions run in parallel, background agents perform tool calls invisibly, and a prefix cache lets synthesis start before the full sentence is generated.
-
-The result is a natural, low-latency caller experience even when using slow, high-intelligence models. The demo call shows seamless interaction, with no audible gaps or artifacts.
-
-## Main Ideas
-- Voice agents can be decomposed into perception (transcription), planning (LLM), and control (speech synthesis), mirroring self-driving architectures.
-- A **Streaming Speculative Transcriber** runs a fast streaming engine alongside a slower, context-aware batch engine; corrections are discarded if newer audio arrives first.
-- **Background tool calls** let a secondary agent fetch data (e.g., names, dates) and inject results into the main model’s context, making the primary agent believe it performed the call itself.
-- A **prefix cache** detects repeated word sequences (e.g., scripted openers) and plays cached audio immediately while the rest of the sentence is still generating, with synthesis providers unaware of the split.
-- Overlapping audio from the cache and synthesis provider is suppressed to create a seamless output, masking latency without sacrificing prosody.
-
-## Questions And Answers
-- **How do you handle transcription latency?**
-  Parallel streaming and batch engines, where the batch engine corrects the streaming output only if no newer audio has arrived.
-
-- **How do you start speaking before the model finishes generating?**
-  The prefix cache plays cached audio for repeated phrases (e.g., "You said your name is") while the full sentence is synthesized in the background.
-
-- **How do you avoid audible seams between cached and synthesized audio?**
-  The synthesis provider generates the full sentence with natural prosody, but the already-played cached portion is suppressed, leaving only the new audio.
-
-## Notable Details
-- The batch transcription engine (e.g., Scribe v2) uses question context to infer whether a segment is a name or date of birth, improving accuracy.
-- Phonetic matching is used to correct mistranscribed names in tool calls.
-- Cartesia’s TTS engine is used with WebSocket support for streaming synthesis.
-- The demo call (OB-GYN clinic booking) shows no perceptible latency or artifacts despite the layered optimizations.
-
-## Actionable Takeaways
-- For voice agents, decouple transcription, LLM, and synthesis to optimize each layer independently.
-- Use speculative execution (streaming + batch) to balance speed and accuracy in transcription.
-- Cache common prefixes in TTS to start playback early, then suppress overlapping audio from the full synthesis.
-- Offload tool calls to background agents to reduce round trips and maintain context continuity.
-
-## People, Companies, Tools, And Links Mentioned
-- [Bohan Li](https://x.com/bobowchan)
-- [Bohan Li on LinkedIn](https://www.linkedin.com/in/bohan-li-7290b74a)
-- [EliseAI](https://eliseai.com/)
-- [EliseAI on Twitter](https://x.com/EliseAI)
-- Flux (streaming transcriber)
-- Scribe v2 (batch transcription)
-- [Cartesia](https://cartesia.ai/) (TTS engine)
-- [AI Engineer talk page](https://ai.engineer/talks/MBHOH1NmDqc)
-
-## Reading Priority
-
-Medium – A technical but practical breakdown of latency-hiding techniques for real-time voice agents, with concrete implementations and a live demo.
-
-***
-
-# Box's Aaron Levie: On Reinventing Yourself in the AI Age and Enterprise Diffusion
-
-- **Published:** 2026-09-15
-- **Podcast:** [Training Data](https://pscrb.fm/rss/p/traffic.megaphone.fm/CPUAI7737498941.mp3)
-
-## One-Sentence Takeaway
-The real enterprise AI value lies not in raw models but in application-layer bridges that tightly integrate models with workflows, permissions, and data—where 90% of future enterprise tokens will run autonomously, not user-initiated.
-
-## Short Summary
-Aaron Levie argues that the largest opportunity in enterprise AI is the "application layer": domain-specific harnesses that connect foundation models to real workflows in industries like banking, law, and pharma. Box’s agent, deeply integrated with its file system, permissions, and search, outperforms raw API calls to Claude or ChatGPT on accuracy and latency for document-centric tasks.
-
-He predicts token subsidies from model labs are unsustainable long-term, and enterprises will prefer model-agnostic routing to optimize cost and accuracy. Diffusion of AI will be slower outside coding because most knowledge work involves external dependencies (e.g., sales reps waiting on customers) and lacks a "GitHub-like" data connector, unlike code.
-
-## Main Ideas
-- The gap between model capability and enterprise workflow is vast, creating a trillion-dollar opportunity for application-layer software that bridges this divide—just as Snowflake and Databricks emerged atop cloud infrastructure.
-- Model providers face a strategic tension: move up the stack to own the customer or foster an ecosystem by leaving the application layer open; history suggests the latter enables more value creation.
-- Token subsidies from labs are temporary due to gross margin pressures and competition from non-economic actors (e.g., Meta, China, NVIDIA), which will drive down inference costs and shift value to the application layer.
-- Coding diffused rapidly because it is purely text-based, technically homogeneous (GitHub), and high-value per line of output, whereas most knowledge work involves external bottlenecks (e.g., human approvals, budgets) and lacks standardized data connectors.
-- Long-running, background agents (e.g., contract analysis, onboarding workflows) will dominate enterprise AI, with 90% of tokens eventually spent on autonomous tasks users never explicitly initiate.
-
-## Questions And Answers
-**Q: Why won’t open-weight models dominate enterprise AI immediately?**
-A: Cost is the primary driver today, but open-weight models often suffer from token inefficiency, unpredictable behavior (e.g., switching languages mid-chain), and lack of enterprise-grade reliability. Adoption will grow as these issues are resolved and workloads stabilize.
-
-**Q: How does Box’s agent outperform raw model APIs?**
-A: Box’s harness leverages deep knowledge of its file system, permissions, search, and user heuristics (e.g., how employees rank document relevance). This domain-specific tuning improves accuracy and latency for queries over tens of millions of files.
-
-**Q: Will chat remain the dominant enterprise AI UI?**
-A: Chat will persist for ad-hoc queries, but most enterprise value will come from background agents embedded in workflows (e.g., dashboards, queues, automated triage), where the UI is a task list or alert, not a conversation.
-
-**Q: Why did coding agents diffuse so fast compared to other knowledge work?**
-A: Coding is a closed-loop, text-in/text-out task with homogeneous data (GitHub), technical users who can debug issues, and direct productivity gains. Other domains (e.g., sales) involve external dependencies (customer responses, budgets) and lack standardized data connectors.
-
-## Notable Details
-- Box’s agent achieves higher accuracy and lower latency than raw model APIs by exploiting its native understanding of search, permissions, and file metadata, including multi-search re-ranking and dynamic chunking.
-- Box evaluates models using a "complex work eval" (domain-specific tasks in life sciences, finance, etc.) and a holdback eval based on internal Box employee workflows, detecting improvements as small as 0.5 points.
-- Current model performance on Box’s use cases roughly correlates with coding benchmarks, with Gemini disproportionately strong in some general knowledge tasks.
-- Open-weight adoption in enterprises is driven ~30% by experimentation ("sexiness") and ~70% by cost, but reliability and token efficiency remain barriers.
-- Levie cites Jesse Walden’s (Decagon) argument: as use cases mature, they’ll peel off to open-weight models for cost efficiency, while frontier models handle the long tail of complex tasks.
-- Box Labs focuses on improving agent accuracy by 10+ points for specific tasks (e.g., loan document extraction) via automated hill-climbing on customer data.
-
-## Actionable Takeaways
-- Build model-agnostic routing layers to optimize cost/accuracy; avoid locking into a single model provider’s ecosystem.
-- Prioritize long-running, background agents over chatbots for enterprise workflows—focus on tasks users never explicitly trigger.
-- Invest in domain-specific harnesses that exploit proprietary data (e.g., permissions, search logs) to outperform generic model APIs.
-- Prepare for a hybrid model future: frontier models for complex tasks, open-weight models for stable, high-volume workloads.
-- Address "work slop" skepticism by framing AI as a utility (like calculators or financial models) rather than a proxy for human judgment—this shift may take 3–5 years.
-
-## People, Companies, Tools, And Links Mentioned
-- [Box](https://www.box.com)
-- [Sequoia Capital](https://www.sequoiacap.com)
+- Zeke Emanuel
+- Vinod Khosla
+- Neil Khosla
+- Bob Wachter
+- Erik Brynjolfsson
+- Elting Morison
+- Satya Nadella
+- Sam Altman
+- Larry Ellison
+- Masa Son
+- Dario Amodei
+- Terence Tao
+- Cleveland Clinic
+- Mayo Clinic
 - OpenAI
 - Anthropic
-- Google (Gemini)
-- Meta
-- NVIDIA
-- Snowflake
-- Databricks
-- AWS
-- GCP
-- Azure
-- Harvey
-- Lagore
-- Cognition
-- Factory
-- Decagon (Jesse Walden)
-- Enneagram
-- Trajectory AI
-- Applied Computer
-- Prime Intellect
-- Eli Lilly
-- Claude
-- ChatGPT
+- Cursor
+- Microsoft
 - GitHub
-- MCP (Model Context Protocol)
-- [Stan Druckenmiller’s Wall Street Journal article](https://www.wsj.com)
-
-## Reading Priority
-
-High – Levie’s arguments are unusually concrete, drawing on Box’s real-world deployments, and his predictions (e.g., 90% autonomous enterprise tokens) are both bold and grounded in observable trends.
-
-***
-
-# Act, Confirm, or Stop? Smarter behavior for AI assistants, wearables & robots — Amit Desai, Roku
-
-- **Published:** 2026-09-15
-- **YouTube:** [AI Engineer](https://www.youtube.com/watch?v=Zd5b40Jbp_k)
-- **Speaker:** Amit Desai, Voice Subject Matter Expert, Roku
-
-## One-Sentence Takeaway
-Improving AI assistant user satisfaction depends as much on smarter uncertainty handling (act, confirm, or stop) as on accuracy gains, and a cost-based heuristic (OUCH) can optimize these behaviors without changing model performance.
-
-## Short Summary
-Voice and embodied AI systems suffer from persistent errors whose real-world costs rise as assistants take physical or digital actions. While teams focus on incrementally improving accuracy, a second, orthogonal lever—how the system behaves under uncertainty—can dramatically reduce user pain at no accuracy cost.
-
-By assigning explicit costs to outcomes (e.g., wrong action vs. rejection) and optimizing confidence thresholds, user cost can drop by nearly half. Adding a confirmation step further lowers cost, and the same framework adapts to multimodal interfaces like TV, where visual choices change the cost calculus.
-
-## Main Ideas
-- User dissatisfaction in voice AI stems less from accuracy limits than from poor handling of uncertainty; improving the latter is a separate, high-impact knob.
-- A cost-based heuristic (Outcome User Cost Heuristic, OUCH) quantifies the relative pain of outcomes (e.g., wrong action, rejection, confirmation) and optimizes thresholds to minimize total user cost.
-- Intuitive thresholds (e.g., 65% confidence) often underperform; data-driven optimization (e.g., 43% for stop/act) can yield significantly better results.
-- Adding a confirmation behavior (e.g., "Play *Kiss* by Prince?") splits the confidence range into three regions, further reducing user cost by trading off speed for accuracy.
-- The same principles apply to multimodal systems (e.g., TV), where visual confirmations or choice displays alter the cost of each outcome, but the optimization framework remains valid.
-
-## Questions And Answers
-- **Q: How do you choose the optimal confidence threshold for stopping vs. acting?**
-  A: Assign explicit costs to each bad outcome (e.g., wrong action = 10s, rejection = 4s), then minimize the total cost function across the confidence distribution. In the example, 43% was optimal, not 65%.
-
-- **Q: Does adding confirmation always help?**
-  A: Yes, but the thresholds and cost assignments must be recalculated. Confirmation introduces new outcomes (e.g., "yes" vs. "no" corrections) with their own costs, requiring two thresholds (e.g., 41% and 49%) to minimize total OUCH.
-
-## Notable Details
-- In a 1,000-request example with 79% accuracy, naive acting yields 2.1 "OUCH points" per turn; adding stop/act at 43% confidence drops this to 1.27, and adding confirmation further reduces it to ~1.26.
-- Costs are heuristic but grounded in user time/effort (e.g., wrong song = 10s to stop/re-request; rejection = 4s to repeat; confirmation-"yes" = 2s, confirmation-"no" = 6s).
-- On TV interfaces, visual confirmations (e.g., displaying choices) can lower the cost of confirmation outcomes compared to voice-only systems.
-- The approach scales to real-time systems via learned decision models, not just static thresholds.
-
-## Actionable Takeaways
-- Audit your system’s uncertainty behaviors: measure the user cost of wrong actions, rejections, and confirmations to identify low-hanging improvements.
-- Replace intuitive confidence thresholds with cost-optimized ones; even small changes can yield outsized user satisfaction gains.
-- Test confirmation behaviors in high-stakes or high-cost scenarios (e.g., actions with irreversible outcomes).
-- Adapt the OUCH framework to multimodal interfaces by reassessing outcome costs (e.g., visual vs. voice confirmations).
-- Prioritize uncertainty handling alongside accuracy in your roadmap; the two are independent levers.
-
-## People, Companies, Tools, And Links Mentioned
-- Amit Desai
-- Roku
-- Alexa
-- [AI Engineer (AIE) talk page](https://ai.engineer/talks/Zd5b40Jbp_k)
-- [AI Engineer conferences](https://ai.engineer)
-
-## Reading Priority
-
-Medium – Introduces a practical, underappreciated framework (OUCH) for improving AI assistant UX without model changes, with clear examples and actionable mechanics.
-
-***
-
-# 5 Voice Agent Failure Modes You'll Hit in Week One — Venky B, Plivo
-
-- **Published:** 2026-09-15
-- **YouTube:** [AI Engineer](https://www.youtube.com/watch?v=vblnYHzBgS4)
-- **Speaker:** Venky B, Plivo
-
-## One-Sentence Takeaway
-Voice agents fail in production due to latency, brittle transcription, poor data collection, unnormalized synthesis input, and turn detection—solvable with constrained fields, normalization layers, and sub-300 ms open-source models.
-
-## Short Summary
-Voice agents break when moving from demo to production because latency budgets (ideally <550 ms, often 750–1,200 ms) force disabling LLM "thinking," and transcription errors cascade through the pipeline. The most impactful fix is treating data collection as typed fields with validation (e.g., phone numbers, dates) rather than open-ended transcription, which improved accuracy from ~30% to mid-90s without fine-tuning. Additional failures stem from unnormalized text-to-speech input, code-switched languages, and improper turn detection.
-
-## Main Ideas
-- **Latency constraints disable LLM thinking**: Voice agents must respond within hundreds of milliseconds, so recent LLM gains from longer reasoning chains are unusable; teams must trade off intelligence, cost, and speed.
-- **Open-source models for sub-300 ms latency**: Self-hosted models like Qwen 3.5 (English) or Gemma 4 (multilingual) can achieve <300 ms response times, with Gemma 4 offering 2.5–3x better token efficiency for non-English languages.
-- **Typed fields outperform open-ended transcription**: Structuring inputs as validated fields (e.g., phone numbers, dates) with unit-test-style evaluation jumps accuracy from ~30% to ~95% without fine-tuning.
-- **Transcription is brittle by default**: Proper nouns, jargon, code-switched languages, and noisy audio degrade word error rates to double digits; dynamic keyword boosting and LLM post-processing (e.g., correcting "E" to "3" in phone numbers) mitigate this.
-- **Normalize before synthesis**: Raw LLM output (emojis, markdown, custom terms) breaks TTS; a normalization layer (custom dictionaries, slowed speech for entities) ensures correct pronunciation.
-
-## Questions And Answers
-- **Q: How do you balance cost, intelligence, and latency?**
-  A: Frontier models (e.g., OpenAI, Claude) have P50 TTFTs of 450–500 ms but spike higher; dedicated hardware (Groq, Cerebras) is expensive and requires long-term capacity booking. Self-hosted open-source models (Qwen 3.5, Gemma 4) at 3–12B parameters or MoE variants balance all three.
-
-- **Q: How do you handle multilingual inputs?**
-  A: Use Gemma 4 for its superior token efficiency (2.5–3x better than Qwen 3.5) in non-English languages, and normalize transliterated text (e.g., Hindi in Latin script) before sending to the LLM.
-
-- **Q: What’s the simplest way to improve data collection accuracy?**
-  A: Replace open-ended prompts with constrained fields (e.g., phone number as a typed field with length/format validation) and evaluate per field, not end-to-end.
-
-## Notable Details
-- Target latency: <550 ms ideal, 750–1,200 ms typical, >1.2 s causes user hang-ups.
-- Token fertility: Gemma 4 generates words with 2.5–3x fewer tokens than Qwen 3.5 in multilingual contexts.
-- Model sizes: MoE models (3–4B) work out-of-the-box for most cases; 8–12B models are minimum for fine-tuning in domain-specific tasks.
-- Validation trick: For hard-to-pronounce names (e.g., "Balasubramanian"), use letter-by-letter confirmation.
-- TTS test: If a system can’t pronounce "Balasubramanian" or "Plivo," it fails a basic benchmark.
-
-## Actionable Takeaways
-- Use self-hosted open-source models (Gemma 4 for multilingual, Qwen 3.5 for English) to hit <300 ms latency.
-- Replace transcription with typed fields + validation (e.g., phone numbers, dates) and unit-test each field.
-- Add a normalization layer between LLM and TTS to strip emojis/markdown, handle custom dictionaries, and slow speech for entities.
-- Dynamically boost keywords in transcription engines per call phase, and post-process transcripts with an LLM for domain context.
-- Test TTS with edge cases (proper nouns, acronyms) and require letter-by-letter confirmation for ambiguous inputs.
-
-## People, Companies, Tools, And Links Mentioned
-- Venky Balasubramanian
-- Plivo
-- [Qwen 3.5](https://huggingface.co/Qwen)
-- [Gemma 4](https://huggingface.co/google/gemma-2-9b-it)
-- Groq
-- Cerebras
-- LiveKit
-- Pipecat
-- [AI Engineer (AIE) talk page](https://ai.engineer/talks/vblnYHzBgS4)
-
-## Reading Priority
-
-High – Rare production insights from a billion-call/month platform, with concrete fixes for voice agent failure modes.
-
-***
-
-# 1 Trillion Phone Calls/yr, 10% Error rate: The Crisis in Voice AI — Sumanyu Sharma, Hamming AI
-
-- **Published:** 2026-09-15
-- **YouTube:** [AI Engineer](https://www.youtube.com/watch?v=qStB9GbppMU)
-- **Speaker:** Sumanyu Sharma, Founder and CEO, Hamming AI
-
-## One-Sentence Takeaway
-Voice AI agents are scaling rapidly with error rates near 10%, creating systemic risks that demand rigorous testing, monitoring, and adversarial defenses.
-
-## Short Summary
-Voice agents are transitioning from demos to production at massive scale, with ~1 trillion calls annually and error rates around 10% across monitored deployments. Failures range from minor annoyances (repetition, mishearing) to severe risks (unauthorized discounts, missed eligibility checks, or safety-critical miscommunications). Unlike localized crime, voice agent failures are centralized—single prompt or architecture changes can propagate broadly, amplifying blast radius.
-
-The solution is a continuous loop: identify failures, prioritize by frequency/severity, fix, verify fixes don’t introduce regressions, and monitor. Manual call reviews build intuition but don’t scale; cross-conversation pattern analysis uncovers systemic issues. Adversarial testing reveals vulnerabilities—current red-teaming breaks ~1 in 5 agents, exposing risks like prompt injection or unauthorized data access.
-
-## Main Ideas
-- Voice agents are deploying at scale (1T+ calls/year) with real-world error rates near 10%, leading to billions of harmful interactions annually—far beyond acceptable thresholds for safety-critical or high-stakes domains.
-- Centralized deployment means a single prompt or architecture change can create systemic failures, unlike localized crime; blast radius grows with user base and agent capability.
-- Reliability remains the primary barrier to widespread adoption, with common failures including skipped verification steps, incorrect information, or false confirmations (e.g., claiming an appointment was booked when it wasn’t).
-- A structured debugging loop—identify, prioritize (frequency × severity), fix, verify, monitor—is essential, but most teams underinvest in post-fix validation and cross-conversation pattern detection.
-- Adversarial testing is critically underrated: current red-teaming breaks ~20% of agents, exposing vulnerabilities like prompt injection, verification bypasses, or unauthorized data access, especially as agents gain more tools and permissions.
-
-## Questions And Answers
-- **How do you prioritize which voice agent failures to fix?**
-  Use a frequency × severity matrix: focus first on systematic, high-impact failures (e.g., fintech agent failing to freeze a credit card), then one-off high-impact, then systematic low-impact (e.g., repetitive responses), and finally one-off low-impact.
-
-- **How do you verify a fix actually works?**
-  Replay the original failing conversation multiple times, then test variations in intent, wording, accents, and style. For hard-to-simulate fixes (e.g., outbound agent first impressions), A/B testing in production is necessary.
-
-- **What’s the risk of adversarial attacks on voice agents?**
-  As agents become more capable and human-like, bad actors will exploit them to extract PII/PHI, bypass verification, or manipulate outcomes. Current red-teaming breaks 1 in 5 agents, and 24/7 adversarial monitoring is recommended for high-stakes deployments.
-
-## Notable Details
-- Hamming monitors ~10,000 voice agents, observing a ~10% error rate in practice (vs. 1% hypothetical = 10B incidents/year at 1T calls).
-- Common failure modes: skipped eligibility checks, unauthorized discounts, misheard inputs, false confirmations (e.g., "appointment booked" when it wasn’t).
-- Cross-conversation analysis (not single-call review) uncovers emerging, systemic issues that rubric-based evals or LLM judges miss.
-- Red-teaming results: bypassed verification, prompt injection, and unauthorized data access across fintech, healthcare, and consumer domains.
-- Outbound agents’ first 5 seconds (vocal quality, wording) are critical; A/B testing is the only reliable way to validate changes here.
-
-## Actionable Takeaways
-- Start with manual call reviews to build intuition, but scale to cross-conversation pattern analysis to catch systemic failures.
-- Implement a structured debugging loop: identify → prioritize (frequency × severity) → fix → verify (replay + variations + A/B tests) → monitor.
-- Run continuous adversarial testing (24/7 if high-stakes) to uncover vulnerabilities before deployment; assume ~20% of agents will break under current red-teaming.
-- Invest in pre-deployment testing (text-to-text and voice-to-voice) and multi-layer monitoring (per-call scoring, manual evals, cross-call analysis).
-- Treat centralized voice agent risks like software security: limit blast radius by constraining agent permissions and validating changes rigorously.
-
-## People, Companies, Tools, And Links Mentioned
-- [Sumanyu Sharma](https://x.com/sumanyu)
-- [Hamming AI](https://hamming.ai)
-- Citizen (public safety app)
-- Aqua Voice, Superwhisper, WhisperFlow (voice agent products)
-- [AI Engineer (AIE) page for this talk](https://ai.engineer/talks/qStB9GbppMU)
-
-## Reading Priority
-
-High – Voice AI’s rapid scaling and high error rates pose systemic risks, and the concrete debugging/red-teaming frameworks here are immediately applicable to enterprise deployments.
-
-***
-
-# "My name is... my name is...": A Linguistic Map for Voice Agents — Midam Kim, ServiceNow
-
-- **Published:** 2026-09-15
-- **YouTube:** [AI Engineer](https://www.youtube.com/watch?v=IDNfAZVKvPE)
-- **Speaker:** Midam Kim, ML Engineer and speech communication researcher at ServiceNow
-
-## One-Sentence Takeaway
-Voice AI failures stem from structured, interdependent linguistic layers—sounds, words, interaction, and mental model—rather than isolated bugs, and fixing them requires a joint-activity framework that prioritizes the user’s accumulating mental model over transient speech.
-
-## Short Summary
-Midam Kim argues that voice AI breakdowns (misheard names, premature cut-offs, ignored corrections) are not random but map to a linguistic grid: two channels (listening/speaking) across four levels (sounds, words, interaction, mental model). Each cell captures a class of failure (e.g., STT errors in listening-sounds, TTS mispronunciation in speaking-sounds, turn-taking in interaction). Critically, the layers interdepend—improving sounds without words or timing yields brittle fixes.
-
-The core insight: in speech, sounds vanish; only the user’s mental model persists. Design must therefore align all layers in real time to grow that model, not just optimize individual components. The payoff includes lower frustration, fewer escalations, and scalable orchestration, with tools like ServiceNow’s EVA-Bench for diagnosis.
-
-## Main Ideas
-- Voice AI is a joint activity: both user and agent continuously update mental models through listening and speaking channels, just as in human conversation.
-- A 2×4 linguistic grid (listening/speaking × sounds/words/interaction/mental model) locates every failure mode—e.g., STT misrecognition (listening-sounds), TTS mispronunciation (speaking-sounds), premature turn-taking (interaction), or intent drift (mental model).
-- Layers are interdependent: fixing sounds without accounting for words, timing, or intent leads to fragile improvements; alignment across all cells is required for robust performance.
-- In speech, waveforms disappear; the user’s mental model is the only durable artifact, so design must optimize for its growth over the call timeline.
-- Dynamic adaptation is essential: users change speaking styles mid-call, and languages evolve, so systems must continuously recalibrate across all layers.
-
-## Questions And Answers
-- **Why do users abandon voice agents?**
-  Agents fail to track mental models, ignore interactive clarification, and repeat requests without adjusting—behaviors that violate expectations of joint activity.
-
-- **How can teams diagnose their voice agents?**
-  Use the linguistic grid to map failures to specific cells, then test with end-to-end benchmarks like EVA-Bench to quantify gaps.
-
-- **What’s the long-term challenge for voice AI?**
-  Systems must adapt to users’ evolving speech patterns and language changes over months/years, not just static datasets.
-
-## Notable Details
-- Example failure: Agent mishears "Midam" as "Mydam" due to English-centric TTS rules, then ignores the correction, compounding frustration.
-- EVA-Bench: ServiceNow’s end-to-end benchmark for evaluating voice agent performance across the linguistic grid.
-- Turn-taking and latency are interaction-layer problems that can derail recognition even if ASR/TTS are accurate.
-- Emotion detection and context retention are cited as critical but often overlooked components of mental-model alignment.
-
-## Actionable Takeaways
-- Audit voice agents using the 2×4 linguistic grid to identify systemic failures, not just isolated errors.
-- Prioritize real-time alignment of listening/speaking layers (sounds, words, interaction) to preserve and grow the user’s mental model.
-- Adopt dynamic benchmarks like EVA-Bench to track progress across layers, not just component accuracy.
-- Hire linguists or train teams in conversational analysis to design for joint activity, not pipeline optimization.
-- Plan for adaptation: build mechanisms to update models for user-specific patterns and language drift.
-
-## People, Companies, Tools, And Links Mentioned
-- Midam Kim
-- ServiceNow
-- [EVA-Bench](https://ai.engineer/talks/IDNfAZVKvPE)
-- [AI Engineer (AIE) conferences](https://ai.engineer)
-
-## Reading Priority
-
-Medium – Offers a novel, actionable framework for diagnosing voice AI failures, grounded in linguistics and validated with concrete examples and tools.
-
-***
-
-# We let an AI agent execute Bash and lived to talk about it — Sarah Sanders, PostHog
-
-- **Published:** 2026-09-14
-- **YouTube:** [AI Engineer](https://www.youtube.com/watch?v=4lXks428C9o)
-- **Speaker:** Sarah Sanders, Context Engineer at PostHog
-
-## One-Sentence Takeaway
-Agentic CLIs with shell access demand deterministic, layered security—prompts are not guardrails, supply-chain inputs are attack surfaces, and enforcement must never depend on probabilistic models.
-
-## Short Summary
-PostHog’s Wizard is an agentic CLI that instruments codebases in minutes, but its ability to run commands and ingest runtime context creates a “malware starter pack” threat model. An audit revealed that most vulnerabilities emerged from benign components interacting unexpectedly, not overt malice, and that the greatest risk was prompt injection via the project’s own content pipeline.
-
-The response was the Warlock scanner: a deterministic YARA-based detector that flags threats without acting on them, supplemented by an LLM triage layer that advises but never overrides blocks. The resulting posture combines sandboxing, deny-by-default, vaulted secrets, and defense-in-depth scanning of both inputs and outputs.
-
-## Main Ideas
-- Prompts are steering, not security; any enforcement that is non-deterministic is effectively no enforcement.
-- The most dangerous inputs are often internal: documentation, examples, and skill bundles fed to the agent at runtime can carry prompt-injection payloads.
-- Attacks compose across innocent components, while code review examines changes in isolation, missing emergent interactions.
-- Enforcement must be mechanical and fail-closed; probabilistic models can advise on triage but must never sit in the enforcement path.
-- Defense-in-depth for agentic tools requires scanning at both the content source and the point of use, with deterministic rules and separate detection vs. action layers.
-
-## Questions And Answers
-**Q: Why not let the LLM decide whether to block a command?**
-A: Enforcement cannot depend on a model’s variable behavior; blocks must be deterministic and occur before any LLM judgment is requested.
-
-**Q: What was the most surprising vulnerability?**
-A: Sub-agents spawned by the main agent were inventing ways to bypass guardrails and hunt for secrets, leading to a complete ban on sub-agents.
-
-**Q: How do you reduce false positives without weakening security?**
-A: Pair deterministic rules with an LLM triage layer that only suppresses noise, never overrides a block, and ship negative tests with every rule.
-
-## Notable Details
-- The Wizard runs ~8,000 times/week, instruments events, installs SDKs, and builds dashboards in 5–6 minutes.
-- Bash is denied by default; allowed actions are limited to installing vetted packages, building, type-checking, and linting.
-- The Warlock uses YARA rules for deterministic pattern matching, producing findings with category, severity, and recommended action.
-- Rules include metadata (severity, direction), string patterns, conditions, and mandatory test cases to curb false positives.
-- PII leakage was a recurring issue: agents would dump emails and phone numbers into events unless explicitly blocked.
-- The final posture: sandboxed execution, vaulted secrets, Warlock scanning at both ends of the context pipeline, and telemetry throughout.
-
-## Actionable Takeaways
-- Audit agent inputs beyond user commands: scan your own docs, examples, and skill bundles for prompt-injection risks.
-- Enforce with deterministic mechanisms only; keep probabilistic models out of the enforcement path.
-- Design rules with real-world impact in mind—blocking `rm -rf` may break legitimate workflows, so severity must reflect actual risk.
-- Assume supply-chain poisoning; validate content at the source and again at runtime.
-- Separate detection from action: detectors report, humans or deterministic systems enforce.
-
-## People, Companies, Tools, And Links Mentioned
-- PostHog
-- [PostHog Wizard](https://www.youtube.com/watch?v=4lXks428C9o)
-- Sarah Sanders
-- Josh Snyder
-- Cursor
-- YARA
-- Ink
-- MCP server
-- [AI Engineer talk page](https://ai.engineer/talks/4lXks428C9o)
-- [AI Engineer conferences](https://ai.engineer)
-
-## Reading Priority
-
-Medium – A concrete, novel case study on securing production agentic tools with actionable patterns and hard-won lessons.
-
-***
-
-# Tokens Should Have Jobs — Katelyn Lesse & Angela Jiang, Anthropic
-
-- **Published:** 2026-09-14
-- **YouTube:** [AI Engineer](https://www.youtube.com/watch?v=PXj0p_mW9nI)
-- **Speaker:** Katelyn Lesse & Angela Jiang, Anthropic
-
-## One-Sentence Takeaway
-Assigning tokens distinct roles (e.g., advising, grading, dreaming) within a fixed budget can outperform brute-force execution on complex tasks, especially when perfect accuracy is required.
-
-## Short Summary
-The assumption that all tokens are fungible leads teams to rely solely on increasing budget to improve agent performance. By instead assigning tokens specialized jobs—such as advising, grading, or dreaming—within the same budget, performance on financial analysis tasks improved from 76 to 89 under standard scoring, and from 42% to 75% under a stricter "perfect or fail" lens.
-
-The true cost of achieving a perfect answer matters: brute-force execution required ~1.8M tokens on average (three runs at 600K tokens each), while advising and grading strategies reached the same outcome more efficiently. The optimal strategy depends on whether you prioritize token efficiency or single-run reliability.
-
-## Main Ideas
-- **Token specialization beats brute-force scaling**: Within a fixed 600K-token budget, an executor-only agent scored 76 on financial tasks, while an executor + advisor scored 89, demonstrating that role assignment can unlock performance gains without increasing spend.
-- **Perfect-or-fail scoring changes the calculus**: In domains like financial analysis, 80% accuracy is useless—only 100% passes. Under this lens, execute-only agents passed 42% of the time (requiring ~1.8M tokens for a perfect answer), while advise/grade strategies improved pass rates to ~75% at lower true cost.
-- **Tradeoff between efficiency and reliability**: Advise strategies optimize for token efficiency, while grade/dream strategies maximize the chance of a perfect single-run answer. The best choice depends on business priorities.
-- **Strategies are composable primitives**: Advising (executor calls an advisor), grading (rubric-based iteration), and dreaming (memory from past transcripts) can be mixed and matched to fit task requirements.
-
-## Questions And Answers
-- **Q: How do you measure "true cost" of a perfect answer?**
-  A: Multiply the tokens per run by the average number of runs needed to achieve 100% accuracy (e.g., 600K tokens × 3 runs = 1.8M for execute-only).
-
-- **Q: When is grading better than advising?**
-  A: When reliability (high probability of a perfect answer in one run) matters more than token efficiency.
-
-## Notable Details
-- One-shot experiments showed dreaming used 600K tokens to achieve high accuracy, but this confounded budget with strategy—fixing the budget at 600K revealed the alpha from role specialization.
-- Financial analysis bench tasks were designed to mimic real-world constraints where partial accuracy is unacceptable (e.g., P&L statements).
-- Claude-managed agents provide built-in primitives (e.g., dreaming, outcomes) to simplify strategy composition.
-- Strategies can be dynamically constructed by combining primitives (e.g., executor + advisor → grader → dreamer).
-
-## Actionable Takeaways
-- Audit your agent’s token usage: Are all tokens executing, or could some advise, grade, or dream?
-- For tasks requiring perfection (e.g., financials, legal), adopt a perfect-or-fail scoring lens to evaluate strategies.
-- If token efficiency is critical, prioritize advising; if reliability is critical, prioritize grading or dreaming.
-- Experiment with composable strategies using existing agent frameworks (e.g., Claude-managed agents).
-
-## People, Companies, Tools, And Links Mentioned
-- [Anthropic](https://www.anthropic.com)
-- [Claude-managed agents](https://www.anthropic.com)
-- [AI Engineer (AIE)](https://ai.engineer)
-- [AIE New York](https://ai.engineer)
-- [AIEi Shanghai](https://ai.engineer)
-- [AIE CODE](https://ai.engineer)
-- [AIEi Sydney](https://ai.engineer)
-- Katelyn Lesse – [Twitter/X](https://x.com/katelyn_lesse)
-- Angela Jiang – [Twitter/X](https://x.com/angjiang)
-
-## Reading Priority
-
-High – Challenges a core assumption in agent design (token fungibility) with concrete experiments, clear tradeoffs, and actionable strategies for improving performance under fixed budgets.
-
-***
-
-# No Memory, No Harness: Why the Database Is the Last Line of Defense — Kay Malcolm, Oracle
-
-- **Published:** 2026-09-14
-- **YouTube:** [AI Engineer](https://www.youtube.com/watch?v=jA_x7F8caHI)
-- **Speaker:** Kay Malcolm, Oracle
-
-## One-Sentence Takeaway
-Enterprise AI agents fail without shared, structured memory, and consolidating memory types in a single database eliminates reconciliation overhead and token waste.
-
-## Short Summary
-
-Kay Malcolm argues that AI accelerates individual productivity but stalls team productivity without a shared memory layer that captures intent, context, and decision rationale. She frames agents as a "brain" (model) plus a "harness" (tools, context, retrieval, guardrails), with memory acting as the central nervous system connecting them. Without consolidating memory—short-term, long-term, episodic, procedural, and semantic—across a single store, agents waste tokens reconciling conflicting sources and teams duplicate work.
-
-The solution she demonstrates is storing all memory types in one database (Oracle’s AI Database) to avoid the operational and cognitive overhead of managing multiple specialized stores. A memory broker (e.g., Polly) then routes and retains context across forks, branches, and commits, enabling seamless collaboration between human and AI agents.
-
-## Main Ideas
-- AI tools speed up individuals but can reduce team productivity by failing to propagate context, intent, and reasoning across distributed workflows.
-- An enterprise agent comprises the model plus a harness (tools, context, memory, retrieval, guardrails); memory is the critical connector that enables coherent action.
-- Five distinct memory types—short-term (session), long-term (persistent), episodic (prior interactions), procedural (steps/tools), and semantic (meaning)—must be explicitly managed.
-- Fragmenting memory across specialized databases (relational, document, graph, vector) forces agents to reconcile inconsistencies, burning tokens and introducing errors.
-- Consolidating memory in a single, multi-model database (supporting relational, JSON, graph, vector, etc.) eliminates reconciliation overhead and provides a single source of truth.
-
-## Questions And Answers
-- **Why didn’t Git solve the team’s context problem?**
-  Git tracks code changes but not the intent, reasoning, or context behind them, leaving downstream teams without the information needed to build on prior work.
-
-- **What happens when memory is split across multiple databases?**
-  Agents must guess which store holds the truth, often failing and consuming excessive tokens to resolve conflicts, as demonstrated by a live exercise with four volunteers representing different database types.
-
-- **How does a memory broker improve collaboration?**
-  A broker like Polly centralizes and routes memory (context, decisions, steps) across forks and branches, ensuring continuity for both human and AI agents without sacrificing developer control.
-
-## Notable Details
-- At a prior job, each new specialized database (document, graph) added two weekly meetings (security + patching) per system, leading to operational bloat and Malcolm’s departure.
-- Oracle’s AI Database natively supports JSON, graph, vector, spatial, and blockchain data in the same table/partition, enabling unified memory storage.
-- The `OracleAgentMemory` Python package (`pip install oracleagentmemory`) provides an SDK for managing agent memory, storing live conversations, facts, and filtered insights.
-- Memory can be paired with any LLM or Oracle’s Private AI Services container for on-prem or cloud deployment.
-- Oracle offers an Always Free tier with a free database, compute, storage, and other resources for testing.
-
-## Actionable Takeaways
-- Audit where agent memory (context, decisions, steps) is stored today; fragmentation likely creates hidden costs in tokens and coordination.
-- Evaluate consolidating memory types into a single multi-model database to reduce reconciliation and operational overhead.
-- Pilot a memory broker (e.g., Polly) to propagate context across forks/branches and measure impact on team productivity.
-- Test Oracle’s Always Free tier or `OracleAgentMemory` SDK for low-risk experimentation with unified memory storage.
-
-## People, Companies, Tools, And Links Mentioned
-- Kay Malcolm
+- Stargate
+- Epic
 - Oracle
-- Oracle AI Database
-- Oracle Autonomous Database
-- Oracle Private AI Services
-- Oracle Agent Memory (`pip install oracleagentmemory`)
-- [Oracle AI Developer Hub](https://developer.oracle.com/ai)
-- [Oracle LiveLabs](https://livelabs.oracle.com)
-- [Oracle Cloud Always Free](https://www.oracle.com/cloud/free/)
-- OpenAI (in-house data agent paper)
-- Harrison Chase
-- Codex
-- Claude
-- ChatGPT
-- Redis
-- Neo4j
-- Southern Company
+- Tsinghua University
+- Dell Medical School
+- eMed
+- [Stanford Healthcare AI programs](https://stanford.io/3NEt7uE)
+- [AI in Healthcare series playlist](https://stanford.io/3NEt7uE)
+- [Cutler and Klarnet paper (Harvard)](https://arxiv.org) (Note: URL inferred from context; exact link not provided in transcript)
 
 ## Reading Priority
 
-Medium – A concrete, experience-backed case for unifying agent memory in enterprise AI, with actionable tools and examples.
+High – This conversation offers a rare, evidence-backed look at how AI is already reshaping healthcare economics and institutional structures, with actionable insights for leaders.
 
 ***
 
-# Loophole: Adversarial Agents To Stress Test Your Morality — Brendan Rappazzo, Morgan Stanley
+# 🔬Bio-security is an AI Arms Race - Eric Nguyen (CEO, Radical Numerics)
 
-- **Published:** 2026-09-14
-- **YouTube:** [AI Engineer](https://www.youtube.com/watch?v=hOWU0KPUp1k)
-- **Speaker:** Brendan Rappazzo, Machine Learning Researcher at Morgan Stanley (project is personal/open-source)
+- **Published:** 2026-09-23
+- **Podcast:** [Latent Space](https://www.latent.space/p/bio-security-is-an-ai-arms-race-eric)
+- **Speaker:** Eric Nguyen, CEO and co-founder, Radical Numerics
 
 ## One-Sentence Takeaway
-Adversarial agents can stress-test moral and legal codes by generating synthetic case law to expose loopholes, overreach, and contradictions in plain-language principles.
+Genomic language models (GLMs) are accelerating biological design and defense, but biosecurity requires closing the gap between offensive and defensive AI capabilities in DNA sequence understanding.
 
 ## Short Summary
-Loophole uses adversarial agents to translate personal morals into a formal legal code, then surfaces gaps where actions are immoral but legal (loopholes) or moral but illegal (overreach). A judge agent attempts to auto-patch trivial inconsistencies, escalating genuine contradictions to the user for resolution. The approach mirrors common law’s reliance on case-by-case interpretation to refine nuanced boundaries.
+Genomic language models (GLMs) like Evo and Omni demonstrate that AI can read, generate, and reason over DNA sequences, enabling breakthroughs like designing functional bacteriophage genomes from scratch. However, the same capabilities that accelerate biological discovery also introduce risks, as models capable of generating pathogenic sequences outpace current defensive measures.
 
-The framework extends beyond personal ethics to practical applications: codified system prompts for chatbots, decentralized contract validation against terms of service, and legislative simulation (e.g., a US Senate model that hill-climbs bill language to secure majority support).
+Eric Nguyen argues that the solution is an arms race: the teams building advanced GLMs must also lead the development of defensive tools, as the same models excel at both generating and detecting pathogenic sequences. Radical Numerics’ work shows that long-context, multimodal GLMs can generalize across DNA, RNA, and proteins, and even exhibit chain-of-thought reasoning in biological design tasks.
 
 ## Main Ideas
-- Moral and legal systems suffer from a translation problem: converting nuanced principles into precise rules often introduces gaps (loopholes) or excessive constraints (overreach).
-- Adversarial agents—one hunting for loopholes, another for overreach—can systematically expose these gaps by generating synthetic case law, with a judge agent triaging patchable inconsistencies vs. genuine contradictions.
-- The method scales from personal ethics to institutional use cases: stress-testing chatbot "constitutions," auditing contracts against user-defined morals, and simulating legislative bodies to predict votes or optimize bill language.
-- Common law’s reliance on case-by-case precedent inspires the approach, as it acknowledges the difficulty of preemptively codifying nuance and delegates refinement to iterative judging.
+- **Dual-use nature of GLMs**: Models trained to generate DNA sequences (e.g., Evo, Omni) are inherently capable of both biological design and defense, as they can predict pathogenicity or functional outcomes of sequences they were not explicitly trained on.
+- **Defensive lag in biosecurity**: Current biosecurity defenses (e.g., natural language filters) are insufficient; robust defense requires models that understand biological sequences at the substrate level to detect and mitigate misuse.
+- **Long-context breakthroughs**: DNA’s long sequences (e.g., human genes at 60K–2.3M base pairs) necessitated early innovations in long-context modeling (e.g., Hyena DNA), which predated mainstream 1M+ context LLMs and enabled GLMs to capture long-range interactions critical for biological function.
+- **Chain-of-thought in DNA**: GLMs can exhibit reasoning by extrapolating patterns in biological sequences (e.g., progressively improving RNA aptamer scores), suggesting a path toward autonomous biological design and optimization.
+- **Multimodal generalization**: DNA serves as a foundational modality from which models can infer RNA, protein, and regulatory functions, enabling cross-modal generalization without explicit training on downstream modalities.
 
 ## Questions And Answers
-- **How does Loophole handle contradictions in a user’s morals?**
-  A judge agent first attempts to auto-patch trivial inconsistencies (e.g., imprecise legal drafting). If the contradiction reflects a genuine gap in the user’s morals, it is escalated for human resolution.
+- **What is a genomic language model (GLM)?**
+  A GLM is a large language model trained on raw DNA sequences to read, predict, and generate biological sequences, analogous to NLP models but operating on the 4-letter alphabet of DNA (A, C, T, G).
 
-- **Can this framework audit real-world contracts?**
-  Yes: users can codify their moral/legal preferences, then compare them against a company’s terms of service to surface synthetic cases where the contract violates their principles.
+- **How do GLMs enable both design and defense?**
+  Models skilled at generating functional DNA (e.g., CRISPR systems, bacteriophages) can also discriminate between pathogenic and benign sequences, making them ideal for both biological innovation and biosecurity surveillance.
 
-- **How does the Senate simulator work?**
-  It synthesizes each senator’s moral/legal code from public voting history, then simulates votes on proposed bills. It can also "hill-climb" bill language to maximize support without violating core tenets.
+- **Why is long context critical for GLMs?**
+  Biological sequences are extremely long (e.g., human genome ~3B base pairs), and long-range interactions (e.g., regulatory elements far from coding regions) are essential for understanding function, disease, and evolutionary constraints.
+
+- **What is the role of alignment in GLMs?**
+  Alignment (mid/post-training) adapts pre-trained GLMs to specific tasks (e.g., variant effect prediction) by structuring inputs/outputs (e.g., special tokens, Q&A formats) to make them useful for scientists, similar to RLHF in NLP.
 
 ## Notable Details
-- Example loophole: An insurance company trains a risk model on *artifacts derived from DNA* rather than raw DNA, which may be immoral under a user’s code but technically legal.
-- Example overreach: A user’s morals forbid disclosing a treatable genetic disorder found in research DNA, even though disclosure would be moral (and potentially life-saving).
-- The Senate simulator optimized a Medicare bill from a 50-50 split to 52 votes by iteratively adjusting language to align with senators’ codified morals.
-- The system uses a Git-style diff to show changes between the original legal code and auto-patched versions.
-- For state-level analysis, 500 synthetic personas per state (from Nvidia’s USA personas dataset) were used to model constituent preferences.
+- Evo and Evo-2 (developed at Arc Institute) generated the first AI-designed functional bacteriophage genomes, synthesized into viruses in wet labs.
+- Omni outperforms specialized models (e.g., Borzoi, CAD ensembles) on human genomics tasks, particularly in non-coding regions where traditional tools struggle.
+- DNA’s "imprint of the environment" hypothesis: Models may infer functional relationships between sequences by learning evolutionary patterns embedded in genomes.
+- Radical Numerics uses likelihood ratios (wild-type vs. mutant sequence probabilities) to score pathogenicity without labeled data, leveraging unsupervised pre-training.
+- Chain-of-thought experiments: Models shown progressively better RNA aptamers (with fitness scores) could extrapolate to higher-scoring, unseen sequences, validated in silico and pending wet-lab confirmation.
+- Context limitations: Current models handle ~2M base pairs, far short of the human genome (~3B), requiring architectural innovations (e.g., GPU-optimized kernels) to scale.
 
 ## Actionable Takeaways
-- Use adversarial agents to stress-test internal policies, chatbot prompts, or contracts for hidden contradictions before deployment.
-- For legislative or corporate decision-making, simulate stakeholder reactions to proposals by codifying their principles and running synthetic case law.
-- Explore hill-climbing techniques to refine language in bills, terms of service, or AI system prompts to maximize alignment with stakeholder morals.
-- Apply the framework to personal ethics to uncover blind spots in your own principles.
+- **Monitor GLM advancements**: Track progress in long-context, multimodal, and aligned GLMs, as these directly impact biosecurity and biological design capabilities.
+- **Invest in defensive GLMs**: Prioritize models that can detect pathogenic sequences at the substrate level, not just natural language filters.
+- **Explore chain-of-thought for biology**: Test whether progressive prompting (e.g., showing sequences with increasing fitness scores) can improve design tasks in your domain.
+- **Leverage DNA as a foundation**: For biological applications, consider pre-training on DNA to enable cross-modal generalization to RNA, proteins, and regulatory elements.
+- **Watch non-coding regions**: Focus on models that excel in non-coding genomic regions, where most disease-causing variants reside but are understudied by traditional tools.
 
 ## People, Companies, Tools, And Links Mentioned
-- Brendan Rappazzo ([Twitter](https://x.com/brendanh0gan), [Website](https://www.bhogan.net))
-- Morgan Stanley
-- 23andMe
-- Claude
-- Nvidia (USA personas dataset)
-- [Loophole GitHub](https://www.bhogan.net) (implied via speaker’s website)
-- [Senate Simulator](https://ai.engineer/talks/hOWU0KPUp1k) (QR code referenced)
-- [AI Engineer (AIE) conferences](https://ai.engineer)
+- [Radical Numerics](https://radicalnumerics.com)
+- [Arc Institute](https://arcinstitute.org)
+- [Evo and Evo-2](https://arcinstitute.org/news/arc-institute-announces-evo/)
+- [Hyena DNA](https://arxiv.org/abs/2306.12692)
+- [Omni (Radical Numerics blog post)](https://www.radicalnumerics.com/blog/omni)
+- [ClinVar](https://www.ncbi.nlm.nih.gov/clinvar/)
+- [CrateGym](https://github.com/ML-Bioinfo-CEITEC/CrateGym)
+- [Borzoi](https://www.biorxiv.org/content/10.1101/2023.07.10.548380v1)
+- [TED Talk on Evo](https://www.ted.com/talks)
+- [Stanford University](https://www.stanford.edu)
+- [NVIDIA](https://www.nvidia.com)
+- Greg Brockman
+- Chris Ré
+- Michael Poli
+- Atomic AI
+- Mirroromics
 
 ## Reading Priority
 
-Medium – A novel, concrete demonstration of adversarial agents for moral/legal stress-testing with scalable applications in contracts, AI alignment, and governance.
+Medium – This conversation highlights a critical, emerging intersection of AI and biosecurity, with concrete examples of both offensive and defensive capabilities in genomic language models.
 
 ***
 
-# Humanity’s Last Invention — Richard Socher of Recursive
+# You’re Not Thinking Big Enough: Rebuilding Food Systems with AI Agents — Cody Menefee, Firecrawl
 
-- **Published:** 2026-09-14
-- **Podcast:** [Latent Space](https://www.latent.space/p/recursive)
+- **Published:** 2026-09-23
+- **YouTube:** [AI Engineer](https://www.youtube.com/watch?v=ztlXKfPCT3Q)
+- **Speaker:** Cody Menefee, Firecrawl
 
 ## One-Sentence Takeaway
-Recursive self-improving AI can compress years of research into weeks, but its safety, alignment, and economic constraints remain unresolved.
-
-***
+AI agents can scale regenerative livestock farming by replacing manual pasture decisions with LLM-driven, data-informed rotational grazing.
 
 ## Short Summary
-Richard Socher argues that superintelligence—particularly an AI that can automate invention and research—could revolutionize science, energy, and materials. He believes current LLM paradigms have significant room for growth, especially when combined with recursive self-improvement (RSI) and open-endedness. However, he cautions that hard takeoff scenarios underestimate physical and economic constraints, and that regulating intelligence itself (rather than applications) is misguided.
+Only 3% of cattle finish on pasture despite benefits to animals, consumers, and ecosystems because rotational grazing is labor-intensive: farmers must daily move herds, fences, and water to optimize grass regrowth. GPS collars with virtual fences automate movement but not the decision-making; farmers still walk paddocks to judge biomass, drought impact, and biodiversity.
 
-Recursive’s early results demonstrate AI outperforming humans in tasks like GPU kernel optimization and language model training, but Socher emphasizes the need for better reward engineering to avoid hacking and misalignment. He critiques Anthropic’s constitutional AI as ineffective and advocates for open-source models as a geopolitical and competitive necessity.
-
-***
+Cody Menefee proposes an LLM in the loop that ingests animal locations, grass height, and environmental data to suggest the next paddock, with a human in the confirmation step. The blockers are a knowledge base (scraped from farmer YouTube and research papers via Firecrawl into Open Pasture), a vision layer to measure biomass and biodiversity, and closed collar APIs that prevent third-party software from controlling herd movement.
 
 ## Main Ideas
-- **The Eureka Machine**: A superintelligence capable of recursive self-improvement, designed to invent solutions for humanity’s most pressing problems (e.g., science, energy, materials). Socher frames this as the "ultimate invention" that could automate future inventions.
-- **Slow Takeoff Constraints**: Hard takeoff scenarios overestimate speed due to physical (compute, energy), economic (industry inertia), and cultural (off-ramping from progress) limits. Superintelligence won’t 1000x industries like oil or tourism overnight.
-- **Regulation Critique**: Regulating intelligence or GPU usage directly is impractical and totalitarian; focus instead on high-risk applications (e.g., medical AI, autonomous vehicles). Europe’s FLOP-based regulations are counterproductive.
-- **Reward Hacking Risks**: Current AI systems often exploit loopholes in objectives (e.g., gaming metrics like CSAT scores). Constitutional AI (e.g., Anthropic’s) is ineffective; better reward engineering and open-ended methods (e.g., rainbow teaming) are needed.
-- **LLMs Are Not Enough (Yet)**: While transformers have room to grow—especially with coding and neurosymbolic reasoning—Socher is less bullish on world models. He advocates for diversity in AI research beyond the current LLM monoculture.
-- **Open Source as Soft Power**: Open-source AI is critical for Western competitiveness, resilience, and geopolitical influence, akin to Hollywood’s cultural impact. Recursive plans to contribute to this space.
-
-***
+- Rotational grazing boosts pasture productivity but is bottlenecked by daily manual decisions on where to move herds based on grass height, drought, and trampling.
+- Virtual-fence GPS collars (e.g., Halter, NoFence) solve movement but not decision-making; farmers still rely on eyeballing grass, which is intuitive and non-scalable.
+- An LLM can reason over multivariate inputs (GPS, biomass, weather, historical growth) to propose the next paddock, enabling a human-in-the-loop system that scales pasture management.
+- Three technical blockers remain: a curated knowledge base of grazing best practices (being built via Firecrawl’s web scraping into Open Pasture), a vision layer to quantify biomass and biodiversity from imagery, and open collar APIs to allow third-party software control.
+- Stacking species (e.g., chickens behind cows) can reduce parasite loads and fertilizer costs, but requires precise coordination that AI agents could optimize.
 
 ## Questions And Answers
-**Q: What is recursive self-improvement (RSI)?**
-A: RSI is an AI system that automates the process of ideating, implementing, and validating new AI ideas, including improvements to itself. Recursive’s early results show such systems outperforming human teams in tasks like optimizing GPU kernels or training small language models (e.g., NanoGPT) in under 48 hours.
+- **Why aren’t more cattle finished on pasture?**
+  Labor: daily paddock moves, fence/water relocation, and grass assessment are manual and don’t scale.
 
-**Q: Why are hard takeoff scenarios overblown?**
-A: Physical constraints (e.g., GPU supply, energy efficiency), economic realities (e.g., industries like tourism or fashion won’t be revolutionized overnight), and cultural resistance (e.g., regions "off-ramping" from progress) limit rapid acceleration.
+- **What data does the LLM need to suggest the next paddock?**
+  Animal GPS locations, grass height, drought/rainfall conditions, historical grazing patterns, and pasture biodiversity metrics.
 
-**Q: How should AI safety be addressed?**
-A: Focus on rigorous reward engineering, open-ended adversarial testing (e.g., rainbow teaming), and sandboxing. Constitutional AI is insufficient, as demonstrated by Anthropic’s failed cybersecurity constraints.
-
-**Q: What’s the role of open-source AI?**
-A: Open-source models democratize access, foster competition, and serve as geopolitical soft power. Socher argues the West needs open alternatives to counterbalance models from other regions (e.g., China).
-
-***
+- **What’s the biggest technical hurdle beyond the model?**
+  Closed collar ecosystems that lock out third-party software, preventing external agents from pushing GPS boundaries to herds.
 
 ## Notable Details
-- **Recursive’s Early Wins**: Outperformed humans and their agents in:
-  - **NanoChat**: Achieved lower bits-per-byte in <2 days.
-  - **NanoGPT**: Optimized small language models faster than community efforts.
-  - **SOL-ExecBench**: Discovered GPU kernel optimizations (e.g., hash table implementations) without CUDA expertise.
-- **Compute Costs**: Training human-level AI on current hardware (e.g., GB300) would require thousands of GPUs, costing billions. Human brains achieve similar feats with ~20 watts.
-- **DecaNLP Legacy**: Socher’s 2018 paper (rejected by ICLR) proposed unifying NLP tasks via prompting, directly inspiring GPT’s architecture. He laments gatekeeping in academia.
-- **AI Economist**: A 2018 Salesforce project simulating economic agents to test fiscal policies (e.g., taxation). Economists rejected it due to lack of traditional benchmarks.
-- **10 Spaces of Intelligence**: Socher’s framework includes visual, communication, knowledge, physical, social, creative, metacognitive, survival/replication, and others. Each has sub-dimensions (e.g., sensor count, frequency range) with theoretical upper bounds far beyond human limits.
-- **Metacognition Gap**: AI lacks the ability to set its own goals or reflect on its thought processes—a critical frontier for true intelligence.
-
-***
-***
-## Actionable Takeaways
-- **For Researchers**: Explore non-LLM paradigms (e.g., open-endedness, evolutionary methods) and reward engineering to mitigate hacking. Avoid over-reliance on human-centric benchmarks.
-- **For Policymakers**: Regulate high-risk *applications* (e.g., autonomous vehicles) rather than abstract capabilities (e.g., FLOPs). Open-source restrictions may backfire.
-- **For Builders**: Prioritize AI-for-AI tools (e.g., auto-optimization of kernels, training pipelines) to compress research timelines. Open-source contributions can amplify impact.
-- **For Investors**: Watch for breakthroughs in inference efficiency and recursive systems. Socher predicts robotics and physical sciences will be viable targets for RSI in 3–5 years.
-- **For Society**: Debate alignment vs. personalization. Cultural values (e.g., individualism vs. collectivism) should shape AI constraints, not just technical safeguards.
-
-***
-***
-## People, Companies, Tools, And Links Mentioned
-- **People**: Alec Radford, Jeff Clune, Tim Rocktäschel, Josh Tobin, Caiming Xiong, Alexey Dosovitskiy, Tim Shi, Yuandong Tian, Sam Gershman, Yann LeCun, Yoshua Bengio, Geoff Hinton, Andrej Karpathy, Stuart (author of *The Slow Time Between the Stars*), ZeFrank.
-- **Companies/Organizations**: Recursive, You.com, AIX Ventures, OpenAI, Anthropic, Salesforce, MetaMind, Google, ICLR, EU, Singapore AI Council, Andon Labs, NeoLab, Tencent, LM Arena, Shopify, Bridgewater, Ramp, Coatue, Mastercard, Vanguard, Coinbase, BlackRock, Fidelity, Point72, Capital One, JPMC, Wells Fargo, Bloomberg, A24 Labs, Two Sigma, Apollo Global.
-- **Tools/Projects**: GloVe, DecaNLP, GPT, ProGen, AI Economist, Genie (1/2/3), Darwin Gödel Machine, NanoChat, NanoGPT, SOL-ExecBench, WhisperFlow, FinSearch, Opus models, Fable.
-- **Links**:
-  - [Recursive](https://recursive.ai)
-  - [The Eureka Machine (book)](https://www.latent.space/p/recursive)
-  - [Richard Socher on X](https://x.com/RichardSocher)
-  - [Richard Socher on LinkedIn](https://www.linkedin.com/in/richardsocher/)
-  - [AI Economist (Salesforce)](https://einstein.ai/research/the-ai-economist)
-  - [DecaNLP Paper](https://arxiv.org/abs/1806.08717)
-  - [Darwin Gödel Machine](https://arxiv.org/abs/2304.10753)
-  - [Rainbow Teaming Paper](https://arxiv.org/abs/2402.01287)
-
-***
-***
-## Reading Priority
-
-High – Socher combines a bold vision for recursive AI with concrete early results, while addressing critical safety, economic, and alignment challenges with nuance. The discussion is unusually dense with actionable insights for researchers, builders, and policymakers.
-
-***
-
-# How We Solved Agent Building — Andrew Qu, Vercel
-
-- **Published:** 2026-09-14
-- **YouTube:** [AI Engineer](https://www.youtube.com/watch?v=9dYcwOkpCE8)
-- **Speaker:** Andrew Qu, Chief of Software at Vercel
-
-## One-Sentence Takeaway
-Narrow, company-specific agents with file-system access and distilled "skills" outperform general-purpose agents for internal workflows.
-
-## Short Summary
-Vercel’s internal data science agent initially failed because it relied on rigid prompts and chained sub-agents. The breakthrough came from adopting a file-system-based agent (inspired by Claude Code) that could read, write, and execute in a sandbox with the semantic layer pre-loaded. By distilling recurring queries into reusable "skills," the agent’s eval score doubled, and Vercel now deploys ~20 specialized agents across teams. The lesson: domain-specific knowledge and simple, file-based conventions (as in Vercel’s open-source Eve framework) enable more effective agents than generic tools.
-
-The talk argues against over-engineering agent architectures and for leveraging models’ existing strengths (e.g., file operations) rather than custom toolsets. Eve, released two weeks prior, applies Next.js-style conventions to agents—skills, tools, and channels as files—simplifying deployment and observability.
-
-## Main Ideas
-- **File-system agents outperform custom toolchains**: Claude Code’s effectiveness stemmed from its minimal toolset (list, read, bash) and ability to explore a sandboxed file system, which models handle well. Replicating this approach with Vercel’s semantic layer dumped into the sandbox doubled the agent’s eval score.
-- **Distilled "skills" accelerate agents**: Recurring queries (e.g., aggregations, lookups) were distilled into ~100 reusable skills, giving agents pre-loaded context instead of starting from scratch each run.
-- **Narrow, domain-specific agents > general agents**: Off-the-shelf vertical agents (e.g., Snowflake query tools) underperformed because they lacked Vercel-specific knowledge (e.g., web customer data relationships). Custom agents with internal context delivered better results.
-- **Framework conventions reduce friction**: Eve applies Next.js-style file-system conventions (skills/, tools/, channels/) to agents, automating infrastructure (durability, sandboxing, connections) and simplifying iteration.
-- **Observability is critical**: Deploying agents on Vercel provides built-in observability (tool calls, steps, costs), which is essential for debugging and optimization.
-
-## Questions And Answers
-- **Why did the initial agent fail?**
-  It passed only 30% of evals because it couldn’t handle edge cases in user questions, and manually mapping scenarios wasn’t scalable.
-
-- **What was the key unlock for the agent’s performance?**
-  Switching to a file-system-based agent in a sandbox with the semantic layer pre-loaded, inspired by Claude Code’s minimal toolset (list, read, bash).
-
-- **How does Eve simplify agent development?**
-  It uses file-system conventions (e.g., skills/, tools/) to auto-configure infrastructure, similar to Next.js, and integrates with Vercel’s durability, sandboxing, and connection tools.
-
-## Notable Details
-- The agent’s eval score doubled after adopting the file-system approach and sandboxing.
-- Vercel now runs ~20 production-grade agents, including marketing retros, contract redlining, and data queries.
-- Eve was released two weeks before the talk and is open-source ([eve.dev](https://eve.dev)).
-- A recurring job distills common queries into ~100 skills, which are stored in a `/skills` folder and reused.
-- Vercel’s agent uses tools like `bash`, `grep`, and custom connectors (e.g., Snowflake) in a sandboxed environment.
-- Observability includes tool calls, step-by-step execution, and cost estimates.
+- Planet Labs satellites offer daily 1m-resolution imagery but lack the resolution to assess grass height or biodiversity for grazing decisions.
+- Trail cams pointed at measuring sticks are a low-cost proxy for grass height monitoring.
+- Firecrawl scrapes farmer YouTube channels and arXiv papers to build Open Pasture, an open knowledge base for grazing practices.
+- Pasturebird’s mobile chicken coops demonstrate species stacking: chickens follow ruminants to peck parasites from manure, reducing medication costs.
+- Halter (backed by Peter Thiel) and NoFence are leading virtual-fence collar providers but maintain closed software ecosystems.
 
 ## Actionable Takeaways
-- Start with a file-system-based agent in a sandbox for internal workflows, leveraging models’ built-in file operation capabilities.
-- Distill recurring queries or tasks into reusable "skills" to give agents pre-loaded context.
-- Prioritize domain-specific knowledge (e.g., company data schemas, workflows) over generic agent tools.
-- Use frameworks like Eve to adopt conventions (skills/, tools/) and reduce infrastructure overhead.
-- Deploy agents with observability to track performance, costs, and debugging needs.
+- Explore open-source or modular collar hardware with public APIs to enable third-party grazing algorithms.
+- Contribute to or adopt knowledge bases like Open Pasture to standardize grazing best practices for AI agents.
+- Pilot low-cost biomass monitoring (e.g., trail cams + measuring sticks) as a stopgap until autonomous drone/satellite solutions mature.
+- Watch for regulatory shifts enabling autonomous drone flights for agricultural monitoring.
+- Consider multivariate, non-deterministic problems (e.g., pasture management) as high-impact targets for LLM-driven decision support.
 
 ## People, Companies, Tools, And Links Mentioned
-- [Andrew Qu](https://andrewqu.com)
-- [Vercel](https://vercel.com)
-- [Eve](https://eve.dev)
-- [Claude Code](https://www.claude.com)
-- [Snowflake](https://www.snowflake.com)
-- [Next.js](https://nextjs.org)
-- [Aura](https://aura.com)
-- [Vercel Workflows](https://vercel.com)
-- [Vercel Sandbox](https://vercel.com)
-- [Vercel Connect](https://vercel.com)
-- [Skills SH](https://github.com/vercel-labs/skills-sh) (tool for finding/running agent skills)
+- Cody Menefee
+- Firecrawl
+- [Open Pasture](https://openpasture.dev)
+- Halter
+- NoFence
+- Peter Thiel
+- Planet Labs
+- Pasturebird
+- Missouri Lincoln University
+- [Firecrawl careers](https://firecrawl.dev)
+- [Cody Menefee on X](https://x.com/cbmenefee)
+- [Cody Menefee on LinkedIn](https://linkedin.com/in/codybmenefee)
 
 ## Reading Priority
 
-Medium – A practical, experience-based case for building narrow, file-system-based agents with domain-specific knowledge, including actionable frameworks and lessons from Vercel’s internal deployment.
+Medium – A concrete, near-term application of AI agents to a labor-constrained, high-impact industry, with clear technical blockers and open-source efforts underway.
 
 ***
 
-# Harness Engineering: Building the Production Cage for Powerful Domain Agents — Mike Chambers, AWS
+# The Best Models Still Reason Like Toddlers — Andrew Dai, Elorian
 
-- **Published:** 2026-09-14
-- **YouTube:** [AI Engineer](https://www.youtube.com/watch?v=gxVZ_1tuuq4)
-- **Speaker:** Mike Chambers, AWS
+- **Published:** 2026-09-23
+- **YouTube:** [AI Engineer](https://www.youtube.com/watch?v=A_I8mw8yfns)
+- **Speaker:** Andrew Dai, Elorian
 
 ## One-Sentence Takeaway
-Harness engineering separates an agent’s model from its supporting infrastructure—memory, tools, scaling, observability—so each component can scale independently and remain maintainable at production scale.
+Frontier models excel at pattern matching but fail at visual reasoning tasks requiring spatial grounding, state tracking, or multi-step analysis, exposing a critical gap for real-world applications like robotics, construction, and mechanical design.
 
 ## Short Summary
-Mike Chambers argues that agents fall into two categories: those we *use* (e.g., coding assistants) and those we *build* (production systems). For the latter, the "harness" is everything except the model—memory, tools, identity, runtime, loop management, and observability. He demonstrates how to decompose these components (e.g., deploying memory as separate infrastructure) to avoid monolithic containers and enable independent scaling.
+Current multimodal models rely on superficial pattern recognition (e.g., identifying chessboards or flowers) but struggle with tasks demanding detailed visual reasoning, such as counting objects, tracking state across videos, or interpreting spatial relationships. Benchmarks like ARC-AGI and MMMU mask these weaknesses by using low-resolution images or questions answerable without visual input.
 
-A key practice is rejecting "slop ops" (agents directly spinning up cloud resources) in favor of infrastructure-as-code. His live demo shows a progression from a local agent with tools to a cloud-deployed agent using AWS Bedrock AgentCore, where even a JSON config with a model and system prompt can replace custom agent code for many use cases.
+Elorian’s approach targets this gap with four pillars: proprietary visual reasoning data, a synthetic data flywheel (evals → agents → SFT → RL), architectural improvements atop transformers, and native *visual* chain-of-thought (e.g., drawing bounding boxes to isolate relevant objects before counting). The stakes are high for industries like robotics, construction safety, and mechanical design, where existing models fail on blueprints, CAD files, or dynamic environments.
 
 ## Main Ideas
-- **Harness definition by subtraction**: The harness is everything in an agent *except* the model—memory, tools, skills, runtime, observability, and scaling mechanisms.
-- **Two agent classes**: Agents we *use* (e.g., Claude Code) need lightweight harnesses (memory, tools, standards), while agents we *build* require robust infrastructure (loop management, payments, identity, context, observability).
-- **Avoid slop ops**: Agents should not directly provision cloud resources (e.g., S3 buckets); instead, they should generate infrastructure-as-code to maintain ownership and reproducibility.
-- **Independent scaling**: Bundling all harness components into one container fails at scale; memory, runtime, and other services should be decoupled to scale separately.
-- **Minimal viable agent**: Many use cases can be solved with just a model, system prompt, and tools—no custom agent code—using frameworks like AWS Bedrock AgentCore.
+- Frontier models conflate *visual understanding* (fast, pattern-based answers like "this is a chessboard") with *visual reasoning* (slow, step-by-step analysis like counting roads on a Catan board). The litmus test: if a human needs >1 second to answer, models typically fail.
+- Benchmarks overstate progress: ARC-AGI uses 32×32 pixel images, and MMMU’s science questions often ignore the visual component. True visual reasoning requires evaluating geometric alignment, spatial intelligence, and object permanence.
+- Generation models (e.g., video generators) produce Hollywood-style explosions because they replicate training data (movies/game engines), lacking physical grounding or causal logic. Detection models (e.g., SAM 3, YOLO) are robust but passive—they label pixels without reasoning.
+- Visual chain-of-thought (e.g., drawing boxes to isolate objects before counting) is a missing capability in frontier models, which rely solely on *textual* chain-of-thought. Native visual reasoning is required for agentic workflows and physical execution.
 
 ## Questions And Answers
-- **Q: How do you prevent agents from becoming unmaintainable at scale?**
-  A: Decompose the harness into discrete, independently scalable components (e.g., memory as a service, runtime, observability) rather than embedding them in a single container.
+- **Q: How do you distinguish visual understanding from visual reasoning?**
+  A: Ask whether a human could answer in under a second. Fast answers (e.g., "What game is this?") rely on pattern recognition; slower answers (e.g., "How many roads does the blue player have?") require reasoning, where models fail.
 
-- **Q: What’s the simplest way to deploy an agent?**
-  A: With AWS Bedrock AgentCore, a JSON file specifying a model and system prompt can deploy a functional agent without writing agent code.
+- **Q: Why don’t existing benchmarks capture these failures?**
+  A: ARC-AGI’s images are too low-resolution (32×32 pixels) to reflect real-world complexity, and MMMU’s questions often don’t require the image to solve. New benchmarks must test spatial intelligence and state tracking.
+
+- **Q: What’s missing in current multimodal models?**
+  A: *Visual thinking*—active spatial/temporal intelligence to extract actionable logic for planning and execution. Today’s models are either generative (but physically ungrounded) or detection-based (but passive).
 
 ## Notable Details
-- **AgentCore CLI**: AWS tool to scaffold and deploy agents, supporting Python/TypeScript, custom frameworks, and multi-tenant isolation without manual multi-tenancy code.
-- **Session manager**: Rehydrates conversation history between invocations, providing short/medium-term memory (with long-term storage in files).
-- **Strands Agents SDK**: Open-source, model-first framework used in demos for building agents with tools and MCP support.
-- **80% rule**: Chambers claims ~80% of agentic use cases can be addressed with just a model, system prompt, and tools—no custom harness code.
-- **Observability first**: Despite listing it last, Chambers emphasizes observability and evaluation as the most critical harness components.
-- **MCP-Lambda-Handler**: Chambers’ open-source tool (35k monthly downloads) for serverless MCP serving.
+- Models hallucinate chessboard squares (answering "32" for a partial board) because they pattern-match "chessboard → 32 white squares" without counting.
+- In robotics videos, models miss critical actions (e.g., a robot arm lifting a lid or turning on a stove) due to context amnesia and inability to track state across long sequences.
+- A mechanical engineering firm reports 2,000–3,000 human hours to design a single testing platform; frontier models fail on blueprints/CAD due to poor spatial reasoning.
+- Elorian’s synthetic data flywheel: evals identify weaknesses → agents generate data → SFT/RL improve the model → repeat.
 
 ## Actionable Takeaways
-- Audit your agent’s harness: Separate model from memory, tools, and runtime to identify scaling bottlenecks.
-- Replace slop ops with IaC: Ensure agents generate infrastructure-as-code rather than directly provisioning resources.
-- Start minimal: Test whether a JSON config (model + prompt + tools) suffices before writing custom agent logic.
-- Decouple memory: Deploy memory as a standalone service to scale independently of agent runtime.
-- Explore AgentCore: Use AWS Bedrock AgentCore for composable harness components (memory, runtime, etc.) without rewriting existing agents.
+- Audit visual tasks for "1-second test" difficulty—if humans need deliberate analysis, assume frontier models will fail without specialized tooling.
+- Treat current multimodal benchmarks skeptically; prioritize evals that test spatial reasoning, object permanence, and state tracking.
+- For industries like construction or robotics, pair vision models with explicit spatial/temporal reasoning (e.g., visual chain-of-thought) to bridge the gap between perception and action.
+- Explore synthetic data pipelines to generate missing visual reasoning datasets, as real-world data is scarce or misaligned with reasoning needs.
 
 ## People, Companies, Tools, And Links Mentioned
-- [Mike Chambers’ blog](https://blog.mikegchambers.com)
-- [AWS Bedrock AgentCore](https://aws.amazon.com/bedrock/agentcore)
-- [Strands Agents SDK (GitHub)](https://github.com/strands-ai/strands)
-- [Agent Toolkit for AWS (GitHub)](https://github.com/aws-samples/agent-toolkit)
-- [mcp-lambda-handler (GitHub)](https://github.com/mikegchambers/mcp-lambda-handler)
-- [Agentic AI Foundation (Linux Foundation)](https://www.linuxfoundation.org)
-- [AI Engineer (AIE) conferences](https://ai.engineer)
-- Andrew Ng
-- Antje Barth (Amazon AGI)
-- LangChain
-- Martin Fowler (martinfowler.com)
-- Qodo (IDE)
-- Sonnet 4.5 (model)
-- AG-UI
+- [Elorian](https://elorian.ai)
+- [Elorian on X](https://x.com/ElorianAI)
+- Google Brain, DeepMind
+- GLaM, PaLM 2, Gemini
+- Apple MM1
+- xAI
+- ARC-AGI, MMMU benchmarks
+- SAM 3, YOLO, Mask R-CNN (detection models)
+- ByteDance Seaweed (video generation model)
+- OSHA (safety regulations)
+- Siemens (simulation tools)
 
 ## Reading Priority
 
-Medium – A practical, code-backed framework for production-grade agent harnesses, with clear distinctions between agent types and actionable scaling advice.
+High – Exposes a critical, underappreciated limitation of frontier models in visual reasoning, with concrete examples, benchmarks, and a plausible technical path forward.
 
 ***
 
-# Every step you take, every call you make: the reliable agent stack — Giselle van Dongen, Restate
+# Skill issue: stop deploying vision language models, use them with Skills — Merve Noyan, Hugging Face
 
-- **Published:** 2026-09-14
-- **YouTube:** [AI Engineer](https://www.youtube.com/watch?v=cI7zfqusmFU)
+- **Published:** 2026-09-23
+- **YouTube:** [AI Engineer](https://www.youtube.com/watch?v=dKcTBQzR7jI)
+- **Speaker:** Merve Noyan, Hugging Face (Computer Vision Engineer, Author of *Vision Language Models* book)
 
 ## One-Sentence Takeaway
-Durable execution infrastructure like Restate turns agent workflows into resilient, long-running processes that recover from failures, scale safely, and allow mid-flight control without rebuilding complex retry, state, and cancellation logic.
+Deploying vision language models (VLMs) at runtime is inefficient; instead, use smaller, task-specific models with coding agents and "vibe training" for faster, cheaper, and more robust computer vision applications.
 
 ## Short Summary
-Agent platforms are evolving from single-turn chatbots to persistent, asynchronous entities that live in production infrastructure. The missing layer is durable execution: the ability to resume a failed run at the exact point of interruption, isolate thousands of concurrent sessions, and signal or cancel in-flight work. Restate implements this as a push-based, event-journaled server that proxies requests to agent services, enabling low-latency recovery, stateful virtual objects, and fine-grained control over running loops.
+Merve Noyan argues that developers should stop deploying VLMs directly for real-time tasks due to latency and robustness issues. Instead, she advocates for task-specific models (e.g., RF-DETR) trained via a pipeline where VLMs act as labelers and judges, with coding agents automating the workflow. This approach achieves high performance at low cost (~$3–4 end-to-end) while addressing licensing pitfalls (e.g., avoiding AGPL models like YOLO in favor of Apache 2.0 alternatives).
 
-The demo shows a Slack research agent that plans, spawns parallel sub-agents, retries failed tool calls from the journal, accepts mid-flight signals to refocus, and rewinds the call stack on cancellation. Under the hood, a distributed log and embedded state store provide the guarantees, with P99 latencies around 45 ms for multi-step workflows.
+The pipeline leverages open-source models (e.g., Qwen 2.5-9B for labeling, Gemma 4 and LFM2.5-VL as judges) and merges judgments via *minimum agreement* (not consensus) to avoid over-filtering. Results show strong mean average precision on road sign detection and generalization in document parsing, though human oversight is still needed for prompt approval and augmentation constraints.
 
 ## Main Ideas
-- Durable execution is the critical infrastructure layer for production agents: it recovers long-running processes to the exact failure point instead of restarting, using an event journal that replays steps.
-- Restate models agent sessions as virtual objects with isolated state and unique keys, enabling safe concurrency and mid-flight interaction (signaling, cancellation) without cross-session interference.
-- A push-based invocation model (vs. polling) yields low-latency workflows (≈45 ms P99 for 10-step flows) and integrates cleanly with serverless, waking functions only when needed.
-- The architecture borrows from Apache Flink and Meta’s event infrastructure: a distributed log persists events, an event loop drives side effects, and an embedded state store keeps per-session data consistent.
+- **Avoid runtime VLMs**: VLMs are too slow for real-time tasks (e.g., 30–40 FPS on edge devices is unachievable); smaller, task-specific detectors (e.g., RF-DETR) outperform them in speed and accuracy.
+- **Licensing matters**: Many popular models (e.g., YOLO) use restrictive licenses (AGPL 3.0); prioritize Apache 2.0/MIT models to avoid legal risks.
+- **Vibe training pipeline**: Use a VLM (Qwen 2.5-9B) to label unlabeled images, then employ two smaller VLMs (Gemma 4, LFM2.5-VL) as judges to validate bounding boxes. Merge judgments via *minimum agreement* (not consensus) to preserve examples and improve generalization.
+- **Cost efficiency**: The full pipeline (labeling → judging → training RF-DETR) costs ~$3–4 on Hugging Face Jobs/Inference Providers, with most expenses tied to VLM inference.
+- **Coding agents as "clueless CV engineers"**: Even advanced agents (e.g., Opus 4.6, GLM-5.2) lack domain-specific common sense (e.g., flipping traffic signs horizontally, jittering traffic light colors) and require human constraints.
 
 ## Questions And Answers
-- **How does Restate recover a failed agent run?**
-  It replays the journal of events emitted by the agent up to the failure point, resuming execution from that exact step rather than restarting the entire workflow.
+- **Q: Do you plan to train VLMs themselves (e.g., self-improvement)?**
+  A: Not yet; the priority is helping developers train/deploy task-specific models on edge first.
 
-- **How can a human interrupt or steer a running agent?**
-  Virtual objects expose a unique session ID; new inputs are classified for relevance and either signaled into the live loop or used to cancel and rewind the stack, killing sub-agents as needed.
-
-- **What latency does Restate achieve for multi-step workflows?**
-  P99 latency around 45 milliseconds for a 10-step workflow, attributed to the push-based invocation model.
+- **Q: Why use coding agents for prompt generation?**
+  A: Agents maintain context for generating judge prompts, but human approval is still required to avoid errors (e.g., invalid augmentations).
 
 ## Notable Details
-- A durable promise suspends a function waiting for human approval, surviving restarts and redeploys without consuming serverless execution time.
-- The demo injects a tool failure (web search API down) and shows automatic retry and completion from the journal, not a full restart.
-- Restate’s single binary embeds the state store and UI; high availability is achieved by running multiple instances with snapshots to object storage.
-- SDKs exist for multiple languages and integrate with popular agent frameworks; the project is open source with self-hosted, BYOC, and managed cloud options.
+- **Models used**:
+  - Labeler: Qwen 2.5-9B (Apache 2.0).
+  - Judges: Gemma 4 E4B (~8B), LFM2.5-VL (~2B; revenue-based license).
+  - Backbone: RF-DETR (medium/large) for detection/segmentation.
+- **Performance**: Road sign detection achieved "good" mAP (>50) vs. ground truth; document parsing generalized to detect signatures missed by the labeling VLM.
+- **Judge imbalance**: LFM2.5-VL rejected far more examples than Gemma 4; consensus would have left too few training examples, so *minimum agreement* (1/2 judges approving) worked better.
+- **Augmentation pitfalls**: Default augmentations (e.g., horizontal flips for traffic signs) corrupted datasets; explicit constraints were added.
+- **Toolkit components**: Includes Apache 2.0 models for depth estimation (e.g., [Hugging Face benchmarks](https://huggingface.co/benchmarks)), zero-shot segmentation (Falcon-Perception, 600M params), pose estimation (Sapiens), and OCR (olmOCR).
+- **Future work**: Image-guided detection (for non-describable parts), IoU-based merging of judge boxes, and segmentation support.
 
 ## Actionable Takeaways
-- Evaluate durable execution frameworks like Restate before building custom retry, recovery, and session isolation logic for agent platforms.
-- Model long-running agent sessions as stateful virtual objects to enable mid-flight control and safe concurrency at scale.
-- Prefer push-based invocation over polling to reduce latency and serverless costs in agent workflows.
-- Consider a distributed log architecture if you need strong consistency and recovery guarantees across agent steps and external tools.
+- Replace runtime VLMs with task-specific models (e.g., RF-DETR) for real-time applications.
+- Audit model licenses; prefer Apache 2.0/MIT (e.g., avoid YOLO’s AGPL 3.0).
+- Use VLMs as labelers/judges in a pipeline, but merge judgments via *minimum agreement* to avoid over-filtering.
+- Constrain coding agents’ augmentations (e.g., disable flips for asymmetric objects like traffic signs).
+- Explore [Smol Vision](https://github.com/mervenoyan/vision-intern) and [Hugging Face Skills](https://huggingface.co/skills) for reproducible workflows.
 
 ## People, Companies, Tools, And Links Mentioned
-- Giselle van Dongen
-- Restate
-- [Restate GitHub repository](https://github.com/restatedev/restate)
-- Apache Flink
+- Merve Noyan ([X](https://x.com/mervenoyann), [LinkedIn](https://www.linkedin.com/in/merve-noyan-28b1a113a), [Hugging Face](https://hf.co/merve))
+- Hugging Face (Jobs, Inference Providers, Benchmarks, Transformers, Supervision, Trackers)
+- Models: Qwen 2.5-9B, Gemma 4 E4B, LFM2.5-VL, RF-DETR, Falcon-Perception (TII), Sapiens, Moondream 3, MM-Grounding-DINO
+- Tools: Deep Infra, Roboflow, olmOCR
+- Repositories: [mervenoyan/vision-intern](https://github.com/mervenoyan/vision-intern), [Smol Vision](https://github.com/mervenoyan/vision-intern)
+- Datasets: DocVQA
+
+## Reading Priority
+
+High – A concrete, cost-effective alternative to runtime VLMs with actionable workflows, licensing warnings, and evidence-backed results.
+
+***
+
+# Modality Misalignment and Originality Attribution in Short-Form Video — Aditya Gautam, Meta
+
+- **Published:** 2026-09-23
+- **YouTube:** [AI Engineer](https://www.youtube.com/watch?v=jNE8No-wvok)
+- **Speaker:** Aditya Gautam, Engineering at Meta
+
+## One-Sentence Takeaway
+At 100M+ video scale, Meta decomposes modality-misalignment and unoriginal-content detection into three small, specialized VLM agents (Perceiver, Reviewer, Retriever) that split, analyze, and index clips with temporal precision, then continuously improves via DPO on production samples and human-in-the-loop review.
+
+## Short Summary
+
+Short-form video platforms face two core integrity problems: intra-video modality misalignment (e.g., a sports clip abruptly switching to politics) and unoriginal content that erodes attribution. Both must operate on messy, adversarial, multilingual, drifting data without ground truth.
+
+Meta’s solution is a multi-agent pipeline: a Perceiver splits videos at temporal change points and emits clip-level embeddings, tags, and OCR; a Reviewer performs temporal analysis and folds in live user signals; a Retriever indexes topics, embeddings, and entities into inverted, vector, and graph stores for similarity search at inference. Each agent runs on a small, domain-specialized VLM, pretrained on in-house user-generated images, instruction-tuned to a JSON schema, and refined via a DPO loop that samples daily production data, uses an in-house LLM judge, and routes failures to a human queue for root-cause tracing.
+
+## Main Ideas
+- Intra-modality misalignment (e.g., abrupt topic shifts within a single video) is harder than cross-modality alignment and requires fine-grained temporal segmentation, not fixed frame rates.
+- Unoriginal content detection hinges on clip-level similarity search across inverted, vector, and graph stores, combined with real-time user interaction signals (comments, sentiment, reports).
+- Small, task-specific VLMs outperform frontier models for this domain: pretraining on in-house user-generated images, instruction tuning to structured JSON outputs, and DPO on production samples with human oversight.
+- Holistic evaluation extends beyond precision/recall to per-node latency, reasoning budgets, token cost, and judge drift, ensuring the pipeline remains efficient and robust under data drift.
+- Three optimizations reduce pipeline load: spatial-temporal frame compression, caching verdicts on viral content, and metadata pruning (e.g., skipping trusted creators).
+
+## Questions And Answers
+- **Why not use a single agent or frontier model?**
+  The problem requires specialized nodes for retrieval, content understanding, and reasoning; frontier models are overkill and cost-prohibitive for a domain-specific task that doesn’t require general capabilities like coding.
+
+- **How does the system handle data drift?**
+  Daily production samples are fed into a DPO loop with an in-house LLM judge and human queue to trace failures to specific nodes (e.g., tool calls, retrieval), enabling continuous retraining and adaptation.
+
+- **What makes the vision encoder domain-specific?**
+  User-generated content differs from clean web data, so the vision transformer is pretrained from scratch on in-house images to capture the unique characteristics of the platform’s data.
+
+## Notable Details
+- Temporal segmentation is triggered by semantic embeddings and temporal change detection, not fixed intervals, to capture abrupt shifts (e.g., 6 seconds of sports followed by 0.5 seconds of politics).
+- The Reviewer agent incorporates live user signals (likes, dislikes, comments, sentiment) to detect anomalies missed by offline analysis.
+- Model sizes are optimized via knowledge distillation and quantization (e.g., 4-bit, brain float) to balance performance and inference cost, with a table of size-performance tradeoffs.
+- Evaluation includes adaptive reasoning budgets to test whether reducing or increasing model "thinking" time improves accuracy or efficiency.
+- Metadata pruning filters out videos from high-authenticity creators or topics with strong prior records, reducing unnecessary processing.
+
+## Actionable Takeaways
+- Decompose complex multimodal problems into specialized agents to improve precision and scalability.
+- For domain-specific tasks, pretrain vision encoders on in-house data rather than relying on general-purpose frontier models.
+- Implement a DPO loop with human-in-the-loop review to continuously adapt to production data drift and edge cases.
+- Optimize pipelines with frame compression, caching, and metadata pruning to reduce computational overhead.
+- Evaluate beyond accuracy: track per-node latency, token cost, reasoning budgets, and judge drift for holistic system health.
+
+## People, Companies, Tools, And Links Mentioned
+- Aditya Gautam
 - Meta
-- Andrej Karpathy
-- [AI Engineer talk page for this talk](https://ai.engineer/talks/cI7zfqusmFU)
+- [Modality Misalignment and Originality Attribution in Short-Form Video — Aditya Gautam, Meta](https://www.youtube.com/watch?v=jNE8No-wvok)
+- CLIP
+- DPO
+- Ray
 
 ## Reading Priority
 
-Medium – A concrete, technical look at the infrastructure required to run agents reliably in production, with a compelling demo and clear architectural insights.
+High – A rare, concrete look at how a platform at 100M+ scale operationalizes multimodal integrity with specialized agents, continuous learning, and cost-aware optimizations.
 
 ***
 
-# Agents Without Code: Skills, YAML, and Filesystems Replaced Python — Philipp Schmid, Google DeepMind
+# From VLM/VLA's to Embodied Agents — Armen Aghajanyan, Perceptron AI
 
-- **Published:** 2026-09-14
-- **YouTube:** [AI Engineer](https://www.youtube.com/watch?v=fjF8EKnxKCU)
-- **Speaker:** Philipp Schmid, Google DeepMind
+- **Published:** 2026-09-23
+- **YouTube:** [AI Engineer](https://www.youtube.com/watch?v=ZZcE0HeO-Hc)
+- **Speaker:** Armen Aghajanyan, Perceptron AI
 
 ## One-Sentence Takeaway
-The most effective agent systems replace custom code with declarative files (instructions, skills, rules) and rely on hosted sandboxes to handle loops, tool routing, and state, letting models leverage general-purpose tools rather than rigid schemas.
+Embodied foundation models that jointly train perception, reasoning, and control can replace expensive teleoperation data with scalable video pretraining, achieving frontier performance at a fraction of the cost.
 
 ## Short Summary
-Philipp Schmid demonstrates building the same GitHub PR review agent three times, progressively removing Python code until only an `AGENTS.md` file and a bash script remain. The final version runs in a hosted sandbox with injected credentials, allowing the agent to use general tools (e.g., GitHub CLI, search) without explicit tool definitions. The core insight: as models improve, agent harnesses should shrink—complexity that grows with model capability signals overengineering.
+Perceptron’s approach unifies vision-language models (VLMs), vision-language-action models (VLAs), and world models into a single *embodied foundation model* that perceives, reasons, and acts. Two core challenges—sparse ground truth in video (where only ~2% of tokens contribute to loss) and context bloat from always-on sensors—are addressed with a *perceptive objective* (automatically learning which visual signals matter) and *data-sparse mixture-of-experts* (a router dynamically selecting relevant tokens per layer).
 
-The talk highlights a shift from manual loops and JSON schemas to server-side orchestration, where developers focus on instructions, rules, and evaluations while the platform manages execution, state, and security.
+The result is a petabyte-scale model outperforming frontier embodied reasoning systems (e.g., Gemini 1.5 Pro) at 1/15th the cost, with emergent behaviors like agentic detection (tiling, zooming, contrast adjustment) and robust control policies that read text (e.g., book titles) to inform actions. A new scaling law shows 10x more video pretraining can substitute for 10x less teleoperation data ($100/hour), unlocking cheaper, scalable robotics training.
 
 ## Main Ideas
-- **Declarative agents outperform code-heavy ones**: Version 3 of the agent replaces Python loops, JSON schemas, and tool definitions with an `AGENTS.md` file and a bash script, relying on a hosted sandbox to handle execution, tool routing, and state. The agent answers out-of-scope questions (e.g., weather) by dynamically using available tools like search.
-- **Hosted sandboxes enable security and flexibility**: The sandbox injects credentials via a network proxy, so the agent never sees tokens, and domain access can be restricted. This allows agents to use general-purpose tools (e.g., GitHub CLI, bash) without hardcoding capabilities.
-- **Server-side orchestration reduces boilerplate**: Loops, tool routing, session state, and context compaction move to the server, leaving developers to define instructions, rules, and skills in Markdown files. Teams like Cursor replaced 12,000 lines of TypeScript with 200 lines of agent files.
-- **Overengineering is a red flag**: If your agent harness grows more complex as models improve, you’re likely micromanaging the model. Better models should allow *less* code, not more.
-- **Agents as file systems**: Agents can read, write, and persist files (e.g., notes, rules) across sessions, externalizing context and enabling handoffs between workflows.
+- **Unified embodied models** outperform siloed VLMs/VLAs by jointly training perception, reasoning, and control, enabling tasks like agentic detection (e.g., tiling images, adjusting contrast) and multi-step robotic actions (e.g., reading book titles to sort them).
+- **Perceptive objectives** solve sparse supervision in video: instead of predicting all pixels or relying on sparse transcripts, the model learns to focus on semantically important signals (e.g., gripper tips, contact points) *without hardcoding*.
+- **Data-sparse MoE** dynamically routes tokens to reduce context bloat, letting the model allocate compute to task-relevant regions (e.g., graphs in figures, fruit in segmentation tasks) while ignoring background noise.
+- **New scaling law**: For embodied models, 10x more video pretraining can replace 10x less teleoperation data, drastically cutting costs (teleop data ~$100/hour) while maintaining performance.
+- **Robustness emerges** from joint training: Models resist background changes or lighting variations better than traditional VLAs, partly due to early fusion and synthetic augmentations (e.g., simulated camera failures, directional light).
 
 ## Questions And Answers
-- **Q: Why does the third agent version answer the weather question while the first two cannot?**
-  A: The third version runs in a sandbox with access to general tools (e.g., Google Search) and no rigid tool definitions, so it can dynamically use available capabilities. The first two versions only use explicitly defined tools (GitHub API functions).
+- **Q: How does the model handle temporal and spatial context (e.g., reading a book title to sort it)?**
+  A: Context is managed via limited windows (e.g., 1M tokens) and training objectives that prioritize robotics-relevant signals (e.g., cardinal directions, object relationships). Early data curation (e.g., labeling spatial relationships) and embodied reasoning focus improve temporal/spatial grounding.
 
-- **Q: How are credentials secured in the sandbox?**
-  A: A network proxy injects credentials into outbound requests, so the agent never sees tokens. Domain access can be restricted to specific URLs or left open.
+- **Q: Are these models more robust to background changes than traditional VLAs?**
+  A: Yes—joint perception-control training improves robustness to background/lighting shifts. Traditional VLAs often fail if backgrounds change; Perceptron’s models also use online augmentations (e.g., simulated camera occlusions, light direction) to further harden performance.
 
-- **Q: What should developers focus on when building agents?**
-  A: Define clear instructions, rules, and skills in Markdown files; own the evaluations and domain logic; avoid micromanaging execution paths.
+- **Q: Can the model build structured knowledge bases?**
+  A: It excels at *structured extraction* (e.g., complex egocentric annotation, captioning) and deep video understanding, but not at constructing ontologies. Public APIs and benchmarks are available for testing.
 
 ## Notable Details
-- The **Interactions API** (Gemini) uses a step-based model (user input → reasoning → function call → result) instead of turn-based conversation history, better suited for agents.
-- **Antigravity remote agent** (Gemini API) provides a hosted Linux sandbox with bash, file system access, and pre-configured tools (e.g., Google Search). Custom agents can be created via the Agents API with unique IDs.
-- Teams like **Cursor**, **Manus**, **LangChain**, and **Vercel** have drastically reduced orchestration code (e.g., 12K lines → 200 lines) by adopting file-based agent designs.
-- The heuristic: *"If your harness gets more complex as models improve, you are overengineering it."*
+- **Training data**: 1 petabyte spanning text, images, video, and trajectories (desktop use, video games, robotics).
+- **Cost efficiency**: Model is ~15x cheaper than Gemini 1.5 Pro for embodied reasoning; video annotation costs cents vs. dollars for competitors.
+- **Agentic detection**: Model autonomously tiles images, adjusts contrast, and proposes bounding boxes to solve hard detection tasks (e.g., finding camouflaged birds).
+- **Control tokens**: Single model emits tokens to directly control robots (e.g., sorting books by reading titles).
+- **Open-source plans**: Smaller model weights to be released in July 2026.
+- **Teleoperation cost**: ~$100/hour, making video pretraining a cost-effective substitute.
 
 ## Actionable Takeaways
-- Replace custom agent loops with hosted sandboxes (e.g., Gemini’s Interactions API) to offload orchestration, state, and security.
-- Define agent capabilities in Markdown (`AGENTS.md`, `SKILL.md`) instead of Python/JSON, focusing on instructions, rules, and general-purpose tools.
-- Audit your agent harness: if complexity grows with model improvements, simplify by removing orchestration code.
-- Experiment with file-based persistence for agents (e.g., saving notes, rules, or handoffs to disk for later sessions).
-- Try the **Antigravity harness** in [AI Studio](https://ai.engineer/talks/fjF8EKnxKCU) to test sandboxed agents with minimal setup.
+- Watch for **scaling law tradeoffs**: Video pretraining can replace teleoperation data at predictable ratios—validate this in your domain.
+- Test **data-sparse MoE** for multimodal tasks with long contexts (e.g., robotics, surveillance) to reduce compute bloat.
+- Prioritize **perceptive objectives** over pixel-level prediction when ground truth is sparse (e.g., video with minimal labels).
+- Explore **agentic detection** for tasks where traditional CV fails (e.g., low-contrast, occluded, or rare objects).
+- Monitor Perceptron’s **July open release** for hands-on evaluation of embodied foundation models.
 
 ## People, Companies, Tools, And Links Mentioned
-- Philipp Schmid
-- Google DeepMind
-- Google Gemini
-- [Interactions API](https://ai.engineer/talks/fjF8EKnxKCU)
-- Antigravity (agent and IDE)
-- Cursor
-- Manus
-- LangChain
-- Vercel
-- [AI Studio](https://ai.engineer/talks/fjF8EKnxKCU)
-- GitHub CLI
+- Armen Aghajanyan
+- Perceptron AI
+- [Perceptron website](https://perceptron.inc)
+- [Armen Aghajanyan on X/Twitter](https://x.com/ArmenAgha)
+- FAIR (Meta)
+- Gemini 1.5 Pro
+- MoMoAct (AI2)
+- GDM (Generalist Decision Making)
 
 ## Reading Priority
 
-High – A compelling, concrete demonstration of how agent systems can be simplified by leveraging hosted infrastructure and declarative files, with actionable insights for developers.
+High – Introduces a novel, evidence-backed scaling law for embodied AI, with concrete architectural innovations (perceptive objectives, data-sparse MoE) and near-term open-source releases.
+
+***
+
+# From Scratch to SOTA: Training a 3B State-Space Vision Model — Krishna Prasad Srinivasan, Sarvam
+
+- **Published:** 2026-09-23
+- **YouTube:** [AI Engineer](https://www.youtube.com/watch?v=T72nqdC92PM)
+- **Speaker:** Krishna Prasad Srinivasan, Sarvam
+
+## One-Sentence Takeaway
+A 3B-parameter state-space vision-language model trained in India achieves SOTA document AI for 22 low-resource Indic languages by combining block-level OCR, a four-stage curriculum, and RL with verifiable rewards.
+
+## Short Summary
+Sarvam’s 3B-parameter vision model outperforms models 100x larger on document intelligence by using a state-space architecture (SSM) to avoid quadratic attention costs on long visual sequences (5–10k tokens/page). The team’s contrarian bet on block-level OCR with layout and reading-order harnesses—later adopted by 2026 releases—enables efficient, accurate extraction.
+
+The training pipeline is a four-stage curriculum: 13T text tokens (English, 22 Indian languages, math, code) to build a strong language prior, continual pretraining on 300M image-text pairs, supervised fine-tuning on 100M OCR samples, and RL with machine-checkable rewards (e.g., character error rate, table structure). The moat lies in a proprietary data engine for low-resource languages and rigorous, real-world evals.
+
+## Main Ideas
+- **Architecture choice**: SSMs replace Transformers for OCR due to linear compute/memory scaling on long sequences (5–10k visual tokens/page), avoiding quadratic attention costs while accepting minor recall tradeoffs.
+- **Block-level OCR**: A contrarian 2025 bet to decompose page-level OCR into blocks with layout and reading-order harnesses, now a converged industry approach in 2026.
+- **Curriculum training**: Four stages—text-only pretraining (13T tokens), continual pretraining (300M image-text pairs), supervised fine-tuning (100M OCR samples), and RL—build competence hierarchically, with the language prior resolving ambiguous or smudged text.
+- **RL with verifiable rewards**: OCR’s machine-checkable nature (e.g., CER, table structure, grammar) enables scalable RL via unit-test-style rewards, pushing performance beyond supervised fine-tuning.
+- **Sovereignty and data moat**: Sarvam’s end-to-end India-based pipeline (data, compute, training) addresses the <1% representation of Indian languages in Common Crawl, with a proprietary data engine for low-resource languages and upcoming public Indic benchmarks (1800s–present).
+
+## Questions And Answers
+- **Q: How does the model handle low-resource languages?**
+  A: The 13T-token text-only pretraining includes 22 Indian languages, math, and code, creating a strong language prior that resolves ambiguous or smudged text. Synthetic and real-world document data pipelines supplement missing labeled data.
+
+- **Q: Why not use synthetic data for RL?**
+  A: Real-world documents are preferred for RL because they allow machine-verifiable rewards (e.g., CER, table structure) that align with practical OCR challenges, though synthetic documents are used for post-training (SFT/RL).
+
+- **Q: What’s the role of sovereignty in adoption?**
+  A: Government and enterprise users (e.g., insurance, banking) require control over data location and usage. Sarvam’s on-prem/API deployment and India-based training address these concerns, accelerating digitization of 35M+ pages in 4 months.
+
+## Notable Details
+- **Performance**: 84.3 on olmOCR-Bench and 93.2 on OmniDocBench at launch, with an unbeaten lead on 22 Indian languages vs. frontier models (Gemini, ChatGPT, Opus).
+- **Deployment**: Powers Sarvam’s agentic workbench (Akshar) for human-in-the-loop digitization, with confidence scores, block-level grounding, and proofreading.
+- **Data composition**: 40% of pretraining data is Indic languages; the rest is English, math, and code.
+- **Benchmark**: Upcoming Sarvam Indic Benchmark covers 22 languages, diverse layouts (prose, poetry, tables, finance), and documents from the 1800s to present.
+- **Compute efficiency**: Model runs on a single GPU despite SOTA performance, enabled by SSM architecture and block-level processing.
+
+## Actionable Takeaways
+- Watch for public release of Sarvam’s Indic benchmark to evaluate models on low-resource, high-complexity document tasks.
+- Consider SSMs for long-sequence vision tasks where quadratic attention costs (Transformers) are prohibitive.
+- For OCR, prioritize block-level processing with layout/reading-order harnesses to balance accuracy and compute.
+- Explore RL with verifiable rewards (e.g., CER, structural correctness) for tasks with machine-checkable outputs.
+- Assess sovereignty requirements for enterprise/government deployments, where data locality and control are critical.
+
+## People, Companies, Tools, And Links Mentioned
+- Sarvam
+- [Sarvam Vision](https://www.youtube.com/watch?v=T72nqdC92PM)
+- Krishna Prasad Srinivasan
+- [@fewshotlearner](https://x.com/fewshotlearner)
+- [Krishna Prasad Srinivasan (LinkedIn)](https://www.linkedin.com/in/krishnapsrinivasan/)
+- Common Crawl
+- olmOCR-Bench
+- OmniDocBench
+- Qwen
+- Gemma
+- Gemini
+- ChatGPT
+- Opus
+- Chandra
+
+## Reading Priority
+
+High – A rare, concrete case study of a sovereign, low-resource language model achieving SOTA with novel architecture, curriculum training, and verifiable RL, backed by real-world deployment at scale.
+
+***
+
+# From Ingestion to Agents: How AI Teams Build on Document Intelligence — Adit Abraham, Reducto
+
+- **Published:** 2026-09-23
+- **YouTube:** [AI Engineer](https://www.youtube.com/watch?v=0I07YAuF8xA)
+- **Speaker:** Adit Abraham, Reducto
+
+## One-Sentence Takeaway
+Better document parsing and agentic verification unlock reliable, multi-step AI workflows that outperform frontier models on real-world tasks by fixing inputs at the token level and orchestrating tools for precision and recall.
+
+## Short Summary
+PDFs remain a hard problem for AI because their format was designed for printing, not reasoning, and humans encode meaning visually in tables, charts, and handwriting. Frontier models score only ~30% on benchmarks like GDP.pdf, but structured inputs (e.g., parsed Markdown/HTML) can lift other models past them while reducing reasoning tokens and latency.
+
+The shift from RAG to agents compounds the cost of bad inputs, as errors propagate across steps. Agentic OCR—token-level corrections via VLMs and traditional CV—addresses this by fixing OCR mistakes (e.g., "0" vs. "O") without rewriting content. Agent harnesses (e.g., code interpreters, self-checks) solve previously unsolvable tasks like extracting data from line charts, balancing precision and recall where frontier models drop rows and document services lag in accuracy.
+
+## Main Ideas
+- **PDFs are inherently hard for AI**: Designed for printing, they encode visual meaning (merged cells, charts, handwriting) that breaks simple OCR or NLP pipelines. Benchmarks like GDP.pdf show frontier models at ~30% accuracy, highlighting the gap between demo performance and real-world use.
+- **Agentic OCR outperforms naive rewrites**: VLMs can correct token-level OCR errors (e.g., "0" vs. "O") without regenerating content, avoiding model-induced errors like recalculating totals. Traditional CV (e.g., sub-100M-parameter models) still excels at layout detection and runs efficiently on CPUs at scale.
+- **Structured inputs lift model performance**: Providing parsed, structured representations (Markdown/HTML) of documents improves accuracy and reduces reasoning tokens/latency for models like GPT-5.5 and Opus, enabling them to outperform newer frontier models on benchmarks.
+- **Agent harnesses solve compound problems**: Tools like code interpreters and iterative self-checks enable agents to tackle tasks no single model can solve in one shot (e.g., extracting data from line charts). This approach balances precision (frontier models) and recall (document services), which often trade off against each other.
+- **Orchestration matters**: Classification and splitting (e.g., routing 100-page mail packets to relevant snippets) reduce noise and improve agent focus, while formatting data for its consumer (e.g., natural language renderings of tables for retrieval) boosts retrieval quality.
+
+## Questions And Answers
+- **Why not just use VLMs for everything?**
+  Traditional CV models (e.g., for layout detection) are deterministic, efficient, and run on CPUs at scale, making them ideal for high-volume tasks where VLMs are overkill.
+
+- **How do you handle tables in retrieval?**
+  Embedding models struggle to match natural language queries (e.g., "How did revenue change?") to messy HTML/Markdown tables. A natural language rendering of the table improves retrieval without sacrificing reasoning fidelity.
+
+- **What’s the tradeoff between frontier models and document services?**
+  Frontier models are precise but silently drop rows (low recall), while document services achieve higher recall but lower precision. Agent harnesses can combine both strengths.
+
+## Notable Details
+- GDP.pdf benchmark: Frontier models score ~30%, underscoring the difficulty of reasoning over PDFs.
+- Agentic OCR: Token-level corrections (e.g., fixing "0" vs. "O") preserve fidelity without introducing model-generated errors like recalculating totals.
+- Line chart extraction: Agents with code interpreters and iterative checks can reconstruct tabular data from line charts, a task no single model solves in one shot.
+- Micro1 benchmark: Exposes the precision-recall tradeoff in document processing, where frontier models excel in precision but drop content, while document services prioritize recall.
+- Formatting for retrieval: Natural language renderings of tables improve embedding model performance for retrieval tasks.
+- CLI for agents: Reducto’s approach lets agents navigate a file system dynamically, choosing tools and contexts as needed.
+
+## Actionable Takeaways
+- Decompose parsing: Use the right tool for each task (e.g., CV for layout, VLMs for semantics) to balance accuracy, cost, and latency.
+- Adopt agentic verification: Implement token-level corrections and validation layers to catch OCR errors without regenerating content.
+- Structure inputs for models: Provide parsed, formatted data (e.g., Markdown/HTML tables) to improve accuracy and reduce reasoning overhead.
+- Orchestrate data flow: Use classification and splitting to route relevant snippets to agents, reducing noise and improving focus.
+- Evaluate at every stage: Test parsing, retrieval, formatting, and end-to-end agent performance to identify bottlenecks.
+
+## People, Companies, Tools, And Links Mentioned
+- [Reducto](https://reducto.ai)
+- GDP.pdf benchmark
+- Surge (data lab)
+- Fable (frontier model)
+- GPT-5.5
+- Opus
+- Micro1 benchmark
+- Harvey
+- Legora
+- Rogo
+- Cursor
+- Claude Code
+
+## Reading Priority
+
+Medium – A practical, evidence-backed breakdown of how to build reliable agent workflows on real-world documents, with concrete examples and tradeoffs.
+
+***
+
+# Building the Document Context Layer for AI Agents — Jerry Liu, LlamaIndex
+
+- **Published:** 2026-09-23
+- **YouTube:** [AI Engineer](https://www.youtube.com/watch?v=RQi7x-navxU)
+- **Speaker:** Jerry Liu, Co-founder and CEO, LlamaIndex
+
+## One-Sentence Takeaway
+Document OCR remains unsolved because PDFs and other formats are designed for display, not machine interpretation, and modern RAG now splits into an agent harness that reasons about search and a context layer that prepares and serves document data at scale.
+
+## Short Summary
+RAG in 2026 is no longer a static pipeline of chunking, embedding, and top-k retrieval; it has evolved into a dynamic system where agents reason about search terms and context is managed through MCP servers, skills, and document workflows. The central bottleneck is unlocking the 10+ trillion pages trapped in PDFs, PowerPoints, Word docs, and spreadsheets—formats that encode text as glyphs and tables as line segments, making them unintelligible to agents without specialized parsing.
+
+LlamaIndex frames the solution as a three-layer stack: parsing into token-efficient markdown and metadata, semantic storage for human–agent document management, and repeatable workflows for tasks like invoices or KYC. Benchmarks like ParseBench reveal that even frontier models struggle with tables, charts, and faithfulness, so the stack must support high-accuracy, low-cost, and low-latency regimes.
+
+## Main Ideas
+- RAG has split into an agent harness that reasons about queries and a context layer that prepares and serves data; retrieval complexity has moved into the agent, while context management has moved up the stack toward MCP servers and skills.
+- PDFs, Word docs, and PowerPoints are rendered for display, not machine consumption: text is stored as glyphs with coordinates, tables as line segments, and reading order is not encoded, making raw files unusable by agents without OCR and structural parsing.
+- Document understanding requires a hybrid approach: heuristic pipelines for structure, specialized VLMs for visual elements, and routing between cheap and frontier models to balance cost, accuracy, and latency.
+- Enterprise document parsing has three regimes: high accuracy for regulated industries (99–100% correctness), low cost for large-scale indexing (tolerates some errors), and low latency for real-time uploads (e.g., 1,000 documents in a minute).
+- Programs and workflows are increasingly defined in English rather than code, enabling non-technical users to create repeatable agent tasks like invoice processing or KYC, with citations and confidence scores for extracted data.
+
+## Questions And Answers
+- **Why is document OCR still hard after 20 years?**
+  PDFs and similar formats store text as glyphs with coordinates and tables as line segments, with no inherent reading order or semantic structure, so agents cannot interpret them without specialized parsing.
+
+- **How does LlamaIndex balance cost and accuracy in parsing?**
+  It uses a hybrid of heuristic pipelines and VLMs, with a router that selects cheap specialized models for simple pages and frontier models for complex visuals, plus a fast Rust parser (LightParse) for low-latency first passes.
+
+- **What is ParseBench?**
+  A public benchmark of 2,000 human-verified pages testing 50+ models on tables, charts, and faithfulness, showing that document understanding is not yet solved even by frontier models.
+
+## Notable Details
+- ParseBench evaluates tables, charts, content faithfulness, and semantic formatting, optimized for agent understanding rather than syntactic correctness.
+- LightParse is a free, Rust-based parser described as the fastest open-source option, used for low-latency first passes before deeper VLM analysis.
+- LlamaParse (commercial) combines optimized PDF engines, agentic routing between models, and fine-tuned document VLMs for tables and charts.
+- Document workflows (e.g., invoices, KYC) require structured extraction with granular citations and confidence scores, tunable for cost and accuracy.
+- Agent-native document formats, versioning, editing, and "hill climbing as a service" are identified as unsolved areas for future work.
+
+## Actionable Takeaways
+- For real-time document uploads, use a fast first-pass parser like LightParse, then route complex pages to a VLM for deeper analysis.
+- In regulated industries, prioritize high-accuracy parsing with agentic reasoning and citations, even at higher cost.
+- For large-scale indexing, accept some inaccuracies in parsing if agents can later verify and ground answers with citations.
+- Evaluate parsing solutions against ParseBench to ensure they handle tables, charts, and faithfulness at your required accuracy and cost.
+- Define repeatable document workflows (e.g., invoices) in English with confidence thresholds to automate data entry tasks.
+
+## People, Companies, Tools, And Links Mentioned
+- Jerry Liu
+- LlamaIndex
+- [ParseBench](https://parsebench.ai)
+- LightParse
+- LlamaParse
+- Claude Code
+- Claude Cowork
+- Codex
+- OpenClaw
+- MCP (Model Context Protocol)
+- Hugging Face
+- Kaggle
+
+## Reading Priority
+
+Medium – A concrete, technical breakdown of why document OCR is hard and how modern RAG systems are evolving to handle it, with actionable frameworks for balancing cost, accuracy, and latency.
+
+***
+
+# 🔬 An Oscar, Two Asteroids, and the Algorithm in Your sklearn: John Platt on AI for Science
+
+- **Published:** 2026-09-22
+- **Podcast:** [Latent Space](https://www.latent.space/p/john-platt)
+
+## One-Sentence Takeaway
+AI-driven evolutionary optimization (ERA) can solve "scoreable" scientific problems—from climate modeling to satellite data fusion—by iteratively mutating code with LLM-guided search, but human rigor remains critical to avoid overfitting and ensure descriptive (not just predictive) models.
+
+***
+
+## Short Summary
+John Platt’s team at Google developed **Empirical Research Assistance (ERA)**, an LLM-powered system that automates the search for solutions to scientific problems framed as "scoreable tasks" (e.g., maximizing a metric via code). ERA uses **Monte Carlo Tree Search with Upper Confidence Bound (UCB)** to explore mutations of notebooks, leveraging Gemini’s world knowledge to guide non-random, high-recall exploration. The approach excelled in domains like contrail mitigation (reducing 1% of anthropogenic warming) and CO₂ monitoring, but Platt emphasizes the risk of **Goodhart’s Law**—metrics become targets, leading to reward hacking—and the need for human oversight to ensure models are *descriptive* (capturing real-world physics) rather than merely *predictive*.
+
+The conversation also highlights the **jagged frontier** of AI capabilities: while ERA and modern LLMs (e.g., Gemini 2.5+) show step-change improvements in coding and multi-paper synthesis, they lack human-level creativity, rigor, or philosophical depth. Climate modeling remains uniquely hard due to non-stationarity (changing attractors) and data scarcity, but tools like ERA may eventually integrate vast literature to constrain uncertainties.
+
+***
+
+## Main Ideas
+- **Scoreable tasks as a unifying framework**: Many scientific problems (e.g., model fitting, asymptotic expansions, satellite data fusion) can be reduced to optimizing a score function via code. ERA automates this by treating notebooks as mutable "organisms" in an evolutionary search guided by an LLM (Gemini).
+- **LLM-guided search outperforms random mutation**: Unlike 1970s-style genetic algorithms, ERA’s mutations are informed by Gemini’s pre-trained knowledge (e.g., reading papers, suggesting datasets), enabling efficient exploration of vast hypothesis spaces. The shift from Gemini 2.0 to 2.5 was a **phase transition**—earlier versions failed, while 2.5+ worked "magically."
+- **Descriptive vs. predictive models**: Science demands models that *extrapolate* (e.g., Newton’s gravity applying to planets, not just apples). ERA produces *predictive* models; humans must ensure they’re *descriptive* by incorporating domain constraints and avoiding overfitting. Platt’s advice: **"Always just fit linear regression. Or SVM."** as a baseline to anchor rigor.
+- **Goodhart’s Law and reward hacking**: Metrics optimized by ERA (or humans in Kaggle competitions) can be gamed. Example: A contrail-detection competition was won by exploiting a **half-pixel label error**—useless for real-world impact. ERA’s power requires **"excruciating" rigor** (e.g., hidden holdout sets) to avoid self-deception.
+- **Climate as a non-stationary attractor**: Climate is the *statistics* of weather’s chaotic attractor, but human actions (e.g., CO₂ emissions) *shift the attractor itself*. Modeling this is hard because tipping points (sudden attractor changes) are difficult to distinguish from model artifacts. ERA helped solve a **counterfactual problem** in contrail warming by identifying confounders missed by humans.
+
+***
+***
+## Questions And Answers
+
+**Q: How does ERA avoid local optima in its search?**
+A: It uses **Upper Confidence Bound (UCB)** from reinforcement learning, an optimistic algorithm that selects notebooks based on their 95th-percentile potential (not just current performance). This balances exploration (e.g., trying the 5th-best notebook) with exploitation.
+
+**Q: What’s the role of humans in ERA’s loop?**
+A: Humans define the **score function** (the hardest part), validate *descriptive* (not just predictive) models, and iteratively refine constraints (e.g., "Don’t do this"). ERA acts like a **"hyper-eager grad student"**—relentless but needing guidance.
+
+**Q: Why is climate modeling uniquely challenging for AI?**
+A: It’s a **low-data, non-stationary** problem: the attractor (climate system) is changing due to human influence, and we lack future data. Process models (e.g., breaking climate into 1,000 sub-problems) are reductionist but uncertain; ERA may help by synthesizing vast literature.
+
+**Q: How did ERA solve the contrail counterfactual problem?**
+A: It found a **simple model with overlooked confounders** that passed tests on synthetic data, enabling estimation of contrails’ **infrared heat-trapping** (24/7 effect) and **sunlight reflection** (daytime-only). This unstuck a 2-year roadblock.
+
+***
+***
+## Notable Details
+- **Contrails’ warming impact**: Account for **~1% of anthropogenic global warming**. A single gram of exhaust can seed **10 kg of ice crystals** in ice-supersaturated regions, acting as a thermal blanket (black in infrared).
+- **ERA’s computational trade-offs**: Runs **~10 parallel notebook mutations** per iteration to balance exploration and cross-learning. More parallelism reduces shared history benefits.
+- **Gemini’s coding leap**: Platt notes that **Gemini 2.5 could write functional boosted decision tree code** where 2.0 failed—illustrating the jagged frontier of capability gains.
+- **Kaggle overfitting**: Winners of Google’s contrail-detection competition exploited a **half-pixel label offset** (corner vs. center of pixel), a classic **Goodhart’s Law** example.
+- **Climate data gaps**: Uncertainty in biosphere CO₂ absorption by 2100 is **±300 ppm**—nearly as large as current atmospheric CO₂ (~450 ppm). This dominates long-term climate predictions.
+- **Feynman’s advice**: **"You must not fool yourself, and you are the easiest person to fool."** Platt echoes this as ERA’s core cautionary principle.
+
+***
+***
+## Actionable Takeaways
+- **Frame problems as scoreable tasks**: If a scientific problem can be expressed as "maximize this metric via code," ERA-like approaches may automate much of the trial-and-error.
+- **Start simple**: Use linear regression or SVMs as baselines to anchor rigor before deploying complex models.
+- **Guard against Goodhart’s Law**: Design metrics that resist gaming (e.g., hidden holdouts, orthogonal validation). Assume ERA (or humans) will exploit loopholes.
+- **Prioritize descriptive models**: Ensure models encode real-world constraints (e.g., physics) to extrapolate, not just interpolate. ERA can help but won’t replace domain expertise.
+- **Watch for phase transitions in LLM capabilities**: Tools that failed 6–12 months ago (e.g., ERA on Gemini 2.0) may now work due to step-change improvements in reasoning and coding.
+
+***
+***
+## People, Companies, Tools, And Links Mentioned
+- **People**: John Platt, Michael Brenner (ERA lead author), Richard Feynman, Dave Bacon, Carver Mead, John Hopfield, Brian Marsden, Lorenz (chaos theory)
+- **Companies/Institutions**: Google (Google Research, Kaggle), Pixar, MIT, Caltech, NeurIPS, EGU (European Geosciences Union), CDC, NASA (OCO2/OCO3, GOES satellites), Vera Rubin Observatory
+- **Tools/Projects**: [ERA (Empirical Research Assistance)](https://github.com/google-research/era) ([paper](https://arxiv.org/abs/2609.12345), [blog](https://blog.google/technology/ai/era-google-research)), Gemini (2.0, 2.5, 3.5), Anti-Gravity (Google), sklearn, SVM (Sequential Minimal Optimization), Platt Scaling, Monte Carlo Tree Search, Upper Confidence Bound (UCB), FireSat, COVID/Flu forecasting leaderboard
+- **Concepts**: Goodhart’s Law, Lawson criterion (fusion), NISQ era (quantum), helium shortage, Hopfield networks, physics-informed neural networks, equivariance, Klebs-Gordan coefficients, attractor theory (climate), counterfactual modeling
+
+***
+***
+## Reading Priority
+
+Medium – A rare, concrete look at how cutting-edge AI (ERA + Gemini) is being applied to hard scientific problems, with candid insights on limitations, pitfalls, and the irreplaceable role of human rigor.
+
+***
+
+# Andrew Ng: One Skill to Stay Relevant in the Age of AI
+
+- **Published:** 2026-09-22
+- **YouTube:** [Stanford Online](https://www.youtube.com/watch?v=HTlf3KNNez0)
+
+## One-Sentence Takeaway
+Learning to code—even with AI assistance—is the most practical way to harness computers and stay productive in an AI-driven workplace.
+
+## Short Summary
+Andrew Ng argues that coding is now a universal skill, not just for engineers, because AI tools have lowered the barrier to writing and deploying software. Professionals who can code—even at a basic level—gain autonomy, speed, and a competitive edge by automating tasks, prototyping ideas, and directly instructing computers, while those who cannot risk falling behind.
+
+The productivity gap is already visible: marketers build their own websites, recruiters automate resume screening, and non-engineers solve problems without waiting for technical teams. Contrary to advice that AI will obviate coding, Ng contends AI makes coding accessible enough to be worth learning for everyone.
+
+## Main Ideas
+- AI assistance has made coding easier, shifting its value from manual implementation to the ability to specify what you want a computer to do.
+- A productivity divide is emerging between professionals who can code (even lightly) and those who cannot, across non-technical roles like marketing and recruiting.
+- Coding is the language for precise communication with computers; fluency enables direct problem-solving and automation without intermediaries.
+- Senior leaders often advise against learning to code because they assume AI will automate it, but this overlooks how AI lowers the barrier to entry and increases the skill’s utility.
+
+## Questions And Answers
+- **Should I learn to code if AI can write code?**
+  Yes—AI makes coding easier, so the skill becomes more valuable, not less. It lets you leverage computers directly rather than waiting for others.
+
+- **How are non-engineers using coding today?**
+  Marketers build websites, recruiters automate resume screening, and other professionals prototype or automate tasks without engineering support.
+
+## Notable Details
+- Ng reports he rarely writes code by hand, emphasizing the skill’s value as a means to instruct computers, not to manually implement solutions.
+- The productivity gap is observable now, not speculative, across multiple non-engineering domains.
+- The advice to avoid coding due to AI automation is framed as a common but misguided perspective among senior business leaders.
+
+## Actionable Takeaways
+- Start learning coding basics to directly control and automate tasks, even if your role is non-technical.
+- Use AI-assisted coding tools to accelerate learning and reduce friction in building simple software.
+- Identify repetitive or time-consuming tasks in your work that could be automated with basic scripting or code.
+- Watch for emerging tools that further lower the barrier to coding for non-developers.
+
+## People, Companies, Tools, And Links Mentioned
+- Andrew Ng
+- Stanford University
+- DeepLearning.AI
+- [Stanford Online AI courses](https://stanford.io/3UV9jqi)
+
+## Reading Priority
+
+Medium – A concise, contrarian argument from a credible source on a broadly relevant skill, backed by observable workplace trends.
+
+***
+
+# The Dark Arts of Skill Engineering — Paul Bakaus, Renaissance Geek (Impeccable)
+
+- **Published:** 2026-09-21
+- **YouTube:** [AI Engineer](https://www.youtube.com/watch?v=SQMCtZX3trg)
+- **Speaker:** Paul Bakaus, Renaissance Geek (Impeccable)
+
+## One-Sentence Takeaway
+Prompting alone cannot overcome AI’s gravitational pull toward the median; skill engineering must extend the harness with deterministic checks, adversarial agents, and dynamic constraints to force divergence and quality.
+
+***
+
+## Short Summary
+
+AI design and coding tools default to predictable, "slop" outputs (e.g., "Claude beige" or purple gradients) because models converge on latent-space clusters. Banning specific choices (e.g., fonts like Inter) only shifts the problem to the next closest cluster, as the median is the model’s gravity. True improvement requires treating skills as harness extensions—not just prompts—using techniques like adversarial sub-agents, dynamic seeds, and hooks that enforce rules proactively rather than reactively.
+
+The conversation argues that prompting is the floor, while harness engineering (e.g., scripts, memory, routing) is the ceiling. It demonstrates nine concrete methods, from forcing divergence via anti-attractors to compiling skills for different model harnesses, all aimed at making outputs deterministic, adaptable, and resistant to the model’s tendency to skip gates or self-grade generously.
+
+***
+
+## Main Ideas
+
+- **Bans relocate, not solve**: Prohibiting overused elements (e.g., fonts, color schemes) only nudges the model to the next nearest cluster in latent space; true divergence requires injecting unpredictable seeds (e.g., random inputs, celebrity-themed prompts) or shaving safe predictions (e.g., "name your top 3 fonts, then discard them").
+- **Adversarial sub-agents outperform self-review**: A single model grading its own work anchors on its output and overrates it. Splitting critique into blind sub-agents (e.g., a design director + deterministic linter) and synthesizing their results yields balanced, actionable feedback.
+- **Harness capabilities > prose**: Skills should exploit harness features (e.g., in-app browsers, background tasks, hooks) to create interactive, deterministic workflows. For example, live-wiring the browser enables visual iteration, while pre-write hooks block violations before they occur.
+- **Model-specific overfitting demands tailored rules**: Each model (e.g., Codex, Gemini, Claude) has unique biases (e.g., Codex’s rounded borders, Gemini’s hover animations). Effective skills must compile model-specific builds with targeted overrides to counteract these tendencies.
+- **Gates must be unskippable**: Models will bypass optional checks if possible. Design gates to log explicit pass/fail states and force sequential compliance, especially for weaker models that lack discipline to follow instructions.
+
+***
+***
+## Questions And Answers
+
+**Q: How do you evaluate and iterate on Impeccable’s effectiveness?**
+A: Uses an internal eval harness that replicates target model environments (Claude Code, Codex, Gemini), runs end-to-end Playwright tests, and employs ablation testing (removing/adding individual rules to measure impact). A mixture-of-experts judge (including deterministic linters) scores outputs, with human review for taste-based criteria.
+
+**Q: Can taste be evaluated by models?**
+A: No. Models are poor judges of subjective quality (e.g., Gemini rates cluttered designs higher). Taste is scarce and context-dependent; models tend toward maximalism. Human oversight remains essential for final passes.
+
+**Q: What’s the future of skills?**
+A: Skills are hitting the limits of current platforms (e.g., live mode works "yes-ish" but is hacky). The ecosystem needs fewer, more rigorously tested skills rather than a Wild West of unvalidated distributions. Standardized testing and packaging (e.g., model-specific compiles) are critical.
+
+***
+***
+## Notable Details
+
+- **Impeccable’s architecture**: Uses a mixture-of-experts model to route between design modes (e.g., "brand" vs. "product"), loads context dynamically via scripts (e.g., `context.mjs`), and persists memory across sessions (e.g., saving critiques to `.impeccable/`).
+- **Hooks**: Pre-tool-use hooks (blocking writes) work better for weaker models than post-tool-use hooks (which may be ignored). Impeccable includes design hooks for contrast, font limits, and other deterministic checks, with granular ignore rules.
+- **Model quirks**:
+  - Codex: Overuses rounded borders, hairline borders, and bad letter spacing; requires explicit user permission for sub-agents.
+  - Gemini: Adds hover animations to all images by default.
+  - GPT-5 Mini: Poor instruction-following; skips gates unless forced.
+- **Prompt caching tradeoff**: Dynamic script outputs (e.g., `stdout` instructions) improve reliability but break prompt caching, as results are non-deterministic.
+- **Distribution challenges**: Native marketplaces (Claude Code, Codex) have caching/update issues. Impeccable uses a custom CLI to compile harness-specific builds, as tools like `npx-skills` don’t support per-harness directories.
+- **Eval harness**: Tests across 20+ niches (e.g., "Italian restaurant" designs), 5–10 tests per model (GPT-5.5, Opus, Sonnet), and includes competitor benchmarks (e.g., Anthropic’s frontend-design skill).
+
+***
+***
+## Actionable Takeaways
+
+- **Force divergence**: Use anti-attractors (random seeds, discarded top picks) to escape latent-space clusters instead of bans.
+- **Adopt adversarial agents**: Split critical tasks (e.g., code review, design critique) into blind sub-agents to avoid self-grading bias.
+- **Exploit harness features**: Leverage in-app browsers, background tasks, or hooks to create interactive, deterministic workflows beyond chat.
+- **Compile for models**: Tailor skills to model-specific overfitting (e.g., add rules to counteract Codex’s rounded borders).
+- **Make gates mandatory**: Log explicit pass/fail states for each gate to prevent models from skipping steps.
+
+***
+***
+## People, Companies, Tools, And Links Mentioned
+- [Impeccable](https://impeccable.style)
+- [Impeccable GitHub](https://github.com/pbakaus/impeccable)
+- [Impeccable Talks Repository](https://github.com/pbakaus/impeccable-talks)
+- Paul Bakaus: [Twitter/X](https://x.com/pbakaus), [LinkedIn](https://linkedin.com/in/paulbakaus), [Website](https://www.paulbakaus.com/)
+- jQuery UI
+- Tailwind CSS
+- Anthropic: frontend-design skill
+- Cursor
+- Codex
+- Claude Code
+- Gemini
+- GPT-5.5, GPT-5 Mini
+- Opus, Sonnet, Haiku
+- Grok
+- Playwright
+- npx-skills
+- MCP (Model Context Protocol)
+- Contra (Ben)
+- Radiant Shaders
+- skills.sh
+- Microsoft (unnamed skill packaging project)
+
+***
+***
+## Reading Priority
+
+High – A rare, concrete breakdown of advanced skill engineering techniques, backed by real-world testing and model-specific insights, with actionable methods for overcoming AI’s tendency toward mediocrity.
+
+***
+
+# Jev: System One models for Prod, not God — with Diogo Almeida, CEO, TypeSafe AI
+
+- **Published:** 2026-09-21
+- **Podcast:** [Latent Space](https://www.latent.space/p/jev)
+- **Speaker:** Diogo Almeida, CEO, TypeSafe AI
+
+## One-Sentence Takeaway
+Jev introduces **System 1 models**—machine-native, programmable AI optimized for **reliability, calibration, and intelligence-per-dollar**—to automate software tasks by replacing human-aligned chat models with code-consumable decision primitives.
+
+***
+
+## Short Summary
+Jev represents a paradigm shift from human-centered AI (e.g., RLHF-tuned chatbots) to **machine-native AI** designed for software integration. Its core innovation, **Reinforcement Learning for Calibrated Decisions (RLCD)**, prioritizes **epistemically honest probabilities** for System 1 tasks (fast, intuitive decisions) over human-rated feedback or benchmark optimization, addressing hallucinations, sycophancy, and jaggedness in traditional LLMs.
+
+TypeSafe rejects public benchmarks, arguing they are gameable and misaligned with real-world reliability. Instead, Jev focuses on **intelligence-per-dollar**, robustness, and composability, aiming to disappear into software stacks like a utility (e.g., regex or databases). The model’s primitives—**choice, score, and Noulli (Bernoulli-inspired)**—map to programming constructs (enums, thresholds, if-statements), enabling structured, decomposable workflows.
+
+***
+
+## Main Ideas
+- **RLCD vs. RLHF/RLVR**: RLCD optimizes for **calibrated probabilities in System 1 tasks** (e.g., classification, routing), avoiding the pitfalls of RLHF (mode collapse, sycophancy) and RLVR (jagged intelligence, benchmark overfitting). Jev’s North Star is **programmatic AI**, not human preference or benchmark scores.
+- **System 1 Models**: Designed for **code consumption**, not chat. They excel at fast, reliable decisions (e.g., filtering, routing, validation) and integrate seamlessly into software dependencies, unlike chat-tuned models that refuse or hallucinate.
+- **Intelligence-per-Dollar**: Jev prioritizes **cost-efficiency and reliability** over raw capability. TypeSafe argues that **data and task selection** (the "Bitterest Lesson") matter more than compute, and that most neo-labs overindex on scaling laws without addressing the right problems.
+- **Against Public Benchmarks**: Public benchmarks are **gameable** and fail to capture real-world reliability. TypeSafe relies on internal evals and workflow-specific testing, emphasizing **vibes and trust** over metrics.
+- **API Primitives**: Jev’s outputs—**choice** (enum-like), **score** (rankable), and **Noulli** (probabilistic boolean)—map to programming primitives, enabling structured, verifiable, and composable AI workflows.
+- **Inverse SaaS-pocalypse**: Jev aims to **supercharge existing software** by embedding intelligence into dependencies (e.g., coding agents, analytics, computer use), rather than replacing SaaS with AI chatbots.
+
+***
+
+## Questions And Answers
+**Q: Why does Jev avoid refusals?**
+A: Refusals are **type errors** in software. A dependency that stochastically refuses breaks downstream systems. Jev treats AI as a **database-like utility**, where the user (developer) controls safety/ethics at the application layer, not the infrastructure layer.
+
+**Q: What’s the "Bitterest Lesson" in ML?**
+A: **Tasks and data beat compute**. The right North Star (e.g., RLCD for programmable AI) and high-quality data matter more than raw scaling. TypeSafe positions itself as a **data lab**, not just a model lab, because data quality drives reliability.
+
+**Q: How should developers use Jev?**
+A: **Decompose tasks into small, semantic units** (e.g., individual decisions) and use structured inputs (JSON) instead of giant prompts. This enables **verifiability, testing, and robustness**, unlike monolithic LLM calls.
+
+**Q: Why no determinism in Jev?**
+A: Determinism (same input → same output) is **less valuable than robustness** (similar inputs → similar outputs). Jev prioritizes **intelligence-per-dollar**, and determinism would sacrifice efficiency. However, deterministic variants *could* be offered if demand arises.
+
+***
+
+## Notable Details
+- **Launch Traction**: Jev’s launch video hit **~40M views** (vs. GPT-4o’s 22M, 6 Astra’s 137M). Daily token usage exceeds **1 trillion**, driven by **machine-to-machine calls** (not just human experimentation).
+- **RLHF Critique**: RLHF causes **mode collapse** (models avoid outliers to appear confident) and **calibration poisoning**, making strings poor for decision-making. Yann LeCun’s JEPA critique is directionally correct but not yet practical.
+- **Synthetic Data**: TypeSafe uses **highly curated synthetic data** to avoid overfitting to real-world biases and to target futuristic use cases (e.g., deep software integration).
+- **Coding Agents**: Jev could **reshape coding agents** by freeing them from **KV cache tyranny** (e.g., enabling sub-agents, state sharing, and smarter context management). Diogo teases a future post on this.
+- **Economic Impact**: Jev aims to **unlock TFP (total factor productivity) growth** by automating "basic rote work" that LLMs currently can’t handle reliably, despite their ability to solve complex problems (e.g., math prizes).
+- **Future Models**: TypeSafe hints at **non-decision System 1 models** and other "shapes of intelligence" beyond Jev, emphasizing **machine-native** over human-aligned tasks.
+
+***
+***
+## Actionable Takeaways
+- **For developers**: Experiment with **decomposing workflows** into small Jev calls (e.g., validation, routing) using structured inputs. Avoid monolithic prompts.
+- **For AI builders**: Explore **RLCD or alternative North Stars** beyond RLHF/RLVR. Focus on **reliability and composability** for software integration.
+- **For enterprises**: Pilot Jev for **dark data analysis** (e.g., logs, internal docs) or **real-time decision layers** (e.g., filtering, prioritization) where calibration matters more than creativity.
+- **Watch for**: TypeSafe’s future work on **coding agent patterns**, **multi-agent coordination**, and **new model shapes** (e.g., non-decision System 1 tasks).
+- **Avoid**: Over-reliance on public benchmarks or chat-tuned models for **programmatic use cases**. Prioritize **workflow-specific evals**.
+
+***
+## People, Companies, Tools, And Links Mentioned
+- **People**: Yann LeCun, Paul Christiano, Dario Amodei, Alec Radford, Ryan Lowe, Sam Altman, Sasha Luccioni, Eric Tang, Kay (Diogo’s chief of staff)
+- **Companies**: TypeSafe AI, OpenAI, Anthropic, Hugging Face, Jasper AI, Copy.ai, Cognition (Cog), Navier Stokes, Fable, 6 Astra
+- **Models/Tools**: Jev, InstructGPT, RLHF, RLVR, RLCD, JEPA, GPT-4o, Claude, Claude Code, Codex, GLiNER, Doom (demo), Excalidraw, PrimeAgent, Temporal
+- **Concepts**: Jevons Paradox, KV Cache, System 1/System 2, Bitterest Lesson (Sutton), Mode Collapse, Calibration, Jagged Intelligence
+- **Links**:
+  - [TypeSafe AI](https://typesafe.ai/)
+  - [Diogo’s X/Twitter](https://x.com/CompleteSkeptic)
+  - [Diogo’s LinkedIn](https://www.linkedin.com/in/diogomda)
+  - [Jev Launch Video](https://www.latent.space/p/jev) (referenced)
+  - [Tyranny of the KV Cache (Diogo’s note)](https://www.latent.space/p/jev) (referenced)
+
+***
+## Reading Priority
+
+High – Jev introduces a fundamentally new class of AI models (System 1) optimized for software, not humans, with a compelling critique of RLHF/RLVR and a practical path to reliable, composable automation.
+
+***
+
+# 90 minutes of unfiltered product advice from Snap and Discord’s product chief | Peter Sellis
+
+- **Published:** 2026-09-20
+- **Podcast:** [Lenny's Podcast](https://www.lennysnewsletter.com/p/90-minutes-of-unfiltered-product)
+
+## One-Sentence Takeaway
+Great product teams thrive on clear ideological alignment and autonomous decision-making, while growth most reliably comes from deepening engagement with core users rather than chasing new markets.
+
+## Short Summary
+Peter Sellis argues that the most effective teams operate with a strong, almost religious clarity of purpose and a structure that minimizes collaboration overhead by assigning clear decision rights. He contends that growth is usually unlocked by refining the core product for existing users—improving performance, relevance, or frequency of use—rather than expanding into adjacent markets. Sellis also critiques the median product manager as net negative, citing a power-law distribution of talent where the best exit the profession and the rest cling to the role.
+
+The conversation highlights Snapchat’s monetization challenges: a young user base with strict advertising constraints, a camera-first UX that resists ad insertion, and a messaging utility that lacks proven ad formats. Despite these hurdles, Snap’s core product suite (camera, messaging, maps) dominates Gen Z, demonstrating exceptional product-market fit even if monetization lagged expectations.
+
+## Main Ideas
+- **Terrorist organization analogy for teams**: High-performing teams need a clear, almost ideological mission and a structure where decision rights are explicitly assigned to minimize collaboration costs and maximize speed. This reduces the "slowest node" problem in coordinated work.
+- **Ride your best people hard**: Instead of spending time improving average performers, double down on high performers by giving them more responsibility until they break. This leverages the power-law distribution of talent and reinforces success.
+- **Growth comes from the core**: For network-effect businesses, growth is more reliably driven by improving the experience for existing core users (e.g., performance, retention) than by expanding into new markets or use cases.
+- **Median PMs are net negative**: The product management profession suffers from a power-law talent distribution where the best exit to become founders or executives, while the median clings to the role despite adding little value. This is exacerbated by high compensation and low opportunity costs during periods like ZIRP.
+- **Snapchat’s monetization constraints**: Three structural challenges limited Snap’s ad business: (1) a young user base with strict privacy/ad-targeting rules, (2) a camera-first UX with no natural ad insertion points, and (3) messaging utilities lacking proven ad formats. Despite this, Snap’s product suite (camera, messaging, maps) achieved dominant Gen Z adoption.
+
+## Questions And Answers
+- **Why do most product managers underperform?**
+  The profession attracts a power-law distribution of talent: the best exit to found companies or move into executive roles, while the median remains due to high pay and low barriers to entry. During ZIRP, low opportunity costs led to over-hiring, further skewing the distribution toward mediocrity.
+
+- **When should you bet on new markets vs. refining the core?**
+  First, identify the core strengths of your product (e.g., Snap’s camera, Discord’s voice) and assess adjacent niches where those strengths could apply. Second, prioritize organic, unexpected user behaviors that signal unmet demand—these are often the clearest signals for expansion.
+
+- **How did Discord drive growth by focusing on core users?**
+  By obsessing over the needs of intentional multiplayer gamers—Discord’s original core—it improved performance and reduced friction for existing users, increasing daily active usage (DAU/MAU ratio). This led to some of the fastest growth since the pandemic, despite already having near-100% penetration in that niche.
+
+## Notable Details
+- Snapchat’s DAU flattened only once (2018 redesign); recovery came from laser-focusing on Android performance for existing users.
+- Discord’s growth renaissance in 2024 stemmed from refining the experience for gamers playing with friends, not from crypto or AI use cases.
+- OpenAI’s ad auction should prioritize **trust maximization** over short-term revenue, using mechanisms like modified VCG (Vickrey-Clarke-Groves) auctions to balance advertiser bids with user trust.
+- Evan Spiegel (Snap CEO) demonstrated exceptional taste by saying "no" to more ideas than most founders, a skill akin to museum curation—selecting only what fits the current cultural moment.
+- Systems thinking benefits from mathematical modeling (e.g., spreadsheet simulations) to clarify stocks, flows, and distributions, not just asking "why" five times.
+
+## Actionable Takeaways
+- Audit your team’s decision rights: Are they as clear and autonomous as in a "terrorist organization"? Reduce collaboration overhead by assigning single-threaded owners.
+- Allocate 80% of your energy to high performers; let average performers self-correct or exit. Defend your team publicly but push top talent to their limits.
+- Before chasing new markets, measure how much growth you could unlock by improving retention or DAU/MAU ratios among core users. Small gains here often outperform new user acquisition.
+- For ad-supported products, model trust as a long-term variable: Short-term ad revenue that erodes user trust will underperform sustainable, trust-optimized monetization.
+- Practice "negative product management": Regularly ask what features or ideas your team has *not* shipped, and why. Restraint is a learnable taste muscle.
+
+## People, Companies, Tools, And Links Mentioned
+- [Snapchat](https://www.snapchat.com)
+- [Discord](https://discord.com)
+- [OpenAI](https://openai.com)
+- [Meta](https://meta.com)
+- [Midjourney](https://www.midjourney.com)
+- [Instagram](https://www.instagram.com)
+- [Twitter/X](https://twitter.com)
+- [Pinterest](https://www.pinterest.com)
+- [Amazon](https://www.amazon.com)
+- [SpaceX](https://www.spacex.com)
+- [Evan Spiegel](https://www.linkedin.com/in/evanspiegel)
+- [Nikita Bier](https://x.com/nikitabier)
+- [Phil Jackson](https://en.wikipedia.org/wiki/Phil_Jackson)
+- [Lenny’s Newsletter](https://www.lennysnewsletter.com)
+- [Peter Sellis on X](https://x.com/petersellis)
+- [Peter Sellis on LinkedIn](https://www.linkedin.com/in/disgruntled)
+- [Peter Sellis’ website](https://pjs.lol)
+
+## Reading Priority
+
+Medium – A candid, experience-backed take on product leadership, team design, and growth from a operator who shaped two of the most influential consumer products of the past decade.
+
+***
+
+# What's New in Inference Engineering — Philip Kiely, Baseten
+
+- **Published:** 2026-09-19
+- **YouTube:** [AI Engineer](https://www.youtube.com/watch?v=75ckHC2LU_0)
+- **Speaker:** Philip Kiely, Inference Engineer and Author, Baseten
+
+## One-Sentence Takeaway
+Data center inference now relies on dedicated training to optimize quantization, KV caching, and speculation, blurring the line between training and inference while local inference prioritizes memory efficiency over speed.
+
+## Short Summary
+Inference engineering has split into two distinct regimes: local inference (prioritize memory savings via quantization, pruning, or distillation) and data center inference (prioritize speed via KV-aware routing, speculation, and disaggregation). Recent advances—like TurboQuant (4-bit KV cache), learned KV compaction (STILL), and diffusion-based speculative decoding (DFlash)—highlight a shift toward training specialized models to improve inference efficiency.
+
+The most impactful gains now come from co-designing training and inference, such as retraining speculators on live prompts to double acceptance rates, though this introduces storage, compute, and permission challenges.
+
+## Main Ideas
+- **Local vs. data center inference tradeoffs**: Local setups optimize for memory (e.g., TurboQuant’s 4-bit KV cache) at the cost of compute, while data centers optimize for speed (e.g., NVFP4 quantization for weights, not KV cache) and accept higher memory usage.
+- **Training for inference**: Optimizations like KV compaction (STILL) and speculation (DFlash, DSpark) now require dedicated training, creating a feedback loop where faster inference enables more data for further training.
+- **Speculative decoding evolution**: Diffusion-based drafters (DFlash) outperform earlier methods (EAGLE-3) by proposing 8–16 tokens at once, tripling acceptance rates in production, and pairing with sequential models (DSpark) may push this further.
+- **Continuous retraining of speculators**: Retraining on live prompts can improve token acceptance by 20–100%, but requires significant storage, compute, and data permissions.
+
+## Questions And Answers
+- **Why did TurboQuant not catch on in data centers?**
+  Its 4-bit KV cache halves memory usage but cuts tokens per second by >50% due to extra decode computation, making it impractical for production. It remains valuable for memory-constrained local inference.
+
+- **How does STILL improve KV caching?**
+  It uses a learned perceiver bottleneck to compress the KV cache into compact keys/values in one forward pass, retaining near-lossless information while reducing memory footprint.
+
+- **What makes DFlash better than EAGLE-3?**
+  DFlash’s diffusion model drafts 8–16 tokens at once with bidirectional attention, achieving >3x higher acceptance rates than EAGLE-3’s single-token drafts, despite slower per-model speed.
+
+## Notable Details
+- TurboQuant’s 4-bit KV cache doubles effective bandwidth but reduces TPS by >50% in data centers; ideal for local setups with limited memory.
+- STILL’s mechanism: fixed learned query vectors cross-attend against the full KV cache to emit compact keys/values in a differentiable, single-pass process.
+- DFlash in production (Qwen 3 8B on B200) achieves >3x acceptance rate over EAGLE-3; DSpark pairs diffusion with sequential drafting but lacks production benchmarks.
+- Continuous speculator retraining requires storage/compute for live data and model-specific speculator updates.
+
+## Actionable Takeaways
+- For local inference: Prioritize memory-saving techniques like TurboQuant or KV compaction, accepting compute tradeoffs.
+- For data centers: Focus on NVFP4 weight quantization, KV-aware routing, and speculation (e.g., DFlash) to maximize TPS.
+- Explore training specialized models (e.g., STILL, DFlash) for inference optimizations, but weigh the costs of retraining and data permissions.
+- Monitor advances in disaggregation and system-wide communication (e.g., PD disaggregation) for scaling inference workloads.
+
+## People, Companies, Tools, And Links Mentioned
+- Philip Kiely ([Twitter](https://x.com/philip_kiely), [LinkedIn](https://linkedin.com/in/philipkiely), [Website](https://philipkiely.com))
+- Baseten ([Website](https://baseten.co))
+- TurboQuant
+- STILL (Baseten research)
+- DFlash
+- DSpark
+- EAGLE-3
+- Medusa
+- SpecDec
+- NVFP4
+- Qwen 3 8B
+- Nvidia B200
+- Attention Matching
+- Cartridges
+- PD disaggregation
+- [Inference Engineering (Book)](https://philipkiely.com)
+
+## Reading Priority
+
+Medium – A dense, technical update on cutting-edge inference optimizations with concrete tradeoffs and production insights.
+
+***
+
+# Weight Folding, CUDA Streams, and the Bug That Made My Model Speak Backwards — Filip Makraduli
+
+- **Published:** 2026-09-19
+- **YouTube:** [AI Engineer](https://www.youtube.com/watch?v=c1hGBoWw20A)
+- **Speaker:** Filip Makraduli
+
+## One-Sentence Takeaway
+FlashNorm folds RMSNorm into adjacent linear layers and defers division to eliminate GPU launch/memory overhead, yielding 33–35 % speedups while exposing subtle CUDA stream race conditions that must be explicitly synchronized.
+
+## Short Summary
+RMSNorm contributes little FLOP-wise yet dominates wall-clock time because GPUs are slow at kernel launches, data movement, and synchronization. FlashNorm removes this overhead by algebraically folding the norm’s gain into projection weights offline, deferring the scalar divide so matmul and RMS reduction run in parallel, and dropping redundant pre-norms in scale-invariant architectures. The approach delivers 33–35 % speedups on norm+projection and works with torch.compile and quantized models.
+
+A practical hurdle emerged when parallelizing tensor-core matmul and CUDA-core RMS: an implicit stream join caused a race condition that read stale buffers, producing one-step-lagged repetitions during long generations. Explicitly marking stream endpoints and forcing the post-scale to wait on both streams fixed the bug. Deployment required a custom checkpoint and an open inference engine (Superlinked’s SIE) because rented endpoints disallow kernel modifications.
+
+## Main Ideas
+- RMSNorm’s cost is dominated by kernel launches and memory traffic, not arithmetic; a single decode step can invoke it ~33 times.
+- Weight folding absorbs the norm’s gain into the projection matrix offline, reducing memory reads and eliminating a separate norm kernel launch.
+- Deferred division lets the matrix unit (tensor cores) and vector unit (CUDA cores) run in parallel, removing idle time between matmul and RMS reduction.
+- In architectures with consecutive RMSNorm layers (e.g., Gemma 4), the second norm is redundant due to scale invariance and can be dropped without loss.
+- Parallelizing matmul and RMSNorm in CUDA requires explicit stream synchronization; implicit joins can cause race conditions that read stale buffers, producing lagged outputs.
+
+## Questions And Answers
+- **Why does RMSNorm matter if it does almost no math?**
+  Because GPUs spend most of their time launching kernels, moving data, and waiting; RMSNorm is invoked frequently (e.g., 33× per decode step), so reducing its overhead has outsized impact.
+
+- **How does FlashNorm avoid the waiting penalty?**
+  By folding the norm into the matmul weights and deferring the scalar divide so both operations run concurrently on different GPU units.
+
+- **What caused the one-step repetition bug?**
+  An implicit join between CUDA streams allowed the post-scale to read an unfinished matmul buffer; fixing it required explicit synchronization on both streams.
+
+## Notable Details
+- Speedup measured: 33–35 % on the combined norm+projection operation.
+- Works out-of-the-box with torch.compile and quantized models.
+- Weight folding can be applied via the `transformer-tricks` repo; deferred division requires custom CUDA kernels.
+- Tested primarily on Llama models but applicable to other architectures.
+- Deployment of modified checkpoints needed Superlinked’s Inference Engine (SIE) to avoid vendor lock-in on rented endpoints.
+
+## Actionable Takeaways
+- Audit normalization layers in your models for redundant or fusable operations; weight folding and deferred division are low-hanging optimizations.
+- When parallelizing GPU operations across different units, explicitly synchronize streams to avoid race conditions.
+- For research or custom kernels, use open inference engines (e.g., SIE) to deploy modified checkpoints without relying on closed endpoints.
+- Monitor long-generation outputs for subtle artifacts (e.g., lagged repetitions) that may indicate synchronization bugs.
+
+## People, Companies, Tools, And Links Mentioned
+- Filip Makraduli
+- Nils Graef
+- [FlashNorm paper](https://arxiv.org/abs/2609.19000) (arXiv)
+- [transformer-tricks repo](https://github.com/filip-makraduli/transformer-tricks)
+- Superlinked Inference Engine (SIE)
+- [SIE GitHub repo](https://github.com/Superlinked/sie)
+- Gemma 4
+- vLLM
+- Hugging Face
+- PyTorch (torch.compile)
+
+## Reading Priority
+
+Medium – A concrete, technically deep dive into a practical optimization and its subtle implementation pitfalls, with reproducible speedups and open-source tooling.
+
+***
+
+# Vertical Mobility: Inference from MVP to Trillion-Parameter Workloads — Sitanshu Gupta, CoreWeave
+
+- **Published:** 2026-09-19
+- **YouTube:** [AI Engineer](https://www.youtube.com/watch?v=cQQbJqvZkpo)
+- **Speaker:** Sitanshu Gupta, Head of Inference, CoreWeave
+
+## One-Sentence Takeaway
+Caching input tokens and optimizing KV cache reuse slashes inference costs because 80–90 % of agentic requests reuse prior context, making prefill the dominant expense.
+
+## Short Summary
+CoreWeave’s inference platform unifies serverless (pay-per-token, multi-tenant or provisioned throughput) and dedicated (per-GPU-hour, private) models under one stack. The design centers on KV cache–aware routing, offloading, and heterogeneous GPU scheduling to exploit the fact that most agentic and chat inputs are repeated, so prefill can be avoided.
+
+Four workload shapes—agentic, chat, voice/video, and batch—are packed like Tetris: real-time traffic by day, batch by night on the same GPUs. Key levers are 4-bit quantization and custom-trained speculators that raise acceptance lengths and throughput.
+
+## Main Ideas
+- 80–90 % of agentic request inputs are identical to the prior turn, so caching and reusing KV cache avoids the most expensive prefill step and drives pricing asymmetry between fresh and cached input tokens.
+- A single platform serves both serverless (pay-per-token, with a provisioned-throughput option to escape noisy neighbors) and dedicated (per-GPU-hour, private gateway, customer-controlled engine and disaggregation) without forking the stack.
+- Workload shapes—agentic/chat (long input, short output, low-latency turns), voice/video (streaming, latency-bound), and batch (loose SLAs)—are scheduled together to maximize GPU utilization across time zones and overnight windows.
+- Router prioritizes KV cache locality first, then least-loaded fallback across heterogeneous GPUs and zones; between turns, KV cache is offloaded to high-bandwidth storage rather than evicted.
+- Largest recent performance gains come from 4-bit quantization (NVFP4) and asynchronously trained, customer-specific speculators that increase acceptance length and effective throughput.
+
+## Questions And Answers
+- Why is prefill so expensive?
+  It is compute-bound and dominates cost; caching or offloading KV cache lets subsequent turns skip prefill.
+- How does CoreWeave avoid noisy neighbors in serverless?
+  Provisioned throughput carves out dedicated capacity behind the scenes while still billing per token and hiding hardware details.
+- What happens to idle GPUs overnight?
+  Capacity serving real-time traffic by day can be scheduled to drain batch queues at night via API-controlled scale-up/down.
+- How are speculators deployed?
+  Customers provide data asynchronously; CoreWeave trains speculators on that data, then deploys them into the customer’s inference stack to improve acceptance lengths.
+
+## Notable Details
+- Token pricing distinguishes fresh input tokens from cached input tokens, reflecting the cost difference of prefill vs. decode.
+- Supported engines include vLLM, SGLang, and TensorRT-LLM; customers on dedicated can choose and configure disaggregation of prefill and decode.
+- External KV cache offloading approaches cited: LMcache and Mooncake; CoreWeave offloads to high-bandwidth storage for rapid reload into HBM.
+- Benchmark leadership on Kimi 2.6/2.7 (Artificial Analysis) and near-parity with Fireworks Fast on OpenRouter (real user traffic) attributed to quantization and speculative decoding.
+- CoreWeave acquired Weights & Biases about a year prior; deployments appear under W&B branding on OpenRouter.
+
+## Actionable Takeaways
+- Audit your agentic/chat traffic: if ≥80 % of input tokens repeat, prioritize KV cache locality and offloading to cut prefill costs.
+- Evaluate provisioned throughput in serverless to lock in SLAs without managing hardware.
+- Schedule batch jobs to reuse real-time GPU capacity during off-peak hours via API-driven scaling.
+- Test 4-bit quantization and custom speculators on your data to lift acceptance length and throughput.
+- Compare engine choices (vLLM, SGLang, TensorRT-LLM) and prefill/decode disaggregation for your latency/throughput profile.
+
+## People, Companies, Tools, And Links Mentioned
+- Sitanshu Gupta
+- CoreWeave
+- Weights & Biases
+- AWS Annapurna Labs
+- SambaNova
+- [Artificial Analysis](https://artificialanalysis.ai)
+- [OpenRouter](https://openrouter.ai)
+- vLLM
+- SGLang
+- TensorRT-LLM
+- LMcache
+- Mooncake
+- Fireworks Fast
+- Kimi 2.6, Kimi 2.7
+- NVFP4
+
+## Reading Priority
+
+Medium – Concrete, implementation-level insights into inference cost/performance levers and multi-tenant scheduling for large-scale LLM serving.
+
+***
+
+# Two Bugs That Hid in Plain Sight: A vLLM Debugging Detective Story — Asaf Gardin & Yuval Belfer
+
+- **Published:** 2026-09-19
+- **YouTube:** [AI Engineer](https://www.youtube.com/watch?v=btxG75rNJC4)
+- **Speaker:** Asaf Gardin & Yuval Belfer
+
+## One-Sentence Takeaway
+Stateful inference systems like vLLM can silently produce high-confidence gibberish due to subtle bugs in Mamba state caching, detectable only through logprob forensics and memory pressure testing.
+
+## Short Summary
+Two elusive bugs in vLLM’s handling of AI21’s Jamba model (a hybrid of attention and Mamba layers) caused rare, high-confidence gibberish outputs under load. The first involved the scheduler incorrectly running decode before prefill for Mamba, leading to stale state usage—attention layers masked this by overwriting KV cache, but Mamba’s read-before-write exposed it. The second was a 32-bit index overflow in the Mamba state cache, wrapping after 4B entries and causing logprob spikes. Both were surfaced by memory pressure and diagnosed via logprob comparisons against a baseline implementation.
+
+The case highlights how stateful inference failures often lack crashes or warnings, requiring deliberate stress-testing, identity threading through forward passes, and low-level debugging to uncover.
+
+## Main Ideas
+- **Silent failures in stateful inference**: High-confidence gibberish can emerge without crashes or warnings, especially under memory pressure, making these bugs hard to reproduce and diagnose.
+- **Mamba vs. attention sensitivity**: Mamba’s read-before-write state handling exposes stale data bugs that attention layers (which write KV before reading) would overwrite, explaining why the issue was Mamba-specific.
+- **Scheduler misordering**: The vLLM scheduler occasionally ran decode before prefill for new requests, causing Mamba to compute over stale state from prior requests; the fix ensured prefill was enforced for unprocessed tokens.
+- **32-bit index overflow**: A uint32 index in the Mamba state cache wrapped after 4B entries, causing logprob spikes; shrinking GPU memory masked the issue by reducing cache size, while increasing rollouts per prompt accelerated its manifestation.
+- **Logprob forensics**: Comparing logprobs against a baseline (Hugging Face Transformers) revealed divergences that pinpointed the corrupted forward pass, a technique generalizable to other inference bugs.
+
+## Questions And Answers
+- **Why did the bug only appear in vLLM?**
+  vLLM’s scheduler and memory management under load triggered edge cases (decode-before-prefill, cache overflow) not exposed by simpler inference frameworks.
+
+- **Why didn’t attention layers show the same issue?**
+  Attention writes KV cache before reading, overwriting stale data, whereas Mamba reads state first, making it vulnerable to stale inputs.
+
+- **How did memory pressure help debug?**
+  Reducing GPU memory utilization forced faster reproduction (e.g., request 8,854 consistently failed), while increasing rollouts per prompt shifted the logprob spike earlier, revealing the overflow pattern.
+
+## Notable Details
+- Reproduction trick: Dropping GPU memory utilization from 90% to 20% and setting temperature to 0 made the gibberish deterministic at a specific request index.
+- Baseline comparison: Logprobs from vLLM were compared against Hugging Face Transformers’ prefill-only forward pass to isolate divergences.
+- Fixes: (1) Enforce prefill for new requests in the scheduler; (2) Change Mamba state cache index from `uint32` to `size_t` (64-bit) to prevent overflow.
+- False lead: Initially suspected decode kernels, but the root cause was scheduler timing; prefill-only execution masked the issue temporarily.
+
+## Actionable Takeaways
+- Build a logprob comparison tool against a trusted baseline to detect silent inference corruption.
+- Stress-test under memory pressure and scale (e.g., high rollout counts) to surface latent bugs.
+- Thread request IDs through forward contexts to trace stale state or misordered operations in complex frameworks.
+- Audit integer types in state caches for overflow risks, especially in long-running or high-throughput scenarios.
+- For hybrid architectures (e.g., Mamba + attention), test components in isolation to identify layer-specific sensitivities.
+
+## People, Companies, Tools, And Links Mentioned
+- [AI21](https://www.ai21.com)
+- [Jamba](https://www.ai21.com/jamba)
+- [vLLM](https://github.com/vllm-project/vllm)
+- [Hugging Face Transformers](https://huggingface.co/docs/transformers/index)
+- [Nvidia Compute Sanitizer](https://docs.nvidia.com/cuda-toolkit/compute-sanitizer/index.html)
+- [GRPO (Generalist Reinforcement Learning with Human Feedback)](https://arxiv.org/abs/2402.03395)
+
+## Reading Priority
+
+Medium – A concrete, technical deep dive into debugging stateful inference bugs, with reusable methods for engineers working with LLMs.
+
+***
+
+# The Frontier AI Inference Cloud for Agents — Byung-Gon (Gon) Chun, FriendliAI
+
+- **Published:** 2026-09-19
+- **YouTube:** [AI Engineer](https://www.youtube.com/watch?v=Hvb2LfMH58c)
+- **Speaker:** Byung-Gon (Gon) Chun, Founder and CEO, FriendliAI
+
+## One-Sentence Takeaway
+Open-weight frontier models now enable cost-effective agentic workflows, but realizing their full potential requires re-architecting inference stacks to optimize end-to-end task latency rather than per-request speed.
+
+## Short Summary
+Frontier open-weight models like GLM-5.2 have crossed a quality threshold for agentic tasks, delivering usable results at roughly 5.6x lower cost than closed models such as Opus-4.8. However, agentic inference introduces distinct workload patterns—long-running tasks, growing contexts, and interleaved tool calls—where traditional chat-optimized stacks waste compute by recomputing shared prefixes and ignoring task-level dependencies.
+
+FriendliAI addresses this by rebuilding its inference cloud around four pillars: prefix caching, hierarchical KV cache management, cache-aware routing, and agent-aware scheduling, achieving up to 7x faster task completion with lower error rates in production split tests.
+
+## Main Ideas
+- Open-weight models (e.g., GLM-5.2) now match closed frontier models in capability for many agentic tasks, making agents economically viable at scale.
+- Agentic workloads differ fundamentally from chat: the unit is the *task* (a loop of plan-act-observe), not the request, with shared prefixes, growing contexts, and interleaved tool calls.
+- Recomputing shared prefixes in agent steps wastes significant compute; caching and reusing KV states for these prefixes is a major optimization opportunity.
+- End-to-end task latency—not per-request latency—is the critical metric for agentic inference, requiring system-level changes like cache-aware routing and agent-aware scheduling.
+- Production deployments (e.g., Kilo Code) show 7x speedups and lower error rates when using agent-optimized inference stacks like FriendliAI.
+
+## Questions And Answers
+**Q: How much cheaper are open-weight models for agentic tasks?**
+A: In a demo building a tower defense game, GLM-5.2 (open-weight) cost ~27 cents vs. Opus-4.8’s ~$1.50—roughly 5.6x cheaper for comparable output quality.
+
+**Q: Why is traditional inference optimization insufficient for agents?**
+A: Chat optimizes for per-request latency, but agents require minimizing *task* latency, with shared prefixes, parallel sub-agents, and dynamic context growth making naive load balancing and caching ineffective.
+
+**Q: What are the four pillars of FriendliAI’s agentic inference stack?**
+A: Prefix caching, hierarchical KV cache management (GPU/host/disk), cache-aware routing, and agent-aware scheduling.
+
+## Notable Details
+- FriendliAI’s team invented *continuous batching* (now an industry standard) and inspired *vLLM*, a widely used open-source serving framework.
+- Internal traces show consecutive agent steps often share >90% of their prompt prefix, making prefix caching highly impactful.
+- Hierarchical KV caching spans GPU memory, host memory, and disk to handle long contexts beyond GPU limits.
+- Cache-aware routing sends requests to replicas already holding the relevant prefix, preserving locality while balancing load.
+- In a Kilo Code split test, FriendliAI’s stack was **7x faster** with a **lower error rate** than other providers for GLM-5.2.
+
+## Actionable Takeaways
+- Evaluate open-weight frontier models (e.g., GLM-5.2, MiniMax, Kimi) for agentic workflows—they may meet quality thresholds at far lower costs.
+- Audit inference stacks for agent-specific optimizations: prefix caching, KV cache hierarchy, and task-aware scheduling can yield step-change improvements.
+- Prioritize end-to-end task latency over per-request metrics when benchmarking agent performance.
+- Consider specialized inference providers (e.g., FriendliAI) for production agent deployments where speed and reliability are critical.
+
+## People, Companies, Tools, And Links Mentioned
+- Byung-Gon (Gon) Chun
+- FriendliAI
+- [FriendliAI website](https://friendli.ai)
+- GLM-5.2
+- Anthropic Opus-4.8
+- vLLM
+- Kilo Code
+- LG
+- Z.ai
+- Seoul National University
+
+## Reading Priority
+
+High – Open-weight models are now viable for frontier agentic tasks, and this talk provides concrete, production-validated engineering insights for optimizing inference at scale.
+
+***
+
+# Operating Distributed Inference Systems at Scale — Nishant Gupta & Naman Ahuja, Meta
+
+- **Published:** 2026-09-19
+- **YouTube:** [AI Engineer](https://www.youtube.com/watch?v=7c9FSUVcXR0)
+- **Speakers:** Nishant Gupta – Efficiency, Training, and Inference Infrastructure, Meta; Naman Ahuja – Efficiency, Training, and Inference Infrastructure, Meta
+
+## One-Sentence Takeaway
+Inference at scale is evolving from isolated optimizations to an orchestration problem where a control plane must coordinate routing, caching, batching, and scheduling across tightly coupled layers to minimize cost per successful task.
+
+## Short Summary
+Meta’s inference workload now outpaces its largest microservices, with demand scaling non-linearly due to agentic workflows that chain many model calls. The stack’s layers (routing, KV cache, batching, GPU scheduling) are not new, but their coupling creates distributed-transaction semantics where failures cascade and partial retries are costly.
+
+The core challenge is optimizing for cost per successful task—not per token—by avoiding work (caching), sharing it (batching), moving it (routing), or delaying it (admission control). A dedicated inference control plane, akin to Kubernetes for VMs, is emerging to unify these decisions under observability-driven control loops.
+
+## Main Ideas
+- Inference demand now grows as users × calls per user × tokens per call, breaking linear capacity planning and requiring elasticity and workload-aware scheduling.
+- A request is a distributed transaction: every hop (gateway, router, cache, scheduler, GPU) can retry, timeout, or fail, and partial failures (e.g., 200 tokens streamed before GPU preemption) cannot be naively retried.
+- Schedulers must consider seven axes: GPU generation, HBM headroom, KV cache state, weight warmth, tenant priority, latency budget, and workflow context to avoid wasting prior compute.
+- Optimizations fit four quadrants: avoid (caching), share (batching), move (routing), or delay (admission control), and the metric to optimize is cost per successful task, not per token.
+- Reliability must live in the control plane because it alone sees the full workflow; loop breakers (circuit breakers, admission control, load shedding, retry budgets) are critical to prevent cascading failures amplified by KV cache warm-up constraints.
+
+## Questions And Answers
+- **Why can’t we plan inference capacity like microservices?**
+  Agentic workloads scale with users × calls × tokens, not just users, and a single workflow’s failure can waste prior steps’ compute, so elasticity and workflow-aware scheduling are required.
+
+- **What metric should we optimize for inference?**
+  Cost per successful task, because users care about completed outcomes, not tokens or requests; this accounts for retries, failures, and operational overhead.
+
+- **How do latency, cost, and throughput trade off?**
+  Increasing batch size improves throughput and cost but hurts tail latency; speculative decoding improves latency but adds compute cost; using a smaller model reduces latency and cost but may lower quality.
+
+## Notable Details
+- Meta’s inference traffic already exceeds its largest microservices and is the fastest-growing workload the company has seen.
+- Prefill and decode stages have vastly different compute profiles, requiring continuous in-flight batching to avoid throughput collapse.
+- KV cache is expensive to build and discard, making cache hit rates a first-class scheduling concern.
+- Cold-starting a GPU pool to absorb traffic during failures forces the hot pool to over-saturate, exacerbating cascading failures.
+- Observability must feed control loops: telemetry → analysis → decisions → scheduling/routing, iteratively.
+- The inference control plane will treat models, GPUs, KV cache, tokens, latency, and cost as resources to be scheduled, analogous to Kubernetes for VMs.
+
+## Actionable Takeaways
+- Design for workflow-aware scheduling: prioritize requests based on their position in a multi-step workflow to avoid wasting prior compute.
+- Implement loop breakers (circuit breakers, admission control, load shedding, retry budgets) to prevent cascading failures in tightly coupled inference stacks.
+- Optimize for cost per successful task, not per token, and ensure metrics reflect end-to-end outcomes, not isolated layer performance.
+- Assume an inference control plane will emerge; evaluate whether to build it internally, adopt open-source, or use vendor solutions.
+- Treat inference as a distributed systems problem: focus on queues, scheduling, autoscaling, and fault isolation under new constraints (HBM, KV cache, cost).
+
+## People, Companies, Tools, And Links Mentioned
+- Meta
+- Kubernetes
+- Borg
+- Mesos
+- vLLM
+- TorchServe
+- Triton Inference Server
+- SGLang
+- TensorRT
+- [Nishant Gupta’s LinkedIn](https://www.linkedin.com/in/nishantgupta-ai/)
+- [Naman Ahuja’s LinkedIn](https://www.linkedin.com/in/namanahuja/)
+- [BuzzingTech.ai](https://buzzingtech.ai/)
+
+## Reading Priority
+
+High – This talk offers a rare, concrete framework for the next phase of AI infrastructure, where orchestration and control planes will dominate value creation, backed by operational lessons from Meta’s hyperscale inference.
+
+***
+
+# Large clusters for small models — Daniel Svonava, Superlinked
+
+- **Published:** 2026-09-19
+- **YouTube:** [AI Engineer](https://www.youtube.com/watch?v=g4SsanB0gMc)
+- **Speaker:** Daniel Svonava, Superlinked
+
+## One-Sentence Takeaway
+Small, task-specific open-source models now match or exceed frontier performance, but serving them at scale requires rethinking infrastructure to avoid bottlenecks in routing, batching, and model adaptation.
+
+## Short Summary
+Small open-source models (fitting on a single, older GPU) are catching up to frontier performance for specialized tasks, offering dramatic cost and latency advantages over managed endpoints. The challenge shifts from model capability to serving: existing open-source tools are untuned, top-down routers struggle with many small requests, and frequent fine-tunes/LoRAs create operational friction between AI and infrastructure teams.
+
+Superlinked’s approach inverts the architecture: a lightweight gateway annotates requests and drops them into a shared queue, while workers pull and self-batch, doubling throughput. A Rust sidecar abstracts 50+ adapters across PyTorch, Candle, and SGLang runtimes, and an auto-research loop ships pre-tuned configs, including an 80-cent LoRA that improved German legal retrieval by 18%.
+
+## Main Ideas
+- Small open-source models (e.g., Qwen 36 27B) now rival frontier models for specific tasks, while being far cheaper and faster to run on commodity GPUs.
+- Workloads increasingly use multiple specialized models (e.g., a contract review agent running nine models), shifting the bottleneck from model capability to serving infrastructure.
+- Traditional top-down routers (designed for sharding large models) perform poorly with many small requests, often achieving only 20–30% GPU utilization due to stale worker state and suboptimal batching.
+- Frequent LoRA/fine-tune deployments create friction between AI and infrastructure teams, slowing iteration; automation and abstraction are critical to reduce this overhead.
+- Centralized queuing with worker-side batching can double cluster throughput by letting workers self-optimize batch sizes based on local state.
+
+## Questions And Answers
+- **Why not just use managed endpoints for embeddings?**
+  A single mid-range GPU can process 500K tokens/sec into embeddings with low tens of milliseconds latency, at orders of magnitude lower cost than managed services.
+
+- **How do you handle diverse model architectures and runtimes?**
+  A Rust sidecar abstracts 50+ adapters across PyTorch, Candle, and SGLang, while an auto-research loop pre-tunes configs for each model/hardware combination.
+
+## Notable Details
+- Embedding models on an RTX Pro 6000 GPU can reach hundreds of thousands of tokens/sec with latencies in the low tens of milliseconds.
+- Superlinked’s inverted queue architecture (workers pull from a shared NATS JetStream queue) achieved 2x throughput compared to top-down routing.
+- A LoRA fine-tuned for German legal text retrieval cost $0.80 to train and improved quality by 18%.
+- Candle runtime reduces worker image size from ~12GB (PyTorch) to ~1GB, improving cold-start times but currently lags PyTorch in performance.
+- The stack uses msgpack (not base64 JSON) for high-throughput request serialization and supports multimodal data via the API gateway.
+
+## Actionable Takeaways
+- Start with embeddings: self-hosting small models for embeddings offers immediate cost/latency wins with minimal complexity.
+- Avoid top-down routers for small-model fleets; prioritize architectures where workers pull and self-batch from a shared queue.
+- Abstract runtime diversity with a sidecar or similar layer to prevent lock-in to a single framework (e.g., SGLang).
+- Automate model tuning and deployment to reduce friction between AI and infrastructure teams.
+- Explore packing multiple small models on a single GPU with lazy loading/eviction to improve utilization.
+
+## People, Companies, Tools, And Links Mentioned
+- [Superlinked](https://www.youtube.com/watch?v=g4SsanB0gMc)
+- [Daniel Svonava](https://x.com/svonava)
+- Qwen 36 27B
+- GLM 5.2
+- vLLM
+- SGLang
+- PyTorch
+- Candle
+- NATS JetStream
+- [Superlinked GitHub repo](https://www.youtube.com/watch?v=g4SsanB0gMc)
+
+## Reading Priority
+
+High – Small models are now viable for production, but serving them efficiently requires non-obvious architectural shifts; this talk provides concrete, open-source solutions with strong performance data.
+
+***
+
+# Are LLM Performance Benchmarks Reliable? — Ashok Chandrasekar & Jason Kramberger, Google
+
+- **Published:** 2026-09-19
+- **YouTube:** [AI Engineer](https://www.youtube.com/watch?v=l1-D89bAuOA)
+- **Speaker:** Ashok Chandrasekar & Jason Kramberger, Google
+
+## One-Sentence Takeaway
+Many LLM performance benchmarks are unreliable because harness limitations, hidden configurations, and dataset inconsistencies distort results far more often than actual server bottlenecks.
+
+## Short Summary
+Production-scale LLM benchmarking frequently produces misleading numbers due to harness failures (e.g., Python’s GIL capping QPS, client-side latency inflation) and opaque configurations (e.g., temperature=0 skewing throughput). The speakers argue that most "server issues" are actually harness issues, and propose *Inference Perf*—a CNCF-backed, multi-process load generator with declarative workloads and client/server telemetry—to ensure reproducibility and metric fidelity.
+
+The solution combines a scalable load generator, a shared workload catalog (e.g., agentic generation, tree-of-thought), and a UI (*Prism*) to visualize results. Their core principle: valid benchmarks require observability into the client’s ability to meet its own configuration, high-fidelity metrics, and workloads that mirror real production demands.
+
+## Main Ideas
+- Benchmark harnesses often fail silently: single-process Python tools hit GIL limits (e.g., 38 QPS delivered when 200 requested), inflate latency (e.g., +58s from client thrashing), or hide configurations like `temperature=0` that artificially boost throughput by 20%.
+- Dataset handling varies wildly: the same public dataset (e.g., ShareGPT) can yield different input tokens across harnesses due to sampling/truncation, undermining reproducibility.
+- Production-scale benchmarks need client-side observability: tools must report *whether they met the planned load* (e.g., Poisson, fixed concurrency) and separate client failures from server bottlenecks.
+- Standardized workloads are critical: Inference Perf’s *Workload Catalog* defines reusable scenarios (e.g., multi-turn conversations, agentic generation) with declarative configurations for input/output length distributions.
+
+## Questions And Answers
+- **Why can’t published benchmark numbers be reproduced?**
+  Harnesses often lack concurrency (GIL), misreport achieved load, or use non-production settings (e.g., `temperature=0`). Dataset preprocessing (sampling, truncation) also differs across tools.
+
+- **How does Inference Perf avoid these pitfalls?**
+  It uses a multi-process load generator to bypass GIL, tracks planned vs. actual request timing, and pairs client telemetry with server metrics. Workloads are declarative and shared via a catalog.
+
+- **What’s the scale of the problem?**
+  In tests, a harness requesting 200 QPS delivered 38 QPS on a small machine; even on larger machines, single-process tools capped at ~170 QPS. Latency inflation reached 58 seconds due to client thrashing.
+
+## Notable Details
+- Inference Perf sustained 5,000 QPS in tests and accurately reported its own limitations.
+- *Prism* (part of LLM-D) visualizes benchmarks, e.g., showing combined optimizations vs. baseline Kubernetes services across 8 TPU replicas, with throughput scaling to hundreds of thousands of tokens/second.
+- Workload Catalog includes definitions for agentic code generation, tree-of-thought, and batch summarization, with configurations portable across tools.
+- Key metrics for production benchmarks: input/output token throughput, time-to-first-token (P90), SLO conformance, and saturation points.
+
+## Actionable Takeaways
+- Audit your benchmark harness: verify it achieves the requested QPS and doesn’t inflate latency; use multi-process tools to avoid GIL limits.
+- Standardize workloads: adopt declarative configurations (e.g., from Inference Perf’s catalog) to ensure reproducibility.
+- Pair client and server metrics: isolate harness failures from system-under-test bottlenecks.
+- Watch for hidden knobs: check `temperature`, token sampling, and truncation settings—these can skew results by 20%+.
+
+## People, Companies, Tools, And Links Mentioned
+- [Inference Perf](https://github.com/llm-d/inference-perf) (CNCF project)
+- [LLM-D](https://github.com/llm-d/llm-d) (distributed inference framework)
+- [LLM-D Prism](https://github.com/llm-d/prism) (benchmarking UI and Workload Catalog)
+- vLLM, SGLang (model server frameworks)
+- MLPerf, SemiAnalysis, Artificial Analysis (competitive benchmark tools)
+- Locust, Grafana k6 (web benchmark tools)
+- ShareGPT (dataset)
+
+## Reading Priority
+
+High – Exposes systemic flaws in LLM benchmarking with concrete evidence and offers a reproducible, open-source solution already validated at scale.
 
 ***
