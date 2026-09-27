@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import re
 from collections import Counter
 from pathlib import Path
 
@@ -48,6 +49,7 @@ def main() -> None:
     short_transcripts = [path for path in transcript_paths if _looks_incomplete(read_transcript_text(path))]
     metadata_issues = _metadata_issues(resource_paths, transcript_paths, weekly_books)
     graph_issues = _graph_issues(resource_paths, weekly_books)
+    overclaiming = _overclaiming_priorities(last_run)
 
     print("AI Weekly Reads Audit")
     print("====================")
@@ -76,6 +78,7 @@ def main() -> None:
     _print_paths("Truncated or stub raw transcripts", short_transcripts)
     _print_issues("Obsidian metadata issues", metadata_issues)
     _print_issues("Obsidian graph issues", graph_issues)
+    _print_paths("Last-run notes whose Reading Priority presents speaker claims as verified", overclaiming)
     if not any(
         [
             _duplicates(resource_ids),
@@ -88,9 +91,30 @@ def main() -> None:
             short_transcripts,
             metadata_issues,
             graph_issues,
+            overclaiming,
         ]
     ):
         print("No audit issues found.")
+
+
+# Summaries kept labelling speaker- and vendor-reported results "evidence-backed"
+# even after the published edition was corrected by hand, because the fix never
+# reached generation. Only the last run is checked: older notes predate the
+# prompt rule, and flagging them every week would bury the actionable ones.
+_OVERCLAIMING = re.compile(r"\b(evidence-backed|data-backed|proven|validated)\b", re.IGNORECASE)
+
+
+def _overclaiming_priorities(last_run) -> list[Path]:
+    rows = last_run if isinstance(last_run, list) else []
+    flagged = []
+    for row in rows:
+        path = Path(row.get("resource_path") or "")
+        if not path.is_file():
+            continue
+        priority = read_text(path).split("## Reading Priority", 1)
+        if len(priority) == 2 and _OVERCLAIMING.search(priority[1].split("\n## ", 1)[0]):
+            flagged.append(path)
+    return flagged
 
 
 # A short transcript is not the same as a broken one. Publishers post genuine
