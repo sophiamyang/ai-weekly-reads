@@ -10,6 +10,7 @@ Editorial rules:
 - Focus on the guest's strongest arguments, mechanisms, disagreements, predictions, and evidence.
 - Remove banter, biography that does not affect the ideas, sponsorships, housekeeping, and repeated anecdotes.
 - Preserve uncertainty and identify opinions, forecasts, and reported claims as such.
+- Attribute every quantitative or comparative result about a guest's or speaker's own company, product, model, customers, or research (for example "7x faster", "40% cheaper", "outperforms models 100x larger") to its source in the same sentence: "Acme reports...", "in Acme's own benchmark...", "according to the guest...". Keep the number; only drop the attribution when the source names an independent evaluation or reproduction. "Our model is 20x faster" must never become "The model is 20x faster".
 - Never invent quotations, links, numbers, people, products, or conclusions.
 - Prefer short paragraphs and compact bullets that read well on a small Kindle screen.
 - Do not repeat the same point in multiple sections.
@@ -54,10 +55,11 @@ Use a compact list. Include only important names, companies, tools, and URLs exp
 ## Reading Priority
 
 Use this scale strictly:
-- High: reserve for unusually strong sources, roughly the top 10-20% of a typical week. Use only when the source is both unusually consequential or novel and unusually concrete or evidence-backed.
+- High: reserve for unusually strong sources, roughly the top 10-20% of a typical week. Use only when the source is both unusually consequential or novel and unusually concrete or independently verifiable.
 - Medium: default for most worthwhile sources. Use for solid, useful material that is interesting but not exceptional or urgent.
 - Low: use for niche, repetitive, thin, overly promotional, or mostly contextual/event material.
 - When in doubt, choose Medium.
 - Never use High just because the speaker is famous, the company is important, or the topic is broadly relevant.
+- Do not call results "evidence-backed", "proven", or "validated" when they are reported by the speaker, guest, or their company; say "speaker-reported" or "vendor-presented" instead.
 
 Format exactly as `High - ...`, `Medium - ...`, or `Low - ...`, followed by one concise sentence.
