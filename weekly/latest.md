@@ -63,7 +63,7 @@ Week of 2026-09-26
 - **Speaker:** Devansh Tandon, Leader of Meta Recommendations Research
 
 ## One-Sentence Takeaway
-LLM-powered recommendation systems will dominate consumer AI because they scale like LLMs, are 100x cheaper per engagement hour than chat apps, and unlock steerable, explainable feeds.
+LLM-powered recommendation systems will dominate consumer AI because they scale like LLMs, are 100x cheaper per engagement hour than chat apps by Tandon's estimate, and unlock steerable, explainable feeds.
 
 ## Short Summary
 Recommendation systems follow the same power-law scaling as LLMs, with model size, data, and compute driving predictable gains in quality and engagement. Four of the top 10 global apps are content feeds, and their recommenders—unlike chat apps—decode pointers to existing content, making them far more token-efficient.
@@ -72,14 +72,14 @@ Meta’s work shows real-world impact: Instagram Reels gained 30% watch time aft
 
 ## Main Ideas
 - Recommendation systems exhibit LLM-like scaling laws: more data, compute, and model size yield predictable gains in offline metrics (e.g., AUC) and real-world engagement (e.g., watch time, revenue).
-- Content feeds (e.g., Instagram, TikTok) are 100x cheaper per engagement hour than chat apps because they decode semantic pointers to existing content rather than generating tokens themselves.
+- Tandon estimates content feeds (e.g., Instagram, TikTok) are 100x cheaper per engagement hour than chat apps because they decode semantic pointers to existing content rather than generating tokens themselves.
 - The industry is climbing four S-curves: traditional recsys (feature engineering), LLM-inspired (end-to-end scaling), LLM-native (adapted base models), and agentic (orchestrated loops for planning, retrieval, and critique).
 - LLM recommenders can be built with a three-step recipe: tokenize content into semantic IDs, pre-train a bilingual model (English + catalog), and post-train for ranking with chain-of-thought reasoning.
 - Steerable feeds (e.g., Instagram’s "Your Algorithm") let users edit interests in natural language, shifting recommendations from black boxes to interactive, explainable systems.
 
 ## Questions And Answers
 - **Why are content feeds more token-efficient than chat apps?**
-  They decode semantic IDs (pointers to existing content) rather than generating every token, leveraging free/creator-supplied content and reducing inference costs by 100x per engagement hour.
+  They decode semantic IDs (pointers to existing content) rather than generating every token, leveraging free/creator-supplied content and which Tandon estimates reduces inference costs by 100x per engagement hour.
 
 - **How do semantic IDs improve recommenders?**
   They provide stable, compressible representations (e.g., a 3-minute Reel → 10 tokens) that models can reason over, enabling longer interaction histories and shared compute across surfaces.
@@ -88,7 +88,7 @@ Meta’s work shows real-world impact: Instagram Reels gained 30% watch time aft
   Training → inference (tokens in) → better recommendations → user engagement → monetization → funds next training cycle. This flywheel powers both feeds and chat apps but is far more efficient for feeds.
 
 ## Notable Details
-- Instagram Reels achieved **30% YoY watch time growth** after doubling user interaction sequence length and enriching interaction data for training.
+- Meta reports Instagram Reels achieved **30% YoY watch time growth** after doubling user interaction sequence length and enriching interaction data for training.
 - A 3-minute Instagram Reel compresses from **~10,000 tokens to ~10 semantic ID tokens**, enabling efficient reasoning over long histories.
 - Meta’s HSTU and OneRec papers demonstrate **power-law scaling curves** for recommenders, mirroring LLM trends.
 - LLM re-rankers can produce **readable chain-of-thought reasoning** (e.g., "User likes comedy, food, DIY → rank these 5 Reels higher") for explainability.
@@ -121,7 +121,7 @@ Meta’s work shows real-world impact: Instagram Reels gained 30% watch time aft
 
 ## Reading Priority
 
-Medium – LLM recommenders combine scaling laws, token efficiency, and steerability, making them a pivotal (and underappreciated) consumer AI application with proven real-world impact.
+Medium – LLM recommenders combine scaling laws, token efficiency, and steerability, making them a pivotal (and underappreciated) consumer AI application with speaker-reported real-world impact at Meta.
 
 ***
 
@@ -135,7 +135,7 @@ Medium – LLM recommenders combine scaling laws, token efficiency, and steerabi
 Spotify’s Large Taste Model reimagines personalization as a steerable, LLM-native system that reasons over a 100M+ catalog and lets users prompt, edit, and generate experiences in natural language.
 
 ## Short Summary
-Spotify evolved from curated playlists and black-box recommenders (e.g., Discover Weekly) to “generative personalization,” where a single LLM-powered system—used daily by 25% of US Premium subscribers—enables steerable DJs, prompted playlists, editable taste profiles, and personal podcasts. The shift hinges on reasoning (not just ranking) and transparency (user control via language).
+Spotify evolved from curated playlists and black-box recommenders (e.g., Discover Weekly) to “generative personalization,” where a single LLM-powered system—which Spotify says is used daily by 25% of US Premium subscribers—enables steerable DJs, prompted playlists, editable taste profiles, and personal podcasts. The shift hinges on reasoning (not just ranking) and transparency (user control via language).
 
 Staff ML Engineer Jacqueline Wood details NEO, a four-stage training recipe: semantic IDs for catalog grounding, frozen-backbone domain alignment to preserve language ability, multitask instruction tuning for cross-task gains (including cold-start audiobooks), and optional post-training. Grounded LLM judges aligned with human preferences (up to 91% on ambiguous queries) enable scalable evaluation of generative recommendations.
 
@@ -143,7 +143,7 @@ Staff ML Engineer Jacqueline Wood details NEO, a four-stage training recipe: sem
 - Generative personalization replaces opaque ranking with reasoning and steerability: users prompt, edit, and shape experiences in natural language, while the system explains and generates (e.g., DJ sessions, playlists, taste profiles, personal podcasts).
 - NEO’s four-stage recipe grounds open-weight LLMs (e.g., Qwen, Llama) in Spotify’s catalog via semantic IDs, freezes the backbone during domain grounding to retain language ability, then multitask-tunes across Spotify tasks (retrieval, recommendation, explanation) for cross-task benefits, including cold-start performance.
 - Frozen-backbone grounding outperforms continued pre-training, which collapses language ability, and multitask tuning matches or beats single-task models—validated across backbones.
-- Grounded LLM judges (with user profiles or behavioral signals) align closely with human preferences (75% baseline, 91% on ambiguous queries) and enable scalable Cranfield-style evaluation sets with 0.87 agreement to human rankings.
+- In Spotify's evaluations, grounded LLM judges (with user profiles or behavioral signals) align closely with human preferences (75% baseline, 91% on ambiguous queries) and enable scalable Cranfield-style evaluation sets with 0.87 agreement to human rankings.
 
 ## Questions And Answers
 - **Why freeze the backbone during domain grounding?**
@@ -153,12 +153,12 @@ Staff ML Engineer Jacqueline Wood details NEO, a four-stage training recipe: sem
   No—it matches or improves single-task results and helps cold-start tasks (e.g., audiobook recommendations) by transferring knowledge from related tasks like podcasts.
 
 - **How reliable are LLM judges for evaluation?**
-  Grounding them with user profiles or behavior raises alignment with humans to 75% (baseline) and 91% on ambiguous queries; for Cranfield-style sets, agreement reaches 0.87.
+  In Spotify's evaluations, grounding them with user profiles or behavior raises alignment with humans to 75% (baseline) and 91% on ambiguous queries; for Cranfield-style sets, agreement reaches 0.87.
 
 ## Notable Details
 - One in four US Spotify Premium subscribers use the Large Taste Model daily.
 - Semantic IDs are discrete tokens derived from content embeddings (e.g., podcast episodes) and added to the LLM’s vocabulary.
-- 98% of generated semantic IDs are valid without constrained decoding; beam search is preferred over top-p sampling for accuracy despite latency tradeoffs.
+- Spotify reports 98% of generated semantic IDs are valid without constrained decoding; beam search is preferred over top-p sampling for accuracy despite latency tradeoffs.
 - Constrained decoding adds latency but enables targeted constraints (e.g., only new content).
 - NEO powers podcast discovery that breaks habitual listening patterns, driving significant online gains.
 
@@ -176,7 +176,7 @@ Staff ML Engineer Jacqueline Wood details NEO, a four-stage training recipe: sem
 
 ## Reading Priority
 
-High – A rare, concrete case study of a production-scale LLM-native personalization system with validated training recipes, evaluation methods, and measurable user impact.
+High – A rare, concrete case study of a production-scale LLM-native personalization system with Spotify's training recipes, evaluation methods, and company-reported user impact.
 
 ***
 
@@ -414,10 +414,10 @@ The approach avoids replacing retrieval/ranking systems with LLMs. Instead, it u
 
 ## Main Ideas
 - Engagement-based ranking can misalign with user intent (e.g., surfacing popular regular pasta for a gluten-free query), so graded relevance labels from LLMs provide a scalable, reasoning-based supervision signal.
-- A two-stage contrastive retrieval method—global geometry shaping followed by hard-negative mining—improves relevance distinction, lifting retrieval NDCG by 2.3%.
-- Semantic IDs form a learned, hierarchical taxonomy that captures fine-grained relationships (e.g., hot sauce subtypes) and improves ranking MRR by 4–5%, while enabling cross-category comparisons and cold-start coverage.
+- A two-stage contrastive retrieval method—global geometry shaping followed by hard-negative mining—improves relevance distinction; DoorDash reports it lifted retrieval NDCG by 2.3%.
+- Semantic IDs form a learned, hierarchical taxonomy that captures fine-grained relationships (e.g., hot sauce subtypes) and, per DoorDash, improved ranking MRR by 4–5%, while enabling cross-category comparisons and cold-start coverage.
 - Consumer memory is structured across three timescales (long-term preferences, real-time context, stated preferences) and materialized as text, vectors, and graphs to power personalization across models.
-- Steerable, LLM-generated personalized collections (e.g., plant-based pantry rows) are created offline and hydrated at serving time, lifting order rates by nearly 1% in the pets category.
+- Steerable, LLM-generated personalized collections (e.g., plant-based pantry rows) are created offline and hydrated at serving time, which DoorDash says lifted order rates by nearly 1% in the pets category.
 
 ## Questions And Answers
 - **Why not rely on engagement signals for ranking?**
@@ -450,7 +450,7 @@ The approach avoids replacing retrieval/ranking systems with LLMs. Instead, it u
 
 ## Reading Priority
 
-High – This talk presents a concrete, production-tested framework for integrating LLMs into large-scale recommendation systems, with measurable gains and actionable patterns.
+High – This talk presents a concrete, production-tested framework for integrating LLMs into large-scale recommendation systems, with DoorDash-reported gains and actionable patterns.
 
 ***
 
@@ -663,7 +663,7 @@ The approach demonstrates robust zero-shot transfer across diverse robots (e.g.,
 
 ## Reading Priority
 
-High – Pathak presents a compelling, evidence-backed thesis for why robotics has stalled and how foundation models tailored for embodiment could unlock rapid progress, with concrete demos and deployment examples.
+High – Pathak presents a compelling thesis, supported by Skild's own demos, for why robotics has stalled and how foundation models tailored for embodiment could unlock rapid progress, with concrete demos and deployment examples.
 
 ***
 
@@ -674,10 +674,10 @@ High – Pathak presents a compelling, evidence-backed thesis for why robotics h
 - **Speaker:** Jason Ma, Co-founder and CTO, Dyna Robotics
 
 ## One-Sentence Takeaway
-Achieving 99.4% success in long-horizon robotics tasks like napkin folding requires reward models, active learning, and a generalist foundation model that combines reasoning with fine-grained action control.
+Dyna reports that achieving 99.4% success in long-horizon robotics tasks like napkin folding requires reward models, active learning, and a generalist foundation model that combines reasoning with fine-grained action control.
 
 ## Short Summary
-Dyna Robotics demonstrates that generalist robot foundation models can reach near-100% reliability on complex, long-horizon tasks (e.g., napkin folding) by pairing a reasoning model with a world-action model, using reward models to detect mistakes, and iterating via human-in-the-loop active learning. Their approach leverages a 200,000+ hour pre-training data pyramid (off-robot, on-robot, and deployment data) to close the train-test gap, enabling zero-shot generalization to new environments (e.g., a Korean conference, a Sacramento laundromat) without site-specific fine-tuning.
+Dyna Robotics argues, from its own results, that generalist robot foundation models can reach near-100% reliability on complex, long-horizon tasks (e.g., napkin folding) by pairing a reasoning model with a world-action model, using reward models to detect mistakes, and iterating via human-in-the-loop active learning. Their approach leverages a 200,000+ hour pre-training data pyramid (off-robot, on-robot, and deployment data) to close the train-test gap, enabling zero-shot generalization to new environments (e.g., a Korean conference, a Sacramento laundromat) without site-specific fine-tuning.
 
 The core argument is that 80–90% success—common in demos—is commercially useless, as the probability of 10 consecutive successes drops below 0.1%. Dyna’s method addresses this by scaling supervision with reward models, targeting error recovery, and ensuring robustness to real-world variability (e.g., lighting changes, deformable objects).
 
@@ -701,7 +701,7 @@ The core argument is that 80–90% success—common in demos—is commercially u
   A: Generalist pre-training provides broad physical/semantic understanding, enabling faster adaptation and error recovery (e.g., interpolating recovery behaviors from other tasks). Task-specific fine-tuning and active learning then specialize the model for reliability.
 
 ## Notable Details
-- **Dyna-1 performance**: 99.4% success rate over 24 hours of continuous napkin folding, with recovery from errors like pulling multiple napkins or toppling the stack. Validated across multiple 24-hour trials.
+- **Dyna-1 performance**: Dyna reports a 99.4% success rate over 24 hours of continuous napkin folding, with recovery from errors like pulling multiple napkins or toppling the stack. Dyna says this held across multiple 24-hour trials.
 - **Data pyramid**: >200,000 hours of training data, combining off-robot (human cameras, public datasets, simulation), on-robot (diverse tasks/environments), and deployment data (closes train-test gap).
 - **Commercial deployments**: Restaurants (napkin folding), a Sacramento laundromat (towel folding), and live events (opening Red Bull cans). T-shirt folding demo ran for 3 days at CoRL 2025 with no site-specific data.
 - **Task difficulty**: Napkin folding requires sub-inch precision (e.g., fold seam placement) and recovery from deformable-object chaos (e.g., infinite napkin configurations).
@@ -724,7 +724,7 @@ The core argument is that 80–90% success—common in demos—is commercially u
 
 ## Reading Priority
 
-High – Demonstrates a concrete, evidence-backed path to commercially viable robotics with near-100% reliability, addressing a critical gap between demos and real-world deployment.
+High – Presents a concrete path to commercially viable robotics, with speaker-reported near-100% reliability, addressing a critical gap between demos and real-world deployment.
 
 ***
 
@@ -740,14 +740,14 @@ AI can refound legacy incumbents into market leaders by combining permanent owne
 ## Short Summary
 Sequence Holdings acquires and "refounds" large incumbents (e.g., Baldwin, BankSouth) by embedding frontier AI engineering to reorganize workflows, eliminate rote tasks, and unlock step-function gains in capacity and speed. The holding company structure aligns incentives for long-term compounding, while its Atlas platform standardizes data ontologies, agent orchestration, and application layers across portfolio companies.
 
-The model targets industries where incumbents hold structural advantages (e.g., insurance brokerage, banking) but lack the engineering culture or talent to execute AI-driven transformation. Early results at BankSouth include a 94% reduction in consumer loan underwriting time and halving commercial loan processing from 30 to 11 days, enabling the bank to double loan volume without adding headcount.
+The model targets industries where incumbents hold structural advantages (e.g., insurance brokerage, banking) but lack the engineering culture or talent to execute AI-driven transformation. Lee reports early results at BankSouth including a 94% reduction in consumer loan underwriting time and halving commercial loan processing from 30 to 11 days, enabling the bank to double loan volume without adding headcount.
 
 ## Main Ideas
 - **Incumbents can dominate AI transformation** if they possess structural advantages (brand, scale, regulation, network effects) and adopt a culture that celebrates engineering as the primary value driver—something most incumbents, vendors, and private equity firms fail to achieve.
 - **Permanent holding companies outperform fund structures** for AI transformation by aligning long-term incentives, retaining earnings for reinvestment, and prioritizing operational compounding over financial engineering or short-term exits.
 - **Traditional transformation models fail** because consulting/software vendors optimize for incrementalism (billing hours, selling to existing workflows) rather than reorganizing organizations around AI’s 24/7, scalable capabilities.
 - **Atlas platform generalizes AI infrastructure** across industries by codifying business ontologies, agent orchestration (Lattice), and application layers, with 80% of workflows being homogeneous and 20% vertically specific.
-- **BankSouth validated the model**: Post-investment, Sequence reduced consumer loan underwriting time by 94%, cut commercial loan processing from 30 to 11 days, and enabled the bank to double loan volume without adding staff—all while improving employee focus on high-value tasks.
+- **BankSouth as Sequence's proof point**: Lee says that post-investment, Sequence reduced consumer loan underwriting time by 94%, cut commercial loan processing from 30 to 11 days, and enabled the bank to double loan volume without adding staff—all while improving employee focus on high-value tasks.
 
 ## Questions And Answers
 **Q: Why a holding company instead of a fund or vendor?**
@@ -794,7 +794,7 @@ A: They look for teams that are (1) exceptional at their craft (e.g., Baldwin’
 
 ## Reading Priority
 
-Medium – This outlines a novel, capital-backed model for AI-driven transformation of incumbents with concrete results, structural advantages over alternatives, and a repeatable platform (Atlas) that could redefine enterprise AI adoption.
+Medium – This outlines a novel, capital-backed model for AI-driven transformation of incumbents with company-reported results, structural advantages over alternatives, and a repeatable platform (Atlas) that could redefine enterprise AI adoption.
 
 ***
 
@@ -827,7 +827,7 @@ The method reduces waste in compute, bandwidth, and storage while enabling preci
   Models can learn from human actions in videos by analyzing frame-to-frame motion to infer movement, angles, and distances, which can then be fine-tuned with minimal robot-specific data (e.g., Meta’s 62 hours).
 
 - **What is the efficiency gain of Bright Data’s approach?**
-  By indexing and searching videos by actions first, users avoid downloading and processing irrelevant content, reducing waste in compute, bandwidth, and storage (e.g., NVIDIA’s 96% discard rate).
+  By indexing and searching videos by actions first, users avoid downloading and processing irrelevant content, reducing waste in compute, bandwidth, and storage (e.g., the 96% discard rate Levi cites for NVIDIA).
 
 ## Notable Details
 - Meta trained a robotics model on ~1M hours of public video and required only 62 hours of real robot data to achieve functional control.
@@ -1056,7 +1056,7 @@ Meanwhile, a Harvard study (Cutler & Klarnet) reveals that U.S. healthcare spend
 
 ## Reading Priority
 
-High – This conversation offers a rare, evidence-backed look at how AI is already reshaping healthcare economics and institutional structures, with actionable insights for leaders.
+High – This conversation offers a rare, data-informed look at how AI is already reshaping healthcare economics and institutional structures, with actionable insights for leaders.
 
 ***
 
@@ -1293,7 +1293,7 @@ The pipeline leverages open-source models (e.g., Qwen 2.5-9B for labeling, Gemma
   - Judges: Gemma 4 E4B (~8B), LFM2.5-VL (~2B; revenue-based license).
   - Backbone: RF-DETR (medium/large) for detection/segmentation.
 - **Performance**: Road sign detection achieved "good" mAP (>50) vs. ground truth; document parsing generalized to detect signatures missed by the labeling VLM.
-- **Judge imbalance**: LFM2.5-VL rejected far more examples than Gemma 4; consensus would have left too few training examples, so *minimum agreement* (1/2 judges approving) worked better.
+- **Judge imbalance**: LFM2.5-VL rejected far more examples than Gemma 4; consensus would have left too few training examples, so *minimum agreement* (1/2 judges approving) worked better in Noyan's experiment.
 - **Augmentation pitfalls**: Default augmentations (e.g., horizontal flips for traffic signs) corrupted datasets; explicit constraints were added.
 - **Toolkit components**: Includes Apache 2.0 models for depth estimation (e.g., [Hugging Face benchmarks](https://huggingface.co/benchmarks)), zero-shot segmentation (Falcon-Perception, 600M params), pose estimation (Sapiens), and OCR (olmOCR).
 - **Future work**: Image-guided detection (for non-describable parts), IoU-based merging of judge boxes, and segmentation support.
@@ -1315,7 +1315,7 @@ The pipeline leverages open-source models (e.g., Qwen 2.5-9B for labeling, Gemma
 
 ## Reading Priority
 
-High – A concrete, cost-effective alternative to runtime VLMs with actionable workflows, licensing warnings, and evidence-backed results.
+High – A concrete, cost-effective alternative to runtime VLMs with actionable workflows, licensing warnings, and speaker-reported results.
 
 ***
 
@@ -1391,13 +1391,13 @@ Embodied foundation models that jointly train perception, reasoning, and control
 ## Short Summary
 Perceptron’s approach unifies vision-language models (VLMs), vision-language-action models (VLAs), and world models into a single *embodied foundation model* that perceives, reasons, and acts. Two core challenges—sparse ground truth in video (where only ~2% of tokens contribute to loss) and context bloat from always-on sensors—are addressed with a *perceptive objective* (automatically learning which visual signals matter) and *data-sparse mixture-of-experts* (a router dynamically selecting relevant tokens per layer).
 
-The result is a petabyte-scale model outperforming frontier embodied reasoning systems (e.g., Gemini 1.5 Pro) at 1/15th the cost, with emergent behaviors like agentic detection (tiling, zooming, contrast adjustment) and robust control policies that read text (e.g., book titles) to inform actions. A new scaling law shows 10x more video pretraining can substitute for 10x less teleoperation data ($100/hour), unlocking cheaper, scalable robotics training.
+Perceptron reports the result is a petabyte-scale model outperforming frontier embodied reasoning systems (e.g., Gemini 1.5 Pro) at 1/15th the cost, with emergent behaviors like agentic detection (tiling, zooming, contrast adjustment) and robust control policies that read text (e.g., book titles) to inform actions. A new scaling law shows 10x more video pretraining can substitute for 10x less teleoperation data ($100/hour), unlocking cheaper, scalable robotics training.
 
 ## Main Ideas
 - **Unified embodied models** outperform siloed VLMs/VLAs by jointly training perception, reasoning, and control, enabling tasks like agentic detection (e.g., tiling images, adjusting contrast) and multi-step robotic actions (e.g., reading book titles to sort them).
 - **Perceptive objectives** solve sparse supervision in video: instead of predicting all pixels or relying on sparse transcripts, the model learns to focus on semantically important signals (e.g., gripper tips, contact points) *without hardcoding*.
 - **Data-sparse MoE** dynamically routes tokens to reduce context bloat, letting the model allocate compute to task-relevant regions (e.g., graphs in figures, fruit in segmentation tasks) while ignoring background noise.
-- **New scaling law**: For embodied models, 10x more video pretraining can replace 10x less teleoperation data, drastically cutting costs (teleop data ~$100/hour) while maintaining performance.
+- **New scaling law**: Perceptron's own experiments suggest that for embodied models, 10x more video pretraining can replace 10x less teleoperation data, drastically cutting costs (teleop data ~$100/hour) while maintaining performance.
 - **Robustness emerges** from joint training: Models resist background changes or lighting variations better than traditional VLAs, partly due to early fusion and synthetic augmentations (e.g., simulated camera failures, directional light).
 
 ## Questions And Answers
@@ -1412,7 +1412,7 @@ The result is a petabyte-scale model outperforming frontier embodied reasoning s
 
 ## Notable Details
 - **Training data**: 1 petabyte spanning text, images, video, and trajectories (desktop use, video games, robotics).
-- **Cost efficiency**: Model is ~15x cheaper than Gemini 1.5 Pro for embodied reasoning; video annotation costs cents vs. dollars for competitors.
+- **Cost efficiency**: Perceptron says its model is ~15x cheaper than Gemini 1.5 Pro for embodied reasoning; video annotation costs cents vs. dollars for competitors.
 - **Agentic detection**: Model autonomously tiles images, adjusts contrast, and proposes bounding boxes to solve hard detection tasks (e.g., finding camouflaged birds).
 - **Control tokens**: Single model emits tokens to directly control robots (e.g., sorting books by reading titles).
 - **Open-source plans**: Smaller model weights to be released in July 2026.
@@ -1437,7 +1437,7 @@ The result is a petabyte-scale model outperforming frontier embodied reasoning s
 
 ## Reading Priority
 
-High – Introduces a novel, evidence-backed scaling law for embodied AI, with concrete architectural innovations (perceptive objectives, data-sparse MoE) and near-term open-source releases.
+High – Introduces a novel, speaker-reported scaling law for embodied AI, with concrete architectural innovations (perceptive objectives, data-sparse MoE) and near-term open-source releases.
 
 ***
 
@@ -1448,10 +1448,10 @@ High – Introduces a novel, evidence-backed scaling law for embodied AI, with c
 - **Speaker:** Krishna Prasad Srinivasan, Sarvam
 
 ## One-Sentence Takeaway
-A 3B-parameter state-space vision-language model trained in India achieves SOTA document AI for 22 low-resource Indic languages by combining block-level OCR, a four-stage curriculum, and RL with verifiable rewards.
+A 3B-parameter state-space vision-language model trained in India achieves what Sarvam reports as SOTA document AI for 22 low-resource Indic languages by combining block-level OCR, a four-stage curriculum, and RL with verifiable rewards.
 
 ## Short Summary
-Sarvam’s 3B-parameter vision model outperforms models 100x larger on document intelligence by using a state-space architecture (SSM) to avoid quadratic attention costs on long visual sequences (5–10k tokens/page). The team’s contrarian bet on block-level OCR with layout and reading-order harnesses—later adopted by 2026 releases—enables efficient, accurate extraction.
+Sarvam reports that its 3B-parameter vision model outperforms models 100x larger on document intelligence by using a state-space architecture (SSM) to avoid quadratic attention costs on long visual sequences (5–10k tokens/page). The team’s contrarian bet on block-level OCR with layout and reading-order harnesses—later adopted by 2026 releases—enables efficient, accurate extraction.
 
 The training pipeline is a four-stage curriculum: 13T text tokens (English, 22 Indian languages, math, code) to build a strong language prior, continual pretraining on 300M image-text pairs, supervised fine-tuning on 100M OCR samples, and RL with machine-checkable rewards (e.g., character error rate, table structure). The moat lies in a proprietary data engine for low-resource languages and rigorous, real-world evals.
 
@@ -1477,7 +1477,7 @@ The training pipeline is a four-stage curriculum: 13T text tokens (English, 22 I
 - **Deployment**: Powers Sarvam’s agentic workbench (Akshar) for human-in-the-loop digitization, with confidence scores, block-level grounding, and proofreading.
 - **Data composition**: 40% of pretraining data is Indic languages; the rest is English, math, and code.
 - **Benchmark**: Upcoming Sarvam Indic Benchmark covers 22 languages, diverse layouts (prose, poetry, tables, finance), and documents from the 1800s to present.
-- **Compute efficiency**: Model runs on a single GPU despite SOTA performance, enabled by SSM architecture and block-level processing.
+- **Compute efficiency**: Model runs on a single GPU despite Sarvam-reported SOTA performance, enabled by SSM architecture and block-level processing.
 
 ## Actionable Takeaways
 - Watch for public release of Sarvam’s Indic benchmark to evaluate models on low-resource, high-complexity document tasks.
@@ -1504,7 +1504,7 @@ The training pipeline is a four-stage curriculum: 13T text tokens (English, 22 I
 
 ## Reading Priority
 
-High – A rare, concrete case study of a sovereign, low-resource language model achieving SOTA with novel architecture, curriculum training, and verifiable RL, backed by real-world deployment at scale.
+High – A rare, concrete case study of a sovereign, low-resource language model with Sarvam-reported SOTA results, novel architecture, curriculum training, and verifiable RL, backed by real-world deployment at scale.
 
 ***
 
@@ -1518,7 +1518,7 @@ High – A rare, concrete case study of a sovereign, low-resource language model
 Better document parsing and agentic verification unlock reliable, multi-step AI workflows that outperform frontier models on real-world tasks by fixing inputs at the token level and orchestrating tools for precision and recall.
 
 ## Short Summary
-PDFs remain a hard problem for AI because their format was designed for printing, not reasoning, and humans encode meaning visually in tables, charts, and handwriting. Frontier models score only ~30% on benchmarks like GDP.pdf, but structured inputs (e.g., parsed Markdown/HTML) can lift other models past them while reducing reasoning tokens and latency.
+PDFs remain a hard problem for AI because their format was designed for printing, not reasoning, and humans encode meaning visually in tables, charts, and handwriting. Per Reducto, frontier models score only ~30% on benchmarks like GDP.pdf, but structured inputs (e.g., parsed Markdown/HTML) can lift other models past them while reducing reasoning tokens and latency.
 
 The shift from RAG to agents compounds the cost of bad inputs, as errors propagate across steps. Agentic OCR—token-level corrections via VLMs and traditional CV—addresses this by fixing OCR mistakes (e.g., "0" vs. "O") without rewriting content. Agent harnesses (e.g., code interpreters, self-checks) solve previously unsolvable tasks like extracting data from line charts, balancing precision and recall where frontier models drop rows and document services lag in accuracy.
 
@@ -1570,7 +1570,7 @@ The shift from RAG to agents compounds the cost of bad inputs, as errors propaga
 
 ## Reading Priority
 
-Medium – A practical, evidence-backed breakdown of how to build reliable agent workflows on real-world documents, with concrete examples and tradeoffs.
+Medium – A practical, vendor-presented breakdown of how to build reliable agent workflows on real-world documents, with concrete examples and tradeoffs.
 
 ***
 
@@ -1650,7 +1650,7 @@ AI-driven evolutionary optimization (ERA) can solve "scoreable" scientific probl
 ***
 
 ## Short Summary
-John Platt’s team at Google developed **Empirical Research Assistance (ERA)**, an LLM-powered system that automates the search for solutions to scientific problems framed as "scoreable tasks" (e.g., maximizing a metric via code). ERA uses **Monte Carlo Tree Search with Upper Confidence Bound (UCB)** to explore mutations of notebooks, leveraging Gemini’s world knowledge to guide non-random, high-recall exploration. The approach excelled in domains like contrail mitigation (reducing 1% of anthropogenic warming) and CO₂ monitoring, but Platt emphasizes the risk of **Goodhart’s Law**—metrics become targets, leading to reward hacking—and the need for human oversight to ensure models are *descriptive* (capturing real-world physics) rather than merely *predictive*.
+John Platt’s team at Google developed **Empirical Research Assistance (ERA)**, an LLM-powered system that automates the search for solutions to scientific problems framed as "scoreable tasks" (e.g., maximizing a metric via code). ERA uses **Monte Carlo Tree Search with Upper Confidence Bound (UCB)** to explore mutations of notebooks, leveraging Gemini’s world knowledge to guide non-random, high-recall exploration. Platt says the approach excelled in domains like contrail mitigation (reducing 1% of anthropogenic warming) and CO₂ monitoring, but Platt emphasizes the risk of **Goodhart’s Law**—metrics become targets, leading to reward hacking—and the need for human oversight to ensure models are *descriptive* (capturing real-world physics) rather than merely *predictive*.
 
 The conversation also highlights the **jagged frontier** of AI capabilities: while ERA and modern LLMs (e.g., Gemini 2.5+) show step-change improvements in coding and multi-paper synthesis, they lack human-level creativity, rigor, or philosophical depth. Climate modeling remains uniquely hard due to non-stationarity (changing attractors) and data scarcity, but tools like ERA may eventually integrate vast literature to constrain uncertainties.
 
@@ -2027,7 +2027,7 @@ The most impactful gains now come from co-designing training and inference, such
 - **Local vs. data center inference tradeoffs**: Local setups optimize for memory (e.g., TurboQuant’s 4-bit KV cache) at the cost of compute, while data centers optimize for speed (e.g., NVFP4 quantization for weights, not KV cache) and accept higher memory usage.
 - **Training for inference**: Optimizations like KV compaction (STILL) and speculation (DFlash, DSpark) now require dedicated training, creating a feedback loop where faster inference enables more data for further training.
 - **Speculative decoding evolution**: Diffusion-based drafters (DFlash) outperform earlier methods (EAGLE-3) by proposing 8–16 tokens at once, tripling acceptance rates in production, and pairing with sequential models (DSpark) may push this further.
-- **Continuous retraining of speculators**: Retraining on live prompts can improve token acceptance by 20–100%, but requires significant storage, compute, and data permissions.
+- **Continuous retraining of speculators**: Kiely says retraining on live prompts can improve token acceptance by 20–100%, but requires significant storage, compute, and data permissions.
 
 ## Questions And Answers
 - **Why did TurboQuant not catch on in data centers?**
@@ -2082,7 +2082,7 @@ Medium – A dense, technical update on cutting-edge inference optimizations wit
 - **Speaker:** Filip Makraduli
 
 ## One-Sentence Takeaway
-FlashNorm folds RMSNorm into adjacent linear layers and defers division to eliminate GPU launch/memory overhead, yielding 33–35 % speedups while exposing subtle CUDA stream race conditions that must be explicitly synchronized.
+FlashNorm folds RMSNorm into adjacent linear layers and defers division to eliminate GPU launch/memory overhead, which the speaker measured at 33–35 % speedups while exposing subtle CUDA stream race conditions that must be explicitly synchronized.
 
 ## Short Summary
 RMSNorm contributes little FLOP-wise yet dominates wall-clock time because GPUs are slow at kernel launches, data movement, and synchronization. FlashNorm removes this overhead by algebraically folding the norm’s gain into projection weights offline, deferring the scalar divide so matmul and RMS reduction run in parallel, and dropping redundant pre-norms in scale-invariant architectures. The approach delivers 33–35 % speedups on norm+projection and works with torch.compile and quantized models.
@@ -2107,7 +2107,7 @@ A practical hurdle emerged when parallelizing tensor-core matmul and CUDA-core R
   An implicit join between CUDA streams allowed the post-scale to read an unfinished matmul buffer; fixing it required explicit synchronization on both streams.
 
 ## Notable Details
-- Speedup measured: 33–35 % on the combined norm+projection operation.
+- Speaker-measured speedup: 33–35 % on the combined norm+projection operation.
 - Works out-of-the-box with torch.compile and quantized models.
 - Weight folding can be applied via the `transformer-tricks` repo; deferred division requires custom CUDA kernels.
 - Tested primarily on Llama models but applicable to other architectures.
@@ -2133,7 +2133,7 @@ A practical hurdle emerged when parallelizing tensor-core matmul and CUDA-core R
 
 ## Reading Priority
 
-Medium – A concrete, technically deep dive into a practical optimization and its subtle implementation pitfalls, with reproducible speedups and open-source tooling.
+Medium – A concrete, technically deep dive into a practical optimization and its subtle implementation pitfalls, with speaker-measured speedups and open-source tooling to reproduce them.
 
 ***
 
@@ -2273,20 +2273,20 @@ Medium – A concrete, technical deep dive into debugging stateful inference bug
 Open-weight frontier models now enable cost-effective agentic workflows, but realizing their full potential requires re-architecting inference stacks to optimize end-to-end task latency rather than per-request speed.
 
 ## Short Summary
-Frontier open-weight models like GLM-5.2 have crossed a quality threshold for agentic tasks, delivering usable results at roughly 5.6x lower cost than closed models such as Opus-4.8. However, agentic inference introduces distinct workload patterns—long-running tasks, growing contexts, and interleaved tool calls—where traditional chat-optimized stacks waste compute by recomputing shared prefixes and ignoring task-level dependencies.
+Frontier open-weight models like GLM-5.2 have crossed a quality threshold for agentic tasks, delivering usable results at roughly 5.6x lower cost than closed models such as Opus-4.8 in FriendliAI's demo. However, agentic inference introduces distinct workload patterns—long-running tasks, growing contexts, and interleaved tool calls—where traditional chat-optimized stacks waste compute by recomputing shared prefixes and ignoring task-level dependencies.
 
-FriendliAI addresses this by rebuilding its inference cloud around four pillars: prefix caching, hierarchical KV cache management, cache-aware routing, and agent-aware scheduling, achieving up to 7x faster task completion with lower error rates in production split tests.
+FriendliAI addresses this by rebuilding its inference cloud around four pillars: prefix caching, hierarchical KV cache management, cache-aware routing, and agent-aware scheduling, and reports up to 7x faster task completion with lower error rates in production split tests.
 
 ## Main Ideas
 - Open-weight models (e.g., GLM-5.2) now match closed frontier models in capability for many agentic tasks, making agents economically viable at scale.
 - Agentic workloads differ fundamentally from chat: the unit is the *task* (a loop of plan-act-observe), not the request, with shared prefixes, growing contexts, and interleaved tool calls.
 - Recomputing shared prefixes in agent steps wastes significant compute; caching and reusing KV states for these prefixes is a major optimization opportunity.
 - End-to-end task latency—not per-request latency—is the critical metric for agentic inference, requiring system-level changes like cache-aware routing and agent-aware scheduling.
-- Production deployments (e.g., Kilo Code) show 7x speedups and lower error rates when using agent-optimized inference stacks like FriendliAI.
+- FriendliAI reports that production deployments (e.g., Kilo Code) showed 7x speedups and lower error rates when using agent-optimized inference stacks like FriendliAI.
 
 ## Questions And Answers
 **Q: How much cheaper are open-weight models for agentic tasks?**
-A: In a demo building a tower defense game, GLM-5.2 (open-weight) cost ~27 cents vs. Opus-4.8’s ~$1.50—roughly 5.6x cheaper for comparable output quality.
+A: In FriendliAI's demo building a tower defense game, GLM-5.2 (open-weight) cost ~27 cents vs. Opus-4.8’s ~$1.50—roughly 5.6x cheaper for comparable output quality.
 
 **Q: Why is traditional inference optimization insufficient for agents?**
 A: Chat optimizes for per-request latency, but agents require minimizing *task* latency, with shared prefixes, parallel sub-agents, and dynamic context growth making naive load balancing and caching ineffective.
@@ -2299,7 +2299,7 @@ A: Prefix caching, hierarchical KV cache management (GPU/host/disk), cache-aware
 - Internal traces show consecutive agent steps often share >90% of their prompt prefix, making prefix caching highly impactful.
 - Hierarchical KV caching spans GPU memory, host memory, and disk to handle long contexts beyond GPU limits.
 - Cache-aware routing sends requests to replicas already holding the relevant prefix, preserving locality while balancing load.
-- In a Kilo Code split test, FriendliAI’s stack was **7x faster** with a **lower error rate** than other providers for GLM-5.2.
+- In a Kilo Code split test reported by FriendliAI, its stack was **7x faster** with a **lower error rate** than other providers for GLM-5.2.
 
 ## Actionable Takeaways
 - Evaluate open-weight frontier models (e.g., GLM-5.2, MiniMax, Kimi) for agentic workflows—they may meet quality thresholds at far lower costs.
@@ -2321,7 +2321,7 @@ A: Prefix caching, hierarchical KV cache management (GPU/host/disk), cache-aware
 
 ## Reading Priority
 
-High – Open-weight models are now viable for frontier agentic tasks, and this talk provides concrete, production-validated engineering insights for optimizing inference at scale.
+High – Open-weight models are now viable for frontier agentic tasks, and this talk provides concrete, vendor-presented production engineering insights for optimizing inference at scale.
 
 ***
 
@@ -2403,7 +2403,7 @@ Small, task-specific open-source models now match or exceed frontier performance
 ## Short Summary
 Small open-source models (fitting on a single, older GPU) are catching up to frontier performance for specialized tasks, offering dramatic cost and latency advantages over managed endpoints. The challenge shifts from model capability to serving: existing open-source tools are untuned, top-down routers struggle with many small requests, and frequent fine-tunes/LoRAs create operational friction between AI and infrastructure teams.
 
-Superlinked’s approach inverts the architecture: a lightweight gateway annotates requests and drops them into a shared queue, while workers pull and self-batch, doubling throughput. A Rust sidecar abstracts 50+ adapters across PyTorch, Candle, and SGLang runtimes, and an auto-research loop ships pre-tuned configs, including an 80-cent LoRA that improved German legal retrieval by 18%.
+Superlinked’s approach inverts the architecture: a lightweight gateway annotates requests and drops them into a shared queue, while workers pull and self-batch, which Superlinked says doubles throughput. A Rust sidecar abstracts 50+ adapters across PyTorch, Candle, and SGLang runtimes, and an auto-research loop ships pre-tuned configs, including an 80-cent LoRA that Superlinked says improved German legal retrieval by 18%.
 
 ## Main Ideas
 - Small open-source models (e.g., Qwen 36 27B) now rival frontier models for specific tasks, while being far cheaper and faster to run on commodity GPUs.
@@ -2422,7 +2422,7 @@ Superlinked’s approach inverts the architecture: a lightweight gateway annotat
 ## Notable Details
 - Embedding models on an RTX Pro 6000 GPU can reach hundreds of thousands of tokens/sec with latencies in the low tens of milliseconds.
 - Superlinked’s inverted queue architecture (workers pull from a shared NATS JetStream queue) achieved 2x throughput compared to top-down routing.
-- A LoRA fine-tuned for German legal text retrieval cost $0.80 to train and improved quality by 18%.
+- Superlinked reports a LoRA fine-tuned for German legal text retrieval cost $0.80 to train and improved quality by 18%.
 - Candle runtime reduces worker image size from ~12GB (PyTorch) to ~1GB, improving cold-start times but currently lags PyTorch in performance.
 - The stack uses msgpack (not base64 JSON) for high-throughput request serialization and supports multimodal data via the API gateway.
 
@@ -2447,7 +2447,7 @@ Superlinked’s approach inverts the architecture: a lightweight gateway annotat
 
 ## Reading Priority
 
-High – Small models are now viable for production, but serving them efficiently requires non-obvious architectural shifts; this talk provides concrete, open-source solutions with strong performance data.
+High – Small models are now viable for production, but serving them efficiently requires non-obvious architectural shifts; this talk provides concrete, open-source solutions with vendor-presented performance data.
 
 ***
 
@@ -2504,6 +2504,6 @@ The solution combines a scalable load generator, a shared workload catalog (e.g.
 
 ## Reading Priority
 
-High – Exposes systemic flaws in LLM benchmarking with concrete evidence and offers a reproducible, open-source solution already validated at scale.
+High – Exposes systemic flaws in LLM benchmarking with concrete evidence and offers a reproducible, open-source solution the speakers say already runs at scale.
 
 ***
