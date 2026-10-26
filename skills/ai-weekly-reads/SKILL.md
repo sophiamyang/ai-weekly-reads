@@ -110,6 +110,16 @@ Full background is in the reusable `substack-publishing` skill. What this pipeli
 - On failure it falls back to `scripts/email_substack_post.py`, which emails the post using the Kindle Gmail credentials. A failed draft is never a reason to abandon the run.
 - The cookie grants full account access and expires without warning. A 401/403 means re-export it from the browser, not that the pipeline is broken.
 
+## Scheduled Run Release
+
+The scheduled weekly run ends by opening and merging its own pull request:
+
+1. Push the knowledge base to `sophiamyang/ai-knowledge-base` first, then the edition branch (`claude/weekly-reads-q9qk7j`), and confirm both report `0 0` from `git rev-list --left-right --count origin/<branch>...HEAD`.
+2. Open a PR titled `Weekly reads YYYY-MM-DD` into `main`, then squash-merge it once checks pass. The Substack post stays a draft; only the user publishes it.
+3. If the previous run's PR is still open, review and merge it before starting. Do not reset the edition branch while it holds unmerged work.
+4. Because the repo squash-merges, the edition branch is permanently diverged from `main`. Reset it with `git checkout -B` only when `git diff origin/main origin/<branch>` is empty. If a force-push is blocked, merge `main` into the branch and push normally.
+5. The agent proxy port changes when the session reconnects, which makes yt-dlp fail with "Connection refused" and drops every video as "without resolvable publication date". A run that finds zero resources alongside that error is a failed run, not an empty week. Rerun with a fresh `HTTPS_PROXY` rather than reporting it.
+
 ## Commands
 
 Default build commands generate artifacts only. Distribution is a separate explicit step.
